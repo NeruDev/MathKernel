@@ -123,7 +123,7 @@ Añadí las funciones hiperbólicas (usadas en líneas de transmisión).
 | $\mu$ | Media poblacional | `\mu` | Promedio esperado |
 | $\sigma$ | Desviación estándar | `\sigma` | Dispersión de datos |
 | $\sigma^2$ | Varianza | `\sigma^2` | Dispersión al cuadrado |
-| $\bar{x}$ | Media muestral | `\bar{x}` | Promedio de una muestra |
+| $\bar{x}$ | Media muestral | `\bar{x}` | Probedio de una muestra |
 | $E[X]$ | Esperanza | `E[X]` | Valor esperado |
 | $\mathcal{N}(\mu, \sigma^2)$| Distribución Normal| `\mathcal{N}` | Campana de Gauss |
 
