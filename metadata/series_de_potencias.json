@@ -9,5 +9,9 @@
     "Ecuación de Bessel",
     "Polinomios de Legendre",
     "Relación de recurrencia"
-  ]
+  ],
+  "scripts": [
+    "diagrama_decision_series_potencias.py"
+  ],
+  "assets": []
 }

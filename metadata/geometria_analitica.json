@@ -9,5 +9,18 @@
     "Circunferencia",
     "Parábola",
     "Elipse"
-  ]
+  ],
+  "scripts": [
+    "circunferencia.py",
+    "conicas_discriminante.py",
+    "coordenadas_polares.py",
+    "distancia_punto_medio.py",
+    "elipse.py",
+    "hiperbola.py",
+    "parabola.py",
+    "pendiente_recta.py",
+    "plano_cartesiano.py",
+    "transformaciones.py"
+  ],
+  "assets": []
 }

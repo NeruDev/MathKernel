@@ -9,5 +9,13 @@
     "Torsión",
     "Componentes de la aceleración",
     "Movimiento de proyectiles"
-  ]
+  ],
+  "scripts": [
+    "aceleracion_componentes.py",
+    "curvas_espacio.py",
+    "curvatura_circulo_osculador.py",
+    "frenet_serret_tnb.py",
+    "longitud_arco.py"
+  ],
+  "assets": []
 }

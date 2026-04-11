@@ -9,5 +9,9 @@
     "PVI con Laplace",
     "Función escalón unitario",
     "Delta de Dirac"
-  ]
+  ],
+  "scripts": [
+    "diagrama_decision_laplace.py"
+  ],
+  "assets": []
 }

@@ -9,5 +9,20 @@
     "Identidades",
     "Ley de senos",
     "Ley de cosenos"
-  ]
+  ],
+  "scripts": [
+    "angulos_notables_valores.py",
+    "circulo_unitario.py",
+    "funciones_inversas.py",
+    "graficas_seno_coseno.py",
+    "graficas_tan_sec.py",
+    "identidades_angulo_doble.py",
+    "identidades_pitagoricas.py",
+    "identidades_suma_diferencia.py",
+    "ley_cosenos.py",
+    "ley_senos.py",
+    "transformaciones_trig.py",
+    "triangulo_razones_trig.py"
+  ],
+  "assets": []
 }

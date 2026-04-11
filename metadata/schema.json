@@ -3,5 +3,7 @@
   "title": "string",
   "module": "string",
   "order": "number",
-  "concepts": ["string"]
+  "concepts": ["string"],
+  "scripts": ["string"],
+  "assets": ["string"]
 }

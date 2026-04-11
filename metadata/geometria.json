@@ -9,5 +9,34 @@
     "Cuadriláteros",
     "Círculo",
     "Áreas"
-  ]
+  ],
+  "scripts": [
+    "angulos_clasificacion.py",
+    "angulos_complementarios_suplementarios.py",
+    "areas_figuras_planas.py",
+    "circunferencia_angulos.py",
+    "circunferencia_elementos.py",
+    "circunferencias_posiciones.py",
+    "cuadrilateros_clasificacion.py",
+    "cuadrilateros_propiedades.py",
+    "escalera_apoyada.py",
+    "paralelas_transversal_angulos.py",
+    "pitagoras_visual.py",
+    "poligonos_regulares.py",
+    "relaciones_metricas_triangulo.py",
+    "rombo_propiedades.py",
+    "sector_segmento_circular.py",
+    "semejanza_criterios.py",
+    "solidos_geometricos.py",
+    "teorema_tales.py",
+    "trapecio_elementos.py",
+    "triangulo_altura_area.py",
+    "triangulo_angulo_exterior.py",
+    "triangulo_equilatero_elementos.py",
+    "triangulo_lineas_notables.py",
+    "triangulos_clasificacion_angulos.py",
+    "triangulos_clasificacion_lados.py",
+    "triangulos_congruencia.py"
+  ],
+  "assets": []
 }

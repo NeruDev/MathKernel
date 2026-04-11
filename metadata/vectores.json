@@ -9,5 +9,12 @@
     "Ecuación de la recta",
     "Ecuación del plano",
     "Producto triple escalar"
-  ]
+  ],
+  "scripts": [
+    "operaciones_vectores_3d.py",
+    "producto_punto_cruz.py",
+    "recta_plano_espacio.py",
+    "sistema_coordenadas_3d.py"
+  ],
+  "assets": []
 }

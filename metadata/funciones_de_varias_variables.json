@@ -9,5 +9,13 @@
     "Derivada direccional",
     "Plano tangente",
     "Multiplicadores de Lagrange"
-  ]
+  ],
+  "scripts": [
+    "curvas_nivel.py",
+    "extremos_hessiano.py",
+    "gradiente_derivada_direccional.py",
+    "plano_tangente.py",
+    "superficie_funcion_dos_variables.py"
+  ],
+  "assets": []
 }

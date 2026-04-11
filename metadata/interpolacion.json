@@ -9,5 +9,7 @@
     "Splines cúbicos",
     "Error de interpolación",
     "Nodos de Chebyshev"
-  ]
+  ],
+  "scripts": [],
+  "assets": []
 }

@@ -9,5 +9,9 @@
     "Variación de parámetros",
     "Ecuación de Cauchy-Euler",
     "Oscilador armónico"
-  ]
+  ],
+  "scripts": [
+    "diagrama_clasificacion_edo_segundo_orden.py"
+  ],
+  "assets": []
 }

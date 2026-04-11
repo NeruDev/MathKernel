@@ -9,5 +9,7 @@
     "Integración de Romberg",
     "Cuadratura Gaussiana",
     "Extrapolación de Richardson"
-  ]
+  ],
+  "scripts": [],
+  "assets": []
 }

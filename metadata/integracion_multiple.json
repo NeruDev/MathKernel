@@ -9,5 +9,12 @@
     "Integrales triples",
     "Teorema de Green",
     "Teorema de Stokes"
-  ]
+  ],
+  "scripts": [
+    "coordenadas_cilindricas.py",
+    "coordenadas_esfericas.py",
+    "regiones_integracion_doble.py",
+    "teoremas_integrales.py"
+  ],
+  "assets": []
 }

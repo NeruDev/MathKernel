@@ -9,5 +9,9 @@
     "Ecuaciones exactas",
     "Ecuaciones de Bernoulli",
     "Problema de Valor Inicial"
-  ]
+  ],
+  "scripts": [
+    "diagrama_decision_edo_primer_orden.py"
+  ],
+  "assets": []
 }

@@ -1,6 +1,6 @@
 {
   "id": "sistemas_edo",
-  "title": "Teoría: Sistemas de Ecuaciones Diferenciales Ordinarias",
+  "title": "Teoría: Systems of Ordinary Differential Equations",
   "module": "05_ecuaciones_diferenciales",
   "order": 4,
   "concepts": [
@@ -9,5 +9,9 @@
     "Retratos de fase",
     "Estabilidad",
     "Matriz exponencial"
-  ]
+  ],
+  "scripts": [
+    "diagrama_traza_determinante.py"
+  ],
+  "assets": []
 }
