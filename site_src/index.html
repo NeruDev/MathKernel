@@ -3,35 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matemáticas</title>
+  <title>Arquitectura Matemática</title>
 
-  <!-- 🔥 PREVENIR FLICKER DE TEMA -->
   <script>
     const theme = localStorage.getItem("theme") || "light";
     document.documentElement.setAttribute("data-theme", theme);
   </script>
 
-  <!-- 🎨 ESTILOS -->
   <link rel="stylesheet" href="./styles.css">
-
-  <!-- 🧠 CONFIGURACIÓN MATHJAX (ANTES DE CARGARLO) -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true
-      },
-      startup: {
-        typeset: true
-      }
-    };
-  </script>
-
-  <!-- 📐 LIBRERÍA MATHJAX -->
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
-  <!-- ⚙️ TU JS -->
   <script defer src="./scripts.js"></script>
 </head>
 
@@ -40,18 +19,19 @@
 <div class="container">
 
 <header>
-  <h1>📚 Matemáticas</h1>
-  <button id="theme-toggle" class="btn-theme">🌞</button>
+  <h1>📚 Arquitectura Matemática</h1>
+  <button id="theme-toggle" class="btn-theme">🌓</button>
 </header>
 
 <nav>
-  <a href="./pages/00_fundamentos/01_simbologia_matematica/simbologia_matematica.html">
-    Simbología
-  </a>
+  <a href="./pages/index.html">Explorar Contenidos</a>
   <a href="./glossary.html">Glosario</a>
 </nav>
 
-<p>Repositorio educativo de matemáticas.</p>
+<main>
+  <p>Base de conocimiento matemática estructurada para consumo humano y sistemas de IA.</p>
+  <p>Selecciona <strong>Explorar Contenidos</strong> para ver los módulos disponibles.</p>
+</main>
 
 </div>
 

@@ -1,0 +1,18 @@
+{
+  "id": "determinantes",
+  "title": "Determinantes",
+  "lang": "es",
+  "concepts": [
+    "determinante",
+    "regla de sarrus",
+    "menor",
+    "cofactor",
+    "metodo de laplace",
+    "matriz adjunta",
+    "regla de cramer"
+  ],
+  "scripts": [],
+  "assets": [],
+  "module": "algebra_lineal",
+  "order": 2
+}

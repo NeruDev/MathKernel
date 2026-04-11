@@ -1,0 +1,23 @@
+{
+  "id": "matrices",
+  "title": "Matrices",
+  "lang": "es",
+  "concepts": [
+    "matriz",
+    "matriz identidad",
+    "matriz diagonal",
+    "matriz triangular",
+    "suma de matrices",
+    "multiplicacion por escalar",
+    "multiplicacion de matrices",
+    "transpuesta",
+    "matriz simetrica",
+    "matriz invertible",
+    "gauss-jordan",
+    "matriz ortogonal"
+  ],
+  "scripts": [],
+  "assets": [],
+  "module": "algebra_lineal",
+  "order": 1
+}

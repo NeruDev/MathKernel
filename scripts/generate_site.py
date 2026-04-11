@@ -61,8 +61,9 @@ def convert_md_to_html(md_path, depth):
 
     html = markdown.markdown(md_text, extensions=["tables", "fenced_code", "toc"])
 
-    link_replacements = len(re.findall(r'href="([^"]+)\.md"', html))
-    html = re.sub(r'href="([^"]+)\.md"', r'href="\1.html"', html)
+    # Corregir enlaces .md (incluyendo fragmentos #)
+    link_replacements = len(re.findall(r'href="[^"]+\.md(?:#[^"]*)?"', html))
+    html = re.sub(r'href="([^"]+)\.md(#[^"]*)?"', r'href="\1.html\2"', html)
 
     prefix = "../" * depth
     html = html.replace("assets/", f"{prefix}assets/")
@@ -107,6 +108,7 @@ def wrap_html(title, body, depth=1):
 
 <nav>
     <a href="{prefix}index.html">Inicio</a>
+    <a href="{prefix}pages/index.html">Contenidos</a>
     <a href="{prefix}glossary.html">Glosario</a>
 </nav>
 
@@ -124,6 +126,7 @@ def process_markdown():
         raise Exception("No existe la carpeta content/")
 
     generated_pages = []
+    id_to_path = {}
 
     for root, _, files in os.walk(CONTENT_DIR):
         for file in files:
@@ -131,6 +134,7 @@ def process_markdown():
                 continue
 
             md_path = os.path.join(root, file)
+            md_base = os.path.splitext(file)[0]
             rel_path = os.path.relpath(md_path, CONTENT_DIR)
             rel_path_html = rel_path.replace(".md", ".html")
             out_path = os.path.join(PAGES_DIR, rel_path_html)
@@ -145,19 +149,20 @@ def process_markdown():
                 f.write(wrap_html(display_title, html_content, depth))
 
             generated_pages.append(out_path)
+            id_to_path[md_base] = rel_path_html
             log_info(f"Archivo procesado: {md_path}")
             log_info(f"Conversión realizada: {md_path} -> {out_path}")
             if conversions:
                 log_info(f"Enlaces .md corregidos: {conversions} en {out_path}")
 
-    return generated_pages
+    return generated_pages, id_to_path
 
 
 def build_glossary():
     glossary_html = "<h1>Glosario de Conceptos</h1><ul>"
 
     if os.path.exists(METADATA_DIR):
-        for file in os.listdir(METADATA_DIR):
+        for file in sorted(os.listdir(METADATA_DIR)):
             if not file.endswith(".json") or file == "schema.json":
                 continue
 
@@ -179,7 +184,7 @@ def build_glossary():
     log_info(f"Conversión realizada: glosario -> {out_path}")
 
 
-def generate_metadata_index():
+def generate_metadata_index(id_to_path):
     metadata_items = []
 
     if not os.path.exists(METADATA_DIR):
@@ -195,15 +200,19 @@ def generate_metadata_index():
             with open(path, "r", encoding="utf-8") as metadata_file:
                 data = json.load(metadata_file)
 
-            page_link = f"./{data['id']}.html"
-            metadata_items.append(
-                {
-                    "title": data.get("title", data["id"]),
-                    "module": data.get("module", "zz_sin_modulo"),
-                    "order": data.get("order", 9999),
-                    "link": page_link,
-                }
-            )
+            md_id = data["id"]
+            if md_id in id_to_path:
+                page_link = f"./{id_to_path[md_id].replace(os.sep, '/')}"
+                metadata_items.append(
+                    {
+                        "title": data.get("title", data["id"]),
+                        "module": data.get("module", "zz_sin_modulo"),
+                        "order": data.get("order", 9999),
+                        "link": page_link,
+                    }
+                )
+            else:
+                log_warn(f"ID {md_id} de metadata no encontrado en archivos .md")
         except Exception as exc:
             log_warn(f"No se pudo indexar {file}: {exc}")
 
@@ -265,8 +274,8 @@ if __name__ == "__main__":
     copy_static_assets()
     ensure_dirs()
 
-    pages = process_markdown()
-    generate_metadata_index()
+    pages, id_to_path = process_markdown()
+    generate_metadata_index(id_to_path)
     pages.append(os.path.join(PAGES_DIR, "index.html"))
 
     build_glossary()
