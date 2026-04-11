@@ -38,21 +38,25 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      # 4. Generar sitio
+      # 4. Validar estructura
+      - name: Validate structure
+        run: python scripts/validate_structure.py
+
+      # 5. Generar sitio
       - name: Generate site
         run: python scripts/generate_site.py
 
-      # 5. Crear archivo .nojekyll (evita que GitHub use Jekyll)
+      # 6. Crear archivo .nojekyll (evita que GitHub use Jekyll)
       - name: Disable Jekyll
         run: touch site/.nojekyll
 
-      # 6. Subir artefacto
+      # 7. Subir artefacto
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
 
-      # 7. Deploy
+      # 8. Deploy
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
