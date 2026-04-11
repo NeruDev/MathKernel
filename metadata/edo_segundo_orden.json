@@ -1,0 +1,13 @@
+{
+  "id": "edo_segundo_orden",
+  "title": "Teoría: Ecuaciones Diferenciales de Segundo Orden",
+  "module": "05_ecuaciones_diferenciales",
+  "order": 2,
+  "concepts": [
+    "Raíces de la ecuación característica",
+    "Coeficientes indeterminados",
+    "Variación de parámetros",
+    "Ecuación de Cauchy-Euler",
+    "Oscilador armónico"
+  ]
+}

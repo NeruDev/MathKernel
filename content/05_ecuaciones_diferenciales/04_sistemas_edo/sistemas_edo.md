@@ -1,23 +1,9 @@
-<!--
-::METADATA::
-type: theory
-status: active
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría: Sistemas de Ecuaciones Diferenciales Ordinarias
-
----
-
 ## 3.1 Forma Matricial
 
 ### Sistema de EDO Lineales
 
-Un sistema de $n$ [ecuaciones diferenciales](../../../glossary.md#ecuaciones-diferenciales) lineales de primer [orden](../../../glossary.md#orden):
+Un sistema de $n$ ecuaciones diferenciales lineales de primer orden:
 
 $$\begin{cases}
 x_1' = a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n + f_1(t) \\
@@ -31,9 +17,9 @@ x_n' = a_{n1}x_1 + a_{n2}x_2 + \cdots + a_{nn}x_n + f_n(t)
 $$\boxed{\mathbf{X}' = A\mathbf{X} + \mathbf{F}(t)}$$
 
 donde:
-- $\mathbf{X} = \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}$ es el [vector](../../../glossary.md#vector) de incógnitas
-- $A = (a_{ij})$ es la [matriz](../../../glossary.md#matriz) de coeficientes $n \times n$
-- $\mathbf{F}(t) = \begin{pmatrix} f_1(t) \\ f_2(t) \\ \vdots \\ f_n(t) \end{pmatrix}$ es el [vector](../../../glossary.md#vector) de términos forzantes
+- $\mathbf{X} = \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}$ es el vector de incógnitas
+- $A = (a_{ij})$ es la matriz de coeficientes $n \times n$
+- $\mathbf{F}(t) = \begin{pmatrix} f_1(t) \\ f_2(t) \\ \vdots \\ f_n(t) \end{pmatrix}$ es el vector de términos forzantes
 
 ### Sistema Homogéneo
 
@@ -43,7 +29,7 @@ $$\mathbf{X}' = A\mathbf{X}$$
 
 ### Conversión de EDO de Orden Superior
 
-Una [EDO](../../../glossary.md#edo) de [orden](../../../glossary.md#orden) $n$:
+Una EDO de orden $n$:
 $$y^{(n)} + a_{n-1}y^{(n-1)} + \cdots + a_1y' + a_0y = f(t)$$
 
 Se convierte en sistema con: $x_1 = y$, $x_2 = y'$, ..., $x_n = y^{(n-1)}$
@@ -126,7 +112,7 @@ $$\boxed{\mathbf{X}_1 = e^{\alpha t}(\mathbf{a}\cos\beta t - \mathbf{b}\sin\beta
 
 $$\boxed{\mathbf{X}_2 = e^{\alpha t}(\mathbf{a}\sin\beta t + \mathbf{b}\cos\beta t)}$$
 
-[Solución general](../../../glossary.md#solucion-general):
+Solución general:
 
 $$\mathbf{X} = C_1\mathbf{X}_1 + C_2\mathbf{X}_2$$
 
@@ -192,7 +178,7 @@ El **punto de equilibrio** del sistema $\mathbf{X}' = A\mathbf{X}$ es $\mathbf{X
 
 ### Clasificación (Sistema 2×2)
 
-Para [matriz](../../../glossary.md#matriz) $A$ con eigenvalores $\lambda_1, \lambda_2$:
+Para matriz $A$ con eigenvalores $\lambda_1, \lambda_2$:
 
 | Eigenvalores | Tipo | Descripción |
 |--------------|------|-------------|

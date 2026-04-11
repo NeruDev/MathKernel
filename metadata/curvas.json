@@ -1,0 +1,13 @@
+{
+  "id": "curvas",
+  "title": "Teoría — Curvas planas, ecuaciones paramétricas y coordenadas polares",
+  "module": "04_calculo_vectorial",
+  "order": 2,
+  "concepts": [
+    "Ecuaciones paramétricas",
+    "Coordenadas polares",
+    "Longitud de arco",
+    "Área en polares",
+    "Secciones cónicas"
+  ]
+}

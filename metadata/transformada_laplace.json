@@ -1,0 +1,13 @@
+{
+  "id": "transformada_laplace",
+  "title": "Teoría: Transformada de Laplace",
+  "module": "05_ecuaciones_diferenciales",
+  "order": 3,
+  "concepts": [
+    "Propiedades de la transformada",
+    "Transformada inversa",
+    "PVI con Laplace",
+    "Función escalón unitario",
+    "Delta de Dirac"
+  ]
+}

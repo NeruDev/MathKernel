@@ -1,0 +1,13 @@
+{
+  "id": "teoremas_fundamentales",
+  "title": "Teoremas Fundamentales del Cálculo Diferencial",
+  "module": "02_calculo_diferencial",
+  "order": 4,
+  "concepts": [
+    "Teorema de Rolle",
+    "Teorema del Valor Medio",
+    "Regla de L'Hôpital",
+    "Teorema de Taylor",
+    "Series de Maclaurin"
+  ]
+}

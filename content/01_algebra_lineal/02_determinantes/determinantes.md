@@ -1,11 +1,4 @@
-> 🏠 **Navegación:** ← Volver al Índice Principal
-
----
-
 # Teoría de Determinantes
-
----
-
 ## 2.1 Determinante de Matrices 2×2 y 3×3
 
 ### Determinante $2 \times 2$

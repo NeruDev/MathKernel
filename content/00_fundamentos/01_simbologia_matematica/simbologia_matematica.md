@@ -1,4 +1,4 @@
-### 1. Aritmética y Álgebra Básica
+# 1. Aritmética y Álgebra Básica
 
 | Símbolo | Nombre | LaTeX | Uso / Significado |
 | :---: | :--- | :--- | :--- |

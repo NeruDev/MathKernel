@@ -1,0 +1,13 @@
+{
+  "id": "derivadas",
+  "title": "Teoría de la Derivada",
+  "module": "02_calculo_diferencial",
+  "order": 2,
+  "concepts": [
+    "Definición por límite",
+    "Regla de la cadena",
+    "Derivación implícita",
+    "Derivación logarítmica",
+    "Diferenciabilidad"
+  ]
+}

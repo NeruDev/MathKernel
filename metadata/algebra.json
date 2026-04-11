@@ -1,10 +1,13 @@
 {
   "id": "algebra",
-  "title": "Álgebra",
-  "lang": "es",
-  "concepts": [],
-  "scripts": [],
-  "assets": [],
-  "module": "fundamentos",
-  "order": 3
+  "title": "Teoría de Álgebra",
+  "module": "00_fundamentos",
+  "order": 3,
+  "concepts": [
+    "Expresiones algebraicas",
+    "Polinomios",
+    "Productos notables",
+    "Factorización",
+    "Ecuaciones lineales"
+  ]
 }

@@ -1,0 +1,13 @@
+{
+  "id": "funciones_de_varias_variables",
+  "title": "Teoría — Funciones reales de varias variables",
+  "module": "04_calculo_vectorial",
+  "order": 4,
+  "concepts": [
+    "Derivadas parciales",
+    "Vector gradiente",
+    "Derivada direccional",
+    "Plano tangente",
+    "Multiplicadores de Lagrange"
+  ]
+}

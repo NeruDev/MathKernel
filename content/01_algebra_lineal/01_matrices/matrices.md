@@ -1,11 +1,4 @@
-> 🏠 **Navegación:** ← Volver al Índice Principal
-
----
-
 # Teoría de Matrices
-
----
-
 ## 1.1 Definición y Notación
 
 ### Definición

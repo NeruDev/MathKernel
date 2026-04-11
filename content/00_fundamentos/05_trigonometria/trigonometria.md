@@ -1,22 +1,4 @@
-<!--
-::METADATA::
-type: theory
-topic_id: fun-05-trigonometria
-file_id: FUN-05-Teoria-Trigonometria
-status: stable
-audience: student
-requires: [fun-04-geometria]
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría de Trigonometría
-
----
-
 ## 5.1 Conceptos fundamentales
 
 ### Definición de ángulo
@@ -39,7 +21,7 @@ Un **ángulo** es la rotación de un rayo desde una posición inicial hasta una 
 
 **Radianes:**
 - Una vuelta completa = $2\pi$ rad
-- Un [radián](../../../glossary.md#radian) = ángulo central que subtiende un arco igual al radio
+- Un radián = ángulo central que subtiende un arco igual al radio
 
 **Conversión:**
 $$\boxed{180° = \pi \text{ rad}}$$
@@ -100,8 +82,6 @@ $$\cot\theta = \frac{1}{\tan\theta} = \frac{b}{a}$$
 - **C**oseno = **A**dyacente / **H**ipotenusa
 - **T**angente = **O**puesto / **A**dyacente
 
-![Razones trigonométricas en el triángulo rectángulo](../media/generated/triangulo_razones_trig.png)
-
 *Figura 5.2.1: Triángulo rectángulo con las razones trigonométricas seno, coseno y tangente.*
 
 ---
@@ -125,9 +105,9 @@ $$\sin\theta = y \qquad \cos\theta = x \qquad \tan\theta = \frac{y}{x}$$
 
 **Regla mnemotécnica "ASTC"** (All Students Take Calculus):
 - **A**ll (I): todas positivas
-- **S**in (II): solo [seno](../../../glossary.md#seno) positivo
-- **T**an (III): solo [tangente](../../../glossary.md#tangente) positiva
-- **C**os (IV): solo [coseno](../../../glossary.md#coseno) positivo
+- **S**in (II): solo seno positivo
+- **T**an (III): solo tangente positiva
+- **C**os (IV): solo coseno positivo
 
 ### Ángulos de referencia
 
@@ -139,8 +119,6 @@ El **ángulo de referencia** $\theta_r$ es el ángulo agudo formado entre el lad
 | II | $\theta_r = 180° - \theta$ |
 | III | $\theta_r = \theta - 180°$ |
 | IV | $\theta_r = 360° - \theta$ |
-
-![Círculo unitario](../media/generated/circulo_unitario.png)
 
 *Figura 5.3.1: Círculo unitario mostrando las coordenadas $(\cos\theta, \sin\theta)$ y los signos por cuadrante.*
 
@@ -170,14 +148,12 @@ $$\tan\theta \cdot \cot\theta = 1$$
 
 ### Identidades de paridad
 
-| [Función](../../../glossary.md#funcion) par | Función impar |
+| Función par | Función impar |
 |:-----------:|:-------------:|
 | $\cos(-\theta) = \cos\theta$ | $\sin(-\theta) = -\sin\theta$ |
 | $\sec(-\theta) = \sec\theta$ | $\tan(-\theta) = -\tan\theta$ |
 | | $\cot(-\theta) = -\cot\theta$ |
 | | $\csc(-\theta) = -\csc\theta$ |
-
-![Identidades pitagóricas](../media/generated/identidades_pitagoricas.png)
 
 *Figura 5.4.1: Representación geométrica de la identidad fundamental $\sin^2\theta + \cos^2\theta = 1$.*
 
@@ -200,8 +176,6 @@ $$\sin(\alpha - \beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta$$
 $$\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$$
 
 $$\tan(\alpha - \beta) = \frac{\tan\alpha - \tan\beta}{1 + \tan\alpha\tan\beta}$$
-
-![Identidades de suma y diferencia](../media/generated/identidades_suma_diferencia.png)
 
 *Figura 5.5.1: Interpretación geométrica de las identidades de suma y diferencia de ángulos.*
 
@@ -226,8 +200,6 @@ $$\cos\frac{\theta}{2} = \pm\sqrt{\frac{1 + \cos\theta}{2}}$$
 $$\tan\frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos\theta}{1 + \cos\theta}} = \frac{\sin\theta}{1 + \cos\theta} = \frac{1 - \cos\theta}{\sin\theta}$$
 
 > **Nota:** El signo $\pm$ depende del cuadrante donde se ubica $\frac{\theta}{2}$.
-
-![Identidades de ángulo doble](../media/generated/identidades_angulo_doble.png)
 
 *Figura 5.6.1: Visualización de las identidades de ángulo doble: $\sin(2\theta)$ y $\cos(2\theta)$.*
 
@@ -299,11 +271,7 @@ $$\cos C = \frac{a^2 + b^2 - c^2}{2ab}$$
 
 $$\frac{a - b}{a + b} = \frac{\tan\frac{A-B}{2}}{\tan\frac{A+B}{2}}$$
 
-![Ley de senos](../media/generated/ley_senos.png)
-
 *Figura 5.8.1: Ley de senos: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$.*
-
-![Ley de cosenos](../media/generated/ley_cosenos.png)
 
 *Figura 5.8.2: Ley de cosenos: $c^2 = a^2 + b^2 - 2ab\cos C$.*
 
@@ -313,7 +281,7 @@ $$\frac{a - b}{a + b} = \frac{\tan\frac{A-B}{2}}{\tan\frac{A+B}{2}}$$
 
 ### Fórmulas de área
 
-**Con [base](../../../glossary.md#base) y altura:**
+**Con base y altura:**
 $$A = \frac{1}{2}bh$$
 
 **Con dos lados y ángulo comprendido:**
@@ -330,7 +298,7 @@ donde $s = \frac{a + b + c}{2}$ es el semiperímetro.
 
 ### Definiciones y dominios
 
-| Función | Notación | [Dominio](../../../glossary.md#dominio) | Rango |
+| Función | Notación | Dominio | Rango |
 |---------|:--------:|:-------:|:-----:|
 | Arcoseno | $\arcsin x$ o $\sin^{-1}x$ | $[-1, 1]$ | $[-\frac{\pi}{2}, \frac{\pi}{2}]$ |
 | Arcocoseno | $\arccos x$ o $\cos^{-1}x$ | $[-1, 1]$ | $[0, \pi]$ |
@@ -350,8 +318,6 @@ $$\arcsin x + \arccos x = \frac{\pi}{2}$$
 
 $$\arctan x + \arctan\frac{1}{x} = \begin{cases} \frac{\pi}{2} & \text{si } x > 0 \\ -\frac{\pi}{2} & \text{si } x < 0 \end{cases}$$
 
-![Funciones trigonométricas inversas](../media/generated/funciones_inversas.png)
-
 *Figura 5.10.1: Gráficas de las funciones inversas $\arcsin x$, $\arccos x$ y $\arctan x$.*
 
 ---
@@ -369,24 +335,18 @@ $$\arctan x + \arctan\frac{1}{x} = \begin{cases} \frac{\pi}{2} & \text{si } x > 
 
 ### Características de las funciones básicas
 
-| Función | Periodo | Amplitud | [Dominio](../../../glossary.md#dominio) | Rango |
+| Función | Periodo | Amplitud | Dominio | Rango |
 |---------|:-------:|:--------:|---------|-------|
 | $\sin x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
 | $\cos x$ | $2\pi$ | $1$ | $\mathbb{R}$ | $[-1, 1]$ |
 | $\tan x$ | $\pi$ | $\nexists$ | $x \neq \frac{\pi}{2} + n\pi$ | $\mathbb{R}$ |
 | $\cot x$ | $\pi$ | $\nexists$ | $x \neq n\pi$ | $\mathbb{R}$ |
 | $\sec x$ | $2\pi$ | $\nexists$ | $x \neq \frac{\pi}{2} + n\pi$ | $(-\infty, -1] \cup [1, \infty)$ |
-| $\csc x$ | $2\pi$ | $\nexists$ | $x \neq n\pi$ | $(-\infty, -1] \cup [1, \infty)$ |
-
-![Gráficas de seno y coseno](../media/generated/graficas_seno_coseno.png)
+| $\csc x$ | $2\pi$ | $\nexists$ | $x \neq n\pi$ | $(-\infty, -1] \cup 1, \infty)$ |
 
 *Figura 5.11.1: Gráficas de las funciones seno y coseno mostrando amplitud, periodo y desfase.*
 
-![Gráficas de tangente y secante](../media/generated/graficas_tan_sec.png)
-
 *Figura 5.11.2: Gráficas de las funciones tangente y secante con sus asíntotas verticales.*
-
-![Transformaciones trigonométricas](../media/generated/transformaciones_trig.png)
 
 *Figura 5.11.3: Efecto de los parámetros $A$, $B$, $C$, $D$ en $y = A\sin(Bx + C) + D$.*
 
@@ -398,7 +358,7 @@ $$\arctan x + \arctan\frac{1}{x} = \begin{cases} \frac{\pi}{2} & \text{si } x > 
 
 1. Aislar la función trigonométrica
 2. Encontrar soluciones en el intervalo fundamental
-3. Escribir la [solución general](../../../glossary.md#solucion-general) usando periodicidad
+3. Escribir la [solución general usando periodicidad
 
 ### Soluciones generales
 
@@ -412,4 +372,4 @@ donde $n \in \mathbb{Z}$.
 
 ---
 
-> 📚 **Nota:** Este documento cubre [trigonometría](../../../glossary.md#trigonometria) para nivel [fundamentos](../../../glossary.md#fundamentos).
+> 📚 **Nota:** Este documento cubre trigonometría para nivel fundamentos.

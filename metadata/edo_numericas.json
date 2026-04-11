@@ -1,0 +1,13 @@
+{
+  "id": "edo_numericas",
+  "title": "Teoría: Solución Numérica de EDO",
+  "module": "06_metodos_numericos",
+  "order": 4,
+  "concepts": [
+    "Método de Euler",
+    "Runge-Kutta (RK4)",
+    "Métodos multipaso",
+    "Predictor-Corrector",
+    "Estabilidad y rigidez"
+  ]
+}

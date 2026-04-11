@@ -1,0 +1,13 @@
+{
+  "id": "integracion_multiple",
+  "title": "Teoría — Integración múltiple",
+  "module": "04_calculo_vectorial",
+  "order": 5,
+  "concepts": [
+    "Integrales dobles",
+    "Coordenadas polares",
+    "Integrales triples",
+    "Teorema de Green",
+    "Teorema de Stokes"
+  ]
+}

@@ -1,32 +1,14 @@
-<!--
-::METADATA::
-type: theory
-topic_id: cv-01-vectores-espacio
-file_id: CV-01-Teoria-Vectores
-status: stable
-audience: student
-requires: [FUN-04-Geometria, FUN-06-Geometria-Analitica]
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría — Vectores en el espacio
-
----
-
 ## 1.1 Definición de un vector en el plano y en el espacio
 
 ### Concepto intuitivo
-Un **[vector](../../../glossary.md#vector)** es un objeto matemático que tiene **magnitud** (longitud) y **dirección**. Geométricamente se representa como una flecha que va de un punto inicial a un punto final.
+Un **vector** es un objeto matemático que tiene **magnitud** (longitud) y **dirección**. Geométricamente se representa como una flecha que va de un punto inicial a un punto final.
 
 ### Representación en coordenadas
 - En el plano $\mathbb{R}^2$: $\mathbf{v} = \langle v_x, v_y \rangle$
 - En el espacio $\mathbb{R}^3$: $\mathbf{v} = \langle v_x, v_y, v_z \rangle$
 
-Las componentes $v_x, v_y, v_z$ indican cuánto "avanza" el [vector](../../../glossary.md#vector) en cada eje coordenado.
+Las componentes $v_x, v_y, v_z$ indican cuánto "avanza" el vector en cada eje coordenado.
 
 ### Vector posición
 Dado un punto $P = (a, b, c)$, el **vector posición** $\overrightarrow{OP}$ va del origen al punto:
@@ -53,8 +35,6 @@ En $\mathbb{R}^3$: $\mathbf{i} = \langle 1,0,0 \rangle$, $\mathbf{j} = \langle 0
 
 Todo vector se escribe como:
 $$\mathbf{v} = v_x\mathbf{i} + v_y\mathbf{j} + v_z\mathbf{k}$$
-
-![Sistema de coordenadas 3D](../media/generated/sistema_coordenadas_3d.png)
 
 *Figura 1.1.1: Sistema de coordenadas tridimensional con los ejes $x$, $y$, $z$ y los vectores canónicos $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$.*
 
@@ -97,9 +77,7 @@ $$c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_n\mathbf{v}_n$$
 **Aplicación**: dos vectores no paralelos generan un plano; tres vectores no coplanares generan todo $\mathbb{R}^3$.
 
 ### Vectores paralelos
-$\mathbf{u} \parallel \mathbf{v}$ si existe $k \in \mathbb{R}$ [tal que](../../../glossary.md#tal-que) $\mathbf{u} = k\mathbf{v}$.
-
-![Operaciones con vectores en 3D](../media/generated/operaciones_vectores_3d.png)
+$\mathbf{u} \parallel \mathbf{v}$ si existe $k \in \mathbb{R}$ tal que $\mathbf{u} = k\mathbf{v}$.
 
 *Figura 1.2.1: Suma de vectores (regla del paralelogramo) y multiplicación por escalar en el espacio tridimensional.*
 
@@ -132,7 +110,7 @@ $$\text{proy}_{\mathbf{v}}\mathbf{u} = \frac{\mathbf{u} \cdot \mathbf{v}}{\lVert
 
 **Solo en $\mathbb{R}^3$**. El resultado es un **vector**.
 
-**Definición mediante [determinante](../../../glossary.md#determinante)**:
+**Definición mediante determinante**:
 $$\mathbf{u} \times \mathbf{v} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ u_x & u_y & u_z \\ v_x & v_y & v_z \end{vmatrix}$$
 
 Expandiendo:
@@ -152,8 +130,6 @@ $$\mathbf{u} \times \mathbf{v} = \langle u_y v_z - u_z v_y, \; u_z v_x - u_x v_z
 $$\mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \det \begin{pmatrix} u_x & u_y & u_z \\ v_x & v_y & v_z \\ w_x & w_y & w_z \end{pmatrix}$$
 
 Su valor absoluto es el **volumen del paralelepípedo** formado por los tres vectores.
-
-![Producto punto y producto cruz](../media/generated/producto_punto_cruz.png)
 
 *Figura 1.3.1: Interpretación geométrica del producto escalar (proyección) y producto vectorial (área del paralelogramo, vector perpendicular).*
 
@@ -213,8 +189,6 @@ $$\cos\theta = \frac{|\mathbf{n}_1 \cdot \mathbf{n}_2|}{\lVert \mathbf{n}_1 \rVe
 ### Ángulo entre recta y plano
 Si la recta tiene dirección $\mathbf{v}$ y el plano normal $\mathbf{n}$:
 $$\sin\alpha = \frac{|\mathbf{v} \cdot \mathbf{n}|}{\lVert \mathbf{v} \rVert \lVert \mathbf{n} \rVert}$$
-
-![Rectas y planos en el espacio](../media/generated/recta_plano_espacio.png)
 
 *Figura 1.5.1: Representación de rectas y planos en el espacio 3D, mostrando vectores directores, vectores normales e intersecciones.*
 

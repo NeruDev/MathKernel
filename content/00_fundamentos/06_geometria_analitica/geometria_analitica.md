@@ -1,11 +1,4 @@
-> 🏠 **Navegación:** ← Volver al Índice Principal
-
----
-
 # Teoría de Geometría Analítica
-
----
-
 ## 6.1 Sistema de coordenadas cartesianas
 
 ### Definición

@@ -1,0 +1,13 @@
+{
+  "id": "raices_ecuaciones",
+  "title": "Teoría: Raíces de Ecuaciones",
+  "module": "06_metodos_numericos",
+  "order": 1,
+  "concepts": [
+    "Método de Bisección",
+    "Newton-Raphson",
+    "Método de la Secante",
+    "Punto Fijo",
+    "Orden de convergencia"
+  ]
+}

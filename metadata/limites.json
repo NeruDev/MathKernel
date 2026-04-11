@@ -1,0 +1,13 @@
+{
+  "id": "limites",
+  "title": "Teoría de Límites",
+  "module": "02_calculo_diferencial",
+  "order": 1,
+  "concepts": [
+    "Límite intuitivo",
+    "Límite formal",
+    "Límites laterales",
+    "Teorema del emparedado",
+    "Continuidad"
+  ]
+}

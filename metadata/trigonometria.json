@@ -1,0 +1,13 @@
+{
+  "id": "trigonometria",
+  "title": "Teoría de Trigonometría",
+  "module": "00_fundamentos",
+  "order": 5,
+  "concepts": [
+    "Razones trigonométricas",
+    "Círculo unitario",
+    "Identidades",
+    "Ley de senos",
+    "Ley de cosenos"
+  ]
+}

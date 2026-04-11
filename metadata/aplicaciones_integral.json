@@ -1,0 +1,13 @@
+{
+  "id": "aplicaciones_integral",
+  "title": "Aplicaciones de la Integral",
+  "module": "03_calculo_integral",
+  "order": 4,
+  "concepts": [
+    "Área entre curvas",
+    "Volúmenes por discos",
+    "Capas cilíndricas",
+    "Longitud de arco",
+    "Trabajo"
+  ]
+}

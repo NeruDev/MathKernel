@@ -1,0 +1,13 @@
+{
+  "id": "integral_definida",
+  "title": "Teoría de la Integral Definida",
+  "module": "03_calculo_integral",
+  "order": 3,
+  "concepts": [
+    "Sumas de Riemann",
+    "Teorema Fundamental del Cálculo",
+    "Propiedades de la integral",
+    "Sustitución en integrales definidas",
+    "Funciones pares e impares"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "integral_indefinida",
+  "title": "Teoría de la Integral Indefinida",
+  "module": "03_calculo_integral",
+  "order": 1,
+  "concepts": [
+    "Antiderivada",
+    "Constante de integración",
+    "Regla de la potencia",
+    "Integrales trigonométricas",
+    "Linealidad"
+  ]
+}

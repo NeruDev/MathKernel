@@ -1,4 +1,4 @@
-# ARQUITECTURA
+# MathKernel
 
 Repositorio educativo de matematicas orientado a dos tipos de consumo:
 
@@ -6,7 +6,7 @@ Repositorio educativo de matematicas orientado a dos tipos de consumo:
 - IA: metadatos estructurados en JSON para indexacion, analisis y automatizacion.
 
 Sitio operativo actual:
-https://nerudev.github.io/ARQUITECTURA/
+https://nerudev.github.io/MathKernel/
 
 ## Objetivo del proyecto
 
@@ -115,7 +115,7 @@ Resumen del workflow:
 7. Upload de artifact (./site).
 8. Deploy con actions/deploy-pages.
 
-Rama de disparo actual: master.
+Rama de disparo actual: main.
 
 ## Estado actual del repositorio
 
@@ -141,4 +141,4 @@ Snapshot verificado:
 
 Ver detalle tecnico de arquitectura y flujo en:
 
-- docs/ARQUITECTURA.md
+- docs/MATHKERNEL.md

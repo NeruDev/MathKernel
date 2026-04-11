@@ -1,23 +1,13 @@
 {
   "id": "matrices",
-  "title": "Matrices",
-  "lang": "es",
+  "title": "Teoría de Matrices",
+  "module": "01_algebra_lineal",
+  "order": 1,
   "concepts": [
-    "matriz",
-    "matriz identidad",
-    "matriz diagonal",
-    "matriz triangular",
-    "suma de matrices",
-    "multiplicacion por escalar",
-    "multiplicacion de matrices",
-    "transpuesta",
-    "matriz simetrica",
-    "matriz invertible",
-    "gauss-jordan",
-    "matriz ortogonal"
-  ],
-  "scripts": [],
-  "assets": [],
-  "module": "algebra_lineal",
-  "order": 1
+    "Matriz identidad",
+    "Multiplicación de matrices",
+    "Transpuesta",
+    "Matriz inversa",
+    "Matriz ortogonal"
+  ]
 }

@@ -1,10 +1,13 @@
 {
   "id": "geometria",
-  "title": "Geometría",
-  "lang": "es",
-  "concepts": [],
-  "scripts": [],
-  "assets": [],
-  "module": "fundamentos",
-  "order": 4
+  "title": "Teoría de Geometría",
+  "module": "00_fundamentos",
+  "order": 4,
+  "concepts": [
+    "Ángulos",
+    "Triángulos",
+    "Cuadriláteros",
+    "Círculo",
+    "Áreas"
+  ]
 }

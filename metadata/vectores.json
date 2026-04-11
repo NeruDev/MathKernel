@@ -1,0 +1,13 @@
+{
+  "id": "vectores",
+  "title": "Teoría — Vectores en el espacio",
+  "module": "04_calculo_vectorial",
+  "order": 1,
+  "concepts": [
+    "Producto escalar",
+    "Producto vectorial",
+    "Ecuación de la recta",
+    "Ecuación del plano",
+    "Producto triple escalar"
+  ]
+}

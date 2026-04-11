@@ -1,0 +1,13 @@
+{
+  "id": "integracion_numerica",
+  "title": "Teoría: Integración Numérica",
+  "module": "06_metodos_numericos",
+  "order": 3,
+  "concepts": [
+    "Regla del Trapecio",
+    "Regla de Simpson",
+    "Integración de Romberg",
+    "Cuadratura Gaussiana",
+    "Extrapolación de Richardson"
+  ]
+}

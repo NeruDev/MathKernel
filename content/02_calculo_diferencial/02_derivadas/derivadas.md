@@ -1,30 +1,10 @@
-<!--
-HUMANO:
-Teoría completa de [derivadas](../../../glossary.md#derivadas).
-
-IA:
-Este archivo define CONCEPTOS de diferenciación.
-
----
-content_type: theory
-expected_output:
-  default: markdown
-audience: self-study
----
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría de la Derivada
 
 ## 2.1 Definición de Derivada
 
 ### Definición por Límite
 
-La **[derivada](../../../glossary.md#derivada)** de $f(x)$ en $x = a$ es:
+La **derivada** de $f(x)$ en $x = a$ es:
 
 $$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
 
@@ -40,7 +20,7 @@ $$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$$
 | $Df(x)$ | "D de f de x" |
 
 ### Interpretación Geométrica
-$f'(a)$ es la **pendiente** de la recta [tangente](../../../glossary.md#tangente) a la gráfica de $f$ en el punto $(a, f(a))$.
+$f'(a)$ es la **pendiente** de la recta tangente a la gráfica de $f$ en el punto $(a, f(a))$.
 
 ### Interpretación Física
 Si $s(t)$ es posición, entonces $s'(t)$ es **velocidad instantánea**.
@@ -52,7 +32,7 @@ Si $v(t)$ es velocidad, entonces $v'(t) = s''(t)$ es **aceleración**.
 
 ### Funciones Algebraicas
 
-| [Función](../../../glossary.md#funcion) | Derivada |
+| Función | Derivada |
 |---------|----------|
 | $e^x$ | $e^x$ |
 | $a^x$ | $a^x \ln a$ |
@@ -129,7 +109,7 @@ Cuando $y$ está definida implícitamente por $F(x,y) = 0$:
 
 ### Procedimiento
 1. Derivar ambos lados respecto a $x$
-2. Aplicar [regla de la cadena](../../../glossary.md#regla-de-la-cadena): $\frac{d}{dx}[y^n] = ny^{n-1}\frac{dy}{dx}$
+2. Aplicar regla de la cadena: $\frac{d}{dx}[y^n] = ny^{n-1}\frac{dy}{dx}$
 3. Despejar $\frac{dy}{dx}$
 
 ### Ejemplo
@@ -150,8 +130,8 @@ $$f^{(n)}(x) = \frac{d^nf}{dx^n}$$
 ### Interpretación
 - $f'(x)$: velocidad (tasa de cambio)
 - $f''(x)$: aceleración (tasa de cambio de la tasa de cambio)
-- $f''(x) > 0$: [concavidad](../../../glossary.md#concavidad) hacia arriba
-- $f''(x) < 0$: [concavidad](../../../glossary.md#concavidad) hacia abajo
+- $f''(x) > 0$: concavidad hacia arriba
+- $f''(x) < 0$: concavidad hacia abajo
 
 ---
 

@@ -1,35 +1,17 @@
-<!--
-::METADATA::
-type: theory
-topic_id: cv-03-funciones-vectoriales
-file_id: CV-03-Teoria-Vectoriales
-status: stable
-audience: student
-requires: [CV-01-Teoria-Vectores, CV-02-Teoria-Curvas]
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría — Funciones vectoriales de una variable real
-
----
-
 ## 3.1 Definición y representación
 
 ### Concepto intuitivo
-Una **[función](../../../glossary.md#funcion) vectorial** asigna a cada valor de un parámetro real $t$ un [vector](../../../glossary.md#vector) en el espacio. Describe la trayectoria de una partícula: dado el tiempo, devuelve la posición.
+Una **función vectorial** asigna a cada valor de un parámetro real $t$ un vector en el espacio. Describe la trayectoria de una partícula: dado el tiempo, devuelve la posición.
 
 ### Definición formal
-Una **[función](../../../glossary.md#funcion) vectorial** $\mathbf{r}: I \subseteq \mathbb{R} \to \mathbb{R}^n$ es:
+Una **función vectorial** $\mathbf{r}: I \subseteq \mathbb{R} \to \mathbb{R}^n$ es:
 $$\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}$$
 
 donde $x(t)$, $y(t)$, $z(t)$ son las **funciones componentes** (escalares).
 
 ### Dominio
-El [dominio](../../../glossary.md#dominio) de $\mathbf{r}(t)$ es la intersección de los dominios de sus componentes:
+El dominio de $\mathbf{r}(t)$ es la intersección de los dominios de sus componentes:
 $$\text{Dom}(\mathbf{r}) = \text{Dom}(x) \cap \text{Dom}(y) \cap \text{Dom}(z)$$
 
 ### Curva en el espacio
@@ -44,8 +26,6 @@ La imagen de $\mathbf{r}(t)$ es una **curva en el espacio** (o curva espacial). 
 | Círculo en el plano $z = c$ | $\mathbf{r}(t) = \langle a\cos t, a\sin t, c \rangle$ |
 | Curva de Viviani | $\mathbf{r}(t) = \langle a(1+\cos t), a\sin t, 2a\sin(t/2) \rangle$ |
 
-![Curvas en el espacio](../media/generated/curvas_espacio.png)
-
 *Figura 3.1.1: Ejemplos de curvas espaciales: hélice circular, curva de Viviani, y círculo en un plano horizontal.*
 
 ---
@@ -56,7 +36,7 @@ La imagen de $\mathbf{r}(t)$ es una **curva en el espacio** (o curva espacial). 
 
 $$\lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} x(t), \lim_{t \to a} y(t), \lim_{t \to a} z(t) \right\rangle$$
 
-El [límite](../../../glossary.md#limite) existe si y solo si existen los [límites](../../../glossary.md#limites) de cada componente.
+El límite existe si y solo si existen los límites de cada componente.
 
 ### Continuidad
 
@@ -83,13 +63,13 @@ $$\mathbf{r}'(t) = \lim_{h \to 0} \frac{\mathbf{r}(t+h) - \mathbf{r}(t)}{h}$$
 
 $$\mathbf{r}'(t) = \langle x'(t), y'(t), z'(t) \rangle$$
 
-La [derivada](../../../glossary.md#derivada) existe si y solo si existen las [derivadas](../../../glossary.md#derivadas) de cada componente.
+La derivada existe si y solo si existen las derivadas de cada componente.
 
 ### Interpretación geométrica
 
-- $\mathbf{r}'(t)$ es el **[vector](../../../glossary.md#vector) [tangente](../../../glossary.md#tangente)** a la curva en el punto $\mathbf{r}(t)$
+- $\mathbf{r}'(t)$ es el **vector tangente** a la curva en el punto $\mathbf{r}(t)$
 - Apunta en la dirección del movimiento (según la orientación)
-- $\mathbf{r}'(t) \neq \mathbf{0}$ garantiza que la [tangente](../../../glossary.md#tangente) está bien definida
+- $\mathbf{r}'(t) \neq \mathbf{0}$ garantiza que la tangente está bien definida
 
 ### Interpretación física (cinemática)
 
@@ -109,16 +89,16 @@ La [derivada](../../../glossary.md#derivada) existe si y solo si existen las [de
 | Producto por función escalar | $[f(t)\mathbf{u}(t)]' = f'(t)\mathbf{u}(t) + f(t)\mathbf{u}'(t)$ |
 | Producto escalar | $[\mathbf{u}(t) \cdot \mathbf{v}(t)]' = \mathbf{u}'(t) \cdot \mathbf{v}(t) + \mathbf{u}(t) \cdot \mathbf{v}'(t)$ |
 | Producto vectorial | $[\mathbf{u}(t) \times \mathbf{v}(t)]' = \mathbf{u}'(t) \times \mathbf{v}(t) + \mathbf{u}(t) \times \mathbf{v}'(t)$ |
-| [Regla de la cadena](../../../glossary.md#regla-de-la-cadena) | $[\mathbf{r}(f(t))]' = \mathbf{r}'(f(t)) \cdot f'(t)$ |
+| Regla de la cadena | $[\mathbf{r}(f(t))]' = \mathbf{r}'(f(t)) \cdot f'(t)$ |
 
-**Nota importante**: En el producto vectorial, el [orden](../../../glossary.md#orden) es crucial (no es conmutativo).
+**Nota importante**: En el producto vectorial, el orden es crucial (no es conmutativo).
 
 ### Propiedades útiles
 
 Si $\lVert \mathbf{r}(t) \rVert = c$ (constante), entonces:
 $$\mathbf{r}(t) \cdot \mathbf{r}'(t) = 0$$
 
-**Interpretación**: Si un vector tiene magnitud constante, su [derivada](../../../glossary.md#derivada) es perpendicular a él.
+**Interpretación**: Si un vector tiene magnitud constante, su derivada es perpendicular a él.
 
 ---
 
@@ -171,8 +151,6 @@ $$\tilde{\mathbf{r}}(s) = \mathbf{r}(t(s))$$
 
 **Propiedad clave**: $\left\lVert \frac{d\tilde{\mathbf{r}}}{ds} \right\rVert = 1$ (la curva se recorre a "velocidad unitaria").
 
-![Longitud de arco](../media/generated/longitud_arco.png)
-
 *Figura 3.5.1: Longitud de arco como suma de pequeños segmentos $\Delta s$ a lo largo de la curva.*
 
 ---
@@ -198,7 +176,7 @@ $$\mathbf{N}(t) = \frac{\mathbf{T}'(t)}{\lVert \mathbf{T}'(t) \rVert}$$
 $$\mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t)$$
 
 - Perpendicular tanto a $\mathbf{T}$ como a $\mathbf{N}$
-- $\{\mathbf{T}, \mathbf{N}, \mathbf{B}\}$ forman una [base](../../../glossary.md#base) ortonormal dextrógira
+- $\{\mathbf{T}, \mathbf{N}, \mathbf{B}\}$ forman una base ortonormal dextrógira
 
 ### Planos asociados
 
@@ -207,8 +185,6 @@ $$\mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t)$$
 | **Osculador** | $\mathbf{T}$ y $\mathbf{N}$ | Plano de mejor ajuste local |
 | **Normal** | $\mathbf{N}$ y $\mathbf{B}$ | Perpendicular a la tangente |
 | **Rectificante** | $\mathbf{T}$ y $\mathbf{B}$ | Perpendicular a la normal |
-
-![Marco de Frenet-Serret TNB](../media/generated/frenet_serret_tnb.png)
 
 *Figura 3.6.1: Marco móvil de Frenet-Serret: vectores Tangente ($\mathbf{T}$), Normal ($\mathbf{N}$) y Binormal ($\mathbf{B}$) a lo largo de una hélice.*
 
@@ -251,8 +227,6 @@ El **círculo osculador** tiene radio $\rho$ y centro en el **centro de curvatur
 ### Centro de curvatura
 
 $$\text{Centro} = \mathbf{r}(t) + \rho\mathbf{N}(t)$$
-
-![Curvatura y círculo osculador](../media/generated/curvatura_circulo_osculador.png)
 
 *Figura 3.7.1: Curvatura $\kappa$ y círculo osculador de radio $\rho = 1/\kappa$ tangente a la curva en el punto de contacto.*
 
@@ -304,8 +278,6 @@ $$\lVert \mathbf{a} \rVert^2 = a_T^2 + a_N^2$$
 
 - En movimiento circular uniforme: $a_T = 0$, solo hay $a_N$ (centrípeta)
 - En movimiento rectilíneo: $a_N = 0$, solo hay $a_T$
-
-![Componentes de la aceleración](../media/generated/aceleracion_componentes.png)
 
 *Figura 3.9.1: Descomposición de la aceleración en componentes tangencial ($a_T$) y normal ($a_N$).*
 

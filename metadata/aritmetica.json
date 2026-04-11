@@ -1,30 +1,13 @@
 {
   "id": "aritmetica",
-  "title": "Aritmética",
-  "lang": "es",
+  "title": "Teoría de Aritmética",
+  "module": "00_fundamentos",
+  "order": 2,
   "concepts": [
-    "sistemas numericos",
-    "numeros naturales",
-    "numeros enteros",
-    "numeros racionales",
-    "numeros irracionales",
-    "numeros reales",
-    "divisibilidad",
-    "numeros primos",
-    "teorema fundamental de la aritmetica",
-    "mcd",
-    "mcm",
-    "fracciones",
-    "decimales",
-    "porcentajes",
-    "potencias",
-    "raices",
-    "razones",
-    "proporciones",
-    "axiomas de peano"
-  ],
-  "scripts": [],
-  "assets": [],
-  "module": "fundamentos",
-  "order": 2
+    "Sistemas numéricos",
+    "Divisibilidad",
+    "Números primos",
+    "Fracciones",
+    "Potencias"
+  ]
 }

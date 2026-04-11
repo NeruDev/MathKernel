@@ -1,11 +1,4 @@
-> 🏠 **Navegación:** ← Volver al Índice Principal
-
----
-
 # Teoría de Geometría
-
----
-
 ## 4.1 Conceptos fundamentales
 
 ### Elementos primitivos

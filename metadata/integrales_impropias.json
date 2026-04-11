@@ -1,0 +1,13 @@
+{
+  "id": "integrales_impropias",
+  "title": "Integrales Impropias",
+  "module": "03_calculo_integral",
+  "order": 5,
+  "concepts": [
+    "Límites infinitos",
+    "Discontinuidades",
+    "Convergencia y divergencia",
+    "Criterios de comparación",
+    "Integrales p"
+  ]
+}

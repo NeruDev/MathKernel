@@ -1,10 +1,13 @@
 {
   "id": "geometria_analitica",
-  "title": "Geometría analítica",
-  "lang": "es",
-  "concepts": [],
-  "scripts": [],
-  "assets": [],
-  "module": "fundamentos",
-  "order": 5
+  "title": "Teoría de Geometría Analítica",
+  "module": "00_fundamentos",
+  "order": 6,
+  "concepts": [
+    "Plano cartesiano",
+    "Línea recta",
+    "Circunferencia",
+    "Parábola",
+    "Elipse"
+  ]
 }

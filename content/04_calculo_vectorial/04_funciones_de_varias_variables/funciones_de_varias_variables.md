@@ -1,33 +1,15 @@
-<!--
-::METADATA::
-type: theory
-topic_id: cv-04-funciones-varias-variables
-file_id: CV-04-Teoria-Varias
-status: stable
-audience: student
-requires: [CD-01-Teoria-Limites, CD-02-Teoria-[Derivadas](../../../glossary.md#derivadas), CV-01-Teoria-Vectores]
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría — Funciones reales de varias variables
-
----
-
 ## 4.1 Funciones de varias variables
 
 ### Definición
 
-Una **[función](../../../glossary.md#funcion) de dos variables** es una regla $f: D \subseteq \mathbb{R}^2 \to \mathbb{R}$ que asigna a cada par ordenado $(x, y)$ en el [dominio](../../../glossary.md#dominio) $D$ un único número real $z = f(x, y)$.
+Una **función de dos variables** es una regla $f: D \subseteq \mathbb{R}^2 \to \mathbb{R}$ que asigna a cada par ordenado $(x, y)$ en el dominio $D$ un único número real $z = f(x, y)$.
 
-Análogamente, una **[función](../../../glossary.md#funcion) de tres variables** $f: D \subseteq \mathbb{R}^3 \to \mathbb{R}$ asigna $w = f(x, y, z)$.
+Análogamente, una **función de tres variables** $f: D \subseteq \mathbb{R}^3 \to \mathbb{R}$ asigna $w = f(x, y, z)$.
 
 ### Dominio y rango
 
-- **[Dominio](../../../glossary.md#dominio)**: conjunto de puntos $(x, y)$ donde $f$ está definida
+- **Dominio**: conjunto de puntos $(x, y)$ donde $f$ está definida
 - **Rango**: conjunto de valores $z$ que toma $f$
 
 ### Gráfica
@@ -47,8 +29,6 @@ $$C_k = \{(x, y) : f(x, y) = k\}$$
 Para $f(x, y, z)$, las **superficies de nivel** son:
 $$S_k = \{(x, y, z) : f(x, y, z) = k\}$$
 
-![Superficie de una función de dos variables](../media/generated/superficie_funcion_dos_variables.png)
-
 *Figura 4.1.1: Gráfica de $z = f(x,y)$ como superficie en $\mathbb{R}^3$ con curvas de nivel proyectadas en el plano $xy$.*
 
 ---
@@ -63,18 +43,18 @@ significa que $f(x, y)$ se aproxima a $L$ cuando $(x, y)$ se acerca a $(a, b)$ *
 
 ### Definición formal (épsilon-delta)
 
-Para todo $\varepsilon > 0$ existe $\delta > 0$ [tal que](../../../glossary.md#tal-que):
+Para todo $\varepsilon > 0$ existe $\delta > 0$ tal que:
 $$0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta \implies |f(x,y) - L| < \varepsilon$$
 
 ### Técnicas para evaluar límites
 
-1. **[Sustitución](../../../glossary.md#sustitucion) directa** (si $f$ es continua)
+1. **Sustitución directa** (si $f$ es continua)
 2. **Coordenadas polares**: $x = a + r\cos\theta$, $y = b + r\sin\theta$, luego $r \to 0$
 3. **Acotamiento** (teorema del sándwich)
 
 ### Demostración de no existencia
 
-Si diferentes trayectorias dan diferentes [límites](../../../glossary.md#limites), el [límite](../../../glossary.md#limite) **no existe**.
+Si diferentes trayectorias dan diferentes límites, el límite **no existe**.
 
 **Trayectorias comunes**:
 - $y = mx$ (rectas por el origen)
@@ -163,10 +143,8 @@ válida cerca de $(a, b)$.
 
 ### Plano tangente
 
-El **plano [tangente](../../../glossary.md#tangente)** a la superficie $z = f(x, y)$ en $(a, b, f(a,b))$:
+El **plano tangente** a la superficie $z = f(x, y)$ en $(a, b, f(a,b))$:
 $$z - f(a,b) = f_x(a,b)(x - a) + f_y(a,b)(y - b)$$
-
-![Plano tangente](../media/generated/plano_tangente.png)
 
 *Figura 4.4.1: Plano tangente a una superficie en un punto, con gradiente $\nabla f$ perpendicular a las curvas de nivel.*
 
@@ -215,7 +193,7 @@ $$\nabla f = \left\langle \frac{\partial f}{\partial x}, \frac{\partial f}{\part
 
 ### Derivada direccional
 
-La tasa de cambio de $f$ en la dirección del [vector](../../../glossary.md#vector) unitario $\mathbf{u}$:
+La tasa de cambio de $f$ en la dirección del vector unitario $\mathbf{u}$:
 $$D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} = \lVert \nabla f \rVert \cos\theta$$
 
 donde $\theta$ es el ángulo entre $\nabla f$ y $\mathbf{u}$.
@@ -228,8 +206,6 @@ donde $\theta$ es el ángulo entre $\nabla f$ y $\mathbf{u}$.
 | $\mathbf{u} = -\frac{\nabla f}{\lVert \nabla f \rVert}$ | $-\lVert \nabla f \rVert$ (mínimo) |
 | $\mathbf{u} \perp \nabla f$ | $0$ (sin cambio) |
 
-![Gradiente y derivada direccional](../media/generated/gradiente_derivada_direccional.png)
-
 *Figura 4.6.1: El vector gradiente $\nabla f$ apunta en la dirección de máximo crecimiento, perpendicular a las curvas de nivel.*
 
 ---
@@ -238,10 +214,10 @@ donde $\theta$ es el ángulo entre $\nabla f$ y $\mathbf{u}$.
 
 ### Superficie como gráfica: $z = f(x, y)$
 
-**Plano [tangente](../../../glossary.md#tangente)** en $(a, b, f(a,b))$:
+**Plano tangente** en $(a, b, f(a,b))$:
 $$z - f(a,b) = f_x(a,b)(x-a) + f_y(a,b)(y-b)$$
 
-**[Vector](../../../glossary.md#vector) normal**:
+**Vector normal**:
 $$\mathbf{n} = \langle f_x(a,b), f_y(a,b), -1 \rangle$$
 
 ### Superficie como nivel: $F(x, y, z) = k$
@@ -266,13 +242,13 @@ $$\frac{x - x_0}{F_x} = \frac{y - y_0}{F_y} = \frac{z - z_0}{F_z}$$
 
 ### Puntos críticos
 
-$(a, b)$ es **[punto crítico](../../../glossary.md#punto-critico)** si:
+$(a, b)$ es **punto crítico** si:
 - $\nabla f(a,b) = \mathbf{0}$, es decir, $f_x(a,b) = 0$ y $f_y(a,b) = 0$
-- O alguna [derivada](../../../glossary.md#derivada) parcial no existe
+- O alguna derivada parcial no existe
 
 ### Teorema de Fermat (generalizado)
 
-Si $f$ tiene un extremo local en $(a, b)$ y las [derivadas](../../../glossary.md#derivadas) parciales existen, entonces:
+Si $f$ tiene un extremo local en $(a, b)$ y las derivadas parciales existen, entonces:
 $$f_x(a, b) = 0 \quad \text{y} \quad f_y(a, b) = 0$$
 
 ### Criterio de la segunda derivada (Test de la Hessiana)
@@ -289,15 +265,13 @@ $$D = D(a,b) = f_{xx}(a,b)f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
 
 ### Punto silla
 
-Un [punto crítico](../../../glossary.md#punto-critico) donde $f$ no tiene extremo local. La superficie tiene forma de "silla de montar".
+Un punto crítico donde $f$ no tiene extremo local. La superficie tiene forma de "silla de montar".
 
 ### Matriz Hessiana
 
 $$H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}$$
 
 $D = \det(H)$
-
-![Extremos y criterio de la Hessiana](../media/generated/extremos_hessiano.png)
 
 *Figura 4.8.1: Clasificación de puntos críticos: mínimo local ($D>0, f_{xx}>0$), máximo local ($D>0, f_{xx}<0$) y punto silla ($D<0$).*
 
@@ -313,7 +287,7 @@ Si $f$ es continua en una región cerrada y acotada $D$, entonces $f$ alcanza un
 
 1. Encontrar valores de $f$ en los puntos críticos **interiores**
 2. Encontrar valores extremos de $f$ en la **frontera** de $D$
-3. Comparar todos los valores; el mayor es el máximo absoluto, el [menor](../../../glossary.md#menor) es el mínimo
+3. Comparar todos los valores; el mayor es el máximo absoluto, el menor es el mínimo
 
 ### Optimización en la frontera
 

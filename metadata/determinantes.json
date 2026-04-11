@@ -1,18 +1,13 @@
 {
   "id": "determinantes",
-  "title": "Determinantes",
-  "lang": "es",
+  "title": "Teoría de Determinantes",
+  "module": "01_algebra_lineal",
+  "order": 2,
   "concepts": [
-    "determinante",
-    "regla de sarrus",
-    "menor",
-    "cofactor",
-    "metodo de laplace",
-    "matriz adjunta",
-    "regla de cramer"
-  ],
-  "scripts": [],
-  "assets": [],
-  "module": "algebra_lineal",
-  "order": 2
+    "Regla de Sarrus",
+    "Propiedades de determinantes",
+    "Cofactores",
+    "Método de Laplace",
+    "Regla de Cramer"
+  ]
 }

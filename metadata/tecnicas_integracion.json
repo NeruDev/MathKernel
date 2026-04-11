@@ -1,0 +1,13 @@
+{
+  "id": "tecnicas_integracion",
+  "title": "Teoría de Técnicas de Integración",
+  "module": "03_calculo_integral",
+  "order": 2,
+  "concepts": [
+    "Sustitución",
+    "Integración por partes",
+    "Sustitución trigonométrica",
+    "Fracciones parciales",
+    "Estrategias de integración"
+  ]
+}

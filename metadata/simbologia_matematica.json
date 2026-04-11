@@ -1,10 +1,13 @@
 {
   "id": "simbologia_matematica",
-  "title": "Simbología matemática",
-  "lang": "es",
-  "concepts": ["numero", "variable", "matriz"],
-  "scripts": ["scripts/simbologia_matematica.py"],
-  "assets": ["assets/simbologia_matematica.png"],
-  "module": "fundamentos",
-  "order": 1
+  "title": "1. Aritmética y Álgebra Básica",
+  "module": "00_fundamentos",
+  "order": 1,
+  "concepts": [
+    "Lógica",
+    "Conjuntos",
+    "Cálculo",
+    "Análisis Vectorial",
+    "Álgebra Lineal"
+  ]
 }

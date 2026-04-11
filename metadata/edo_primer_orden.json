@@ -1,0 +1,13 @@
+{
+  "id": "edo_primer_orden",
+  "title": "Teoría de EDO de Primer Orden",
+  "module": "05_ecuaciones_diferenciales",
+  "order": 1,
+  "concepts": [
+    "Ecuaciones separables",
+    "Ecuaciones lineales",
+    "Ecuaciones exactas",
+    "Ecuaciones de Bernoulli",
+    "Problema de Valor Inicial"
+  ]
+}

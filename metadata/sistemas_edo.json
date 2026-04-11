@@ -1,0 +1,13 @@
+{
+  "id": "sistemas_edo",
+  "title": "Teoría: Sistemas de Ecuaciones Diferenciales Ordinarias",
+  "module": "05_ecuaciones_diferenciales",
+  "order": 4,
+  "concepts": [
+    "Método de valores propios",
+    "Eigenvalores complejos",
+    "Retratos de fase",
+    "Estabilidad",
+    "Matriz exponencial"
+  ]
+}

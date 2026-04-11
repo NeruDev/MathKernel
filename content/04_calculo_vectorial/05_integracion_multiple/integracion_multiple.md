@@ -1,22 +1,4 @@
-<!--
-::METADATA::
-type: theory
-topic_id: cv-05-integracion-multiple
-file_id: CV-05-Teoria-Integracion
-status: stable
-audience: student
-requires: [CV-04-Teoria-Varias, CI-03-Teoria-Definida]
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoría — Integración múltiple
-
----
-
 ## 5.1 Integrales dobles sobre rectángulos
 
 ### Definición mediante sumas de Riemann
@@ -33,7 +15,7 @@ Si $f$ es continua en $R = [a, b] \times [c, d]$:
 
 $$\iint_R f(x, y)\, dA = \int_a^b \int_c^d f(x, y)\, dy\, dx = \int_c^d \int_a^b f(x, y)\, dx\, dy$$
 
-El [orden](../../../glossary.md#orden) de integración puede intercambiarse.
+El orden de integración puede intercambiarse.
 
 ### Interpretación geométrica
 
@@ -44,7 +26,7 @@ El [orden](../../../glossary.md#orden) de integración puede intercambiarse.
 
 | Propiedad | Fórmula |
 |-----------|---------|
-| [Linealidad](../../../glossary.md#linealidad) | $\iint_R [af + bg]\, dA = a\iint_R f\, dA + b\iint_R g\, dA$ |
+| Linealidad | $\iint_R [af + bg]\, dA = a\iint_R f\, dA + b\iint_R g\, dA$ |
 | Aditividad | Si $R = R_1 \cup R_2$ disjuntas: $\iint_R f\, dA = \iint_{R_1} f\, dA + \iint_{R_2} f\, dA$ |
 | Comparación | Si $f \leq g$ en $R$: $\iint_R f\, dA \leq \iint_R g\, dA$ |
 
@@ -66,11 +48,9 @@ $$\iint_D f(x, y)\, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x, y)\, dx\, dy$$
 
 ### Selección del orden de integración
 
-- Elegir el [orden](../../../glossary.md#orden) que simplifique los [límites](../../../glossary.md#limites)
+- Elegir el orden que simplifique los límites
 - A veces un orden es imposible o muy difícil; el otro puede ser factible
-- Para cambiar el orden: dibujar la región e identificar los nuevos [límites](../../../glossary.md#limites)
-
-![Regiones de integración doble](../media/generated/regiones_integracion_doble.png)
+- Para cambiar el orden: dibujar la región e identificar los nuevos límites
 
 *Figura 5.2.1: Regiones tipo I (simple en $y$) y tipo II (simple en $x$) para integrales dobles.*
 
@@ -209,8 +189,6 @@ $$\iiint_E f(x,y,z)\, dV = \iiint f(r\cos\theta, r\sin\theta, z)\, r\, dr\, d\th
 | Cono | $0 \leq z \leq h$, $0 \leq r \leq az$ |
 | Paraboloide | $0 \leq z \leq c - r^2$ |
 
-![Coordenadas cilíndricas](../media/generated/coordenadas_cilindricas.png)
-
 *Figura 5.6.1: Sistema de coordenadas cilíndricas $(r, \theta, z)$ y elemento de volumen $dV = r\,dr\,d\theta\,dz$.*
 
 ---
@@ -225,7 +203,7 @@ $$z = \rho\cos\phi$$
 
 - $\rho \geq 0$: distancia al origen
 - $\phi \in [0, \pi]$: ángulo desde el eje $z$ positivo (colatitud)
-- $\theta \in [0, 2\pi)$: ángulo en el plano $xy$ (azimut)
+- $\theta \in 0, 2\pi)$: ángulo en el plano $xy$ (azimut)
 
 ### Relaciones útiles
 
@@ -256,8 +234,6 @@ $$\iiint_E f(x,y,z)\, dV = \iiint f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\the
 | Octante | $0 \leq \rho \leq R$, $0 \leq \phi \leq \pi/2$, $0 \leq \theta \leq \pi/2$ |
 | Cono $\phi = \phi_0$ | $0 \leq \phi \leq \phi_0$ |
 | Capa esférica | $a \leq \rho \leq b$ |
-
-![Coordenadas esféricas](../media/generated/coordenadas_esfericas.png)
 
 *Figura 5.7.1: Sistema de coordenadas esféricas $(\rho, \phi, \theta)$ y elemento de volumen $dV = \rho^2\sin\phi\,d\rho\,d\phi\,d\theta$.*
 
@@ -316,7 +292,7 @@ $\int_C \mathbf{F} \cdot d\mathbf{r}$ es independiente del camino si y solo si $
 
 ### Campo conservativo
 
-$\mathbf{F}$ es **conservativo** si existe $f$ [tal que](../../../glossary.md#tal-que) $\mathbf{F} = \nabla f$.
+$\mathbf{F}$ es **conservativo** si existe $f$ [tal que $\mathbf{F} = \nabla f$.
 
 **Criterio** (en región simplemente conexa): $\mathbf{F} = \langle P, Q \rangle$ es conservativo si y solo si:
 $$\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$$
@@ -332,7 +308,7 @@ $$\int_C \nabla f \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a))$$
 
 ### Enunciado
 
-Sea $D$ una región simplemente conexa con frontera $C$ recorrida en sentido positivo (antihorario). Si $P$ y $Q$ tienen [derivadas](../../../glossary.md#derivadas) parciales continuas:
+Sea $D$ una región simplemente conexa con frontera $C$ recorrida en sentido positivo (antihorario). Si $P$ y $Q$ tienen derivadas parciales continuas:
 
 $$\oint_C P\,dx + Q\,dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA$$
 
@@ -385,7 +361,7 @@ Relaciona la circulación de $\mathbf{F}$ alrededor de $C$ con el flujo del rota
 
 $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E \nabla \cdot \mathbf{F}\, dV$$
 
-Relaciona el flujo de $\mathbf{F}$ a través de $S$ con la integral de la [divergencia](../../../glossary.md#divergencia) sobre $E$.
+Relaciona el flujo de $\mathbf{F}$ a través de $S$ con la integral de la divergencia sobre $E$.
 
 ### Operadores diferenciales
 
@@ -396,8 +372,6 @@ Relaciona el flujo de $\mathbf{F}$ a través de $S$ con la integral de la [diver
 | **Rotacional** | $\nabla \times \mathbf{F} = \langle R_y - Q_z, P_z - R_x, Q_x - P_y \rangle$ |
 | **Laplaciano** | $\nabla^2 f = f_{xx} + f_{yy} + f_{zz}$ |
 
-![Teoremas integrales](../media/generated/teoremas_integrales.png)
-
 *Figura 5.12.1: Ilustración de los teoremas de Green, Stokes y Divergencia que relacionan integrales de línea, superficie y volumen.*
 
 ---
@@ -405,6 +379,6 @@ Relaciona el flujo de $\mathbf{F}$ a través de $S$ con la integral de la [diver
 <!--
 IA: Esta teoría cubre integración múltiple, cambio de coordenadas y teoremas vectoriales.
 Usa las definiciones y fórmulas aquí como referencia canónica.
-Al generar problemas, asegura [dominio](../../../glossary.md#dominio) progresivo de cada sección.
+Al generar problemas, asegura dominio progresivo de cada sección.
 file_id: CV-05-Teoria-Integracion
 -->

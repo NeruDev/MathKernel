@@ -1,23 +1,3 @@
-<!--
-HUMANO:
-Teoría de teoremas fundamentales del [cálculo diferencial](../../../glossary.md#calculo-diferencial).
-
-IA:
-Teoremas, demostraciones y aplicaciones.
-
----
-content_type: theory
-expected_output:
-  default: markdown
-audience: self-study
----
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Teoremas Fundamentales del Cálculo Diferencial
 
 ## 4.1 Teorema de Rolle
@@ -28,14 +8,14 @@ Si $f$ es:
 2. Diferenciable en $(a, b)$
 3. $f(a) = f(b)$
 
-Entonces existe al menos un $c \in (a, b)$ [tal que](../../../glossary.md#tal-que) $f'(c) = 0$.
+Entonces existe al menos un $c \in (a, b)$ tal que $f'(c) = 0$.
 
 ### Interpretación Geométrica
-Si una curva suave comienza y termina a la misma altura, en algún punto intermedio la [tangente](../../../glossary.md#tangente) debe ser horizontal.
+Si una curva suave comienza y termina a la misma altura, en algún punto intermedio la tangente debe ser horizontal.
 
 ### Aplicaciones
 - Garantizar existencia de puntos críticos
-- [Base](../../../glossary.md#base) para el teorema del valor medio
+- Base para el teorema del valor medio
 
 ---
 
@@ -46,11 +26,11 @@ Si $f$ es:
 1. Continua en $[a, b]$
 2. Diferenciable en $(a, b)$
 
-Entonces existe al menos un $c \in (a, b)$ [tal que](../../../glossary.md#tal-que):
+Entonces existe al menos un $c \in (a, b)$ tal que:
 $$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 
 ### Interpretación Geométrica
-La pendiente de alguna [tangente](../../../glossary.md#tangente) iguala la pendiente de la recta secante entre los extremos.
+La pendiente de alguna tangente iguala la pendiente de la recta secante entre los extremos.
 
 ### Interpretación Física
 Si $f(t)$ es posición, la velocidad instantánea en algún momento iguala la velocidad promedio.
@@ -74,7 +54,7 @@ Entonces existe $c \in (a, b)$ tal que:
 $$\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)}$$
 
 ### Aplicación Principal
-Es la [base](../../../glossary.md#base) de la demostración de la Regla de L'Hôpital.
+Es la base de la demostración de la Regla de L'Hôpital.
 
 ---
 
@@ -93,9 +73,9 @@ Si $\lim_{x \to a} f(x) = \pm\infty$ y $\lim_{x \to a} g(x) = \pm\infty$, aplica
 - $x \to \infty$ o $x \to -\infty$
 
 ### Advertencias
-1. Verificar que sea [forma indeterminada](../../../glossary.md#forma-indeterminada) antes de aplicar
-2. Se puede aplicar repetidamente si es [necesario](../../../glossary.md#necesario)
-3. No siempre funciona; el [límite](../../../glossary.md#limite) del cociente de [derivadas](../../../glossary.md#derivadas) puede no existir
+1. Verificar que sea forma indeterminada antes de aplicar
+2. Se puede aplicar repetidamente si es necesario
+3. No siempre funciona; el límite del cociente de derivadas puede no existir
 
 ---
 
@@ -155,10 +135,10 @@ $$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n$$
 **Exponencial:**
 $$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots$$
 
-**[Seno](../../../glossary.md#seno):**
+**Seno:**
 $$\sin x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots$$
 
-**[Coseno](../../../glossary.md#coseno):**
+**Coseno:**
 $$\cos x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots$$
 
 **Logaritmo Natural:**

@@ -1,11 +1,4 @@
-> 🏠 **Navegación:** ← Volver al Índice Principal
-
----
-
 # Teoría de Álgebra
-
----
-
 ## 3.1 Expresiones algebraicas
 
 ### Lenguaje algebraico

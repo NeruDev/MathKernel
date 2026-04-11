@@ -1,0 +1,13 @@
+{
+  "id": "aplicaciones_derivada",
+  "title": "Teoría de Aplicaciones de la Derivada",
+  "module": "02_calculo_diferencial",
+  "order": 3,
+  "concepts": [
+    "Recta tangente",
+    "Valores extremos",
+    "Criterio de la primera derivada",
+    "Optimización",
+    "Método de Newton-Raphson"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "interpolacion",
+  "title": "Teoría: Interpolación",
+  "module": "06_metodos_numericos",
+  "order": 2,
+  "concepts": [
+    "Interpolación de Lagrange",
+    "Diferencias divididas",
+    "Splines cúbicos",
+    "Error de interpolación",
+    "Nodos de Chebyshev"
+  ]
+}

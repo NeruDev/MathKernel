@@ -112,7 +112,7 @@ Workflow:
 
 Secuencia actual:
 
-1. Trigger en push sobre master.
+1. Trigger en push sobre main.
 2. Setup Python 3.11.
 3. Setup de Pages.
 4. pip install -r requirements.txt.
@@ -123,7 +123,7 @@ Secuencia actual:
 
 Sitio activo:
 
-- https://nerudev.github.io/ARQUITECTURA/
+- https://nerudev.github.io/MathKernel/
 
 ## 6. Estado actual (tecnico)
 

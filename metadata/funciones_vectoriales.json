@@ -1,0 +1,13 @@
+{
+  "id": "funciones_vectoriales",
+  "title": "Teoría — Funciones vectoriales de una variable real",
+  "module": "04_calculo_vectorial",
+  "order": 3,
+  "concepts": [
+    "Marco de Frenet-Serret",
+    "Curvatura",
+    "Torsión",
+    "Componentes de la aceleración",
+    "Movimiento de proyectiles"
+  ]
+}

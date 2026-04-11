@@ -1,29 +1,8 @@
-<!--
-HUMANO:
-Teoría de [integrales impropias](../../../glossary.md#integrales-impropias).
-
-IA:
-Desarrollo formal con todos los tipos y criterios.
-
----
-content_type: theory
-format: formal_exposition
----
--->
-
-
-> 🏠 **Navegación:** [← Volver al Índice Principal](../../../glossary.md)
-
----
-
 # Integrales Impropias
-
----
-
 ## Introducción
 
-Una **[integral impropia](../../../glossary.md#integral-impropia)** es una [integral definida](../../../glossary.md#integral-definida) donde:
-1. Uno o ambos [límites](../../../glossary.md#limites) de integración son infinitos (Tipo I)
+Una **integral impropia** es una integral definida donde:
+1. Uno o ambos límites de integración son infinitos (Tipo I)
 2. El integrando tiene una discontinuidad en el intervalo (Tipo II)
 
 ---
@@ -32,13 +11,13 @@ Una **[integral impropia](../../../glossary.md#integral-impropia)** es una [inte
 
 ### Definición
 
-**[Límite](../../../glossary.md#limite) superior infinito:**
+**Límite superior infinito:**
 $$\int_a^{\infty} f(x)\,dx = \lim_{t \to \infty} \int_a^t f(x)\,dx$$
 
-**[Límite](../../../glossary.md#limite) inferior infinito:**
+**Límite inferior infinito:**
 $$\int_{-\infty}^{b} f(x)\,dx = \lim_{t \to -\infty} \int_t^b f(x)\,dx$$
 
-**Ambos [límites](../../../glossary.md#limites) infinitos:**
+**Ambos límites infinitos:**
 $$\int_{-\infty}^{\infty} f(x)\,dx = \int_{-\infty}^{c} f(x)\,dx + \int_c^{\infty} f(x)\,dx$$
 
 donde $c$ es cualquier número real (si ambas integrales convergen).
@@ -105,14 +84,14 @@ $$= \lim_{t \to 0^+} [\ln x]_t^1 = \lim_{t \to 0^+} (0 - \ln t) = \infty$$
 Para que $\int_a^{\infty} f(x)\,dx$ tenga posibilidad de converger:
 $$\lim_{x \to \infty} f(x) = 0$$
 
-⚠️ **Nota:** Esta condición es necesaria pero NO [suficiente](../../../glossary.md#suficiente) (ver $1/x$).
+⚠️ **Nota:** Esta condición es necesaria pero NO suficiente (ver $1/x$).
 
 ### Convergencia Absoluta
 
 $\int_a^{\infty} f(x)\,dx$ **converge absolutamente** si:
 $$\int_a^{\infty} |f(x)|\,dx < \infty$$
 
-La [convergencia](../../../glossary.md#convergencia) absoluta implica convergencia.
+La convergencia absoluta implica convergencia.
 
 ### Convergencia Condicional
 
@@ -163,7 +142,7 @@ $$\int_0^{1} \frac{dx}{x^p} = \begin{cases} \dfrac{1}{1-p} & \text{si } p < 1 \\
 
 ### Regla Práctica
 
-| Comportamiento de $f(x)$ | [Convergencia](../../../glossary.md#convergencia) |
+| Comportamiento de $f(x)$ | Convergencia |
 |--------------------------|--------------|
 | $f(x) \sim \frac{1}{x^p}$ cuando $x \to \infty$ | Converge si $p > 1$ |
 | $f(x) \sim \frac{1}{(x-a)^p}$ cuando $x \to a$ | Converge si $p < 1$ |
