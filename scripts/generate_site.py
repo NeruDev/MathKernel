@@ -184,7 +184,7 @@ def build_glossary():
     log_info(f"Conversión realizada: glosario -> {out_path}")
 
 
-def generate_metadata_index(id_to_path):
+def generate_metadata_index(id_to_path, target_path, depth=1):
     metadata_items = []
 
     if not os.path.exists(METADATA_DIR):
@@ -202,7 +202,20 @@ def generate_metadata_index(id_to_path):
 
             md_id = data["id"]
             if md_id in id_to_path:
-                page_link = f"./{id_to_path[md_id].replace(os.sep, '/')}"
+                # Link prefix relative to the target_path
+                prefix = "./" if depth == 0 else "./pages/"
+                if depth == 1:
+                    prefix = "./"
+                
+                # If we are at the root (depth=0), we link to pages/
+                # If we are at pages/ (depth=1), we link to ./ (current dir)
+                
+                rel_link = id_to_path[md_id].replace(os.sep, "/")
+                if depth == 0:
+                    page_link = f"./pages/{rel_link}"
+                else:
+                    page_link = f"./{rel_link}"
+                
                 metadata_items.append(
                     {
                         "title": data.get("title", data["id"]),
@@ -218,25 +231,31 @@ def generate_metadata_index(id_to_path):
 
     metadata_items.sort(key=lambda item: (item["module"], item["order"]))
 
-    list_items = "\n".join(
-        f'<li><strong>{item["title"]}</strong> '
-        f'(<em>{item["module"]}</em>) - '
-        f'<a href="{item["link"]}">Ver página</a></li>'
-        for item in metadata_items
-    )
+    # Group by module
+    current_module = None
+    list_items = ""
+    for item in metadata_items:
+        if item["module"] != current_module:
+            if current_module is not None:
+                list_items += "</ul>"
+            current_module = item["module"]
+            list_items += f"<h3>{current_module.replace('_', ' ').title()}</h3><ul>"
+        
+        list_items += f'<li><a href="{item["link"]}">{item["title"]}</a></li>'
+    
+    if current_module is not None:
+        list_items += "</ul>"
 
     index_body = f"""
-    <h1>Índice de contenidos</h1>
-    <ul>
+    <h1>Biblioteca Matemática</h1>
+    <p>Índice completo de temas disponibles en MathKernel.</p>
     {list_items}
-    </ul>
     """
 
-    out_path = os.path.join(PAGES_DIR, "index.html")
-    with open(out_path, "w", encoding="utf-8") as index_file:
-        index_file.write(wrap_html("Índice", index_body, depth=1))
+    with open(target_path, "w", encoding="utf-8") as index_file:
+        index_file.write(wrap_html("Índice de Contenidos", index_body, depth=depth))
 
-    log_info(f"Conversión realizada: índice metadata -> {out_path}")
+    log_info(f"Índice generado en: {target_path}")
 
 
 def detect_broken_internal_links(generated_pages):
@@ -275,7 +294,14 @@ if __name__ == "__main__":
     ensure_dirs()
 
     pages, id_to_path = process_markdown()
-    generate_metadata_index(id_to_path)
+    
+    # Generate index in /site/index.html (home)
+    generate_metadata_index(id_to_path, os.path.join(OUTPUT_DIR, "index.html"), depth=0)
+    
+    # Generate index in /site/pages/index.html
+    generate_metadata_index(id_to_path, os.path.join(PAGES_DIR, "index.html"), depth=1)
+    
+    pages.append(os.path.join(OUTPUT_DIR, "index.html"))
     pages.append(os.path.join(PAGES_DIR, "index.html"))
 
     build_glossary()
