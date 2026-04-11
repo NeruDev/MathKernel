@@ -256,3 +256,6 @@ $$f(t) = f_1(t)[u(t-a) - u(t-b)] + f_2(t)[u(t-b) - u(t-c)] + \cdots$$
 > $= 2 - 2u(t-1) + tu(t-1) - tu(t-3)$
 > 
 > $= 2 + (t-2)u(t-1) - tu(t-3)$
+
+
+![Diagrama de flujo para métodos de Transformada de Laplace](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.svg)

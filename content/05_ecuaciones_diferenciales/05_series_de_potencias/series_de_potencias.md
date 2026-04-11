@@ -224,3 +224,6 @@ $$L_0(x) = 1, \quad L_1(x) = 1-x, \quad L_2(x) = \frac{1}{2}(x^2 - 4x + 2)$$
 | Hermite | $y'' - 2xy' + 2ny = 0$ | $H_n(x)$ |
 | Laguerre | $xy'' + (1-x)y' + ny = 0$ | $L_n(x)$ |
 | Chebyshev | $(1-x^2)y'' - xy' + n^2y = 0$ | $T_n(x), U_n(x)$ |
+
+
+![Diagrama de flujo para método de series de potencias](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.svg)

@@ -1,6 +1,6 @@
 {
   "id": "edo_numericas",
-  "title": "Teoría: Solución Numérica de EDO",
+  "title": "Teoría de Métodos Numéricos para EDO",
   "module": "06_metodos_numericos",
   "order": 4,
   "concepts": [

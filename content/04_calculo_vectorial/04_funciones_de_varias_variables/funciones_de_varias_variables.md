@@ -1,6 +1,9 @@
 # Teoría — Funciones reales de varias variables
 ## 4.1 Funciones de varias variables
 
+
+![Superficie z=f(x,y), dominio y rango](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.svg)
+
 ### Definición
 
 Una **función de dos variables** es una regla $f: D \subseteq \mathbb{R}^2 \to \mathbb{R}$ que asigna a cada par ordenado $(x, y)$ en el dominio $D$ un único número real $z = f(x, y)$.
@@ -34,6 +37,9 @@ $$S_k = \{(x, y, z) : f(x, y, z) = k\}$$
 ---
 
 ## 4.2 Límites y continuidad
+
+
+![Curvas de nivel y mapa de contorno](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/curvas_nivel.svg)
 
 ### Límite de una función de dos variables
 
@@ -111,6 +117,9 @@ $$f_{xy} = f_{yx}$$
 
 ## 4.4 Diferenciabilidad
 
+
+![Plano tangente y aproximación lineal](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.svg)
+
 ### Definición
 
 $f(x, y)$ es **diferenciable** en $(a, b)$ si:
@@ -151,6 +160,9 @@ $$z - f(a,b) = f_x(a,b)(x - a) + f_y(a,b)(y - b)$$
 ---
 
 ## 4.5 Regla de la cadena
+
+
+![Gradiente y derivada direccional](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.svg)
 
 ### Caso 1: Una variable independiente
 
@@ -234,6 +246,9 @@ $$\frac{x - x_0}{F_x} = \frac{y - y_0}{F_y} = \frac{z - z_0}{F_z}$$
 ---
 
 ## 4.8 Extremos de funciones de varias variables
+
+
+![Puntos críticos y criterio de la segunda derivada](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.svg)
 
 ### Extremos locales
 

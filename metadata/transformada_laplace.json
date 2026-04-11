@@ -1,6 +1,6 @@
 {
   "id": "transformada_laplace",
-  "title": "Teoría: Transformada de Laplace",
+  "title": "Teoría de Transformada de Laplace",
   "module": "05_ecuaciones_diferenciales",
   "order": 3,
   "concepts": [

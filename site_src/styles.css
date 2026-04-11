@@ -66,9 +66,35 @@ a:hover {
 /* ===== NAV ===== */
 nav {
   margin: 20px 0;
-  padding: 10px 15px;
+  padding: 15px;
   background-color: var(--table-header);
   border-left: 4px solid var(--miku-cyan);
+  display: flex;
+  gap: 15px; /* Espacio entre botones */
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--bg-container);
+  color: var(--text-color) !important;
+  border: 1px solid var(--miku-cyan);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--miku-cyan);
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(57, 197, 187, 0.2);
+}
+
+.nav-btn:active {
+  transform: translateY(0);
 }
 
 /* ===== TABLE ===== */
@@ -81,10 +107,42 @@ th, td {
   border: 1px solid var(--table-border);
 }
 
-/* ===== BUTTON ===== */
-.btn-theme {
-  font-size: 1.4rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+/* ===== BIBLIOTECA MATEMATICA (INDEX) ===== */
+main h3 {
+  color: var(--miku-fuchsia);
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 30px;
+  padding-bottom: 5px;
+  text-transform: capitalize;
 }
+
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ul li {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+}
+
+main ul li::before {
+  content: "📘";
+  margin-right: 12px;
+  font-size: 0.9rem;
+}
+
+main ul li a {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+main ul li a:hover {
+  color: var(--miku-cyan);
+  padding-left: 5px;
+  transition: all 0.2s ease;
+}
+
+/* ===== FOOTER / END ===== */

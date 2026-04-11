@@ -107,9 +107,9 @@ def wrap_html(title, body, depth=1):
 </header>
 
 <nav>
-    <a href="{prefix}index.html">Inicio</a>
-    <a href="{prefix}pages/index.html">Contenidos</a>
-    <a href="{prefix}glossary.html">Glosario</a>
+    <a href="{prefix}index.html" class="nav-btn">Inicio</a>
+    <a href="{prefix}pages/index.html" class="nav-btn">Contenidos</a>
+    <a href="{prefix}glossary.html" class="nav-btn">Glosario</a>
 </nav>
 
 <main id="md-content">
@@ -239,7 +239,8 @@ def generate_metadata_index(id_to_path, target_path, depth=1):
             if current_module is not None:
                 list_items += "</ul>"
             current_module = item["module"]
-            list_items += f"<h3>{current_module.replace('_', ' ').title()}</h3><ul>"
+            clean_module_name = re.sub(r'^\d+_', '', current_module).replace('_', ' ').title()
+            list_items += f"<h3>{clean_module_name}</h3><ul>"
         
         list_items += f'<li><a href="{item["link"]}">{item["title"]}</a></li>'
     

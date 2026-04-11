@@ -1,6 +1,9 @@
 # Teoría — Vectores en el espacio
 ## 1.1 Definición de un vector en el plano y en el espacio
 
+
+![Sistema de coordenadas cartesianas 3D con vectores canónicos i, j, k](../../../assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/sistema_coordenadas_3d.svg)
+
 ### Concepto intuitivo
 Un **vector** es un objeto matemático que tiene **magnitud** (longitud) y **dirección**. Geométricamente se representa como una flecha que va de un punto inicial a un punto final.
 
@@ -41,6 +44,9 @@ $$\mathbf{v} = v_x\mathbf{i} + v_y\mathbf{j} + v_z\mathbf{k}$$
 ---
 
 ## 1.2 Álgebra vectorial y su geometría
+
+
+![Suma de vectores y multiplicación por escalar en el espacio](../../../assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/operaciones_vectores_3d.svg)
 
 ### Suma de vectores
 $$\mathbf{u} + \mathbf{v} = \langle u_x + v_x, u_y + v_y, u_z + v_z \rangle$$
@@ -84,6 +90,9 @@ $\mathbf{u} \parallel \mathbf{v}$ si existe $k \in \mathbb{R}$ tal que $\mathbf{
 ---
 
 ## 1.3 Producto escalar y vectorial
+
+
+![Producto escalar (punto) y producto vectorial (cruz)](../../../assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/producto_punto_cruz.svg)
 
 ### Producto escalar (producto punto)
 
@@ -200,3 +209,6 @@ Usa las definiciones y fórmulas aquí como referencia canónica.
 Al generar problemas, verifica que el estudiante domine cada sección antes de avanzar.
 file_id: CV-01-Teoria-Vectores
 -->
+
+
+![Ecuación de la recta y el plano en el espacio 3D](../../../assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.svg)

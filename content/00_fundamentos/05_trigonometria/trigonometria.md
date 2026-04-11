@@ -47,6 +47,9 @@ $$\theta_{\text{grados}} = \theta_{\text{rad}} \cdot \frac{180°}{\pi}$$
 
 ## 5.2 Razones trigonométricas en triángulos rectángulos
 
+
+![Razones trigonométricas en triángulo rectángulo: SOH-CAH-TOA](../../../assets/images/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.svg)
+
 ### Definición
 
 Para un triángulo rectángulo con un ángulo agudo $\theta$:
@@ -88,6 +91,12 @@ $$\cot\theta = \frac{1}{\tan\theta} = \frac{b}{a}$$
 
 ## 5.3 Funciones trigonométricas en el círculo unitario
 
+
+![Círculo unitario con definición de seno y coseno](../../../assets/images/grafics/00_fundamentos/05_trigonometria/circulo_unitario.svg)
+
+
+![Tabla de valores exactos de funciones trigonométricas para ángulos notables](../../../assets/images/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.svg)
+
 ### Definición general
 
 Para cualquier ángulo $\theta$ en posición estándar, si $(x, y)$ es el punto donde el lado terminal intersecta el círculo unitario:
@@ -126,6 +135,9 @@ El **ángulo de referencia** $\theta_r$ es el ángulo agudo formado entre el lad
 
 ## 5.4 Identidades trigonométricas fundamentales
 
+
+![Las tres identidades pitagóricas fundamentales](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.svg)
+
 ### Identidades pitagóricas
 
 $$\boxed{\sin^2\theta + \cos^2\theta = 1}$$
@@ -161,6 +173,9 @@ $$\tan\theta \cdot \cot\theta = 1$$
 
 ## 5.5 Identidades de suma y diferencia
 
+
+![Identidades de suma y diferencia de ángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.svg)
+
 ### Suma de ángulos
 
 $$\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$$
@@ -182,6 +197,9 @@ $$\tan(\alpha - \beta) = \frac{\tan\alpha - \tan\beta}{1 + \tan\alpha\tan\beta}$
 ---
 
 ## 5.6 Identidades de ángulo doble y mitad
+
+
+![Identidades de ángulo doble y medio ángulo](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.svg)
 
 ### Ángulo doble
 
@@ -228,6 +246,12 @@ $$\cos A - \cos B = -2\sin\frac{A+B}{2}\sin\frac{A-B}{2}$$
 ---
 
 ## 5.8 Resolución de triángulos oblicuángulos
+
+
+![Ley de senos para resolución de triángulos oblicuángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/ley_senos.svg)
+
+
+![Ley de cosenos para resolución de triángulos oblicuángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/ley_cosenos.svg)
 
 ### Ley de senos
 
@@ -296,6 +320,9 @@ donde $s = \frac{a + b + c}{2}$ es el semiperímetro.
 
 ## 5.10 Funciones trigonométricas inversas
 
+
+![Funciones trigonométricas inversas: arcsen, arccos, arctan](../../../assets/images/grafics/00_fundamentos/05_trigonometria/funciones_inversas.svg)
+
 ### Definiciones y dominios
 
 | Función | Notación | Dominio | Rango |
@@ -323,6 +350,15 @@ $$\arctan x + \arctan\frac{1}{x} = \begin{cases} \frac{\pi}{2} & \text{si } x > 
 ---
 
 ## 5.11 Gráficas de funciones trigonométricas
+
+
+![Transformaciones de funciones trigonométricas: amplitud, periodo, desfase](../../../assets/images/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.svg)
+
+
+![Gráficas de tangente, cotangente, secante y cosecante](../../../assets/images/grafics/00_fundamentos/05_trigonometria/graficas_tan_sec.svg)
+
+
+![Gráficas de las funciones seno y coseno](../../../assets/images/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.svg)
 
 ### Función seno: $y = A\sin(Bx + C) + D$
 

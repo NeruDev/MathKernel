@@ -1,6 +1,9 @@
 # Teoría — Funciones vectoriales de una variable real
 ## 3.1 Definición y representación
 
+
+![Funciones vectoriales r(t) y curvas en el espacio](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.svg)
+
 ### Concepto intuitivo
 Una **función vectorial** asigna a cada valor de un parámetro real $t$ un vector en el espacio. Describe la trayectoria de una partícula: dado el tiempo, devuelve la posición.
 
@@ -127,6 +130,9 @@ $$\mathbf{r}(t) = \mathbf{r}_0 + \int_{t_0}^t \mathbf{v}(u)\, du$$
 
 ## 3.5 Longitud de arco
 
+
+![Longitud de arco como parámetro y reparametrización](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.svg)
+
 ### Fórmula de longitud
 
 La longitud de la curva $\mathbf{r}(t)$ desde $t = a$ hasta $t = b$ es:
@@ -156,6 +162,9 @@ $$\tilde{\mathbf{r}}(s) = \mathbf{r}(t(s))$$
 ---
 
 ## 3.6 Marco de Frenet-Serret (TNB)
+
+
+![Marco de Frenet-Serret: vectores T, N, B](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/frenet_serret_tnb.svg)
 
 ### Vector tangente unitario
 
@@ -200,6 +209,9 @@ donde $\kappa$ es la curvatura y $\tau$ es la torsión.
 
 ## 3.7 Curvatura
 
+
+![Curvatura, radio de curvatura y círculo osculador](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvatura_circulo_osculador.svg)
+
 ### Definición geométrica
 
 La **curvatura** $\kappa$ mide qué tan rápido cambia la dirección de la tangente:
@@ -233,6 +245,9 @@ $$\text{Centro} = \mathbf{r}(t) + \rho\mathbf{N}(t)$$
 ---
 
 ## 3.8 Torsión
+
+
+![Componentes tangencial y normal de la aceleración](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.svg)
 
 ### Definición
 

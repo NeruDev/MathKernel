@@ -1,6 +1,6 @@
 {
   "id": "edo_segundo_orden",
-  "title": "Teoría: Ecuaciones Diferenciales de Segundo Orden",
+  "title": "Teoría de EDO de Segundo Orden",
   "module": "05_ecuaciones_diferenciales",
   "order": 2,
   "concepts": [

@@ -1,6 +1,6 @@
 {
   "id": "integracion_numerica",
-  "title": "Teoría: Integración Numérica",
+  "title": "Teoría de Integración Numérica",
   "module": "06_metodos_numericos",
   "order": 3,
   "concepts": [
