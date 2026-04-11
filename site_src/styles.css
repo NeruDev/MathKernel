@@ -1,4 +1,4 @@
-
+/* ===== VARIABLES ===== */
 :root {
   --bg-color: #fdfdfd;
   --text-color: #2c2f33;
@@ -25,8 +25,7 @@
   --blockquote-bg: #1f2635;
 }
 
-* { box-sizing: border-box; }
-
+/* ===== BASE ===== */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--bg-color);
@@ -43,9 +42,9 @@ body {
   padding: 30px 40px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -55,50 +54,37 @@ header {
   margin-bottom: 20px;
 }
 
+/* ===== LINKS ===== */
 a {
   color: var(--miku-cyan);
   text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom-color 0.2s, color 0.2s;
 }
-
 a:hover {
   color: var(--miku-fuchsia);
-  border-bottom-color: var(--miku-fuchsia);
 }
 
+/* ===== NAV ===== */
 nav {
   margin: 20px 0;
   padding: 10px 15px;
   background-color: var(--table-header);
-  border-radius: 5px;
   border-left: 4px solid var(--miku-cyan);
 }
-nav a { margin-right: 15px; font-weight: bold; }
 
-.btn-theme {
-  background: none;
-  border: 1px solid var(--border-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 8px;
-  transition: transform 0.2s;
-  color: var(--text-color);
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
-.btn-theme:hover { transform: scale(1.1); border-color: var(--miku-cyan); background-color: var(--blockquote-bg); }
+th, td {
+  padding: 12px;
+  border: 1px solid var(--table-border);
+}
 
-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em; }
-th, td { padding: 12px 15px; border: 1px solid var(--table-border); text-align: left; }
-th { background-color: var(--table-header); color: var(--text-color); }
-tbody tr:nth-of-type(even) { background-color: var(--table-header); }
-tbody tr:hover { background-color: var(--blockquote-bg); }
-
-code {
-  background-color: var(--table-header);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-family: Consolas, monospace;
-  color: var(--miku-fuchsia);
+/* ===== BUTTON ===== */
+.btn-theme {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
