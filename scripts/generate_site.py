@@ -59,6 +59,18 @@ def wrap_html(title, body, depth=1):
 
     <link rel="stylesheet" href="{prefix}styles.css">
     <script defer src="{prefix}scripts.js"></script>
+        <script>
+            window.MathJax = {{
+                tex: {{
+                    inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+                    displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+                    processEscapes: true
+                }},
+                startup: {{
+                    typeset: true
+                }}
+            }};
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 

@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     permissions:
       pages: write
@@ -23,6 +26,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      # 3.1 Configurar Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       # 3. Instalar dependencias (solo si existe requirements.txt)
       - name: Install dependencies
@@ -47,4 +54,5 @@ jobs:
 
       # 7. Deploy
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
