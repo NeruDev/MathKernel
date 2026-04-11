@@ -142,6 +142,19 @@ def build_glossary():
 
     print(f"✔ Generado: {out_path}")
 
+def generate_index_links():
+    links = ""
+
+    for root, _, files in os.walk(CONTENT_DIR):
+        for file in files:
+            if file.endswith(".md"):
+                rel_path = os.path.relpath(os.path.join(root, file), CONTENT_DIR)
+                html_path = rel_path.replace(".md", ".html")
+
+                links += f'<li><a href="./pages/{html_path}">{file}</a></li>\n'
+
+    return f"<ul>{links}</ul>"
+
 
 if __name__ == "__main__":
     print("🚀 Generando sitio...")
