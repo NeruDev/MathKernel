@@ -21,17 +21,14 @@ Estructura principal:
 
 - `content/`: Teoría matemática pura en Markdown.
 - `metadata/`: Capa semántica y de validación para consumo IA.
-    - `content/`: Estructura **espejo** de `content/` con descriptores JSON por tema.
-    - `assets/images/grafics/`: Estructura **espejo** de las imágenes con descriptores JSON por activo.
-    - `schemas/`: Plantillas JSON Schema (`content.schema.json`, `assets.schema.json`) que rigen la integridad de los datos.
-- `assets/`: Recursos gráficos (SVG). **Gestionado con Git LFS** para optimizar el peso del repositorio.
-- `scripts/`: Orquestadores de generación, enlazado y validación (Python).
-- `site_src/`: Código fuente de la interfaz web (HTML/CSS/JS).
-- `site/`: Artefacto final generado para despliegue estático.
+- `assets/`: Recursos gráficos (SVG). **Gestionado con Git LFS**.
+- `scripts/`: Orquestadores de generación, enlazado inteligente y validación.
+- `site_src/`: Código fuente de la interfaz web.
+- `site/`: Artefacto final generado con **estructura aplanada** para despliegue optimizado.
 
-## Gestión de activos pesados (Git LFS)
+## Gestión de activos (Git LFS)
 
-Este repositorio utiliza **Git LFS (Large File Storage)** para gestionar los archivos gráficos en `assets/images/grafics/`. Esto permite mantener el historial de Git ligero al almacenar los binarios grandes fuera del árbol de objetos principal.
+Este repositorio utiliza **Git LFS (Large File Storage)** para los archivos gráficos. Esto es fundamental para mantener el repositorio ligero. El flujo de CI/CD está configurado para descargar estos activos automáticamente antes de generar el sitio.
 
 Para clonar este repositorio correctamente, asegúrate de tener Git LFS instalado:
 ```powershell

@@ -30,16 +30,16 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 
 
 ### 2.4 Gestión de Activos
-- **Git LFS:** Utilizado para rastrear archivos en `assets/images/grafics/`, manteniendo el repositorio ligero.
-- **Formato Vectorial:** Se prioriza SVG para garantizar calidad matemática infinita y bajo peso.
+- **Git LFS:** Utilizado para rastrear archivos en `assets/images/grafics/`. Es crítico que el entorno de CI/CD (GitHub Actions) realice un `git lfs pull` para que los archivos reales estén disponibles durante la generación del sitio.
+- **Formato Vectorial:** Se prioriza SVG. Las rutas en el sitio generado se ajustan dinámicamente de `../../../assets/` a `../../assets/` (o el nivel correspondiente) para mantener la compatibilidad entre el repositorio y la web.
 
 ## 3. Flujo de trabajo y Despliegue
 
 1. **Creación:** Escribir teoría en `content/` o scripts de gráficos en `scripts/grafics/`.
-2. **Sincronización:** Ejecutar `generate_assets.py` y `link_assets_to_content.py`.
+2. **Sincronización:** Ejecutar `link_assets_to_content.py` para vincular dinámicamente las imágenes basándose en metadatos de scripts.
 3. **Verificación:** `validate_structure.py` confirma que todo el sistema de metadatos es coherente.
-4. **Build:** `generate_site.py` construye el artefacto final en `site/`.
-5. **CI/CD:** GitHub Actions despliega el contenido de `site/` automáticamente.
+4. **Build:** `generate_site.py` construye el artefacto final en `site/` usando una estructura aplanada que optimiza la navegación y la carga de activos.
+5. **CI/CD:** GitHub Actions descarga objetos LFS, vincula activos y despliega el contenido de `site/` automáticamente.
 
 ## 4. Estructura del Proyecto
 

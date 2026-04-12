@@ -17,13 +17,12 @@ def convert_md_to_html(md_text, extensions=None, asset_prefix=None):
     html = re.sub(r'href="([^"]+)\.md(#[^"]*)?"', r'href="\1.html\2"', html)
 
     # Corregir rutas de imágenes si se proporciona un prefijo
-    # Busca patrones como ../../../assets/ y los reemplaza por el prefijo adecuado
+    # Mantenemos la estructura interna después de ../../../assets/
     if asset_prefix is not None:
-        # El patrón asume que las rutas originales en MD son relativas a la raíz del proyecto (3 o más niveles)
-        # Reemplazamos cualquier cantidad de ../ que llegue a assets/ por el prefijo calculado para el sitio
-        html = re.sub(r'src="\.\./\.\./\.\./assets/', f'src="{asset_prefix}assets/', html)
-        # También para posibles enlaces directos a archivos en assets
-        html = re.sub(r'href="\.\./\.\./\.\./assets/', f'href="{asset_prefix}assets/', html)
+        # El patrón busca la ruta que llega hasta assets/ y captura lo que sigue
+        # Ejemplo: ../../../assets/images/grafics/file.svg -> asset_prefix + assets/images/grafics/file.svg
+        html = re.sub(r'src="\.\./\.\./\.\./assets/([^"]+)"', f'src="{asset_prefix}assets/\\1"', html)
+        html = re.sub(r'href="\.\./\.\./\.\./assets/([^"]+)"', f'href="{asset_prefix}assets/\\1"', html)
 
     replacements = len(re.findall(r'href="[^"]+\.html(?:#[^"]*)?"', html))
 
