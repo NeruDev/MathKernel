@@ -7,3 +7,7 @@ site/
 __pycache__/
 *.py[cod]
 *.class
+.pytest_cache/
+dist/
+build/
+*.egg-info/
