@@ -1,0 +1,14 @@
+{
+  "id": "gradiente_derivada_direccional",
+  "category": "04_calculo_vectorial",
+  "topic": "04_funciones_de_varias_variables",
+  "topic_id": "CV-04",
+  "script_source": "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.svg",
+  "description": "Gradiente y derivada direccional",
+  "used_in": [
+    "theory/CV-04-Teoria-Varias.md"
+  ],
+  "section": "4.5 Gradiente",
+  "format": "SVG (Vectorial)"
+}

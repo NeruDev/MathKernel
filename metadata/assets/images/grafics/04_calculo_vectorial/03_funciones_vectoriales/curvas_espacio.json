@@ -1,0 +1,14 @@
+{
+  "id": "curvas_espacio",
+  "category": "04_calculo_vectorial",
+  "topic": "03_funciones_vectoriales",
+  "topic_id": "CV-03",
+  "script_source": "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.svg",
+  "description": "Funciones vectoriales r(t) y curvas en el espacio",
+  "used_in": [
+    "theory/CV-03-Teoria-Vectoriales.md"
+  ],
+  "section": "3.1 Definición y representación",
+  "format": "SVG (Vectorial)"
+}

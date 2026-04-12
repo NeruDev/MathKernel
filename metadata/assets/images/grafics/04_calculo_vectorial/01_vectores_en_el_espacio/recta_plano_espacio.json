@@ -1,0 +1,14 @@
+{
+  "id": "recta_plano_espacio",
+  "category": "04_calculo_vectorial",
+  "topic": "01_vectores_en_el_espacio",
+  "topic_id": "CV-01",
+  "script_source": "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.svg",
+  "description": "Ecuación de la recta y el plano en el espacio 3D",
+  "used_in": [
+    "theory/CV-01-Teoria-Vectores.md"
+  ],
+  "section": "1.4-1.5 Ecuación de la recta y del plano",
+  "format": "SVG (Vectorial)"
+}

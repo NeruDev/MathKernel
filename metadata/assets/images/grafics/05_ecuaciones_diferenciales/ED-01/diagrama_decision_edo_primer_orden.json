@@ -1,0 +1,14 @@
+{
+  "id": "diagrama_decision_edo_primer_orden",
+  "category": "05_ecuaciones_diferenciales",
+  "topic": "ED-01",
+  "topic_id": "ED-01",
+  "script_source": "scripts/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.py",
+  "image_path": "assets/images/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.svg",
+  "description": "Diagrama de flujo para identificar tipo de EDO de primer orden",
+  "used_in": [
+    "methods/ED-01-Metodos-EDO-Primer-Orden.md"
+  ],
+  "section": "Método 9: Identificar Tipo de Ecuación",
+  "format": "SVG (Vectorial)"
+}

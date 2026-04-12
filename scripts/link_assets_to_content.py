@@ -4,7 +4,8 @@ from pathlib import Path
 
 # Configuración de rutas
 PROJECT_ROOT = Path(__file__).parent.parent
-MANIFEST_PATH = PROJECT_ROOT / "assets" / "images" / "grafics" / "manifest.json"
+# Ruta homologada: metadata/assets/images/grafics
+METADATA_ASSETS_ROOT = PROJECT_ROOT / "metadata" / "assets" / "images" / "grafics"
 CONTENT_ROOT = PROJECT_ROOT / "content"
 
 # Mapeo de topic_id a archivos de content
@@ -32,17 +33,24 @@ def get_relative_image_path(md_file_rel_path, image_path):
     return f"{prefix}{image_path}"
 
 def main():
-    if not MANIFEST_PATH.exists():
-        print(f"❌ No se encontró el manifiesto en {MANIFEST_PATH}")
+    if not METADATA_ASSETS_ROOT.exists():
+        print(f"❌ No se encontró la carpeta de metadatos de activos en {METADATA_ASSETS_ROOT}")
         return
 
-    with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
-        manifest = json.load(f)
+    # Buscar todos los archivos .json recursivamente
+    asset_files = list(METADATA_ASSETS_ROOT.rglob("*.json"))
+    
+    if not asset_files:
+        print("⚠️ No se encontraron archivos de metadatos de activos.")
+        return
 
-    for asset in manifest["assets"]:
-        topic_id = asset["topic_id"]
-        if topic_id not in TOPIC_TO_FILE:
-            print(f"⚠️ No hay mapeo para topic_id: {topic_id}")
+    for json_path in asset_files:
+        with open(json_path, "r", encoding="utf-8") as f:
+            asset = json.load(f)
+
+        topic_id = asset.get("topic_id")
+        if not topic_id or topic_id not in TOPIC_TO_FILE:
+            print(f"⚠️ No hay mapeo para topic_id: {topic_id} en {json_path.name}")
             continue
 
         md_rel_path = TOPIC_TO_FILE[topic_id]

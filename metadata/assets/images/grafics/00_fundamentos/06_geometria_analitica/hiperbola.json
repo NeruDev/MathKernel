@@ -1,0 +1,14 @@
+{
+  "id": "hiperbola",
+  "category": "00_fundamentos",
+  "topic": "06_geometria_analitica",
+  "topic_id": "FUN-06",
+  "script_source": "scripts/grafics/00_fundamentos/06_geometria_analitica/hiperbola.py",
+  "image_path": "assets/images/grafics/00_fundamentos/06_geometria_analitica/hiperbola.svg",
+  "description": "La hipérbola: elementos, ecuaciones y asíntotas",
+  "used_in": [
+    "theory/FUN-06-Teoria-Geometria-Analitica.md"
+  ],
+  "section": "6.7 La hipérbola",
+  "format": "SVG (Vectorial)"
+}

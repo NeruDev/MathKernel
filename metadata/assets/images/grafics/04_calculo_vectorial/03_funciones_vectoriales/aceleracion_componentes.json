@@ -1,0 +1,14 @@
+{
+  "id": "aceleracion_componentes",
+  "category": "04_calculo_vectorial",
+  "topic": "03_funciones_vectoriales",
+  "topic_id": "CV-03",
+  "script_source": "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.svg",
+  "description": "Componentes tangencial y normal de la aceleración",
+  "used_in": [
+    "theory/CV-03-Teoria-Vectoriales.md"
+  ],
+  "section": "3.8 Componentes de la aceleración",
+  "format": "SVG (Vectorial)"
+}

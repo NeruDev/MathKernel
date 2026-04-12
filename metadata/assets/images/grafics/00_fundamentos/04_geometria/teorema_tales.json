@@ -1,0 +1,14 @@
+{
+  "id": "teorema_tales",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/teorema_tales.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/teorema_tales.svg",
+  "description": "Teorema de Tales: recta paralela divide lados proporcionalmente",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.8",
+  "format": "SVG (Vectorial)"
+}

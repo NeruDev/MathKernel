@@ -1,0 +1,14 @@
+{
+  "id": "angulos_notables_valores",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.svg",
+  "description": "Tabla de valores exactos de funciones trigonométricas para ángulos notables",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.3 Valores de las funciones en ángulos notables",
+  "format": "SVG (Vectorial)"
+}

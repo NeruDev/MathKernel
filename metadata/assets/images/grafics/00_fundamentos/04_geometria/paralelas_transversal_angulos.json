@@ -1,0 +1,14 @@
+{
+  "id": "paralelas_transversal_angulos",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/paralelas_transversal_angulos.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/paralelas_transversal_angulos.svg",
+  "description": "Dos rectas paralelas cortadas por una transversal mostrando ángulos",
+  "used_in": [
+    "problems/FUN-04-Problemas.md"
+  ],
+  "section": "4.2 Ángulos - Prob-13",
+  "format": "SVG (Vectorial)"
+}

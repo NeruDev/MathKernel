@@ -1,0 +1,14 @@
+{
+  "id": "circunferencia_angulos",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/circunferencia_angulos.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/circunferencia_angulos.svg",
+  "description": "Tipos de ángulos: central, inscrito, semi-inscrito",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.6",
+  "format": "SVG (Vectorial)"
+}

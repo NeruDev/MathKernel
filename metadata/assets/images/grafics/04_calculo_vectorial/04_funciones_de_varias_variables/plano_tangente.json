@@ -1,0 +1,14 @@
+{
+  "id": "plano_tangente",
+  "category": "04_calculo_vectorial",
+  "topic": "04_funciones_de_varias_variables",
+  "topic_id": "CV-04",
+  "script_source": "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.svg",
+  "description": "Plano tangente y aproximación lineal",
+  "used_in": [
+    "theory/CV-04-Teoria-Varias.md"
+  ],
+  "section": "4.4 Plano tangente",
+  "format": "SVG (Vectorial)"
+}

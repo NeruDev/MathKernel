@@ -1,0 +1,14 @@
+{
+  "id": "triangulo_equilatero_elementos",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/triangulo_equilatero_elementos.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/triangulo_equilatero_elementos.svg",
+  "description": "Triángulo equilátero con altura, radio inscrito y circunscrito",
+  "used_in": [
+    "problems/FUN-04-Problemas.md"
+  ],
+  "section": "4.3",
+  "format": "SVG (Vectorial)"
+}

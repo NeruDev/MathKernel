@@ -1,0 +1,14 @@
+{
+  "id": "teoremas_integrales",
+  "category": "04_calculo_vectorial",
+  "topic": "05_integracion_multiple",
+  "topic_id": "CV-05",
+  "script_source": "scripts/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.svg",
+  "description": "Teoremas de Green, Stokes y Divergencia",
+  "used_in": [
+    "theory/CV-05-Teoria-Integracion.md"
+  ],
+  "section": "5.7 Teoremas fundamentales",
+  "format": "SVG (Vectorial)"
+}

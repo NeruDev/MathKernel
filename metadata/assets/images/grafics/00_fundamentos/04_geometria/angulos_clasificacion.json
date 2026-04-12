@@ -1,0 +1,14 @@
+{
+  "id": "angulos_clasificacion",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/angulos_clasificacion.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/angulos_clasificacion.svg",
+  "description": "Clasificación de ángulos: agudo, recto, obtuso, llano, cóncavo",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.2",
+  "format": "SVG (Vectorial)"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "extremos_hessiano",
+  "category": "04_calculo_vectorial",
+  "topic": "04_funciones_de_varias_variables",
+  "topic_id": "CV-04",
+  "script_source": "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.svg",
+  "description": "Puntos críticos y criterio de la segunda derivada",
+  "used_in": [
+    "theory/CV-04-Teoria-Varias.md"
+  ],
+  "section": "4.8 Extremos de funciones de varias variables",
+  "format": "SVG (Vectorial)"
+}

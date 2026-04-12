@@ -1,0 +1,14 @@
+{
+  "id": "diagrama_decision_series_potencias",
+  "category": "05_ecuaciones_diferenciales",
+  "topic": "ED-05",
+  "topic_id": "ED-05",
+  "script_source": "scripts/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.py",
+  "image_path": "assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.svg",
+  "description": "Diagrama de flujo para método de series de potencias",
+  "used_in": [
+    "methods/ED-05-Metodos-Series-Potencias.md"
+  ],
+  "section": "Diagrama de Decisión: Método de Series",
+  "format": "SVG (Vectorial)"
+}

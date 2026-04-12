@@ -11,7 +11,7 @@ CONTENT_DIR = "content"
 SOURCE_DIR = "site_src"
 OUTPUT_DIR = "site"
 PAGES_DIR = os.path.join(OUTPUT_DIR, "pages")
-METADATA_DIR = "metadata"
+METADATA_DIR = os.path.join("metadata", "content")
 
 
 def log_info(msg):
@@ -170,18 +170,19 @@ def build_glossary():
     glossary_html = "<h1>Glosario de Conceptos</h1><ul>"
 
     if os.path.exists(METADATA_DIR):
-        for file in sorted(os.listdir(METADATA_DIR)):
-            if not file.endswith(".json") or file == "schema.json":
-                continue
+        for root, _, files in os.walk(METADATA_DIR):
+            for file in sorted(files):
+                if not file.endswith(".json") or file == "schema.json":
+                    continue
 
-            path = os.path.join(METADATA_DIR, file)
-            try:
-                with open(path, encoding="utf-8") as f:
-                    data = json.load(f)
-                    for concept in data.get("concepts", []):
-                        glossary_html += f"<li>{concept}</li>"
-            except Exception as e:
-                log_warn(f"Error leyendo metadata {file}: {e}")
+                path = os.path.join(root, file)
+                try:
+                    with open(path, encoding="utf-8") as f:
+                        data = json.load(f)
+                        for concept in data.get("concepts", []):
+                            glossary_html += f"<li>{concept}</li>"
+                except Exception as e:
+                    log_warn(f"Error leyendo metadata {path}: {e}")
 
     glossary_html += "</ul>"
 
@@ -199,43 +200,44 @@ def generate_metadata_index(id_to_path, target_path, depth=1):
         log_warn("No existe metadata/, no se puede construir índice por metadata")
         return
 
-    for file in os.listdir(METADATA_DIR):
-        if not file.endswith(".json") or file == "schema.json":
-            continue
+    for root, _, files in os.walk(METADATA_DIR):
+        for file in files:
+            if not file.endswith(".json") or file == "schema.json":
+                continue
 
-        path = os.path.join(METADATA_DIR, file)
-        try:
-            with open(path, "r", encoding="utf-8") as metadata_file:
-                data = json.load(metadata_file)
+            path = os.path.join(root, file)
+            try:
+                with open(path, "r", encoding="utf-8") as metadata_file:
+                    data = json.load(metadata_file)
 
-            md_id = data["id"]
-            if md_id in id_to_path:
-                # Link prefix relative to the target_path
-                prefix = "./" if depth == 0 else "./pages/"
-                if depth == 1:
-                    prefix = "./"
-                
-                # If we are at the root (depth=0), we link to pages/
-                # If we are at pages/ (depth=1), we link to ./ (current dir)
-                
-                rel_link = id_to_path[md_id].replace(os.sep, "/")
-                if depth == 0:
-                    page_link = f"./pages/{rel_link}"
+                md_id = data["id"]
+                if md_id in id_to_path:
+                    # Link prefix relative to the target_path
+                    prefix = "./" if depth == 0 else "./pages/"
+                    if depth == 1:
+                        prefix = "./"
+                    
+                    # If we are at the root (depth=0), we link to pages/
+                    # If we are at pages/ (depth=1), we link to ./ (current dir)
+                    
+                    rel_link = id_to_path[md_id].replace(os.sep, "/")
+                    if depth == 0:
+                        page_link = f"./pages/{rel_link}"
+                    else:
+                        page_link = f"./{rel_link}"
+                    
+                    metadata_items.append(
+                        {
+                            "title": data.get("title", data["id"]),
+                            "module": data.get("module", "zz_sin_modulo"),
+                            "order": data.get("order", 9999),
+                            "link": page_link,
+                        }
+                    )
                 else:
-                    page_link = f"./{rel_link}"
-                
-                metadata_items.append(
-                    {
-                        "title": data.get("title", data["id"]),
-                        "module": data.get("module", "zz_sin_modulo"),
-                        "order": data.get("order", 9999),
-                        "link": page_link,
-                    }
-                )
-            else:
-                log_warn(f"ID {md_id} de metadata no encontrado en archivos .md")
-        except Exception as exc:
-            log_warn(f"No se pudo indexar {file}: {exc}")
+                    log_warn(f"ID {md_id} de metadata no encontrado en archivos .md")
+            except Exception as exc:
+                log_warn(f"No se pudo indexar {path}: {exc}")
 
     metadata_items.sort(key=lambda item: (item["module"], item["order"]))
 

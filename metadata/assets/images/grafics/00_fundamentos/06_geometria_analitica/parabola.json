@@ -1,0 +1,14 @@
+{
+  "id": "parabola",
+  "category": "00_fundamentos",
+  "topic": "06_geometria_analitica",
+  "topic_id": "FUN-06",
+  "script_source": "scripts/grafics/00_fundamentos/06_geometria_analitica/parabola.py",
+  "image_path": "assets/images/grafics/00_fundamentos/06_geometria_analitica/parabola.svg",
+  "description": "La parábola: elementos, ecuaciones y orientaciones",
+  "used_in": [
+    "theory/FUN-06-Teoria-Geometria-Analitica.md"
+  ],
+  "section": "6.5 La parábola",
+  "format": "SVG (Vectorial)"
+}

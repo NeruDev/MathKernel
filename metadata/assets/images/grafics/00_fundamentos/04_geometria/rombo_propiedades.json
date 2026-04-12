@@ -1,0 +1,14 @@
+{
+  "id": "rombo_propiedades",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/rombo_propiedades.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/rombo_propiedades.svg",
+  "description": "Rombo con diagonales, perpendiculares y fórmulas",
+  "used_in": [
+    "problems/FUN-04-Problemas.md"
+  ],
+  "section": "4.4",
+  "format": "SVG (Vectorial)"
+}

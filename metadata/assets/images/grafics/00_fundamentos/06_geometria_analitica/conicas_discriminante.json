@@ -1,0 +1,14 @@
+{
+  "id": "conicas_discriminante",
+  "category": "00_fundamentos",
+  "topic": "06_geometria_analitica",
+  "topic_id": "FUN-06",
+  "script_source": "scripts/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.py",
+  "image_path": "assets/images/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.svg",
+  "description": "Clasificación de cónicas mediante el discriminante B²-4AC",
+  "used_in": [
+    "theory/FUN-06-Teoria-Geometria-Analitica.md"
+  ],
+  "section": "6.8 Ecuación general de segundo grado",
+  "format": "SVG (Vectorial)"
+}

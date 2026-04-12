@@ -1,0 +1,14 @@
+{
+  "id": "coordenadas_polares",
+  "category": "00_fundamentos",
+  "topic": "06_geometria_analitica",
+  "topic_id": "FUN-06",
+  "script_source": "scripts/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.py",
+  "image_path": "assets/images/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.svg",
+  "description": "Coordenadas polares y conversión cartesiana-polar",
+  "used_in": [
+    "theory/FUN-06-Teoria-Geometria-Analitica.md"
+  ],
+  "section": "6.9 Coordenadas polares",
+  "format": "SVG (Vectorial)"
+}

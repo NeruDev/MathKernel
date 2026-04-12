@@ -1,0 +1,14 @@
+{
+  "id": "escalera_apoyada",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/escalera_apoyada.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/escalera_apoyada.svg",
+  "description": "Problema de escalera apoyada - aplicación del teorema de Pitágoras",
+  "used_in": [
+    "problems/FUN-04-Problemas.md"
+  ],
+  "section": "4.9",
+  "format": "SVG (Vectorial)"
+}

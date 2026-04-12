@@ -1,0 +1,14 @@
+{
+  "id": "identidades_angulo_doble",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.svg",
+  "description": "Identidades de ángulo doble y medio ángulo",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.6 Identidades de ángulo doble y medio ángulo",
+  "format": "SVG (Vectorial)"
+}

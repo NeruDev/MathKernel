@@ -1,0 +1,15 @@
+{
+  "id": "pitagoras_visual",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/pitagoras_visual.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/pitagoras_visual.svg",
+  "description": "Representación visual del teorema de Pitágoras con cuadrados",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md",
+    "methods/FUN-04-Metodos-Geometria.md"
+  ],
+  "section": "4.9 Teorema de Pitágoras",
+  "format": "SVG (Vectorial)"
+}

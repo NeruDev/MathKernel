@@ -1,0 +1,14 @@
+{
+  "id": "diagrama_traza_determinante",
+  "category": "05_ecuaciones_diferenciales",
+  "topic": "ED-03",
+  "topic_id": "ED-03",
+  "script_source": "scripts/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.py",
+  "image_path": "assets/images/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.svg",
+  "description": "Diagrama de clasificación de puntos de equilibrio usando traza y determinante",
+  "used_in": [
+    "methods/ED-03-Metodos-Sistemas-EDO.md"
+  ],
+  "section": "Método 7: Clasificar Retrato de Fase",
+  "format": "SVG (Vectorial)"
+}

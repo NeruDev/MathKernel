@@ -1,0 +1,14 @@
+{
+  "id": "transformaciones",
+  "category": "00_fundamentos",
+  "topic": "06_geometria_analitica",
+  "topic_id": "FUN-06",
+  "script_source": "scripts/grafics/00_fundamentos/06_geometria_analitica/transformaciones.py",
+  "image_path": "assets/images/grafics/00_fundamentos/06_geometria_analitica/transformaciones.svg",
+  "description": "Transformaciones geométricas: traslación, rotación, reflexión, escalamiento",
+  "used_in": [
+    "theory/FUN-06-Teoria-Geometria-Analitica.md"
+  ],
+  "section": "6.10 Transformaciones geométricas",
+  "format": "SVG (Vectorial)"
+}

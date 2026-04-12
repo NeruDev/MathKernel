@@ -96,6 +96,9 @@ es solución particular para $f_1(x) + f_2(x)$.
 
 ![Diagrama de flujo para clasificar EDO de segundo orden](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-02/diagrama_clasificacion_edo_segundo_orden.svg)
 
+
+![Diagrama de flujo para clasificar EDO de segundo orden](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-02/diagrama_clasificacion_edo_segundo_orden.svg)
+
 ### Aplicabilidad
 
 El método funciona cuando $f(x)$ es combinación de:

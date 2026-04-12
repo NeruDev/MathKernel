@@ -1,0 +1,15 @@
+{
+  "id": "triangulo_altura_area",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/triangulo_altura_area.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/triangulo_altura_area.svg",
+  "description": "Triángulo con altura marcada ilustrando la fórmula del área",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md",
+    "methods/FUN-04-Metodos-Geometria.md"
+  ],
+  "section": "4.7 Áreas de figuras planas",
+  "format": "SVG (Vectorial)"
+}

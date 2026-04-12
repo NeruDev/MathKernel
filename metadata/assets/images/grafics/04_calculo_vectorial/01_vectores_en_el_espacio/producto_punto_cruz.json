@@ -1,0 +1,14 @@
+{
+  "id": "producto_punto_cruz",
+  "category": "04_calculo_vectorial",
+  "topic": "01_vectores_en_el_espacio",
+  "topic_id": "CV-01",
+  "script_source": "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/producto_punto_cruz.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/producto_punto_cruz.svg",
+  "description": "Producto escalar (punto) y producto vectorial (cruz)",
+  "used_in": [
+    "theory/CV-01-Teoria-Vectores.md"
+  ],
+  "section": "1.3 Producto escalar y vectorial",
+  "format": "SVG (Vectorial)"
+}

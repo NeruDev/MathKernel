@@ -1,0 +1,14 @@
+{
+  "id": "superficie_funcion_dos_variables",
+  "category": "04_calculo_vectorial",
+  "topic": "04_funciones_de_varias_variables",
+  "topic_id": "CV-04",
+  "script_source": "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.svg",
+  "description": "Superficie z=f(x,y), dominio y rango",
+  "used_in": [
+    "theory/CV-04-Teoria-Varias.md"
+  ],
+  "section": "4.1 Funciones de varias variables",
+  "format": "SVG (Vectorial)"
+}

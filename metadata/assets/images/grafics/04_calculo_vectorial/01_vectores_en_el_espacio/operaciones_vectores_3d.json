@@ -1,0 +1,14 @@
+{
+  "id": "operaciones_vectores_3d",
+  "category": "04_calculo_vectorial",
+  "topic": "01_vectores_en_el_espacio",
+  "topic_id": "CV-01",
+  "script_source": "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/operaciones_vectores_3d.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/operaciones_vectores_3d.svg",
+  "description": "Suma de vectores y multiplicación por escalar en el espacio",
+  "used_in": [
+    "theory/CV-01-Teoria-Vectores.md"
+  ],
+  "section": "1.2 Álgebra vectorial y su geometría",
+  "format": "SVG (Vectorial)"
+}

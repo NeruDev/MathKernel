@@ -1,0 +1,14 @@
+{
+  "id": "identidades_pitagoricas",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.svg",
+  "description": "Las tres identidades pitagóricas fundamentales",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.4 Identidades pitagóricas",
+  "format": "SVG (Vectorial)"
+}

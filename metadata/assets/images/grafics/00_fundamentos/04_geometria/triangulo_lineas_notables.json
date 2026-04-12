@@ -1,0 +1,14 @@
+{
+  "id": "triangulo_lineas_notables",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/triangulo_lineas_notables.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/triangulo_lineas_notables.svg",
+  "description": "Las cuatro líneas notables del triángulo: mediana, altura, mediatriz, bisectriz",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.3 Triángulos - Líneas notables",
+  "format": "SVG (Vectorial)"
+}

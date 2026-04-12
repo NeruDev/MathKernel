@@ -1,0 +1,14 @@
+{
+  "id": "sistema_coordenadas_3d",
+  "category": "04_calculo_vectorial",
+  "topic": "01_vectores_en_el_espacio",
+  "topic_id": "CV-01",
+  "script_source": "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/sistema_coordenadas_3d.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/sistema_coordenadas_3d.svg",
+  "description": "Sistema de coordenadas cartesianas 3D con vectores canónicos i, j, k",
+  "used_in": [
+    "theory/CV-01-Teoria-Vectores.md"
+  ],
+  "section": "1.1 Definición de un vector en el espacio",
+  "format": "SVG (Vectorial)"
+}

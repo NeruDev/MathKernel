@@ -24,23 +24,23 @@ def setup_svg_styles():
         'figure.autolayout': False
     })
 
-def generate_manifest(assets_data):
-    """Genera el archivo manifest.json para consumo de IA."""
-    manifest_path = PROJECT_ROOT / "assets" / "images" / "grafics" / "manifest.json"
-    os.makedirs(manifest_path.parent, exist_ok=True)
+def generate_asset_metadata(asset_data):
+    """Genera archivos JSON individuales para cada activo gráfico."""
+    img_path = Path(asset_data["image_path"])
+    # Relativo a assets/images/grafics/
+    rel_parts = img_path.parts[3:-1]
     
-    manifest = {
-        "generated_at": datetime.now().isoformat(),
-        "project": "MathKernel",
-        "description": "Registro de activos visuales matemáticos vectoriales (SVG).",
-        "assets_count": len(assets_data),
-        "assets": assets_data
-    }
+    # Ruta homologada con assets/images/grafics/
+    metadata_root = PROJECT_ROOT / "metadata" / "assets" / "images" / "grafics"
+    dest_dir = metadata_root.joinpath(*rel_parts)
+    dest_dir.mkdir(parents=True, exist_ok=True)
     
-    with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    dest_file = dest_dir / f"{asset_data['id']}.json"
     
-    return manifest_path
+    with open(dest_file, "w", encoding="utf-8") as f:
+        json.dump(asset_data, f, indent=2, ensure_ascii=False)
+    
+    return dest_file
 
 def run_graphic_script(script_path):
     """Importa y ejecuta la función generate() de un script específico."""
@@ -66,7 +66,7 @@ def main():
     graphics_root = PROJECT_ROOT / "scripts" / "grafics"
     assets_root = PROJECT_ROOT / "assets" / "images" / "grafics"
     
-    all_assets = []
+    generated_count = 0
     
     # Recorrer recursivamente scripts/grafics/
     for py_file in graphics_root.rglob("*.py"):
@@ -92,7 +92,7 @@ def main():
             fig.savefig(str(output_path), format='svg', bbox_inches='tight')
             plt.close(fig)
             
-            # Registrar metadatos
+            # Registrar metadatos individuales en la ruta homologada
             asset_info = {
                 "id": metadata.get("name", py_file.stem),
                 "category": rel_path.parts[0],
@@ -105,15 +105,13 @@ def main():
                 "section": metadata.get("section", "N/A"),
                 "format": "SVG (Vectorial)"
             }
-            all_assets.append(asset_info)
+            generate_asset_metadata(asset_info)
+            generated_count += 1
             print(f"    ✅ Generado: {image_name}")
 
-    # Generar manifiesto
-    if all_assets:
-        manifest_file = generate_manifest(all_assets)
+    if generated_count:
         print(f"\n✨ Proceso completado con éxito.")
-        print(f"📦 Assets generados: {len(all_assets)}")
-        print(f"📄 Manifiesto creado en: {manifest_file.relative_to(PROJECT_ROOT)}")
+        print(f"📦 Assets generados y metadatos segmentados: {generated_count}")
     else:
         print("\n⚠️ No se generaron assets.")
 

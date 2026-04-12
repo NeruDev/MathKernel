@@ -1,0 +1,14 @@
+{
+  "id": "ley_cosenos",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/ley_cosenos.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/ley_cosenos.svg",
+  "description": "Ley de cosenos para resolución de triángulos oblicuángulos",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.8 Resolución de triángulos - Ley de cosenos",
+  "format": "SVG (Vectorial)"
+}

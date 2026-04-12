@@ -19,24 +19,35 @@ Construir una base de conocimiento matemática en español que pueda:
 
 Estructura principal:
 
-- `content/`: Teoría matemática pura en Markdown (sin metadatos internos ni enlaces rotos).
-- `metadata/`: Descriptores JSON para consumo IA (conceptos, módulo, orden).
-- `scripts/`: Generación de sitio y utilidades Python.
-- `site_src/`: Plantilla base del sitio (HTML, CSS, JS).
-- `site/`: Salida generada para publicación estática.
-- `assets/`: Recursos gráficos referenciados por la teoría.
-- `tests/`: Pruebas automatizadas de estructura y generación.
+- `content/`: Teoría matemática pura en Markdown.
+- `metadata/`: Capa semántica y de validación para consumo IA.
+    - `content/`: Estructura **espejo** de `content/` con descriptores JSON por tema.
+    - `assets/images/grafics/`: Estructura **espejo** de las imágenes con descriptores JSON por activo.
+    - `schemas/`: Plantillas JSON Schema (`content.schema.json`, `assets.schema.json`) que rigen la integridad de los datos.
+- `assets/`: Recursos gráficos (SVG). **Gestionado con Git LFS** para optimizar el peso del repositorio.
+- `scripts/`: Orquestadores de generación, enlazado y validación (Python).
+- `site_src/`: Código fuente de la interfaz web (HTML/CSS/JS).
+- `site/`: Artefacto final generado para despliegue estático.
+
+## Gestión de activos pesados (Git LFS)
+
+Este repositorio utiliza **Git LFS (Large File Storage)** para gestionar los archivos gráficos en `assets/images/grafics/`. Esto permite mantener el historial de Git ligero al almacenar los binarios grandes fuera del árbol de objetos principal.
+
+Para clonar este repositorio correctamente, asegúrate de tener Git LFS instalado:
+```powershell
+git lfs install
+git clone <url-del-repo>
+```
 
 ## Enfoque dual: humano + IA
 
 La **capa humana** se apoya en archivos Markdown limpios en `content/`, renderizados con MathJax en un sitio estático.
 
-La **capa IA** se apoya en archivos JSON en `metadata/` que siguen un esquema estricto:
-- `id`: Identificador único (nombre del archivo).
-- `title`: Título formal del tema.
-- `module`: Módulo de pertenencia.
-- `order`: Orden jerárquico.
-- `concepts`: Lista de términos matemáticos clave.
+La **capa IA** se apoya en una arquitectura de **Metadatos Espejo**:
+- **Consistencia:** Cada archivo de contenido o imagen tiene un archivo JSON homólogo en la misma ruta relativa dentro de `metadata/`.
+- **Validación:** Todos los metadatos deben cumplir estrictamente con los esquemas definidos en `metadata/schemas/`.
+- **Campos de Teoría:** `id`, `title`, `module`, `order`, `concepts`.
+- **Campos de Activos:** `id`, `topic_id`, `description`, `section`, `image_path`.
 
 ## Flujo local con entorno virtual
 
@@ -49,9 +60,16 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2. Generar el sitio
+### 2. Validar y Generar
 ```powershell
+# Valida estructura y genera el sitio web
 python scripts/generate_site.py
+
+# Genera nuevos activos y sus metadatos espejo
+python scripts/generate_assets.py
+
+# Enlaza automáticamente imágenes en el contenido
+python scripts/link_assets_to_content.py
 ```
 
 ## Publicación en GitHub Pages

@@ -1,0 +1,14 @@
+{
+  "id": "diagrama_decision_laplace",
+  "category": "05_ecuaciones_diferenciales",
+  "topic": "ED-04",
+  "topic_id": "ED-04",
+  "script_source": "scripts/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.py",
+  "image_path": "assets/images/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.svg",
+  "description": "Diagrama de flujo para métodos de Transformada de Laplace",
+  "used_in": [
+    "methods/ED-04-Metodos-Transformada-Laplace.md"
+  ],
+  "section": "Diagrama de Decisión",
+  "format": "SVG (Vectorial)"
+}

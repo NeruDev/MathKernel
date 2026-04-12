@@ -1,0 +1,14 @@
+{
+  "id": "cuadrilateros_propiedades",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/cuadrilateros_propiedades.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_propiedades.svg",
+  "description": "Propiedades de paralelogramo, rectángulo, rombo, cuadrado",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.4",
+  "format": "SVG (Vectorial)"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "triangulos_congruencia",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/triangulos_congruencia.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/triangulos_congruencia.svg",
+  "description": "Criterios de congruencia: LLL, LAL, ALA, AAL",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.3",
+  "format": "SVG (Vectorial)"
+}

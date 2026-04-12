@@ -1,0 +1,14 @@
+{
+  "id": "graficas_seno_coseno",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.svg",
+  "description": "Gráficas de las funciones seno y coseno",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.11 Gráficas de funciones trigonométricas",
+  "format": "SVG (Vectorial)"
+}

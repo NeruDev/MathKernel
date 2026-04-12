@@ -1,0 +1,14 @@
+{
+  "id": "coordenadas_cilindricas",
+  "category": "04_calculo_vectorial",
+  "topic": "05_integracion_multiple",
+  "topic_id": "CV-05",
+  "script_source": "scripts/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.svg",
+  "description": "Sistema de coordenadas cilíndricas",
+  "used_in": [
+    "theory/CV-05-Teoria-Integracion.md"
+  ],
+  "section": "5.4 Coordenadas cilíndricas",
+  "format": "SVG (Vectorial)"
+}

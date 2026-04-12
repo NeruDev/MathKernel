@@ -1,0 +1,14 @@
+{
+  "id": "plano_cartesiano",
+  "category": "00_fundamentos",
+  "topic": "06_geometria_analitica",
+  "topic_id": "FUN-06",
+  "script_source": "scripts/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.py",
+  "image_path": "assets/images/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.svg",
+  "description": "Sistema de coordenadas cartesianas con cuadrantes",
+  "used_in": [
+    "theory/FUN-06-Teoria-Geometria-Analitica.md"
+  ],
+  "section": "6.1 Sistema de coordenadas cartesianas",
+  "format": "SVG (Vectorial)"
+}

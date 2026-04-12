@@ -54,6 +54,9 @@ $$M(x)dx + N(y)dy = 0$$
 
 ![Diagrama de flujo para identificar tipo de EDO de primer orden](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.svg)
 
+
+![Diagrama de flujo para identificar tipo de EDO de primer orden](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.svg)
+
 1. Separar variables: $\frac{dy}{h(y)} = g(x)dx$
 2. Integrar ambos lados: $\int \frac{dy}{h(y)} = \int g(x)dx + C$
 

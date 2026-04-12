@@ -1,0 +1,14 @@
+{
+  "id": "transformaciones_trig",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.svg",
+  "description": "Transformaciones de funciones trigonométricas: amplitud, periodo, desfase",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.11 Gráficas de funciones trigonométricas",
+  "format": "SVG (Vectorial)"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "circunferencia_elementos",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/circunferencia_elementos.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/circunferencia_elementos.svg",
+  "description": "Elementos principales de la circunferencia: radio, diámetro, cuerda, tangente",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.6 Circunferencia y círculo",
+  "format": "SVG (Vectorial)"
+}

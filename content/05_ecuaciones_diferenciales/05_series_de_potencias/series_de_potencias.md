@@ -227,3 +227,6 @@ $$L_0(x) = 1, \quad L_1(x) = 1-x, \quad L_2(x) = \frac{1}{2}(x^2 - 4x + 2)$$
 
 
 ![Diagrama de flujo para método de series de potencias](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.svg)
+
+
+![Diagrama de flujo para método de series de potencias](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.svg)

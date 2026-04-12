@@ -4,6 +4,9 @@
 
 ![Regiones Tipo I y Tipo II](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/regiones_integracion_doble.svg)
 
+
+![Regiones Tipo I y Tipo II](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/regiones_integracion_doble.svg)
+
 ### Definición mediante sumas de Riemann
 
 Para $f(x, y)$ definida en el rectángulo $R = [a, b] \times [c, d]$:
@@ -99,6 +102,9 @@ $$\iint_D f(x, y)\, dA = \int_\alpha^\beta \int_{r_1(\theta)}^{r_2(\theta)} f(r\
 
 ![Sistema de coordenadas cilíndricas](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.svg)
 
+
+![Sistema de coordenadas cilíndricas](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.svg)
+
 ### Área
 
 $$A = \iint_D dA$$
@@ -133,6 +139,9 @@ $$\bar{x}_g = \sqrt{\frac{I_y}{m}}, \quad \bar{y}_g = \sqrt{\frac{I_x}{m}}$$
 ---
 
 ## 5.5 Integrales triples
+
+
+![Sistema de coordenadas esféricas](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_esfericas.svg)
 
 
 ![Sistema de coordenadas esféricas](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_esfericas.svg)
@@ -203,6 +212,9 @@ $$\iiint_E f(x,y,z)\, dV = \iiint f(r\cos\theta, r\sin\theta, z)\, r\, dr\, d\th
 ---
 
 ## 5.7 Coordenadas esféricas
+
+
+![Teoremas de Green, Stokes y Divergencia](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.svg)
 
 
 ![Teoremas de Green, Stokes y Divergencia](../../../assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.svg)

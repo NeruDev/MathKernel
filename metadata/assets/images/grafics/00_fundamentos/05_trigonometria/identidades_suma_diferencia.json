@@ -1,0 +1,14 @@
+{
+  "id": "identidades_suma_diferencia",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.svg",
+  "description": "Identidades de suma y diferencia de ángulos",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.5 Identidades de suma y diferencia de ángulos",
+  "format": "SVG (Vectorial)"
+}

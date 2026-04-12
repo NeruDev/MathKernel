@@ -1,0 +1,14 @@
+{
+  "id": "triangulo_razones_trig",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.svg",
+  "description": "Razones trigonométricas en triángulo rectángulo: SOH-CAH-TOA",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.2 Razones trigonométricas",
+  "format": "SVG (Vectorial)"
+}

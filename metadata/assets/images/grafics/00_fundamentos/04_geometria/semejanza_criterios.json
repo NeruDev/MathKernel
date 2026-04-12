@@ -1,0 +1,14 @@
+{
+  "id": "semejanza_criterios",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/semejanza_criterios.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/semejanza_criterios.svg",
+  "description": "Criterios de semejanza: AA, LAL, LLL",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md"
+  ],
+  "section": "4.8",
+  "format": "SVG (Vectorial)"
+}

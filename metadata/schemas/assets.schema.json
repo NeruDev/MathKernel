@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Asset Metadata Schema",
+  "description": "Esquema de validación para los metadatos individuales de imágenes matemáticas (SVG).",
+  "type": "object",
+  "required": [
+    "id",
+    "category",
+    "topic",
+    "topic_id",
+    "script_source",
+    "image_path",
+    "description",
+    "used_in",
+    "section",
+    "format"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "category": { "type": "string" },
+    "topic": { "type": "string" },
+    "topic_id": { "type": "string" },
+    "script_source": { "type": "string" },
+    "image_path": { "type": "string" },
+    "description": { "type": "string" },
+    "used_in": { "type": "array", "items": { "type": "string" } },
+    "section": { "type": "string" },
+    "format": { "type": "string", "enum": ["SVG (Vectorial)"] }
+  }
+}

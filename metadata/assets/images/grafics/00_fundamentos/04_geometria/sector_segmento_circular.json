@@ -1,0 +1,15 @@
+{
+  "id": "sector_segmento_circular",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/sector_segmento_circular.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/sector_segmento_circular.svg",
+  "description": "Sector circular y segmento circular con fórmulas",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md",
+    "problems/FUN-04-Problemas.md"
+  ],
+  "section": "4.6",
+  "format": "SVG (Vectorial)"
+}

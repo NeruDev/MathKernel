@@ -1,0 +1,14 @@
+{
+  "id": "funciones_inversas",
+  "category": "00_fundamentos",
+  "topic": "05_trigonometria",
+  "topic_id": "FUN-05",
+  "script_source": "scripts/grafics/00_fundamentos/05_trigonometria/funciones_inversas.py",
+  "image_path": "assets/images/grafics/00_fundamentos/05_trigonometria/funciones_inversas.svg",
+  "description": "Funciones trigonométricas inversas: arcsen, arccos, arctan",
+  "used_in": [
+    "theory/FUN-05-Teoria-Trigonometria.md"
+  ],
+  "section": "5.10 Funciones trigonométricas inversas",
+  "format": "SVG (Vectorial)"
+}

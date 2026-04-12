@@ -1,0 +1,15 @@
+{
+  "id": "trapecio_elementos",
+  "category": "00_fundamentos",
+  "topic": "04_geometria",
+  "topic_id": "FUN-04",
+  "script_source": "scripts/grafics/00_fundamentos/04_geometria/trapecio_elementos.py",
+  "image_path": "assets/images/grafics/00_fundamentos/04_geometria/trapecio_elementos.svg",
+  "description": "Trapecio con bases, altura, mediana y fórmulas",
+  "used_in": [
+    "theory/FUN-04-Teoria-Geometria.md",
+    "problems/FUN-04-Problemas.md"
+  ],
+  "section": "4.4",
+  "format": "SVG (Vectorial)"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "longitud_arco",
+  "category": "04_calculo_vectorial",
+  "topic": "03_funciones_vectoriales",
+  "topic_id": "CV-03",
+  "script_source": "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.py",
+  "image_path": "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.svg",
+  "description": "Longitud de arco como parámetro y reparametrización",
+  "used_in": [
+    "theory/CV-03-Teoria-Vectoriales.md"
+  ],
+  "section": "3.5 Longitud de arco",
+  "format": "SVG (Vectorial)"
+}
