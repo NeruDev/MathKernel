@@ -18,9 +18,15 @@ jobs:
       contents: read
 
     steps:
-      # 1. Checkout
+      # 1. Checkout con LFS habilitado
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      # 1.1 Asegurar que los archivos LFS se descarguen realmente
+      - name: Checkout LFS objects
+        run: git lfs checkout
 
       # 2. Configurar Python
       - name: Set up Python
@@ -43,9 +49,11 @@ jobs:
       - name: Validate structure
         run: python scripts/validate_structure.py
 
-      # 5. Generar sitio
-      - name: Generate site
-        run: python scripts/generate_site.py
+      # 5. Vincular y Generar sitio
+      - name: Link and Generate site
+        run: |
+          python scripts/link_assets_to_content.py
+          python scripts/generate_site.py
 
       # 6. Crear archivo .nojekyll (evita que GitHub use Jekyll)
       - name: Disable Jekyll
