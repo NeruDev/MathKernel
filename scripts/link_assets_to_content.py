@@ -73,7 +73,14 @@ def main():
         img_markdown = f"\n\n![{asset['description']}]({rel_img_path})\n"
         
         # Leer el contenido actual
-        lines = read_text(md_full_path).splitlines(keepends=True)
+        raw_content = read_text(md_full_path)
+        
+        # Evitar duplicados si la ruta ya está presente
+        if rel_img_path in raw_content:
+            log_info(f"Imagen '{asset['id']}' ya vinculada en {md_rel_path}. Saltando.")
+            continue
+
+        lines = raw_content.splitlines(keepends=True)
 
         # Buscar la sección
         section_id = asset["section"].split(" ")[0] # Tomar solo el número ej: "4.2"

@@ -68,7 +68,7 @@ def sandbox_project(tmp_path, repo_root):
     for site_file in ("index.html", "styles.css", "scripts.js", "template_page.html"):
         shutil.copy2(repo_root / "site_src" / site_file, tmp_path / "site_src" / site_file)
 
-    for script_file in ("generate_site.py", "validate_structure.py"):
+    for script_file in ("generate_site.py", "validate_structure.py", "link_assets_to_content.py", "generate_assets.py", "templates.py"):
         shutil.copy2(repo_root / "scripts" / script_file, tmp_path / "scripts" / script_file)
 
     shutil.copytree(repo_root / "utils", tmp_path / "utils")
