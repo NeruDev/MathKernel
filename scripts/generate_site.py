@@ -1,34 +1,35 @@
-import json
 import os
 import re
-import shutil
 import subprocess
 import sys
+from pathlib import Path
 
-import markdown
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
-CONTENT_DIR = "content"
-SOURCE_DIR = "site_src"
-OUTPUT_DIR = "site"
-PAGES_DIR = os.path.join(OUTPUT_DIR, "pages")
-METADATA_DIR = os.path.join("metadata", "content")
+from utils.io import copy_dir, ensure_dir, read_text, remove_dir, write_text
+from utils.links import detect_broken_internal_links
+from utils.logging import log_error, log_info, log_warn
+from utils.markdown import convert_md_to_html
+from utils.metadata import extract_metadata_fields, load_metadata, validate_required_fields
+from utils.pathing import build_relative_prefix, compute_depth, get_relative_html_path
 
-
-def log_info(msg):
-    print(f"[INFO] {msg}")
-
-
-def log_warn(msg):
-    print(f"[WARN] {msg}")
-
-
-def log_error(msg):
-    print(f"[ERROR] {msg}")
+CONTENT_DIR = PROJECT_ROOT / "content"
+SOURCE_DIR = PROJECT_ROOT / "site_src"
+OUTPUT_DIR = PROJECT_ROOT / "site"
+PAGES_DIR = OUTPUT_DIR / "pages"
+METADATA_DIR = PROJECT_ROOT / "metadata" / "content"
+TEMPLATE_PATH = SOURCE_DIR / "template_page.html"
 
 
 def run_structure_validation():
-    validator_path = os.path.join("scripts", "validate_structure.py")
-    result = subprocess.run([sys.executable, validator_path], check=False)
+    validator_path = PROJECT_ROOT / "scripts" / "validate_structure.py"
+    result = subprocess.run(
+        [sys.executable, str(validator_path)],
+        check=False,
+        cwd=str(PROJECT_ROOT),
+    )
 
     if result.returncode != 0:
         log_error("Validación estructural falló. Build detenido.")
@@ -38,130 +39,65 @@ def run_structure_validation():
 
 
 def ensure_dirs():
-    os.makedirs(PAGES_DIR, exist_ok=True)
+    ensure_dir(PAGES_DIR)
 
 
 def clean_output_dir():
-    if os.path.exists(OUTPUT_DIR):
-        shutil.rmtree(OUTPUT_DIR)
+    if OUTPUT_DIR.exists():
+        remove_dir(OUTPUT_DIR)
         log_info("Contenido previo de site/ eliminado")
 
 
 def copy_static_assets():
-    if not os.path.exists(SOURCE_DIR):
+    if not SOURCE_DIR.exists():
         raise Exception(f"No existe la carpeta fuente: {SOURCE_DIR}")
 
-    shutil.copytree(SOURCE_DIR, OUTPUT_DIR)
+    copy_dir(SOURCE_DIR, OUTPUT_DIR)
     log_info("Archivos base copiados desde site_src/")
 
-    ASSETS_DIR = "assets"
-    if os.path.exists(ASSETS_DIR):
-        shutil.copytree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR), dirs_exist_ok=True)
-        log_info(f"Carpeta {ASSETS_DIR}/ copiada a {OUTPUT_DIR}/{ASSETS_DIR}/")
-
-
-def convert_md_to_html(md_path, depth):
-    with open(md_path, "r", encoding="utf-8") as f:
-        md_text = f.read()
-
-    html = markdown.markdown(md_text, extensions=["tables", "fenced_code", "toc"])
-
-    # Corregir enlaces .md (incluyendo fragmentos #)
-    link_replacements = len(re.findall(r'href="[^"]+\.md(?:#[^"]*)?"', html))
-    html = re.sub(r'href="([^"]+)\.md(#[^"]*)?"', r'href="\1.html\2"', html)
-
-    # NOTE: Markdown files already contain relative paths to assets/ like ../../../assets/
-    # Since the structure in site/pages/ mirrors content/, these relative paths remain valid
-    # as long as the assets/ folder is copied to the root of site/.
-    # prefix = "../" * depth
-    # html = html.replace("assets/", f"{prefix}assets/")
-
-    return html, link_replacements
+    assets_dir = PROJECT_ROOT / "assets"
+    if assets_dir.exists():
+        copy_dir(assets_dir, OUTPUT_DIR / "assets", merge=True)
+        log_info("Carpeta assets/ copiada a site/assets/")
 
 
 def wrap_html(title, body, depth=1):
-    prefix = "../" * depth
-
-    return f"""<!DOCTYPE html>
-<html lang="es" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} | MathKernel</title>
-
-    <link rel="stylesheet" href="{prefix}styles.css">
-    <script defer src="{prefix}scripts.js"></script>
-        <script>
-            window.MathJax = {{
-                tex: {{
-                    inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
-                    displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
-                    processEscapes: true
-                }},
-                startup: {{
-                    typeset: true
-                }}
-            }};
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
-
-<body>
-<div class="container">
-
-<header>
-    <h1>{title}</h1>
-    <button id="theme-toggle" class="btn-theme">🌓</button>
-</header>
-
-<nav>
-    <a href="{prefix}index.html" class="nav-btn">Inicio</a>
-    <a href="{prefix}pages/index.html" class="nav-btn">Contenidos</a>
-    <a href="{prefix}glossary.html" class="nav-btn">Glosario</a>
-</nav>
-
-<main id="md-content">
-{body}
-</main>
-
-</div>
-</body>
-</html>"""
+    prefix = build_relative_prefix(depth)
+    html_template = read_text(TEMPLATE_PATH)
+    return (
+        html_template.replace("{{TITLE}}", title)
+        .replace("{{BODY}}", body)
+        .replace("{{PREFIX}}", prefix)
+    )
 
 
 def process_markdown():
-    if not os.path.exists(CONTENT_DIR):
+    if not CONTENT_DIR.exists():
         raise Exception("No existe la carpeta content/")
 
     generated_pages = []
     id_to_path = {}
 
-    for root, _, files in os.walk(CONTENT_DIR):
-        for file in files:
-            if not file.endswith(".md"):
-                continue
+    for md_path in sorted(CONTENT_DIR.rglob("*.md")):
+        md_base = md_path.stem
+        rel_path_html = get_relative_html_path(md_path, CONTENT_DIR)
+        out_path = PAGES_DIR / rel_path_html
 
-            md_path = os.path.join(root, file)
-            md_base = os.path.splitext(file)[0]
-            rel_path = os.path.relpath(md_path, CONTENT_DIR)
-            rel_path_html = rel_path.replace(".md", ".html")
-            out_path = os.path.join(PAGES_DIR, rel_path_html)
+        ensure_dir(out_path.parent)
 
-            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        depth = compute_depth(rel_path_html)
+        md_text = read_text(md_path)
+        html_content, conversions = convert_md_to_html(md_text)
+        display_title = md_base.replace("_", " ").title()
 
-            depth = rel_path_html.count(os.sep) + 1
-            html_content, conversions = convert_md_to_html(md_path, depth)
-            display_title = file.replace(".md", "").replace("_", " ").title()
+        write_text(out_path, wrap_html(display_title, html_content, depth))
 
-            with open(out_path, "w", encoding="utf-8") as f:
-                f.write(wrap_html(display_title, html_content, depth))
-
-            generated_pages.append(out_path)
-            id_to_path[md_base] = rel_path_html
-            log_info(f"Archivo procesado: {md_path}")
-            log_info(f"Conversión realizada: {md_path} -> {out_path}")
-            if conversions:
-                log_info(f"Enlaces .md corregidos: {conversions} en {out_path}")
+        generated_pages.append(str(out_path))
+        id_to_path[md_base] = rel_path_html.replace(os.sep, "/")
+        log_info(f"Archivo procesado: {md_path}")
+        log_info(f"Conversión realizada: {md_path} -> {out_path}")
+        if conversions:
+            log_info(f"Enlaces .md corregidos: {conversions} en {out_path}")
 
     return generated_pages, id_to_path
 
@@ -169,75 +105,64 @@ def process_markdown():
 def build_glossary():
     glossary_html = "<h1>Glosario de Conceptos</h1><ul>"
 
-    if os.path.exists(METADATA_DIR):
-        for root, _, files in os.walk(METADATA_DIR):
-            for file in sorted(files):
-                if not file.endswith(".json") or file == "schema.json":
-                    continue
+    if METADATA_DIR.exists():
+        for path in sorted(METADATA_DIR.rglob("*.json")):
+            if path.name == "schema.json":
+                continue
 
-                path = os.path.join(root, file)
-                try:
-                    with open(path, encoding="utf-8") as f:
-                        data = json.load(f)
-                        for concept in data.get("concepts", []):
-                            glossary_html += f"<li>{concept}</li>"
-                except Exception as e:
-                    log_warn(f"Error leyendo metadata {path}: {e}")
+            try:
+                data = load_metadata(path)
+                fields = extract_metadata_fields(data)
+                for concept in fields["concepts"]:
+                    glossary_html += f"<li>{concept}</li>"
+            except Exception as exc:
+                log_warn(f"Error leyendo metadata {path}: {exc}")
 
     glossary_html += "</ul>"
 
-    out_path = os.path.join(OUTPUT_DIR, "glossary.html")
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(wrap_html("Glosario", glossary_html, depth=0))
+    out_path = OUTPUT_DIR / "glossary.html"
+    write_text(out_path, wrap_html("Glosario", glossary_html, depth=0))
 
     log_info(f"Conversión realizada: glosario -> {out_path}")
 
 
 def generate_metadata_index(id_to_path, target_path, depth=1):
+    target_path = Path(target_path)
     metadata_items = []
 
-    if not os.path.exists(METADATA_DIR):
+    if not METADATA_DIR.exists():
         log_warn("No existe metadata/, no se puede construir índice por metadata")
         return
 
-    for root, _, files in os.walk(METADATA_DIR):
-        for file in files:
-            if not file.endswith(".json") or file == "schema.json":
+    for path in sorted(METADATA_DIR.rglob("*.json")):
+        if path.name == "schema.json":
+            continue
+
+        try:
+            data = load_metadata(path)
+            missing = validate_required_fields(data, ["id"])
+            if missing:
+                log_warn(f"Metadata inválida en {path}: faltan campos {missing}")
                 continue
 
-            path = os.path.join(root, file)
-            try:
-                with open(path, "r", encoding="utf-8") as metadata_file:
-                    data = json.load(metadata_file)
+            md_id = data["id"]
+            if md_id in id_to_path:
+                rel_link = id_to_path[md_id].replace(os.sep, "/")
+                page_link = f"./pages/{rel_link}" if depth == 0 else f"./{rel_link}"
+                fields = extract_metadata_fields(data)
 
-                md_id = data["id"]
-                if md_id in id_to_path:
-                    # Link prefix relative to the target_path
-                    prefix = "./" if depth == 0 else "./pages/"
-                    if depth == 1:
-                        prefix = "./"
-                    
-                    # If we are at the root (depth=0), we link to pages/
-                    # If we are at pages/ (depth=1), we link to ./ (current dir)
-                    
-                    rel_link = id_to_path[md_id].replace(os.sep, "/")
-                    if depth == 0:
-                        page_link = f"./pages/{rel_link}"
-                    else:
-                        page_link = f"./{rel_link}"
-                    
-                    metadata_items.append(
-                        {
-                            "title": data.get("title", data["id"]),
-                            "module": data.get("module", "zz_sin_modulo"),
-                            "order": data.get("order", 9999),
-                            "link": page_link,
-                        }
-                    )
-                else:
-                    log_warn(f"ID {md_id} de metadata no encontrado en archivos .md")
-            except Exception as exc:
-                log_warn(f"No se pudo indexar {path}: {exc}")
+                metadata_items.append(
+                    {
+                        "title": fields["title"] or md_id,
+                        "module": fields["module"] or "zz_sin_modulo",
+                        "order": fields["order"] if isinstance(fields["order"], int) else 9999,
+                        "link": page_link,
+                    }
+                )
+            else:
+                log_warn(f"ID {md_id} de metadata no encontrado en archivos .md")
+        except Exception as exc:
+            log_warn(f"No se pudo indexar {path}: {exc}")
 
     metadata_items.sort(key=lambda item: (item["module"], item["order"]))
 
@@ -263,37 +188,15 @@ def generate_metadata_index(id_to_path, target_path, depth=1):
     {list_items}
     """
 
-    with open(target_path, "w", encoding="utf-8") as index_file:
-        index_file.write(wrap_html("Índice de Contenidos", index_body, depth=depth))
+    write_text(target_path, wrap_html("Índice de Contenidos", index_body, depth=depth))
 
     log_info(f"Índice generado en: {target_path}")
 
 
-def detect_broken_internal_links(generated_pages):
-    href_pattern = re.compile(r'href="([^"]+)"')
-
-    for html_path in generated_pages:
-        with open(html_path, "r", encoding="utf-8") as html_file:
-            html_content = html_file.read()
-
-        links = href_pattern.findall(html_content)
-
-        for link in links:
-            if (
-                link.startswith("http://")
-                or link.startswith("https://")
-                or link.startswith("#")
-                or link.startswith("mailto:")
-            ):
-                continue
-
-            target = link.split("#", 1)[0]
-            if not target or target.endswith(".css") or target.endswith(".js"):
-                continue
-
-            target_path = os.path.normpath(os.path.join(os.path.dirname(html_path), target))
-            if not os.path.exists(target_path):
-                log_warn(f"Enlace interno roto: {link} en {html_path}")
+def validate_internal_links(generated_pages):
+    broken_links = detect_broken_internal_links(generated_pages)
+    for html_path, link in broken_links:
+        log_warn(f"Enlace interno roto: {link} en {html_path}")
 
 
 if __name__ == "__main__":
@@ -307,17 +210,17 @@ if __name__ == "__main__":
     pages, id_to_path = process_markdown()
     
     # Generate index in /site/index.html (home)
-    generate_metadata_index(id_to_path, os.path.join(OUTPUT_DIR, "index.html"), depth=0)
+    generate_metadata_index(id_to_path, OUTPUT_DIR / "index.html", depth=0)
     
     # Generate index in /site/pages/index.html
-    generate_metadata_index(id_to_path, os.path.join(PAGES_DIR, "index.html"), depth=1)
+    generate_metadata_index(id_to_path, PAGES_DIR / "index.html", depth=1)
     
-    pages.append(os.path.join(OUTPUT_DIR, "index.html"))
-    pages.append(os.path.join(PAGES_DIR, "index.html"))
+    pages.append(str(OUTPUT_DIR / "index.html"))
+    pages.append(str(PAGES_DIR / "index.html"))
 
     build_glossary()
-    pages.append(os.path.join(OUTPUT_DIR, "glossary.html"))
+    pages.append(str(OUTPUT_DIR / "glossary.html"))
 
-    detect_broken_internal_links(pages)
+    validate_internal_links(pages)
 
     log_info("Sitio generado correctamente en /site")

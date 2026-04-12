@@ -1,9 +1,18 @@
 import json
 import os
+import sys
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from utils.io import read_text, write_text
+from utils.logging import log_error, log_info, log_warn
+from utils.metadata import load_metadata
+from utils.pathing import build_relative_prefix, compute_depth
+
 # Configuración de rutas
-PROJECT_ROOT = Path(__file__).parent.parent
 # Ruta homologada: metadata/assets/images/grafics
 METADATA_ASSETS_ROOT = PROJECT_ROOT / "metadata" / "assets" / "images" / "grafics"
 CONTENT_ROOT = PROJECT_ROOT / "content"
@@ -28,36 +37,35 @@ def get_relative_image_path(md_file_rel_path, image_path):
     """Calcula la ruta relativa desde el archivo MD a la imagen."""
     # El archivo MD está en content/<subpath>
     # La imagen está en assets/images/grafics/<subpath>
-    depth = len(Path(md_file_rel_path).parts)
-    prefix = "../" * depth
+    depth = compute_depth(md_file_rel_path)
+    prefix = build_relative_prefix(depth)
     return f"{prefix}{image_path}"
 
 def main():
     if not METADATA_ASSETS_ROOT.exists():
-        print(f"❌ No se encontró la carpeta de metadatos de activos en {METADATA_ASSETS_ROOT}")
+        log_error(f"No se encontro la carpeta de metadatos de activos en {METADATA_ASSETS_ROOT}")
         return
 
     # Buscar todos los archivos .json recursivamente
     asset_files = list(METADATA_ASSETS_ROOT.rglob("*.json"))
     
     if not asset_files:
-        print("⚠️ No se encontraron archivos de metadatos de activos.")
+        log_warn("No se encontraron archivos de metadatos de activos.")
         return
 
     for json_path in asset_files:
-        with open(json_path, "r", encoding="utf-8") as f:
-            asset = json.load(f)
+        asset = load_metadata(json_path)
 
         topic_id = asset.get("topic_id")
         if not topic_id or topic_id not in TOPIC_TO_FILE:
-            print(f"⚠️ No hay mapeo para topic_id: {topic_id} en {json_path.name}")
+            log_warn(f"No hay mapeo para topic_id: {topic_id} en {json_path.name}")
             continue
 
         md_rel_path = TOPIC_TO_FILE[topic_id]
         md_full_path = CONTENT_ROOT / md_rel_path
         
         if not md_full_path.exists():
-            print(f"❌ No se encontró el archivo: {md_full_path}")
+            log_error(f"No se encontro el archivo: {md_full_path}")
             continue
 
         # Preparar el link de la imagen
@@ -65,8 +73,7 @@ def main():
         img_markdown = f"\n\n![{asset['description']}]({rel_img_path})\n"
         
         # Leer el contenido actual
-        with open(md_full_path, "r", encoding="utf-8") as f:
-            lines = f.readlines()
+        lines = read_text(md_full_path).splitlines(keepends=True)
 
         # Buscar la sección
         section_id = asset["section"].split(" ")[0] # Tomar solo el número ej: "4.2"
@@ -81,16 +88,15 @@ def main():
                 if not section_found:
                     new_lines.append(img_markdown)
                     section_found = True
-                    print(f"✅ Insertada imagen '{asset['id']}' en {md_rel_path} (sección {section_id})")
+                    log_info(f"Insertada imagen '{asset['id']}' en {md_rel_path} (seccion {section_id})")
 
         if not section_found:
             # Si no se encontró la sección específica, añadir al final
             new_lines.append(img_markdown)
-            print(f"ℹ️ Sección {section_id} no encontrada en {md_rel_path}. Añadiendo imagen '{asset['id']}' al final.")
+            log_warn(f"Seccion {section_id} no encontrada en {md_rel_path}. Anadiendo imagen '{asset['id']}' al final.")
 
         # Guardar cambios
-        with open(md_full_path, "w", encoding="utf-8") as f:
-            f.writelines(new_lines)
+        write_text(md_full_path, "".join(new_lines))
 
 if __name__ == "__main__":
     main()

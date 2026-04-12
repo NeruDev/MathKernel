@@ -1,17 +1,24 @@
-import json
 import os
 import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from utils.logging import log_error, log_info
+from utils.metadata import load_metadata
 
 # Configuración de directorios
-CONTENT_DIR = "content"
-ASSETS_DIR = "assets/images/grafics"
-METADATA_CONTENT_DIR = os.path.join("metadata", "content")
-METADATA_ASSETS_DIR = os.path.join("metadata", "assets", "images", "grafics")
+CONTENT_DIR = PROJECT_ROOT / "content"
+ASSETS_DIR = PROJECT_ROOT / "assets" / "images" / "grafics"
+METADATA_CONTENT_DIR = PROJECT_ROOT / "metadata" / "content"
+METADATA_ASSETS_DIR = PROJECT_ROOT / "metadata" / "assets" / "images" / "grafics"
 
 # Esquemas de validación
-SCHEMAS_DIR = os.path.join("metadata", "schemas")
-CONTENT_SCHEMA_PATH = os.path.join(SCHEMAS_DIR, "content.schema.json")
-ASSETS_SCHEMA_PATH = os.path.join(SCHEMAS_DIR, "assets.schema.json")
+SCHEMAS_DIR = PROJECT_ROOT / "metadata" / "schemas"
+CONTENT_SCHEMA_PATH = SCHEMAS_DIR / "content.schema.json"
+ASSETS_SCHEMA_PATH = SCHEMAS_DIR / "assets.schema.json"
 
 def find_files(base_dir: str, extension: str):
     paths = []
@@ -28,8 +35,7 @@ def find_files(base_dir: str, extension: str):
 def load_schema(path):
     if not os.path.exists(path):
         return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return load_metadata(path)
 
 def validate_against_schema(data, schema, file_path):
     errors = []
@@ -73,9 +79,8 @@ def validate_theory_structure():
         if rel_base not in md_by_rel:
             errors.append(f"[ERROR] Metadata sin contenido: {json_path} (esperado {CONTENT_DIR}/{rel_base}.md)")
         else:
-            with open(json_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                errors.extend(validate_against_schema(data, schema, json_path))
+            data = load_metadata(json_path)
+            errors.extend(validate_against_schema(data, schema, json_path))
 
     return errors
 
@@ -98,9 +103,8 @@ def validate_assets_structure():
         if rel_base not in img_by_rel:
             errors.append(f"[ERROR] Metadata de activo sin imagen: {json_path} (esperado {ASSETS_DIR}/{rel_base}.svg)")
         else:
-            with open(json_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                errors.extend(validate_against_schema(data, schema, json_path))
+            data = load_metadata(json_path)
+            errors.extend(validate_against_schema(data, schema, json_path))
 
     return errors
 
@@ -114,7 +118,7 @@ def main():
         except:
             pass
 
-    print("Iniciando validacion de estructura completa...")
+    log_info("Iniciando validacion de estructura completa...")
     
     theory_errors = validate_theory_structure()
     assets_errors = validate_assets_structure()
@@ -122,12 +126,12 @@ def main():
     all_errors = theory_errors + assets_errors
 
     if all_errors:
-        print(f"\nSe encontraron {len(all_errors)} errores de validacion:")
+        log_error(f"Se encontraron {len(all_errors)} errores de validacion:")
         for err in all_errors:
-            print(err)
+            log_error(err)
         return 1
 
-    print("\nEstructura y esquemas validados correctamente.")
+    log_info("Estructura y esquemas validados correctamente.")
     return 0
 
 if __name__ == "__main__":

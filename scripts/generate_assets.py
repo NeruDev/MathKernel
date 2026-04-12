@@ -2,7 +2,6 @@ import os
 import sys
 import json
 import importlib.util
-from datetime import datetime
 from pathlib import Path
 import matplotlib.pyplot as plt
 
@@ -12,6 +11,8 @@ sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 
 import templates
+from utils.io import ensure_dir
+from utils.logging import log_error, log_info, log_warn
 
 def setup_svg_styles():
     """Configura estilos globales para salida SVG de alta calidad."""
@@ -55,12 +56,12 @@ def run_graphic_script(script_path):
             metadata = getattr(module, 'METADATA', {})
             return fig, metadata
     except Exception as e:
-        print(f"❌ Error ejecutando {script_path.name}: {e}")
+        log_error(f"Error ejecutando {script_path.name}: {e}")
     
     return None, None
 
 def main():
-    print("🚀 Iniciando generación de assets vectoriales (SVG)...")
+    log_info("Iniciando generacion de assets vectoriales (SVG)...")
     setup_svg_styles()
     
     graphics_root = PROJECT_ROOT / "scripts" / "grafics"
@@ -74,12 +75,12 @@ def main():
         if py_file.name in ["templates.py", "__init__.py"] or py_file.parent.name == "grafics":
             continue
             
-        print(f"  - Procesando: {py_file.relative_to(graphics_root)}")
+        log_info(f"Procesando: {py_file.relative_to(graphics_root)}")
         
         # Determinar ruta de salida manteniendo estructura
         rel_path = py_file.relative_to(graphics_root)
         output_dir = assets_root / rel_path.parent
-        os.makedirs(output_dir, exist_ok=True)
+        ensure_dir(output_dir)
         
         # Ejecutar script
         fig, metadata = run_graphic_script(py_file)
@@ -107,13 +108,13 @@ def main():
             }
             generate_asset_metadata(asset_info)
             generated_count += 1
-            print(f"    ✅ Generado: {image_name}")
+            log_info(f"Generado: {image_name}")
 
     if generated_count:
-        print(f"\n✨ Proceso completado con éxito.")
-        print(f"📦 Assets generados y metadatos segmentados: {generated_count}")
+        log_info("Proceso completado con exito.")
+        log_info(f"Assets generados y metadatos segmentados: {generated_count}")
     else:
-        print("\n⚠️ No se generaron assets.")
+        log_warn("No se generaron assets.")
 
 if __name__ == "__main__":
     main()
