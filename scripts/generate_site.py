@@ -54,6 +54,11 @@ def copy_static_assets():
     shutil.copytree(SOURCE_DIR, OUTPUT_DIR)
     log_info("Archivos base copiados desde site_src/")
 
+    ASSETS_DIR = "assets"
+    if os.path.exists(ASSETS_DIR):
+        shutil.copytree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR), dirs_exist_ok=True)
+        log_info(f"Carpeta {ASSETS_DIR}/ copiada a {OUTPUT_DIR}/{ASSETS_DIR}/")
+
 
 def convert_md_to_html(md_path, depth):
     with open(md_path, "r", encoding="utf-8") as f:
@@ -65,8 +70,11 @@ def convert_md_to_html(md_path, depth):
     link_replacements = len(re.findall(r'href="[^"]+\.md(?:#[^"]*)?"', html))
     html = re.sub(r'href="([^"]+)\.md(#[^"]*)?"', r'href="\1.html\2"', html)
 
-    prefix = "../" * depth
-    html = html.replace("assets/", f"{prefix}assets/")
+    # NOTE: Markdown files already contain relative paths to assets/ like ../../../assets/
+    # Since the structure in site/pages/ mirrors content/, these relative paths remain valid
+    # as long as the assets/ folder is copied to the root of site/.
+    # prefix = "../" * depth
+    # html = html.replace("assets/", f"{prefix}assets/")
 
     return html, link_replacements
 
