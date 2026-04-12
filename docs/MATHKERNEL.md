@@ -40,7 +40,35 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 4. **Build:** `generate_site.py` construye el artefacto final en `site/`.
 5. **CI/CD:** GitHub Actions despliega el contenido de `site/` automáticamente.
 
-## 4. Configuración del Repositorio
+## 4. Estructura del Proyecto
+
+Esta sección describe la organización física del repositorio, segmentada por tipo de consumo.
+
+### 4.1 Árbol de directorios (IA-Ready)
+Para un análisis exhaustivo por agentes de IA, se mantiene un registro completo de la estructura en formato JSON siguiendo la arquitectura homóloga de metadatos:
+- **Referencia:** [metadata/docs/project_structure.json](../metadata/docs/project_structure.json)
+
+### 4.2 Arquitectura simplificada (Lectura Humana)
+A continuación se presenta la jerarquía principal del repositorio para facilitar la navegación rápida:
+
+```mermaid
+graph TD
+    Root[MathKernel/] --> Content[content/ - Teoría MD]
+    Root --> Metadata[metadata/ - Metadatos Espejo]
+    Root --> Assets[assets/ - Gráficos SVG LFS]
+    Root --> Scripts[scripts/ - Automatización]
+    Root --> SiteSrc[site_src/ - Plantillas Web]
+    Root --> Docs[docs/ - Documentación]
+
+    Metadata --> MContent[content/ - JSON de Teoría]
+    Metadata --> MAssets[assets/images/grafics/ - JSON de Activos]
+    Metadata --> MSchemas[schemas/ - Validadores JSON Schema]
+    Metadata --> MDocs[docs/ - Estructura de Proyecto JSON]
+
+    Scripts --> Grafics[grafics/ - Generadores Matplotlib]
+```
+
+## 5. Configuración del Repositorio
 - **Nombre:** MathKernel
 - **Rama principal:** `main`
 - **Sitio:** https://nerudev.github.io/MathKernel/

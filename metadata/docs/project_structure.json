@@ -1,0 +1,1762 @@
+﻿[
+    {
+        "path":  ".vscode",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets",
+        "type":  "directory"
+    },
+    {
+        "path":  "content",
+        "type":  "directory"
+    },
+    {
+        "path":  "docs",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts",
+        "type":  "directory"
+    },
+    {
+        "path":  "tests",
+        "type":  "directory"
+    },
+    {
+        "path":  "utils",
+        "type":  "directory"
+    },
+    {
+        "path":  "AGENTS.md",
+        "type":  "file"
+    },
+    {
+        "path":  "CLAUDE.md",
+        "type":  "file"
+    },
+    {
+        "path":  "GEMINI.md",
+        "type":  "file"
+    },
+    {
+        "path":  "README.md",
+        "type":  "file"
+    },
+    {
+        "path":  "requirements.txt",
+        "type":  "file"
+    },
+    {
+        "path":  ".vscode/settings.json",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/angulos_clasificacion.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/angulos_complementarios_suplementarios.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/areas_figuras_planas.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/circunferencias_posiciones.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/circunferencia_angulos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/circunferencia_elementos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_clasificacion.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_propiedades.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/escalera_apoyada.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/paralelas_transversal_angulos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/pitagoras_visual.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/poligonos_regulares.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/relaciones_metricas_triangulo.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/rombo_propiedades.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/sector_segmento_circular.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/semejanza_criterios.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/solidos_geometricos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/teorema_tales.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/trapecio_elementos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_angulos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_lados.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulos_congruencia.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulo_altura_area.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulo_angulo_exterior.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulo_equilatero_elementos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/04_geometria/triangulo_lineas_notables.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/circulo_unitario.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/funciones_inversas.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/graficas_tan_sec.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/ley_cosenos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/ley_senos.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/circunferencia.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/distancia_punto_medio.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/elipse.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/hiperbola.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/parabola.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/pendiente_recta.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/00_fundamentos/06_geometria_analitica/transformaciones.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/operaciones_vectores_3d.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/producto_punto_cruz.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/sistema_coordenadas_3d.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvatura_circulo_osculador.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/frenet_serret_tnb.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/curvas_nivel.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_esfericas.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/regiones_integracion_doble.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-01",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-02",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-03",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-04",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-05",
+        "type":  "directory"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-02/diagrama_clasificacion_edo_segundo_orden.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.svg",
+        "type":  "file"
+    },
+    {
+        "path":  "content/00_fundamentos",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/01_algebra_lineal",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/02_calculo_diferencial",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/03_calculo_integral",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/04_calculo_vectorial",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/06_metodos_numericos",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/01_simbologia_matematica",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/02_aritmetica",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/03_algebra",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/04_geometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/05_trigonometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/06_geometria_analitica",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/00_fundamentos/01_simbologia_matematica/simbologia_matematica.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/00_fundamentos/02_aritmetica/aritmetica.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/00_fundamentos/03_algebra/algebra.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/00_fundamentos/04_geometria/geometria.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/00_fundamentos/05_trigonometria/trigonometria.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/00_fundamentos/06_geometria_analitica/geometria_analitica.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/01_algebra_lineal/01_matrices",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/01_algebra_lineal/02_determinantes",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/01_algebra_lineal/03_sistemas_lineales",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/01_algebra_lineal/04_espacios_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/01_algebra_lineal/05_transformaciones_lineales",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/01_algebra_lineal/01_matrices/matrices.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/01_algebra_lineal/02_determinantes/determinantes.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/01_algebra_lineal/03_sistemas_lineales/sistemas_lineales.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/01_algebra_lineal/04_espacios_vectoriales/espacios_vectoriales.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/01_algebra_lineal/05_transformaciones_lineales/transformaciones_lineales.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/01_limites",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/02_derivadas",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/03_aplicaciones_de_la_derivada",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/04_teoremas_fundamentales",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/01_limites/limites.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/02_derivadas/derivadas.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/03_aplicaciones_de_la_derivada/aplicaciones_derivada.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/02_calculo_diferencial/04_teoremas_fundamentales/teoremas_fundamentales.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/03_calculo_integral/01_integral_indefinida",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/03_calculo_integral/02_tecnicas_integracion",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/03_calculo_integral/03_integral_definida",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/03_calculo_integral/04_aplicaciones_integral",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/03_calculo_integral/05_integrales_impropias",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/03_calculo_integral/01_integral_indefinida/integral_indefinida.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/03_calculo_integral/02_tecnicas_integracion/tecnicas_integracion.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/03_calculo_integral/03_integral_definida/integral_definida.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/03_calculo_integral/04_aplicaciones_integral/aplicaciones_integral.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/03_calculo_integral/05_integrales_impropias/integrales_impropias.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/01_vectores_en_el_espacio",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/02_curvas_planas_parametricas_y_polares",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/03_funciones_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/04_funciones_de_varias_variables",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/05_integracion_multiple",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/01_vectores_en_el_espacio/vectores.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/02_curvas_planas_parametricas_y_polares/curvas.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/03_funciones_vectoriales/funciones_vectoriales.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/04_funciones_de_varias_variables/funciones_de_varias_variables.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/04_calculo_vectorial/05_integracion_multiple/integracion_multiple.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/01_edo_primer_orden",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/02_edo_segundo_orden",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/03_transformada_laplace",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/04_sistemas_edo",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/05_series_de_potencias",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/01_edo_primer_orden/edo_primer_orden.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/02_edo_segundo_orden/edo_segundo_orden.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/03_transformada_laplace/transformada_laplace.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/04_sistemas_edo/sistemas_edo.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/05_ecuaciones_diferenciales/05_series_de_potencias/series_de_potencias.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/06_metodos_numericos/01_raices_ecuaciones",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/06_metodos_numericos/02_interpolacion",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/06_metodos_numericos/03_integracion_numerica",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/06_metodos_numericos/04_edo_numericas",
+        "type":  "directory"
+    },
+    {
+        "path":  "content/06_metodos_numericos/01_raices_ecuaciones/raices_ecuaciones.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/06_metodos_numericos/02_interpolacion/interpolacion.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/06_metodos_numericos/03_integracion_numerica/integracion_numerica.md",
+        "type":  "file"
+    },
+    {
+        "path":  "content/06_metodos_numericos/04_edo_numericas/edo_numericas.md",
+        "type":  "file"
+    },
+    {
+        "path":  "docs/MATHKERNEL.md",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/docs",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/schemas",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/angulos_clasificacion.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/angulos_complementarios_suplementarios.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/areas_figuras_planas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/circunferencias_posiciones.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/circunferencia_angulos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/circunferencia_elementos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_clasificacion.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_propiedades.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/escalera_apoyada.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/paralelas_transversal_angulos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/pitagoras_visual.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/poligonos_regulares.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/relaciones_metricas_triangulo.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/rombo_propiedades.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/sector_segmento_circular.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/semejanza_criterios.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/solidos_geometricos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/teorema_tales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/trapecio_elementos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_angulos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_lados.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulos_congruencia.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulo_altura_area.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulo_angulo_exterior.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulo_equilatero_elementos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/04_geometria/triangulo_lineas_notables.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/circulo_unitario.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/funciones_inversas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/graficas_tan_sec.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/ley_cosenos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/ley_senos.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/circunferencia.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/distancia_punto_medio.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/elipse.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/hiperbola.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/parabola.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/pendiente_recta.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/00_fundamentos/06_geometria_analitica/transformaciones.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/05_integracion_multiple",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/operaciones_vectores_3d.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/producto_punto_cruz.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/sistema_coordenadas_3d.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvatura_circulo_osculador.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/frenet_serret_tnb.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/curvas_nivel.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_esfericas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/regiones_integracion_doble.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-01",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-02",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-03",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-04",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-05",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-02/diagrama_clasificacion_edo_segundo_orden.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/01_simbologia_matematica",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/02_aritmetica",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/03_algebra",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/04_geometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/05_trigonometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/06_geometria_analitica",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/01_simbologia_matematica/simbologia_matematica.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/02_aritmetica/aritmetica.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/03_algebra/algebra.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/04_geometria/geometria.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/05_trigonometria/trigonometria.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/00_fundamentos/06_geometria_analitica/geometria_analitica.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/01_matrices",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/02_determinantes",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/03_sistemas_lineales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/04_espacios_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/05_transformaciones_lineales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/01_matrices/matrices.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/02_determinantes/determinantes.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/03_sistemas_lineales/sistemas_lineales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/04_espacios_vectoriales/espacios_vectoriales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/01_algebra_lineal/05_transformaciones_lineales/transformaciones_lineales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/01_limites",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/02_derivadas",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/03_aplicaciones_de_la_derivada",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/04_teoremas_fundamentales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/01_limites/limites.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/02_derivadas/derivadas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/03_aplicaciones_de_la_derivada/aplicaciones_derivada.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/02_calculo_diferencial/04_teoremas_fundamentales/teoremas_fundamentales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/01_integral_indefinida",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/02_tecnicas_integracion",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/03_integral_definida",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/04_aplicaciones_integral",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/05_integrales_impropias",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/01_integral_indefinida/integral_indefinida.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/02_tecnicas_integracion/tecnicas_integracion.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/03_integral_definida/integral_definida.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/04_aplicaciones_integral/aplicaciones_integral.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/03_calculo_integral/05_integrales_impropias/integrales_impropias.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/01_vectores_en_el_espacio",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/02_curvas_planas_parametricas_y_polares",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/03_funciones_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/04_funciones_de_varias_variables",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/05_integracion_multiple",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/01_vectores_en_el_espacio/vectores.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/02_curvas_planas_parametricas_y_polares/curvas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/03_funciones_vectoriales/funciones_vectoriales.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/04_funciones_de_varias_variables/funciones_de_varias_variables.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/04_calculo_vectorial/05_integracion_multiple/integracion_multiple.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/01_edo_primer_orden",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/02_edo_segundo_orden",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/03_transformada_laplace",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/04_sistemas_edo",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/05_series_de_potencias",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/01_edo_primer_orden/edo_primer_orden.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/02_edo_segundo_orden/edo_segundo_orden.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/03_transformada_laplace/transformada_laplace.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/04_sistemas_edo/sistemas_edo.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/05_ecuaciones_diferenciales/05_series_de_potencias/series_de_potencias.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/01_raices_ecuaciones",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/02_interpolacion",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/03_integracion_numerica",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/04_edo_numericas",
+        "type":  "directory"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/01_raices_ecuaciones/raices_ecuaciones.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/02_interpolacion/interpolacion.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/03_integracion_numerica/integracion_numerica.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/content/06_metodos_numericos/04_edo_numericas/edo_numericas.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/docs/project_structure.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/schemas/assets.schema.json",
+        "type":  "file"
+    },
+    {
+        "path":  "metadata/schemas/content.schema.json",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/generate_assets.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/link_assets_to_content.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/templates.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/validate_structure.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/angulos_clasificacion.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/angulos_complementarios_suplementarios.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/areas_figuras_planas.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/circunferencias_posiciones.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/circunferencia_angulos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/circunferencia_elementos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/cuadrilateros_clasificacion.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/cuadrilateros_propiedades.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/escalera_apoyada.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/paralelas_transversal_angulos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/pitagoras_visual.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/poligonos_regulares.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/relaciones_metricas_triangulo.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/rombo_propiedades.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/sector_segmento_circular.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/semejanza_criterios.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/solidos_geometricos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/teorema_tales.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/trapecio_elementos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_angulos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_lados.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulos_congruencia.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulo_altura_area.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulo_angulo_exterior.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulo_equilatero_elementos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/04_geometria/triangulo_lineas_notables.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/circulo_unitario.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/funciones_inversas.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/graficas_tan_sec.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/ley_cosenos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/ley_senos.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/circunferencia.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/distancia_punto_medio.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/elipse.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/hiperbola.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/parabola.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/pendiente_recta.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/00_fundamentos/06_geometria_analitica/transformaciones.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/05_integracion_multiple",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/operaciones_vectores_3d.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/producto_punto_cruz.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/sistema_coordenadas_3d.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvatura_circulo_osculador.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/frenet_serret_tnb.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/curvas_nivel.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_cilindricas.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/05_integracion_multiple/coordenadas_esfericas.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/05_integracion_multiple/regiones_integracion_doble.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/04_calculo_vectorial/05_integracion_multiple/teoremas_integrales.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-01",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-02",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-03",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-04",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-05",
+        "type":  "directory"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-01/diagrama_decision_edo_primer_orden.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-02/diagrama_clasificacion_edo_segundo_orden.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.py",
+        "type":  "file"
+    },
+    {
+        "path":  "scripts/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.py",
+        "type":  "file"
+    },
+    {
+        "path":  "tests/test_build.py",
+        "type":  "file"
+    }
+]
