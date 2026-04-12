@@ -5,7 +5,6 @@
 ![Superficie z=f(x,y), dominio y rango](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.svg)
 
 
-![Superficie z=f(x,y), dominio y rango](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/superficie_funcion_dos_variables.svg)
 
 ### Definición
 
@@ -45,7 +44,6 @@ $$S_k = \{(x, y, z) : f(x, y, z) = k\}$$
 ![Curvas de nivel y mapa de contorno](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/curvas_nivel.svg)
 
 
-![Curvas de nivel y mapa de contorno](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/curvas_nivel.svg)
 
 ### Límite de una función de dos variables
 
@@ -127,7 +125,6 @@ $$f_{xy} = f_{yx}$$
 ![Plano tangente y aproximación lineal](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.svg)
 
 
-![Plano tangente y aproximación lineal](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/plano_tangente.svg)
 
 ### Definición
 
@@ -174,7 +171,6 @@ $$z - f(a,b) = f_x(a,b)(x - a) + f_y(a,b)(y - b)$$
 ![Gradiente y derivada direccional](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.svg)
 
 
-![Gradiente y derivada direccional](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/gradiente_derivada_direccional.svg)
 
 ### Caso 1: Una variable independiente
 
@@ -263,7 +259,6 @@ $$\frac{x - x_0}{F_x} = \frac{y - y_0}{F_y} = \frac{z - z_0}{F_z}$$
 ![Puntos críticos y criterio de la segunda derivada](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.svg)
 
 
-![Puntos críticos y criterio de la segunda derivada](../../../assets/images/grafics/04_calculo_vectorial/04_funciones_de_varias_variables/extremos_hessiano.svg)
 
 ### Extremos locales
 

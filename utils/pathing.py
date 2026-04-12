@@ -8,7 +8,8 @@ def get_relative_html_path(md_path, base_dir):
 
 
 def compute_depth(rel_path):
-    return len(Path(rel_path).parts)
+    parts = Path(rel_path).parts
+    return max(len(parts) - 1, 0)
 
 
 def build_relative_prefix(depth):

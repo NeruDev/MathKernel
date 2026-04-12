@@ -51,7 +51,6 @@ $$\theta_{\text{grados}} = \theta_{\text{rad}} \cdot \frac{180°}{\pi}$$
 ![Razones trigonométricas en triángulo rectángulo: SOH-CAH-TOA](../../../assets/images/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.svg)
 
 
-![Razones trigonométricas en triángulo rectángulo: SOH-CAH-TOA](../../../assets/images/grafics/00_fundamentos/05_trigonometria/triangulo_razones_trig.svg)
 
 ### Definición
 
@@ -101,10 +100,8 @@ $$\cot\theta = \frac{1}{\tan\theta} = \frac{b}{a}$$
 ![Tabla de valores exactos de funciones trigonométricas para ángulos notables](../../../assets/images/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.svg)
 
 
-![Círculo unitario con definición de seno y coseno](../../../assets/images/grafics/00_fundamentos/05_trigonometria/circulo_unitario.svg)
 
 
-![Tabla de valores exactos de funciones trigonométricas para ángulos notables](../../../assets/images/grafics/00_fundamentos/05_trigonometria/angulos_notables_valores.svg)
 
 ### Definición general
 
@@ -148,7 +145,6 @@ El **ángulo de referencia** $\theta_r$ es el ángulo agudo formado entre el lad
 ![Las tres identidades pitagóricas fundamentales](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.svg)
 
 
-![Las tres identidades pitagóricas fundamentales](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_pitagoricas.svg)
 
 ### Identidades pitagóricas
 
@@ -189,7 +185,6 @@ $$\tan\theta \cdot \cot\theta = 1$$
 ![Identidades de suma y diferencia de ángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.svg)
 
 
-![Identidades de suma y diferencia de ángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_suma_diferencia.svg)
 
 ### Suma de ángulos
 
@@ -217,7 +212,6 @@ $$\tan(\alpha - \beta) = \frac{\tan\alpha - \tan\beta}{1 + \tan\alpha\tan\beta}$
 ![Identidades de ángulo doble y medio ángulo](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.svg)
 
 
-![Identidades de ángulo doble y medio ángulo](../../../assets/images/grafics/00_fundamentos/05_trigonometria/identidades_angulo_doble.svg)
 
 ### Ángulo doble
 
@@ -272,10 +266,8 @@ $$\cos A - \cos B = -2\sin\frac{A+B}{2}\sin\frac{A-B}{2}$$
 ![Ley de cosenos para resolución de triángulos oblicuángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/ley_cosenos.svg)
 
 
-![Ley de senos para resolución de triángulos oblicuángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/ley_senos.svg)
 
 
-![Ley de cosenos para resolución de triángulos oblicuángulos](../../../assets/images/grafics/00_fundamentos/05_trigonometria/ley_cosenos.svg)
 
 ### Ley de senos
 
@@ -348,7 +340,6 @@ donde $s = \frac{a + b + c}{2}$ es el semiperímetro.
 ![Funciones trigonométricas inversas: arcsen, arccos, arctan](../../../assets/images/grafics/00_fundamentos/05_trigonometria/funciones_inversas.svg)
 
 
-![Funciones trigonométricas inversas: arcsen, arccos, arctan](../../../assets/images/grafics/00_fundamentos/05_trigonometria/funciones_inversas.svg)
 
 ### Definiciones y dominios
 
@@ -388,13 +379,10 @@ $$\arctan x + \arctan\frac{1}{x} = \begin{cases} \frac{\pi}{2} & \text{si } x > 
 ![Gráficas de las funciones seno y coseno](../../../assets/images/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.svg)
 
 
-![Transformaciones de funciones trigonométricas: amplitud, periodo, desfase](../../../assets/images/grafics/00_fundamentos/05_trigonometria/transformaciones_trig.svg)
 
 
-![Gráficas de tangente, cotangente, secante y cosecante](../../../assets/images/grafics/00_fundamentos/05_trigonometria/graficas_tan_sec.svg)
 
 
-![Gráficas de las funciones seno y coseno](../../../assets/images/grafics/00_fundamentos/05_trigonometria/graficas_seno_coseno.svg)
 
 ### Función seno: $y = A\sin(Bx + C) + D$
 

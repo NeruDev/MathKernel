@@ -5,7 +5,6 @@
 ![Sistema de coordenadas cartesianas con cuadrantes](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.svg)
 
 
-![Sistema de coordenadas cartesianas con cuadrantes](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/plano_cartesiano.svg)
 
 ### Definición
 
@@ -37,7 +36,6 @@ Todo punto $P$ en el plano se representa como un par ordenado $(x, y)$ donde:
 ![Fórmulas de distancia entre puntos y punto medio](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/distancia_punto_medio.svg)
 
 
-![Fórmulas de distancia entre puntos y punto medio](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/distancia_punto_medio.svg)
 
 ### Distancia entre dos puntos
 
@@ -80,7 +78,6 @@ $$A = \frac{1}{2}\left|\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y
 ![Pendiente y ecuaciones de la línea recta](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/pendiente_recta.svg)
 
 
-![Pendiente y ecuaciones de la línea recta](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/pendiente_recta.svg)
 
 ### Pendiente
 
@@ -145,7 +142,6 @@ donde $k$ es un parámetro real.
 ![La circunferencia: elementos y ecuaciones](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/circunferencia.svg)
 
 
-![La circunferencia: elementos y ecuaciones](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/circunferencia.svg)
 
 ### Definición
 
@@ -197,7 +193,6 @@ $$c^2 = r^2(1 + m^2)$$
 ![La parábola: elementos, ecuaciones y orientaciones](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/parabola.svg)
 
 
-![La parábola: elementos, ecuaciones y orientaciones](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/parabola.svg)
 
 ### Definición
 
@@ -247,7 +242,6 @@ Los rayos paralelos al eje que inciden en la parábola se reflejan hacia el foco
 ![La elipse: elementos, ecuaciones y propiedades](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/elipse.svg)
 
 
-![La elipse: elementos, ecuaciones y propiedades](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/elipse.svg)
 
 ### Definición
 
@@ -312,7 +306,6 @@ Longitud del lado recto: $\frac{2b^2}{a}$
 ![La hipérbola: elementos, ecuaciones y asíntotas](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/hiperbola.svg)
 
 
-![La hipérbola: elementos, ecuaciones y asíntotas](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/hiperbola.svg)
 
 ### Definición
 
@@ -380,7 +373,6 @@ La hipérbola $xy = k$ tiene:
 ![Clasificación de cónicas mediante el discriminante B²-4AC](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.svg)
 
 
-![Clasificación de cónicas mediante el discriminante B²-4AC](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/conicas_discriminante.svg)
 
 ### Forma general
 
@@ -412,7 +404,6 @@ La ecuación puede representar:
 ![Coordenadas polares y conversión cartesiana-polar](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.svg)
 
 
-![Coordenadas polares y conversión cartesiana-polar](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/coordenadas_polares.svg)
 
 ### Sistema de coordenadas polares
 
@@ -436,7 +427,6 @@ $$r = \sqrt{x^2 + y^2}, \quad \theta = \arctan\frac{y}{x}$$
 ![Transformaciones geométricas: traslación, rotación, reflexión, escalamiento](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/transformaciones.svg)
 
 
-![Transformaciones geométricas: traslación, rotación, reflexión, escalamiento](../../../assets/images/grafics/00_fundamentos/06_geometria_analitica/transformaciones.svg)
 
 ### Traslación
 

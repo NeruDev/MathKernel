@@ -62,14 +62,14 @@ pip install -r requirements.txt
 
 ### 2. Validar y Generar
 ```powershell
-# Valida estructura y genera el sitio web
+# Enlaza inteligentemente imágenes en el contenido Markdown mediante metadatos
+python scripts/link_assets_to_content.py
+
+# Valida estructura y genera el sitio web estático (estructura aplanada)
 python scripts/generate_site.py
 
-# Genera nuevos activos y sus metadatos espejo
+# Genera nuevos activos y sus metadatos espejo (opcional si ya existen)
 python scripts/generate_assets.py
-
-# Enlaza automáticamente imágenes en el contenido
-python scripts/link_assets_to_content.py
 ```
 
 ## Publicación en GitHub Pages

@@ -5,7 +5,6 @@
 ![Funciones vectoriales r(t) y curvas en el espacio](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.svg)
 
 
-![Funciones vectoriales r(t) y curvas en el espacio](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvas_espacio.svg)
 
 ### Concepto intuitivo
 Una **función vectorial** asigna a cada valor de un parámetro real $t$ un vector en el espacio. Describe la trayectoria de una partícula: dado el tiempo, devuelve la posición.
@@ -137,7 +136,6 @@ $$\mathbf{r}(t) = \mathbf{r}_0 + \int_{t_0}^t \mathbf{v}(u)\, du$$
 ![Longitud de arco como parámetro y reparametrización](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.svg)
 
 
-![Longitud de arco como parámetro y reparametrización](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/longitud_arco.svg)
 
 ### Fórmula de longitud
 
@@ -173,7 +171,6 @@ $$\tilde{\mathbf{r}}(s) = \mathbf{r}(t(s))$$
 ![Marco de Frenet-Serret: vectores T, N, B](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/frenet_serret_tnb.svg)
 
 
-![Marco de Frenet-Serret: vectores T, N, B](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/frenet_serret_tnb.svg)
 
 ### Vector tangente unitario
 
@@ -222,7 +219,6 @@ donde $\kappa$ es la curvatura y $\tau$ es la torsión.
 ![Curvatura, radio de curvatura y círculo osculador](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvatura_circulo_osculador.svg)
 
 
-![Curvatura, radio de curvatura y círculo osculador](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/curvatura_circulo_osculador.svg)
 
 ### Definición geométrica
 
@@ -262,7 +258,6 @@ $$\text{Centro} = \mathbf{r}(t) + \rho\mathbf{N}(t)$$
 ![Componentes tangencial y normal de la aceleración](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.svg)
 
 
-![Componentes tangencial y normal de la aceleración](../../../assets/images/grafics/04_calculo_vectorial/03_funciones_vectoriales/aceleracion_componentes.svg)
 
 ### Definición
 

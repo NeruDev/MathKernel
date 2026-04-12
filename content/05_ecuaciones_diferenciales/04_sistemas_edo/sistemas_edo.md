@@ -52,7 +52,6 @@ Se convierte en sistema con: $x_1 = y$, $x_2 = y'$, ..., $x_n = y^{(n-1)}$
 ![Diagrama de clasificación de puntos de equilibrio usando traza y determinante](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.svg)
 
 
-![Diagrama de clasificación de puntos de equilibrio usando traza y determinante](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-03/diagrama_traza_determinante.svg)
 
 ### Idea Central
 

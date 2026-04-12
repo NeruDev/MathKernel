@@ -23,10 +23,11 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
     - `assets.schema.json`: Rige los gráficos (id, topic_id, description, section, etc.).
 
 ### 2.3 Capa de generación y herramientas (`scripts/`)
-- **`generate_site.py`:** Convierte Markdown a HTML y orquestando el glosario/índice mediante búsqueda recursiva en `metadata/content/`.
-- **`validate_structure.py`:** Validador integral que asegura la correspondencia espejo entre archivos y valida cada JSON contra su respectivo esquema.
-- **`generate_assets.py`:** Genera gráficos SVG desde scripts de Matplotlib y crea automáticamente sus archivos de metadatos espejo.
-- **`link_assets_to_content.py`:** Escanea los metadatos de activos y los inyecta en el contenido Markdown basándose en `topic_id` y `section`.
+- **`generate_site.py`**: Convierte Markdown a HTML orquestando el glosario/índice. Genera una estructura aplanada directamente en `site/` para optimizar la resolución de rutas relativas.
+- **`validate_structure.py`**: Validador integral que asegura la correspondencia espejo entre archivos y valida cada JSON contra su respectivo esquema.
+- **`generate_assets.py`**: Genera gráficos SVG desde scripts de Matplotlib y crea automáticamente sus archivos de metadatos espejo.
+- **`link_assets_to_content.py`**: Enlazador inteligente. Mapea scripts gráficos a contenidos mediante metadatos e inyecta las imágenes en el Markdown en las secciones correspondientes de forma dinámica y escalable.
+
 
 ### 2.4 Gestión de Activos
 - **Git LFS:** Utilizado para rastrear archivos en `assets/images/grafics/`, manteniendo el repositorio ligero.

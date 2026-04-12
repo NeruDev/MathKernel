@@ -43,13 +43,10 @@ $$AM = MB = \frac{AB}{2}$$
 ![Clasificación de ángulos: agudo, recto, obtuso, llano, cóncavo](../../../assets/images/grafics/00_fundamentos/04_geometria/angulos_clasificacion.svg)
 
 
-![Dos rectas paralelas cortadas por una transversal mostrando ángulos](../../../assets/images/grafics/00_fundamentos/04_geometria/paralelas_transversal_angulos.svg)
 
 
-![Ángulos complementarios (90°) y suplementarios (180°)](../../../assets/images/grafics/00_fundamentos/04_geometria/angulos_complementarios_suplementarios.svg)
 
 
-![Clasificación de ángulos: agudo, recto, obtuso, llano, cóncavo](../../../assets/images/grafics/00_fundamentos/04_geometria/angulos_clasificacion.svg)
 
 ### Definición
 
@@ -114,22 +111,16 @@ $$S_e = 360°$$
 ![Clasificación de triángulos: acutángulo, rectángulo, obtusángulo](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_angulos.svg)
 
 
-![Las cuatro líneas notables del triángulo: mediana, altura, mediatriz, bisectriz](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulo_lineas_notables.svg)
 
 
-![Triángulo equilátero con altura, radio inscrito y circunscrito](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulo_equilatero_elementos.svg)
 
 
-![Ángulo exterior del triángulo = suma de ángulos interiores no adyacentes](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulo_angulo_exterior.svg)
 
 
-![Criterios de congruencia: LLL, LAL, ALA, AAL](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulos_congruencia.svg)
 
 
-![Clasificación de triángulos: equilátero, isósceles, escaleno](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_lados.svg)
 
 
-![Clasificación de triángulos: acutángulo, rectángulo, obtusángulo](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulos_clasificacion_angulos.svg)
 
 ### Clasificación por lados
 
@@ -194,16 +185,12 @@ Dos triángulos son congruentes si cumplen:
 ![Diagrama jerárquico de clasificación de cuadriláteros](../../../assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_clasificacion.svg)
 
 
-![Trapecio con bases, altura, mediana y fórmulas](../../../assets/images/grafics/00_fundamentos/04_geometria/trapecio_elementos.svg)
 
 
-![Rombo con diagonales, perpendiculares y fórmulas](../../../assets/images/grafics/00_fundamentos/04_geometria/rombo_propiedades.svg)
 
 
-![Propiedades de paralelogramo, rectángulo, rombo, cuadrado](../../../assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_propiedades.svg)
 
 
-![Diagrama jerárquico de clasificación de cuadriláteros](../../../assets/images/grafics/00_fundamentos/04_geometria/cuadrilateros_clasificacion.svg)
 
 ### Clasificación
 
@@ -239,7 +226,6 @@ Cuadriláteros se clasifican principalmente en paralelogramos, trapecios y trape
 ![Polígonos regulares: triángulo, cuadrado, pentágono, hexágono, octágono](../../../assets/images/grafics/00_fundamentos/04_geometria/poligonos_regulares.svg)
 
 
-![Polígonos regulares: triángulo, cuadrado, pentágono, hexágono, octágono](../../../assets/images/grafics/00_fundamentos/04_geometria/poligonos_regulares.svg)
 
 ### Polígono regular
 
@@ -284,16 +270,12 @@ Un polígono es **regular** si todos sus lados y ángulos son iguales.
 ![Posiciones relativas: exteriores, tangentes ext/int, secantes, interiores](../../../assets/images/grafics/00_fundamentos/04_geometria/circunferencias_posiciones.svg)
 
 
-![Sector circular y segmento circular con fórmulas](../../../assets/images/grafics/00_fundamentos/04_geometria/sector_segmento_circular.svg)
 
 
-![Elementos principales de la circunferencia: radio, diámetro, cuerda, tangente](../../../assets/images/grafics/00_fundamentos/04_geometria/circunferencia_elementos.svg)
 
 
-![Tipos de ángulos: central, inscrito, semi-inscrito](../../../assets/images/grafics/00_fundamentos/04_geometria/circunferencia_angulos.svg)
 
 
-![Posiciones relativas: exteriores, tangentes ext/int, secantes, interiores](../../../assets/images/grafics/00_fundamentos/04_geometria/circunferencias_posiciones.svg)
 
 ### Elementos
 
@@ -340,10 +322,8 @@ $$\text{Ángulo inscrito} = \frac{\text{Arco}}{2}$$
 ![Fórmulas de área: cuadrado, rectángulo, triángulo, paralelogramo, trapecio, círculo](../../../assets/images/grafics/00_fundamentos/04_geometria/areas_figuras_planas.svg)
 
 
-![Triángulo con altura marcada ilustrando la fórmula del área](../../../assets/images/grafics/00_fundamentos/04_geometria/triangulo_altura_area.svg)
 
 
-![Fórmulas de área: cuadrado, rectángulo, triángulo, paralelogramo, trapecio, círculo](../../../assets/images/grafics/00_fundamentos/04_geometria/areas_figuras_planas.svg)
 
 ### Fórmulas de área
 
@@ -385,10 +365,8 @@ $$A = \sqrt{s(s-a)(s-b)(s-c)}$$
 ![Criterios de semejanza: AA, LAL, LLL](../../../assets/images/grafics/00_fundamentos/04_geometria/semejanza_criterios.svg)
 
 
-![Teorema de Tales: recta paralela divide lados proporcionalmente](../../../assets/images/grafics/00_fundamentos/04_geometria/teorema_tales.svg)
 
 
-![Criterios de semejanza: AA, LAL, LLL](../../../assets/images/grafics/00_fundamentos/04_geometria/semejanza_criterios.svg)
 
 ### Definición
 
@@ -429,13 +407,10 @@ $$\frac{AD}{DB} = \frac{AE}{EC}$$
 ![Problema de escalera apoyada - aplicación del teorema de Pitágoras](../../../assets/images/grafics/00_fundamentos/04_geometria/escalera_apoyada.svg)
 
 
-![Relaciones métricas: proyecciones, altura sobre hipotenusa](../../../assets/images/grafics/00_fundamentos/04_geometria/relaciones_metricas_triangulo.svg)
 
 
-![Representación visual del teorema de Pitágoras con cuadrados](../../../assets/images/grafics/00_fundamentos/04_geometria/pitagoras_visual.svg)
 
 
-![Problema de escalera apoyada - aplicación del teorema de Pitágoras](../../../assets/images/grafics/00_fundamentos/04_geometria/escalera_apoyada.svg)
 
 ### Enunciado
 
@@ -482,7 +457,6 @@ $$a \cdot b = c \cdot h$$
 ![Sólidos: prisma, pirámide, cilindro, cono, esfera](../../../assets/images/grafics/00_fundamentos/04_geometria/solidos_geometricos.svg)
 
 
-![Sólidos: prisma, pirámide, cilindro, cono, esfera](../../../assets/images/grafics/00_fundamentos/04_geometria/solidos_geometricos.svg)
 
 ### Sólidos y sus propiedades
 

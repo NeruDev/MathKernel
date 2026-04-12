@@ -18,7 +18,7 @@ from utils.pathing import build_relative_prefix, compute_depth, get_relative_htm
 CONTENT_DIR = PROJECT_ROOT / "content"
 SOURCE_DIR = PROJECT_ROOT / "site_src"
 OUTPUT_DIR = PROJECT_ROOT / "site"
-PAGES_DIR = OUTPUT_DIR / "pages"
+PAGES_DIR = OUTPUT_DIR
 METADATA_DIR = PROJECT_ROOT / "metadata" / "content"
 TEMPLATE_PATH = SOURCE_DIR / "template_page.html"
 
@@ -86,8 +86,9 @@ def process_markdown():
         ensure_dir(out_path.parent)
 
         depth = compute_depth(rel_path_html)
+        prefix = build_relative_prefix(depth)
         md_text = read_text(md_path)
-        html_content, conversions = convert_md_to_html(md_text)
+        html_content, conversions = convert_md_to_html(md_text, asset_prefix=prefix)
         display_title = md_base.replace("_", " ").title()
 
         write_text(out_path, wrap_html(display_title, html_content, depth))
@@ -148,7 +149,7 @@ def generate_metadata_index(id_to_path, target_path, depth=1):
             md_id = data["id"]
             if md_id in id_to_path:
                 rel_link = id_to_path[md_id].replace(os.sep, "/")
-                page_link = f"./pages/{rel_link}" if depth == 0 else f"./{rel_link}"
+                page_link = f"./{rel_link}"
                 fields = extract_metadata_fields(data)
 
                 metadata_items.append(
@@ -212,11 +213,7 @@ if __name__ == "__main__":
     # Generate index in /site/index.html (home)
     generate_metadata_index(id_to_path, OUTPUT_DIR / "index.html", depth=0)
     
-    # Generate index in /site/pages/index.html
-    generate_metadata_index(id_to_path, PAGES_DIR / "index.html", depth=1)
-    
     pages.append(str(OUTPUT_DIR / "index.html"))
-    pages.append(str(PAGES_DIR / "index.html"))
 
     build_glossary()
     pages.append(str(OUTPUT_DIR / "glossary.html"))
