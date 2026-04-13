@@ -1,5 +1,5 @@
 def test_md_json_mirror_integrity(sandbox_project, run_script):
-    result = run_script(sandbox_project, "scripts/validate_structure.py")
+    result = run_script(sandbox_project, "scripts/build.py")
 
     assert result.returncode == 0, (
         f"La validacion debio pasar.\nSTDOUT:\n{result.stdout}\nSTDERR:\n{result.stderr}"
@@ -12,7 +12,7 @@ def test_metadata_schema_compliance(sandbox_project, run_script):
         encoding="utf-8",
     )
 
-    result = run_script(sandbox_project, "scripts/validate_structure.py")
+    result = run_script(sandbox_project, "scripts/build.py")
 
-    assert result.returncode == 1
+    assert result.returncode == 2
     assert "Falta campo requerido 'title'" in result.stdout

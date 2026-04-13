@@ -46,15 +46,9 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      # 4. Validar estructura
-      - name: Validate structure
-        run: python scripts/validate_structure.py
-
-      # 5. Vincular y Generar sitio
-      - name: Link and Generate site
-        run: |
-          python scripts/link_assets_to_content.py
-          python scripts/generate_site.py
+      # 4. Build unificado
+      - name: Unified build
+        run: python scripts/build.py --with-assets --verbose
 
       # 6. Crear archivo .nojekyll y verificar contenido
       - name: Verify and Disable Jekyll

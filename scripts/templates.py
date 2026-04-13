@@ -1,4 +1,5 @@
-import os
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 
 def get_colors():
@@ -28,3 +29,20 @@ def setup_style():
         'axes.spines.top': False,
         'axes.spines.right': False,
     })
+
+
+def get_output_dir_for_topic(topic_id):
+    """Builds an output path for a topic and ensures it exists."""
+    project_root = Path(__file__).resolve().parents[1]
+    output_dir = project_root / "assets" / "images" / "grafics" / str(topic_id)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    return output_dir
+
+
+def save_figure(fig, output_dir, base_name):
+    """Saves a figure to SVG and returns generated paths."""
+    target_dir = Path(output_dir)
+    target_dir.mkdir(parents=True, exist_ok=True)
+    svg_path = target_dir / f"{base_name}.svg"
+    fig.savefig(str(svg_path), format="svg", bbox_inches="tight")
+    return {"svg": str(svg_path)}

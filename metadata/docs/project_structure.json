@@ -76,12 +76,16 @@
         "type": "directory"
     },
     {
-        "path": "scripts/generate_site.py",
+        "path": "scripts/build.py",
         "type": "file"
     },
     {
-        "path": "scripts/link_assets_to_content.py",
-        "type": "file"
+        "path": "scripts/core",
+        "type": "directory"
+    },
+    {
+        "path": "scripts/io",
+        "type": "directory"
     },
     {
         "path": "site/index.html",

@@ -68,6 +68,7 @@ def main():
     assets_root = PROJECT_ROOT / "assets" / "images" / "grafics"
     
     generated_count = 0
+    failed_count = 0
     
     # Recorrer recursivamente scripts/grafics/
     for py_file in graphics_root.rglob("*.py"):
@@ -109,12 +110,21 @@ def main():
             generate_asset_metadata(asset_info)
             generated_count += 1
             log_info(f"Generado: {image_name}")
+        else:
+            failed_count += 1
 
-    if generated_count:
+    if generated_count and not failed_count:
         log_info("Proceso completado con exito.")
         log_info(f"Assets generados y metadatos segmentados: {generated_count}")
-    else:
-        log_warn("No se generaron assets.")
+        return 0
+
+    if failed_count:
+        log_error(f"Se detectaron fallos en {failed_count} scripts de graficos.")
+        log_info(f"Assets generados parcialmente: {generated_count}")
+        return 1
+
+    log_warn("No se generaron assets.")
+    return 1
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -23,10 +23,10 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
     - `assets.schema.json`: Rige los gráficos (id, topic_id, description, section, etc.).
 
 ### 2.3 Capa de generación y herramientas (`scripts/`)
-- **`generate_site.py`**: Convierte Markdown a HTML orquestando el glosario/índice. Genera una estructura aplanada directamente en `site/` para optimizar la resolución de rutas relativas.
-- **`validate_structure.py`**: Validador integral que asegura la correspondencia espejo entre archivos y valida cada JSON contra su respectivo esquema.
-- **`generate_assets.py`**: Genera gráficos SVG desde scripts de Matplotlib y crea automáticamente sus archivos de metadatos espejo.
-- **`link_assets_to_content.py`**: Enlazador inteligente. Mapea scripts gráficos a contenidos mediante metadatos e inyecta las imágenes en el Markdown en las secciones correspondientes de forma dinámica y escalable.
+- **`build.py`**: CLI único del proyecto. Orquesta el pipeline `Validar -> Linkear Assets -> Generar Sitio` y centraliza flags operativos (`--verbose`, `--continue-on-error`, `--skip-validation`, `--with-assets`).
+- **`core/`**: Lógica de negocio pura desacoplada del filesystem (`validators.py`, `processors.py`, `generators.py`, `error_handling.py`).
+- **`io/file_manager.py`**: Abstracción de entrada/salida para texto, JSON y operaciones de directorios.
+- **`generate_assets.py`**: Generador de gráficos SVG invocado de forma opcional mediante el flag `--with-assets`.
 
 
 ### 2.4 Gestión de Activos
@@ -36,10 +36,9 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 ## 3. Flujo de trabajo y Despliegue
 
 1. **Creación:** Escribir teoría en `content/` o scripts de gráficos en `scripts/grafics/`.
-2. **Sincronización:** Ejecutar `link_assets_to_content.py` para vincular dinámicamente las imágenes basándose en metadatos de scripts.
-3. **Verificación:** `validate_structure.py` confirma que todo el sistema de metadatos es coherente.
-4. **Build:** `generate_site.py` construye el artefacto final en `site/` usando una estructura aplanada que optimiza la navegación y la carga de activos.
-5. **CI/CD:** GitHub Actions descarga objetos LFS, vincula activos y despliega el contenido de `site/` automáticamente.
+2. **Build local:** Ejecutar `python scripts/build.py --verbose` para validar, vincular activos y generar el sitio.
+3. **Build con assets:** Ejecutar `python scripts/build.py --with-assets --verbose` cuando se requiera regenerar gráficos SVG.
+4. **CI/CD:** GitHub Actions descarga objetos LFS y ejecuta el build unificado antes de desplegar `site/`.
 
 ## 4. Estructura del Proyecto
 

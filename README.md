@@ -57,17 +57,20 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2. Validar y Generar
+### 2. Build unificado
 ```powershell
-# Enlaza inteligentemente imágenes en el contenido Markdown mediante metadatos
-python scripts/link_assets_to_content.py
+# Pipeline completo: Validar -> Linkear Assets -> Generar Sitio
+python scripts/build.py --verbose
 
-# Valida estructura y genera el sitio web estático (estructura aplanada)
-python scripts/generate_site.py
-
-# Genera nuevos activos y sus metadatos espejo (opcional si ya existen)
-python scripts/generate_assets.py
+# Incluye regeneracion de assets graficos al inicio (opcional)
+python scripts/build.py --with-assets --verbose
 ```
+
+Flags disponibles en el CLI unico:
+- `--verbose`: muestra logs detallados.
+- `--continue-on-error`: continua en errores no criticos.
+- `--skip-validation`: salta validacion estructural.
+- `--with-assets`: ejecuta `generate_assets.py` antes del pipeline principal.
 
 ## Publicación en GitHub Pages
 

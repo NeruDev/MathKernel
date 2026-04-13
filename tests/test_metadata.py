@@ -17,7 +17,7 @@ def test_validate_required_fields_missing():
 
 
 def test_glossary_and_index_generation_from_metadata(sandbox_project, run_script):
-    result = run_script(sandbox_project, "scripts/generate_site.py")
+    result = run_script(sandbox_project, "scripts/build.py")
     assert result.returncode == 0
 
     glossary_html = (sandbox_project / "site" / "glossary.html").read_text(encoding="utf-8")
