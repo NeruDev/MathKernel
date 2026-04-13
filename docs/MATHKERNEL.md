@@ -33,6 +33,13 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 - **Git LFS:** Utilizado para rastrear archivos en `assets/images/grafics/`. Es crítico que el entorno de CI/CD (GitHub Actions) realice un `git lfs pull` para que los archivos reales estén disponibles durante la generación del sitio.
 - **Formato Vectorial:** Se prioriza SVG. Las rutas en el sitio generado se ajustan dinámicamente de `../../../assets/` a `../../assets/` (o el nivel correspondiente) para mantener la compatibilidad entre el repositorio y la web.
 
+### 2.5 Cambios recientes en presentación y gráficos (2026-04-13)
+- En `site_src/styles.css` se incorporaron reglas para `main img`/`main figure` con `max-width` relativo al contenido, centrado y ajuste responsive.
+- En `scripts/templates.py` se amplió `get_colors` con paleta didáctica y variantes, manteniendo compatibilidad de claves legacy (`primary`, `secondary`, `accent`, `tertiary`).
+- `setup_style` define un `axes.prop_cycle` que prioriza azul, verde, amarillo, rojo, morado y rosa.
+- La regeneración de SVG se realiza con `scripts/generate_assets.py` y se integra al flujo con `scripts/build.py --with-assets`.
+- La verificación de integridad debe incluir pruebas de `tests/test_links.py`, `tests/test_assets.py` y `tests/test_structure.py`.
+
 ## 3. Flujo de trabajo y Despliegue
 
 1. **Creación:** Escribir teoría en `content/` o scripts de gráficos en `scripts/grafics/`.

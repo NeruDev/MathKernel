@@ -98,5 +98,37 @@
     {
         "path": "site/scripts.js",
         "type": "file"
+    },
+    {
+        "path": "docs/MATHKERNEL.md",
+        "type": "file"
+    },
+    {
+        "path": "metadata/docs",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/docs/project_structure.json",
+        "type": "file"
+    },
+    {
+        "path": "scripts/generate_assets.py",
+        "type": "file"
+    },
+    {
+        "path": "scripts/templates.py",
+        "type": "file"
+    },
+    {
+        "path": "site/assets/images/grafics",
+        "type": "directory"
+    },
+    {
+        "path": "site_src/styles.css",
+        "type": "file"
+    },
+    {
+        "path": "site_src/template_page.html",
+        "type": "file"
     }
 ]

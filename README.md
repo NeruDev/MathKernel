@@ -83,6 +83,13 @@ El despliegue es automático mediante GitHub Actions (`.github/workflows/pages.y
 - **Metadatos:** 34 archivos JSON sincronizados con el contenido.
 - **Rama principal:** `main`.
 
+## Novedades recientes (2026-04-13)
+
+- Se estandarizó el render de imágenes en el sitio para que queden centradas y no excedan el ancho del contenido de texto.
+- Se añadió un límite de ancho para medios en la capa web fuente (`site_src/styles.css`), con comportamiento responsive en móvil.
+- Se actualizó la paleta de generación SVG a colores didácticos vivos (azul, verde, amarillo, rojo, morado, rosa y variantes).
+- Se regeneraron assets SVG y se validó build/tests sin rotura de enlaces de imágenes.
+
 ## Documentación técnica complementaria
 
 Ver detalle técnico de arquitectura y flujo en:
