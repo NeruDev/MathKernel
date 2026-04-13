@@ -1,0 +1,1832 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "Geometria" [level=1] [ref=e4]
+    - button "🌞" [ref=e5]
+  - navigation [ref=e6]:
+    - link "Inicio" [ref=e7] [cursor=pointer]:
+      - /url: ../../index.html
+    - link "Contenidos" [ref=e8] [cursor=pointer]:
+      - /url: ../../index.html
+    - link "Glosario" [ref=e9] [cursor=pointer]:
+      - /url: ../../glossary.html
+  - main [ref=e10]:
+    - heading "Teoría de Geometría" [level=1] [ref=e11]
+    - heading "4.1 Conceptos fundamentales" [level=2] [ref=e12]
+    - heading "Elementos primitivos" [level=3] [ref=e13]
+    - table [ref=e14]:
+      - rowgroup [ref=e15]:
+        - row "Elemento Descripción Notación" [ref=e16]:
+          - columnheader "Elemento" [ref=e17]
+          - columnheader "Descripción" [ref=e18]
+          - columnheader "Notación" [ref=e19]
+      - rowgroup [ref=e20]:
+        - row "Punto Posición sin dimensiones , ," [ref=e21]:
+          - cell "Punto" [ref=e22]:
+            - strong [ref=e23]: Punto
+          - cell "Posición sin dimensiones" [ref=e24]
+          - cell ", ," [ref=e25]:
+            - generic [ref=e26]:
+              - img [ref=e27]
+              - math [ref=e33]:
+                - generic [ref=e34]: A
+            - text: ","
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - math [ref=e42]:
+                - generic [ref=e43]: B
+            - text: ","
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - math [ref=e51]:
+                - generic [ref=e52]: P
+        - row "Recta Conjunto infinito de puntos en una dirección o" [ref=e53]:
+          - cell "Recta" [ref=e54]:
+            - strong [ref=e55]: Recta
+          - cell "Conjunto infinito de puntos en una dirección" [ref=e56]
+          - cell "o" [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e59]
+              - math [ref=e72]:
+                - generic [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [ref=e75]: A
+                    - generic [ref=e76]: B
+                  - generic [ref=e77]: ↔
+            - text: o
+            - generic [ref=e78]:
+              - img [ref=e79]
+              - math [ref=e85]:
+                - generic [ref=e86]: ℓ
+        - row "Plano Superficie infinita bidimensional ," [ref=e87]:
+          - cell "Plano" [ref=e88]:
+            - strong [ref=e89]: Plano
+          - cell "Superficie infinita bidimensional" [ref=e90]
+          - cell "," [ref=e91]:
+            - generic [ref=e92]:
+              - img [ref=e93]
+              - math [ref=e99]:
+                - generic [ref=e100]: π
+            - text: ","
+            - generic [ref=e101]:
+              - img [ref=e102]
+              - math [ref=e108]:
+                - generic [ref=e109]: α
+    - heading "Segmentos y rayos" [level=3] [ref=e110]
+    - list [ref=e111]:
+      - listitem [ref=e112]:
+        - text: 📘
+        - strong [ref=e113]: Segmento
+        - text: ": Porción de recta entre dos puntos. Notación:"
+        - generic [ref=e114]:
+          - img [ref=e115]:
+            - img [ref=e125]
+          - math [ref=e128]:
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - generic [ref=e131]: A
+                - generic [ref=e132]: B
+              - generic [ref=e133]: ―
+      - listitem [ref=e134]:
+        - text: 📘
+        - strong [ref=e135]: Rayo
+        - text: ": Porción de recta que inicia en un punto y se extiende infinitamente. Notación:"
+        - generic [ref=e136]:
+          - img [ref=e137]:
+            - img [ref=e148]
+          - math [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154]: A
+                - generic [ref=e155]: B
+              - generic [ref=e156]: →
+      - listitem [ref=e157]:
+        - text: 📘
+        - strong [ref=e158]: Longitud de segmento
+        - text: ":"
+        - generic [ref=e159]:
+          - img [ref=e160]:
+            - img [ref=e172]
+          - math [ref=e177]:
+            - generic [ref=e178]: "|"
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - generic [ref=e181]: A
+                - generic [ref=e182]: B
+              - generic [ref=e183]: ―
+            - generic [ref=e184]: "|"
+        - text: o simplemente
+        - generic [ref=e185]:
+          - img [ref=e186]
+          - math [ref=e194]:
+            - generic [ref=e195]: A
+            - generic [ref=e196]: B
+    - heading "Punto medio" [level=3] [ref=e197]
+    - paragraph [ref=e198]:
+      - text: El punto
+      - generic [ref=e199]:
+        - img [ref=e200]
+        - math [ref=e206]:
+          - generic [ref=e207]: M
+      - text: es
+      - strong [ref=e208]: punto medio
+      - text: de
+      - generic [ref=e209]:
+        - img [ref=e210]:
+          - img [ref=e220]
+        - math [ref=e223]:
+          - generic [ref=e224]:
+            - generic [ref=e225]:
+              - generic [ref=e226]: A
+              - generic [ref=e227]: B
+            - generic [ref=e228]: ―
+      - text: "si:"
+      - generic [ref=e229]:
+        - img [ref=e230]
+        - math [ref=e255]:
+          - generic [ref=e256]: A
+          - generic [ref=e257]: M
+          - generic [ref=e258]: =
+          - generic [ref=e259]: M
+          - generic [ref=e260]: B
+          - generic [ref=e261]: =
+          - generic [ref=e262]:
+            - generic [ref=e263]:
+              - generic [ref=e264]: A
+              - generic [ref=e265]: B
+            - generic [ref=e266]: "2"
+    - heading "Posiciones relativas" [level=3] [ref=e267]
+    - paragraph [ref=e268]:
+      - strong [ref=e269]: "Entre rectas:"
+      - text: "| Posición | Descripción | |----------|-------------| | Paralelas | No se intersectan, misma dirección ("
+      - generic [ref=e270]:
+        - img [ref=e271]
+        - math [ref=e287]:
+          - generic [ref=e288]:
+            - generic [ref=e289]: ℓ
+            - generic [ref=e290]: "1"
+          - generic [ref=e291]: ∥
+          - generic [ref=e292]:
+            - generic [ref=e293]: ℓ
+            - generic [ref=e294]: "2"
+      - text: ) | | Secantes | Se intersectan en un punto | | Perpendiculares | Se intersectan formando ángulo de 90° (
+      - generic [ref=e295]:
+        - img [ref=e296]
+        - math [ref=e312]:
+          - generic [ref=e313]:
+            - generic [ref=e314]: ℓ
+            - generic [ref=e315]: "1"
+          - generic [ref=e316]: ⊥
+          - generic [ref=e317]:
+            - generic [ref=e318]: ℓ
+            - generic [ref=e319]: "2"
+      - text: ) |
+    - separator [ref=e320]
+    - heading "4.2 Ángulos" [level=2] [ref=e321]
+    - paragraph [ref=e322]:
+      - img "Dos rectas paralelas cortadas por una transversal mostrando ángulos" [ref=e323]
+    - paragraph [ref=e324]:
+      - img "Ángulos complementarios (90°) y suplementarios (180°)" [ref=e325]
+    - paragraph [ref=e326]:
+      - 'img "Clasificación de ángulos: agudo, recto, obtuso, llano, cóncavo" [ref=e327]'
+    - heading "Definición" [level=3] [ref=e328]
+    - paragraph [ref=e329]:
+      - text: Un
+      - strong [ref=e330]: ángulo
+      - text: es la unión de dos rayos con origen común (vértice).
+    - paragraph [ref=e331]:
+      - text: "Notación:"
+      - generic [ref=e332]:
+        - img [ref=e333]
+        - math [ref=e345]:
+          - generic [ref=e346]: ∠
+          - generic [ref=e347]: A
+          - generic [ref=e348]: B
+          - generic [ref=e349]: C
+      - text: o
+      - generic [ref=e350]:
+        - img [ref=e351]
+        - math [ref=e359]:
+          - generic [ref=e360]: ∠
+          - generic [ref=e361]: B
+      - text: (vértice en el centro)
+    - heading "Clasificación por medida" [level=3] [ref=e362]
+    - table [ref=e363]:
+      - rowgroup [ref=e364]:
+        - row "Tipo Medida Ejemplo" [ref=e365]:
+          - columnheader "Tipo" [ref=e366]
+          - columnheader "Medida" [ref=e367]
+          - columnheader "Ejemplo" [ref=e368]
+      - rowgroup [ref=e369]:
+        - row "Agudo 45°" [ref=e370]:
+          - cell "Agudo" [ref=e371]
+          - cell [ref=e372]:
+            - generic [ref=e373]:
+              - img [ref=e374]
+              - math [ref=e395]:
+                - generic [ref=e396]: "0"
+                - generic [ref=e398]: °
+                - generic [ref=e399]: <
+                - generic [ref=e400]: α
+                - generic [ref=e401]: <
+                - generic [ref=e402]: "90"
+                - generic [ref=e404]: °
+          - cell "45°" [ref=e405]
+        - row "Recto 90°" [ref=e406]:
+          - cell "Recto" [ref=e407]
+          - cell [ref=e408]:
+            - generic [ref=e409]:
+              - img [ref=e410]
+              - math [ref=e424]:
+                - generic [ref=e425]: α
+                - generic [ref=e426]: =
+                - generic [ref=e427]: "90"
+                - generic [ref=e429]: °
+          - cell "90°" [ref=e430]
+        - row "Obtuso 120°" [ref=e431]:
+          - cell "Obtuso" [ref=e432]
+          - cell [ref=e433]:
+            - generic [ref=e434]:
+              - img [ref=e435]
+              - math [ref=e458]:
+                - generic [ref=e459]: "90"
+                - generic [ref=e461]: °
+                - generic [ref=e462]: <
+                - generic [ref=e463]: α
+                - generic [ref=e464]: <
+                - generic [ref=e465]: "180"
+                - generic [ref=e467]: °
+          - cell "120°" [ref=e468]
+        - row "Llano 180°" [ref=e469]:
+          - cell "Llano" [ref=e470]
+          - cell [ref=e471]:
+            - generic [ref=e472]:
+              - img [ref=e473]
+              - math [ref=e488]:
+                - generic [ref=e489]: α
+                - generic [ref=e490]: =
+                - generic [ref=e491]: "180"
+                - generic [ref=e493]: °
+          - cell "180°" [ref=e494]
+        - row "Cóncavo (reflejo) 270°" [ref=e495]:
+          - cell "Cóncavo (reflejo)" [ref=e496]
+          - cell [ref=e497]:
+            - generic [ref=e498]:
+              - img [ref=e499]
+              - math [ref=e523]:
+                - generic [ref=e524]: "180"
+                - generic [ref=e526]: °
+                - generic [ref=e527]: <
+                - generic [ref=e528]: α
+                - generic [ref=e529]: <
+                - generic [ref=e530]: "360"
+                - generic [ref=e532]: °
+          - cell "270°" [ref=e533]
+    - heading "Ángulos complementarios y suplementarios" [level=3] [ref=e534]
+    - list [ref=e535]:
+      - listitem [ref=e536]:
+        - text: 📘
+        - strong [ref=e537]: Complementarios
+        - text: ":"
+        - generic [ref=e538]:
+          - img [ref=e539]
+          - math [ref=e557]:
+            - generic [ref=e558]: α
+            - generic [ref=e559]: +
+            - generic [ref=e560]: β
+            - generic [ref=e561]: =
+            - generic [ref=e562]: "90"
+            - generic [ref=e564]: °
+      - listitem [ref=e565]:
+        - text: 📘
+        - strong [ref=e566]: Suplementarios
+        - text: ":"
+        - generic [ref=e567]:
+          - img [ref=e568]
+          - math [ref=e587]:
+            - generic [ref=e588]: α
+            - generic [ref=e589]: +
+            - generic [ref=e590]: β
+            - generic [ref=e591]: =
+            - generic [ref=e592]: "180"
+            - generic [ref=e594]: °
+    - heading "Ángulos formados por paralelas y transversal" [level=3] [ref=e595]
+    - paragraph [ref=e596]: "Cuando una transversal corta a dos rectas paralelas:"
+    - table [ref=e597]:
+      - rowgroup [ref=e598]:
+        - row "Tipo Posición Relación" [ref=e599]:
+          - columnheader "Tipo" [ref=e600]
+          - columnheader "Posición" [ref=e601]
+          - columnheader "Relación" [ref=e602]
+      - rowgroup [ref=e603]:
+        - row "Correspondientes Mismo lado, uno interior y uno exterior Iguales" [ref=e604]:
+          - cell "Correspondientes" [ref=e605]:
+            - strong [ref=e606]: Correspondientes
+          - cell "Mismo lado, uno interior y uno exterior" [ref=e607]
+          - cell "Iguales" [ref=e608]
+        - row "Alternos internos Lados opuestos, ambos interiores Iguales" [ref=e609]:
+          - cell "Alternos internos" [ref=e610]:
+            - strong [ref=e611]: Alternos internos
+          - cell "Lados opuestos, ambos interiores" [ref=e612]
+          - cell "Iguales" [ref=e613]
+        - row "Alternos externos Lados opuestos, ambos exteriores Iguales" [ref=e614]:
+          - cell "Alternos externos" [ref=e615]:
+            - strong [ref=e616]: Alternos externos
+          - cell "Lados opuestos, ambos exteriores" [ref=e617]
+          - cell "Iguales" [ref=e618]
+        - row "Conjugados internos Mismo lado, ambos interiores Suplementarios" [ref=e619]:
+          - cell "Conjugados internos" [ref=e620]:
+            - strong [ref=e621]: Conjugados internos
+          - cell "Mismo lado, ambos interiores" [ref=e622]
+          - cell "Suplementarios" [ref=e623]
+    - heading "Ángulos en polígonos" [level=3] [ref=e624]
+    - paragraph [ref=e625]:
+      - strong [ref=e626]: Suma de ángulos interiores
+      - text: de un polígono de
+      - generic [ref=e627]:
+        - img [ref=e628]
+        - math [ref=e634]:
+          - generic [ref=e635]: "n"
+      - text: "lados:"
+      - generic [ref=e636]:
+        - img [ref=e637]
+        - math [ref=e667]:
+          - generic [ref=e668]:
+            - generic [ref=e669]: S
+            - generic [ref=e670]: i
+          - generic [ref=e671]: =
+          - generic [ref=e672]: (
+          - generic [ref=e673]: "n"
+          - generic [ref=e674]: −
+          - generic [ref=e675]: "2"
+          - generic [ref=e676]: )
+          - generic [ref=e677]: ⋅
+          - generic [ref=e678]: "180"
+          - generic [ref=e680]: °
+    - paragraph [ref=e681]:
+      - strong [ref=e682]: Suma de ángulos exteriores
+      - text: "(siempre):"
+      - generic [ref=e683]:
+        - img [ref=e684]
+        - math [ref=e702]:
+          - generic [ref=e703]:
+            - generic [ref=e704]: S
+            - generic [ref=e705]: e
+          - generic [ref=e706]: =
+          - generic [ref=e707]: "360"
+          - generic [ref=e709]: °
+    - separator [ref=e710]
+    - heading "4.3 Triángulos" [level=2] [ref=e711]
+    - paragraph [ref=e712]:
+      - 'img "Las cuatro líneas notables del triángulo: mediana, altura, mediatriz, bisectriz" [ref=e713]'
+    - paragraph [ref=e714]:
+      - img "Triángulo equilátero con altura, radio inscrito y circunscrito" [ref=e715]
+    - paragraph [ref=e716]:
+      - img "Ángulo exterior del triángulo = suma de ángulos interiores no adyacentes" [ref=e717]
+    - paragraph [ref=e718]:
+      - 'img "Criterios de congruencia: LLL, LAL, ALA, AAL" [ref=e719]'
+    - paragraph [ref=e720]:
+      - 'img "Clasificación de triángulos: equilátero, isósceles, escaleno" [ref=e721]'
+    - paragraph [ref=e722]:
+      - 'img "Clasificación de triángulos: acutángulo, rectángulo, obtusángulo" [ref=e723]'
+    - heading "Clasificación por lados" [level=3] [ref=e724]
+    - table [ref=e725]:
+      - rowgroup [ref=e726]:
+        - row "Tipo Característica" [ref=e727]:
+          - columnheader "Tipo" [ref=e728]
+          - columnheader "Característica" [ref=e729]
+      - rowgroup [ref=e730]:
+        - row "Equilátero Tres lados iguales" [ref=e731]:
+          - cell "Equilátero" [ref=e732]:
+            - strong [ref=e733]: Equilátero
+          - cell "Tres lados iguales" [ref=e734]
+        - row "Isósceles Dos lados iguales" [ref=e735]:
+          - cell "Isósceles" [ref=e736]:
+            - strong [ref=e737]: Isósceles
+          - cell "Dos lados iguales" [ref=e738]
+        - row "Escaleno Todos los lados diferentes" [ref=e739]:
+          - cell "Escaleno" [ref=e740]:
+            - strong [ref=e741]: Escaleno
+          - cell "Todos los lados diferentes" [ref=e742]
+    - heading "Clasificación por ángulos" [level=3] [ref=e743]
+    - table [ref=e744]:
+      - rowgroup [ref=e745]:
+        - row "Tipo Característica" [ref=e746]:
+          - columnheader "Tipo" [ref=e747]
+          - columnheader "Característica" [ref=e748]
+      - rowgroup [ref=e749]:
+        - row "Acutángulo Tres ángulos agudos" [ref=e750]:
+          - cell "Acutángulo" [ref=e751]:
+            - strong [ref=e752]: Acutángulo
+          - cell "Tres ángulos agudos" [ref=e753]
+        - row "Rectángulo Un ángulo recto" [ref=e754]:
+          - cell "Rectángulo" [ref=e755]:
+            - strong [ref=e756]: Rectángulo
+          - cell "Un ángulo recto" [ref=e757]
+        - row "Obtusángulo Un ángulo obtuso" [ref=e758]:
+          - cell "Obtusángulo" [ref=e759]:
+            - strong [ref=e760]: Obtusángulo
+          - cell "Un ángulo obtuso" [ref=e761]
+    - heading "Propiedades fundamentales" [level=3] [ref=e762]
+    - list [ref=e763]:
+      - listitem [ref=e764]:
+        - strong [ref=e765]: Suma de ángulos interiores
+        - text: ":"
+        - generic [ref=e766]:
+          - img [ref=e767]
+          - math [ref=e790]:
+            - generic [ref=e791]: α
+            - generic [ref=e792]: +
+            - generic [ref=e793]: β
+            - generic [ref=e794]: +
+            - generic [ref=e795]: γ
+            - generic [ref=e796]: =
+            - generic [ref=e797]: "180"
+            - generic [ref=e799]: °
+      - listitem [ref=e800]:
+        - strong [ref=e801]: Desigualdad triangular
+        - text: ":"
+        - generic [ref=e802]:
+          - img [ref=e803]
+          - math [ref=e817]:
+            - generic [ref=e818]: a
+            - generic [ref=e819]: +
+            - generic [ref=e820]: b
+            - generic [ref=e821]: ">"
+            - generic [ref=e822]: c
+        - text: (para cualquier par de lados)
+      - listitem [ref=e823]:
+        - strong [ref=e824]: Ángulo exterior
+        - text: ": Igual a la suma de los dos ángulos interiores no adyacentes"
+    - heading "Líneas notables" [level=3] [ref=e825]
+    - table [ref=e826]:
+      - rowgroup [ref=e827]:
+        - row "Línea Definición Punto de concurrencia" [ref=e828]:
+          - columnheader "Línea" [ref=e829]
+          - columnheader "Definición" [ref=e830]
+          - columnheader "Punto de concurrencia" [ref=e831]
+      - rowgroup [ref=e832]:
+        - row "Mediana Une vértice con punto medio del lado opuesto Centroide (G)" [ref=e833]:
+          - cell "Mediana" [ref=e834]:
+            - strong [ref=e835]: Mediana
+          - cell "Une vértice con punto medio del lado opuesto" [ref=e836]
+          - cell "Centroide (G)" [ref=e837]
+        - row "Altura Perpendicular desde vértice al lado opuesto Ortocentro (H)" [ref=e838]:
+          - cell "Altura" [ref=e839]:
+            - strong [ref=e840]: Altura
+          - cell "Perpendicular desde vértice al lado opuesto" [ref=e841]
+          - cell "Ortocentro (H)" [ref=e842]
+        - row "Mediatriz Perpendicular en punto medio de un lado Circuncentro (O)" [ref=e843]:
+          - cell "Mediatriz" [ref=e844]:
+            - strong [ref=e845]: Mediatriz
+          - cell "Perpendicular en punto medio de un lado" [ref=e846]
+          - cell "Circuncentro (O)" [ref=e847]
+        - row "Bisectriz Divide un ángulo en dos partes iguales Incentro (I)" [ref=e848]:
+          - cell "Bisectriz" [ref=e849]:
+            - strong [ref=e850]: Bisectriz
+          - cell "Divide un ángulo en dos partes iguales" [ref=e851]
+          - cell "Incentro (I)" [ref=e852]
+    - heading "Propiedades del centroide" [level=3] [ref=e853]
+    - paragraph [ref=e854]:
+      - text: El centroide divide cada mediana en razón
+      - generic [ref=e855]:
+        - img [ref=e856]
+        - math [ref=e866]:
+          - generic [ref=e867]: "2"
+          - generic [ref=e868]: ":"
+          - generic [ref=e869]: "1"
+      - text: desde el vértice.
+    - heading "Criterios de congruencia" [level=3] [ref=e870]
+    - paragraph [ref=e871]: "Dos triángulos son congruentes si cumplen:"
+    - table [ref=e872]:
+      - rowgroup [ref=e873]:
+        - row "Criterio Significado" [ref=e874]:
+          - columnheader "Criterio" [ref=e875]
+          - columnheader "Significado" [ref=e876]
+      - rowgroup [ref=e877]:
+        - row "LLL Tres lados iguales" [ref=e878]:
+          - cell "LLL" [ref=e879]:
+            - strong [ref=e880]: LLL
+          - cell "Tres lados iguales" [ref=e881]
+        - row "LAL Dos lados y ángulo comprendido iguales" [ref=e882]:
+          - cell "LAL" [ref=e883]:
+            - strong [ref=e884]: LAL
+          - cell "Dos lados y ángulo comprendido iguales" [ref=e885]
+        - row "ALA Dos ángulos y lado comprendido iguales" [ref=e886]:
+          - cell "ALA" [ref=e887]:
+            - strong [ref=e888]: ALA
+          - cell "Dos ángulos y lado comprendido iguales" [ref=e889]
+        - row "AAL Dos ángulos y lado opuesto iguales" [ref=e890]:
+          - cell "AAL" [ref=e891]:
+            - strong [ref=e892]: AAL
+          - cell "Dos ángulos y lado opuesto iguales" [ref=e893]
+    - separator [ref=e894]
+    - heading "4.4 Cuadriláteros" [level=2] [ref=e895]
+    - paragraph [ref=e896]:
+      - img "Trapecio con bases, altura, mediana y fórmulas" [ref=e897]
+    - paragraph [ref=e898]:
+      - img "Rombo con diagonales, perpendiculares y fórmulas" [ref=e899]
+    - paragraph [ref=e900]:
+      - img "Propiedades de paralelogramo, rectángulo, rombo, cuadrado" [ref=e901]
+    - paragraph [ref=e902]:
+      - img "Diagrama jerárquico de clasificación de cuadriláteros" [ref=e903]
+    - heading "Clasificación" [level=3] [ref=e904]
+    - paragraph [ref=e905]: Cuadriláteros se clasifican principalmente en paralelogramos, trapecios y trapezoides.
+    - heading "Propiedades de paralelogramos" [level=3] [ref=e906]
+    - table [ref=e907]:
+      - rowgroup [ref=e908]:
+        - row "Propiedad Descripción" [ref=e909]:
+          - columnheader "Propiedad" [ref=e910]
+          - columnheader "Descripción" [ref=e911]
+      - rowgroup [ref=e912]:
+        - row "Lados opuestos Iguales y paralelos" [ref=e913]:
+          - cell "Lados opuestos" [ref=e914]
+          - cell "Iguales y paralelos" [ref=e915]
+        - row "Ángulos opuestos Iguales" [ref=e916]:
+          - cell "Ángulos opuestos" [ref=e917]
+          - cell "Iguales" [ref=e918]
+        - row "Ángulos consecutivos Suplementarios" [ref=e919]:
+          - cell "Ángulos consecutivos" [ref=e920]
+          - cell "Suplementarios" [ref=e921]
+        - row "Diagonales Se bisecan mutuamente" [ref=e922]:
+          - cell "Diagonales" [ref=e923]
+          - cell "Se bisecan mutuamente" [ref=e924]
+    - heading "Propiedades especiales" [level=3] [ref=e925]
+    - table [ref=e926]:
+      - rowgroup [ref=e927]:
+        - row "Figura Diagonales" [ref=e928]:
+          - columnheader "Figura" [ref=e929]
+          - columnheader "Diagonales" [ref=e930]
+      - rowgroup [ref=e931]:
+        - row "Rectángulo Iguales" [ref=e932]:
+          - cell "Rectángulo" [ref=e933]:
+            - strong [ref=e934]: Rectángulo
+          - cell "Iguales" [ref=e935]
+        - row "Rombo Perpendiculares" [ref=e936]:
+          - cell "Rombo" [ref=e937]:
+            - strong [ref=e938]: Rombo
+          - cell "Perpendiculares" [ref=e939]
+        - row "Cuadrado Iguales y perpendiculares" [ref=e940]:
+          - cell "Cuadrado" [ref=e941]:
+            - strong [ref=e942]: Cuadrado
+          - cell "Iguales y perpendiculares" [ref=e943]
+    - heading "Trapecio" [level=3] [ref=e944]
+    - list [ref=e945]:
+      - listitem [ref=e946]:
+        - text: 📘
+        - strong [ref=e947]: Base mayor
+        - text: "y"
+        - strong [ref=e948]: base menor
+        - text: ": lados paralelos"
+      - listitem [ref=e949]:
+        - text: 📘
+        - strong [ref=e950]: Mediana del trapecio
+        - text: ":"
+        - generic [ref=e951]:
+          - img [ref=e952]
+          - math [ref=e971]:
+            - generic [ref=e972]: m
+            - generic [ref=e973]: =
+            - generic [ref=e974]:
+              - generic [ref=e975]:
+                - generic [ref=e976]: B
+                - generic [ref=e977]: +
+                - generic [ref=e978]: b
+              - generic [ref=e979]: "2"
+    - separator [ref=e980]
+    - heading "4.5 Polígonos" [level=2] [ref=e981]
+    - paragraph [ref=e982]:
+      - 'img "Polígonos regulares: triángulo, cuadrado, pentágono, hexágono, octágono" [ref=e983]'
+    - heading "Polígono regular" [level=3] [ref=e984]
+    - paragraph [ref=e985]:
+      - text: Un polígono es
+      - strong [ref=e986]: regular
+      - text: si todos sus lados y ángulos son iguales.
+    - heading "Fórmulas para polígono de lados" [level=3] [ref=e987]:
+      - text: Fórmulas para polígono de
+      - generic [ref=e988]:
+        - img [ref=e989]
+        - math [ref=e995]:
+          - generic [ref=e996]: "n"
+      - text: lados
+    - table [ref=e997]:
+      - rowgroup [ref=e998]:
+        - row "Propiedad Fórmula" [ref=e999]:
+          - columnheader "Propiedad" [ref=e1000]
+          - columnheader "Fórmula" [ref=e1001]
+      - rowgroup [ref=e1002]:
+        - row "Suma de ángulos interiores" [ref=e1003]:
+          - cell "Suma de ángulos interiores" [ref=e1004]
+          - cell [ref=e1005]:
+            - generic [ref=e1006]:
+              - img [ref=e1007]
+              - math [ref=e1030]:
+                - generic [ref=e1031]: (
+                - generic [ref=e1032]: "n"
+                - generic [ref=e1033]: −
+                - generic [ref=e1034]: "2"
+                - generic [ref=e1035]: )
+                - generic [ref=e1036]: ⋅
+                - generic [ref=e1037]: "180"
+                - generic [ref=e1039]: °
+        - row "Cada ángulo interior (regular)" [ref=e1040]:
+          - cell "Cada ángulo interior (regular)" [ref=e1041]
+          - cell [ref=e1042]:
+            - generic [ref=e1043]:
+              - img [ref=e1044]
+              - math [ref=e1072]:
+                - generic [ref=e1073]:
+                  - generic [ref=e1074]:
+                    - generic [ref=e1075]: (
+                    - generic [ref=e1076]: "n"
+                    - generic [ref=e1077]: −
+                    - generic [ref=e1078]: "2"
+                    - generic [ref=e1079]: )
+                    - generic [ref=e1080]: ⋅
+                    - generic [ref=e1081]: "180"
+                    - generic [ref=e1083]: °
+                  - generic [ref=e1084]: "n"
+        - row "Suma de ángulos exteriores" [ref=e1085]:
+          - cell "Suma de ángulos exteriores" [ref=e1086]
+          - cell [ref=e1087]:
+            - generic [ref=e1088]:
+              - img [ref=e1089]
+              - math [ref=e1100]:
+                - generic [ref=e1101]: "360"
+                - generic [ref=e1103]: °
+        - row "Cada ángulo exterior (regular)" [ref=e1104]:
+          - cell "Cada ángulo exterior (regular)" [ref=e1105]
+          - cell [ref=e1106]:
+            - generic [ref=e1107]:
+              - img [ref=e1108]
+              - math [ref=e1124]:
+                - generic [ref=e1125]:
+                  - generic [ref=e1126]:
+                    - generic [ref=e1127]: "360"
+                    - generic [ref=e1129]: °
+                  - generic [ref=e1130]: "n"
+        - row "Número de diagonales" [ref=e1131]:
+          - cell "Número de diagonales" [ref=e1132]
+          - cell [ref=e1133]:
+            - generic [ref=e1134]:
+              - img [ref=e1135]
+              - math [ref=e1156]:
+                - generic [ref=e1157]:
+                  - generic [ref=e1158]:
+                    - generic [ref=e1159]: "n"
+                    - generic [ref=e1160]: (
+                    - generic [ref=e1161]: "n"
+                    - generic [ref=e1162]: −
+                    - generic [ref=e1163]: "3"
+                    - generic [ref=e1164]: )
+                  - generic [ref=e1165]: "2"
+    - heading "Polígonos comunes" [level=3] [ref=e1166]
+    - table [ref=e1167]:
+      - rowgroup [ref=e1168]:
+        - row "Nombre Lados Ángulo interior (regular)" [ref=e1169]:
+          - columnheader "Nombre" [ref=e1170]
+          - columnheader "Lados" [ref=e1171]
+          - columnheader "Ángulo interior (regular)" [ref=e1172]
+      - rowgroup [ref=e1173]:
+        - row "Triángulo 3 60°" [ref=e1174]:
+          - cell "Triángulo" [ref=e1175]
+          - cell "3" [ref=e1176]
+          - cell "60°" [ref=e1177]
+        - row "Cuadrado 4 90°" [ref=e1178]:
+          - cell "Cuadrado" [ref=e1179]
+          - cell "4" [ref=e1180]
+          - cell "90°" [ref=e1181]
+        - row "Pentágono 5 108°" [ref=e1182]:
+          - cell "Pentágono" [ref=e1183]
+          - cell "5" [ref=e1184]
+          - cell "108°" [ref=e1185]
+        - row "Hexágono 6 120°" [ref=e1186]:
+          - cell "Hexágono" [ref=e1187]
+          - cell "6" [ref=e1188]
+          - cell "120°" [ref=e1189]
+        - row "Octágono 8 135°" [ref=e1190]:
+          - cell "Octágono" [ref=e1191]
+          - cell "8" [ref=e1192]
+          - cell "135°" [ref=e1193]
+        - row "Decágono 10 144°" [ref=e1194]:
+          - cell "Decágono" [ref=e1195]
+          - cell "10" [ref=e1196]
+          - cell "144°" [ref=e1197]
+        - row "Dodecágono 12 150°" [ref=e1198]:
+          - cell "Dodecágono" [ref=e1199]
+          - cell "12" [ref=e1200]
+          - cell "150°" [ref=e1201]
+    - separator [ref=e1202]
+    - heading "4.6 Circunferencia y círculo" [level=2] [ref=e1203]
+    - paragraph [ref=e1204]:
+      - img "Sector circular y segmento circular con fórmulas" [ref=e1205]
+    - paragraph [ref=e1206]:
+      - 'img "Elementos principales de la circunferencia: radio, diámetro, cuerda, tangente" [ref=e1207]'
+    - paragraph [ref=e1208]:
+      - 'img "Tipos de ángulos: central, inscrito, semi-inscrito" [ref=e1209]'
+    - paragraph [ref=e1210]:
+      - 'img "Posiciones relativas: exteriores, tangentes ext/int, secantes, interiores" [ref=e1211]'
+    - heading "Elementos" [level=3] [ref=e1212]
+    - table [ref=e1213]:
+      - rowgroup [ref=e1214]:
+        - row "Elemento Definición" [ref=e1215]:
+          - columnheader "Elemento" [ref=e1216]
+          - columnheader "Definición" [ref=e1217]
+      - rowgroup [ref=e1218]:
+        - row "Centro Punto equidistante de todos los puntos de la circunferencia" [ref=e1219]:
+          - cell "Centro" [ref=e1220]:
+            - strong [ref=e1221]: Centro
+          - cell "Punto equidistante de todos los puntos de la circunferencia" [ref=e1222]
+        - row "Radio ( ) Distancia del centro a cualquier punto de la circunferencia" [ref=e1223]:
+          - cell "Radio ( )" [ref=e1224]:
+            - strong [ref=e1225]: Radio
+            - text: (
+            - generic [ref=e1226]:
+              - img [ref=e1227]
+              - math [ref=e1233]:
+                - generic [ref=e1234]: r
+            - text: )
+          - cell "Distancia del centro a cualquier punto de la circunferencia" [ref=e1235]
+        - row "Diámetro ( ) Cuerda que pasa por el centro;" [ref=e1236]:
+          - cell "Diámetro ( )" [ref=e1237]:
+            - strong [ref=e1238]: Diámetro
+            - text: (
+            - generic [ref=e1239]:
+              - img [ref=e1240]
+              - math [ref=e1246]:
+                - generic [ref=e1247]: d
+            - text: )
+          - cell "Cuerda que pasa por el centro;" [ref=e1248]:
+            - text: Cuerda que pasa por el centro;
+            - generic [ref=e1249]:
+              - img [ref=e1250]
+              - math [ref=e1262]:
+                - generic [ref=e1263]: d
+                - generic [ref=e1264]: =
+                - generic [ref=e1265]: "2"
+                - generic [ref=e1266]: r
+        - row "Cuerda Segmento que une dos puntos de la circunferencia" [ref=e1267]:
+          - cell "Cuerda" [ref=e1268]:
+            - strong [ref=e1269]: Cuerda
+          - cell "Segmento que une dos puntos de la circunferencia" [ref=e1270]
+        - row "Arco Porción de la circunferencia" [ref=e1271]:
+          - cell "Arco" [ref=e1272]:
+            - strong [ref=e1273]: Arco
+          - cell "Porción de la circunferencia" [ref=e1274]
+        - row "Secante Recta que corta la circunferencia en dos puntos" [ref=e1275]:
+          - cell "Secante" [ref=e1276]:
+            - strong [ref=e1277]: Secante
+          - cell "Recta que corta la circunferencia en dos puntos" [ref=e1278]
+        - row "Tangente Recta que toca la circunferencia en un solo punto" [ref=e1279]:
+          - cell "Tangente" [ref=e1280]:
+            - strong [ref=e1281]: Tangente
+          - cell "Recta que toca la circunferencia en un solo punto" [ref=e1282]
+    - heading "Propiedades de la tangente" [level=3] [ref=e1283]
+    - list [ref=e1284]:
+      - listitem [ref=e1285]: 📘 La tangente es perpendicular al radio en el punto de tangencia
+      - listitem [ref=e1286]: 📘 Desde un punto exterior, las dos tangentes tienen igual longitud
+    - heading "Ángulos en la circunferencia" [level=3] [ref=e1287]
+    - table [ref=e1288]:
+      - rowgroup [ref=e1289]:
+        - row "Tipo de ángulo Medida" [ref=e1290]:
+          - columnheader "Tipo de ángulo" [ref=e1291]
+          - columnheader "Medida" [ref=e1292]
+      - rowgroup [ref=e1293]:
+        - row "Central Igual al arco que subtiende" [ref=e1294]:
+          - cell "Central" [ref=e1295]:
+            - strong [ref=e1296]: Central
+          - cell "Igual al arco que subtiende" [ref=e1297]
+        - row "Inscrito Mitad del arco que subtiende" [ref=e1298]:
+          - cell "Inscrito" [ref=e1299]:
+            - strong [ref=e1300]: Inscrito
+          - cell "Mitad del arco que subtiende" [ref=e1301]
+        - row "Semi-inscrito Mitad del arco que subtiende" [ref=e1302]:
+          - cell "Semi-inscrito" [ref=e1303]:
+            - strong [ref=e1304]: Semi-inscrito
+          - cell "Mitad del arco que subtiende" [ref=e1305]
+        - row "Interior Semisuma de los arcos que determina" [ref=e1306]:
+          - cell "Interior" [ref=e1307]:
+            - strong [ref=e1308]: Interior
+          - cell "Semisuma de los arcos que determina" [ref=e1309]
+        - row "Exterior Semidiferencia de los arcos que determina" [ref=e1310]:
+          - cell "Exterior" [ref=e1311]:
+            - strong [ref=e1312]: Exterior
+          - cell "Semidiferencia de los arcos que determina" [ref=e1313]
+    - heading "Teoremas importantes" [level=3] [ref=e1314]
+    - paragraph [ref=e1315]:
+      - strong [ref=e1316]: "Teorema del ángulo inscrito:"
+      - generic [ref=e1317]:
+        - img [ref=e1318]:
+          - generic [ref=e1322]: Á
+        - math [ref=e1348]:
+          - generic [ref=e1349]: Ángulo inscrito
+          - generic [ref=e1350]: =
+          - generic [ref=e1351]:
+            - generic [ref=e1352]: Arco
+            - generic [ref=e1353]: "2"
+    - paragraph [ref=e1354]:
+      - strong [ref=e1355]: "Ángulo inscrito en semicírculo:"
+      - text: Un ángulo inscrito que subtiende un diámetro es recto (90°).
+    - separator [ref=e1356]
+    - heading "4.7 Áreas de figuras planas" [level=2] [ref=e1357]
+    - paragraph [ref=e1358]:
+      - img "Triángulo con altura marcada ilustrando la fórmula del área" [ref=e1359]
+    - paragraph [ref=e1360]:
+      - 'img "Fórmulas de área: cuadrado, rectángulo, triángulo, paralelogramo, trapecio, círculo" [ref=e1361]'
+    - heading "Fórmulas de área" [level=3] [ref=e1362]
+    - table [ref=e1363]:
+      - rowgroup [ref=e1364]:
+        - row "Figura Fórmula Variables" [ref=e1365]:
+          - columnheader "Figura" [ref=e1366]
+          - columnheader "Fórmula" [ref=e1367]
+          - columnheader "Variables" [ref=e1368]
+      - rowgroup [ref=e1369]:
+        - row "Cuadrado = lado" [ref=e1370]:
+          - cell "Cuadrado" [ref=e1371]:
+            - strong [ref=e1372]: Cuadrado
+          - cell [ref=e1373]:
+            - generic [ref=e1374]:
+              - img [ref=e1375]
+              - math [ref=e1388]:
+                - generic [ref=e1389]: A
+                - generic [ref=e1390]: =
+                - generic [ref=e1391]:
+                  - generic [ref=e1392]: l
+                  - generic [ref=e1393]: "2"
+          - cell "= lado" [ref=e1394]:
+            - generic [ref=e1395]:
+              - img [ref=e1396]
+              - math [ref=e1402]:
+                - generic [ref=e1403]: l
+            - text: = lado
+        - row "Rectángulo = base, = altura" [ref=e1404]:
+          - cell "Rectángulo" [ref=e1405]:
+            - strong [ref=e1406]: Rectángulo
+          - cell [ref=e1407]:
+            - generic [ref=e1408]:
+              - img [ref=e1409]
+              - math [ref=e1423]:
+                - generic [ref=e1424]: A
+                - generic [ref=e1425]: =
+                - generic [ref=e1426]: b
+                - generic [ref=e1427]: ⋅
+                - generic [ref=e1428]: h
+          - cell "= base, = altura" [ref=e1429]:
+            - generic [ref=e1430]:
+              - img [ref=e1431]
+              - math [ref=e1437]:
+                - generic [ref=e1438]: b
+            - text: = base,
+            - generic [ref=e1439]:
+              - img [ref=e1440]
+              - math [ref=e1446]:
+                - generic [ref=e1447]: h
+            - text: = altura
+        - row "Triángulo = base, = altura" [ref=e1448]:
+          - cell "Triángulo" [ref=e1449]:
+            - strong [ref=e1450]: Triángulo
+          - cell [ref=e1451]:
+            - generic [ref=e1452]:
+              - img [ref=e1453]
+              - math [ref=e1472]:
+                - generic [ref=e1473]: A
+                - generic [ref=e1474]: =
+                - generic [ref=e1475]:
+                  - generic [ref=e1476]:
+                    - generic [ref=e1477]: b
+                    - generic [ref=e1478]: ⋅
+                    - generic [ref=e1479]: h
+                  - generic [ref=e1480]: "2"
+          - cell "= base, = altura" [ref=e1481]:
+            - generic [ref=e1482]:
+              - img [ref=e1483]
+              - math [ref=e1489]:
+                - generic [ref=e1490]: b
+            - text: = base,
+            - generic [ref=e1491]:
+              - img [ref=e1492]
+              - math [ref=e1498]:
+                - generic [ref=e1499]: h
+            - text: = altura
+        - row "Paralelogramo = base, = altura" [ref=e1500]:
+          - cell "Paralelogramo" [ref=e1501]:
+            - strong [ref=e1502]: Paralelogramo
+          - cell [ref=e1503]:
+            - generic [ref=e1504]:
+              - img [ref=e1505]
+              - math [ref=e1519]:
+                - generic [ref=e1520]: A
+                - generic [ref=e1521]: =
+                - generic [ref=e1522]: b
+                - generic [ref=e1523]: ⋅
+                - generic [ref=e1524]: h
+          - cell "= base, = altura" [ref=e1525]:
+            - generic [ref=e1526]:
+              - img [ref=e1527]
+              - math [ref=e1533]:
+                - generic [ref=e1534]: b
+            - text: = base,
+            - generic [ref=e1535]:
+              - img [ref=e1536]
+              - math [ref=e1542]:
+                - generic [ref=e1543]: h
+            - text: = altura
+        - row "Rombo , = diagonales" [ref=e1544]:
+          - cell "Rombo" [ref=e1545]:
+            - strong [ref=e1546]: Rombo
+          - cell [ref=e1547]:
+            - generic [ref=e1548]:
+              - img [ref=e1549]
+              - math [ref=e1568]:
+                - generic [ref=e1569]: A
+                - generic [ref=e1570]: =
+                - generic [ref=e1571]:
+                  - generic [ref=e1572]:
+                    - generic [ref=e1573]: D
+                    - generic [ref=e1574]: ⋅
+                    - generic [ref=e1575]: d
+                  - generic [ref=e1576]: "2"
+          - cell ", = diagonales" [ref=e1577]:
+            - generic [ref=e1578]:
+              - img [ref=e1579]
+              - math [ref=e1585]:
+                - generic [ref=e1586]: D
+            - text: ","
+            - generic [ref=e1587]:
+              - img [ref=e1588]
+              - math [ref=e1594]:
+                - generic [ref=e1595]: d
+            - text: = diagonales
+        - row "Trapecio , = bases, = altura" [ref=e1596]:
+          - cell "Trapecio" [ref=e1597]:
+            - strong [ref=e1598]: Trapecio
+          - cell [ref=e1599]:
+            - generic [ref=e1600]:
+              - img [ref=e1601]
+              - math [ref=e1628]:
+                - generic [ref=e1629]: A
+                - generic [ref=e1630]: =
+                - generic [ref=e1631]:
+                  - generic [ref=e1632]:
+                    - generic [ref=e1633]: (
+                    - generic [ref=e1634]: B
+                    - generic [ref=e1635]: +
+                    - generic [ref=e1636]: b
+                    - generic [ref=e1637]: )
+                    - generic [ref=e1638]: ⋅
+                    - generic [ref=e1639]: h
+                  - generic [ref=e1640]: "2"
+          - cell ", = bases, = altura" [ref=e1641]:
+            - generic [ref=e1642]:
+              - img [ref=e1643]
+              - math [ref=e1649]:
+                - generic [ref=e1650]: B
+            - text: ","
+            - generic [ref=e1651]:
+              - img [ref=e1652]
+              - math [ref=e1658]:
+                - generic [ref=e1659]: b
+            - text: = bases,
+            - generic [ref=e1660]:
+              - img [ref=e1661]
+              - math [ref=e1667]:
+                - generic [ref=e1668]: h
+            - text: = altura
+        - row "Polígono regular = perímetro, = apotema" [ref=e1669]:
+          - cell "Polígono regular" [ref=e1670]:
+            - strong [ref=e1671]: Polígono regular
+          - cell [ref=e1672]:
+            - generic [ref=e1673]:
+              - img [ref=e1674]
+              - math [ref=e1693]:
+                - generic [ref=e1694]: A
+                - generic [ref=e1695]: =
+                - generic [ref=e1696]:
+                  - generic [ref=e1697]:
+                    - generic [ref=e1698]: P
+                    - generic [ref=e1699]: ⋅
+                    - generic [ref=e1700]: a
+                  - generic [ref=e1701]: "2"
+          - cell "= perímetro, = apotema" [ref=e1702]:
+            - generic [ref=e1703]:
+              - img [ref=e1704]
+              - math [ref=e1710]:
+                - generic [ref=e1711]: P
+            - text: = perímetro,
+            - generic [ref=e1712]:
+              - img [ref=e1713]
+              - math [ref=e1719]:
+                - generic [ref=e1720]: a
+            - text: = apotema
+        - row "Círculo = radio" [ref=e1721]:
+          - cell "Círculo" [ref=e1722]:
+            - strong [ref=e1723]: Círculo
+          - cell [ref=e1724]:
+            - generic [ref=e1725]:
+              - img [ref=e1726]
+              - math [ref=e1741]:
+                - generic [ref=e1742]: A
+                - generic [ref=e1743]: =
+                - generic [ref=e1744]: π
+                - generic [ref=e1745]:
+                  - generic [ref=e1746]: r
+                  - generic [ref=e1747]: "2"
+          - cell "= radio" [ref=e1748]:
+            - generic [ref=e1749]:
+              - img [ref=e1750]
+              - math [ref=e1756]:
+                - generic [ref=e1757]: r
+            - text: = radio
+        - row "Sector circular = ángulo central" [ref=e1758]:
+          - cell "Sector circular" [ref=e1759]:
+            - strong [ref=e1760]: Sector circular
+          - cell [ref=e1761]:
+            - generic [ref=e1762]:
+              - img [ref=e1763]
+              - math [ref=e1790]:
+                - generic [ref=e1791]: A
+                - generic [ref=e1792]: =
+                - generic [ref=e1793]:
+                  - generic [ref=e1794]: θ
+                  - generic [ref=e1795]:
+                    - generic [ref=e1796]: "360"
+                    - generic [ref=e1798]: °
+                - generic [ref=e1799]: π
+                - generic [ref=e1800]:
+                  - generic [ref=e1801]: r
+                  - generic [ref=e1802]: "2"
+          - cell "= ángulo central" [ref=e1803]:
+            - generic [ref=e1804]:
+              - img [ref=e1805]
+              - math [ref=e1811]:
+                - generic [ref=e1812]: θ
+            - text: = ángulo central
+    - heading "Fórmula de Herón (triángulo)" [level=3] [ref=e1813]
+    - paragraph [ref=e1814]:
+      - text: Para un triángulo con lados
+      - generic [ref=e1815]:
+        - img [ref=e1816]
+        - math [ref=e1822]:
+          - generic [ref=e1823]: a
+      - text: ","
+      - generic [ref=e1824]:
+        - img [ref=e1825]
+        - math [ref=e1831]:
+          - generic [ref=e1832]: b
+      - text: ","
+      - generic [ref=e1833]:
+        - img [ref=e1834]
+        - math [ref=e1840]:
+          - generic [ref=e1841]: c
+      - text: y semiperímetro
+      - generic [ref=e1842]:
+        - img [ref=e1843]
+        - math [ref=e1866]:
+          - generic [ref=e1867]: s
+          - generic [ref=e1868]: =
+          - generic [ref=e1869]:
+            - generic [ref=e1870]:
+              - generic [ref=e1871]: a
+              - generic [ref=e1872]: +
+              - generic [ref=e1873]: b
+              - generic [ref=e1874]: +
+              - generic [ref=e1875]: c
+            - generic [ref=e1876]: "2"
+      - text: ":"
+      - generic [ref=e1877]:
+        - img [ref=e1878]
+        - math [ref=e1923]:
+          - generic [ref=e1924]: A
+          - generic [ref=e1925]: =
+          - generic [ref=e1926]:
+            - generic [ref=e1927]: s
+            - generic [ref=e1928]: (
+            - generic [ref=e1929]: s
+            - generic [ref=e1930]: −
+            - generic [ref=e1931]: a
+            - generic [ref=e1932]: )
+            - generic [ref=e1933]: (
+            - generic [ref=e1934]: s
+            - generic [ref=e1935]: −
+            - generic [ref=e1936]: b
+            - generic [ref=e1937]: )
+            - generic [ref=e1938]: (
+            - generic [ref=e1939]: s
+            - generic [ref=e1940]: −
+            - generic [ref=e1941]: c
+            - generic [ref=e1942]: )
+    - heading "Perímetros" [level=3] [ref=e1943]
+    - table [ref=e1944]:
+      - rowgroup [ref=e1945]:
+        - row "Figura Perímetro" [ref=e1946]:
+          - columnheader "Figura" [ref=e1947]
+          - columnheader "Perímetro" [ref=e1948]
+      - rowgroup [ref=e1949]:
+        - row "Cuadrado" [ref=e1950]:
+          - cell "Cuadrado" [ref=e1951]:
+            - strong [ref=e1952]: Cuadrado
+          - cell [ref=e1953]:
+            - generic [ref=e1954]:
+              - img [ref=e1955]
+              - math [ref=e1967]:
+                - generic [ref=e1968]: P
+                - generic [ref=e1969]: =
+                - generic [ref=e1970]: "4"
+                - generic [ref=e1971]: l
+        - row "Rectángulo" [ref=e1972]:
+          - cell "Rectángulo" [ref=e1973]:
+            - strong [ref=e1974]: Rectángulo
+          - cell [ref=e1975]:
+            - generic [ref=e1976]:
+              - img [ref=e1977]
+              - math [ref=e1997]:
+                - generic [ref=e1998]: P
+                - generic [ref=e1999]: =
+                - generic [ref=e2000]: "2"
+                - generic [ref=e2001]: (
+                - generic [ref=e2002]: b
+                - generic [ref=e2003]: +
+                - generic [ref=e2004]: h
+                - generic [ref=e2005]: )
+        - row "Triángulo" [ref=e2006]:
+          - cell "Triángulo" [ref=e2007]:
+            - strong [ref=e2008]: Triángulo
+          - cell [ref=e2009]:
+            - generic [ref=e2010]:
+              - img [ref=e2011]
+              - math [ref=e2029]:
+                - generic [ref=e2030]: P
+                - generic [ref=e2031]: =
+                - generic [ref=e2032]: a
+                - generic [ref=e2033]: +
+                - generic [ref=e2034]: b
+                - generic [ref=e2035]: +
+                - generic [ref=e2036]: c
+        - row "Circunferencia" [ref=e2037]:
+          - cell "Circunferencia" [ref=e2038]:
+            - strong [ref=e2039]: Circunferencia
+          - cell [ref=e2040]:
+            - generic [ref=e2041]:
+              - img [ref=e2042]
+              - math [ref=e2062]:
+                - generic [ref=e2063]: C
+                - generic [ref=e2064]: =
+                - generic [ref=e2065]: "2"
+                - generic [ref=e2066]: π
+                - generic [ref=e2067]: r
+                - generic [ref=e2068]: =
+                - generic [ref=e2069]: π
+                - generic [ref=e2070]: d
+        - row "Polígono regular" [ref=e2071]:
+          - cell "Polígono regular" [ref=e2072]:
+            - strong [ref=e2073]: Polígono regular
+          - cell [ref=e2074]:
+            - generic [ref=e2075]:
+              - img [ref=e2076]
+              - math [ref=e2090]:
+                - generic [ref=e2091]: P
+                - generic [ref=e2092]: =
+                - generic [ref=e2093]: "n"
+                - generic [ref=e2094]: ⋅
+                - generic [ref=e2095]: l
+    - separator [ref=e2096]
+    - heading "4.8 Semejanza" [level=2] [ref=e2097]
+    - paragraph [ref=e2098]:
+      - 'img "Teorema de Tales: recta paralela divide lados proporcionalmente" [ref=e2099]'
+    - paragraph [ref=e2100]:
+      - 'img "Criterios de semejanza: AA, LAL, LLL" [ref=e2101]'
+    - heading "Definición" [level=3] [ref=e2102]
+    - paragraph [ref=e2103]:
+      - text: Dos figuras son
+      - strong [ref=e2104]: semejantes
+      - text: si tienen la misma forma pero diferente tamaño.
+    - heading "Razón de semejanza" [level=3] [ref=e2105]
+    - paragraph [ref=e2106]:
+      - text: Si dos figuras son semejantes con razón
+      - generic [ref=e2107]:
+        - img [ref=e2108]
+        - math [ref=e2114]:
+          - generic [ref=e2115]: k
+      - text: ": - Lados correspondientes:"
+      - generic [ref=e2116]:
+        - img [ref=e2117]
+        - math [ref=e2134]:
+          - generic [ref=e2135]:
+            - generic [ref=e2136]:
+              - generic [ref=e2137]: a
+              - generic [ref=e2138]: ′
+            - generic [ref=e2139]: a
+          - generic [ref=e2140]: =
+          - generic [ref=e2141]: k
+      - text: "- Áreas correspondientes:"
+      - generic [ref=e2142]:
+        - img [ref=e2143]
+        - math [ref=e2163]:
+          - generic [ref=e2164]:
+            - generic [ref=e2165]:
+              - generic [ref=e2166]: A
+              - generic [ref=e2167]: ′
+            - generic [ref=e2168]: A
+          - generic [ref=e2169]: =
+          - generic [ref=e2170]:
+            - generic [ref=e2171]: k
+            - generic [ref=e2172]: "2"
+      - text: "- Volúmenes correspondientes:"
+      - generic [ref=e2173]:
+        - img [ref=e2174]
+        - math [ref=e2194]:
+          - generic [ref=e2195]:
+            - generic [ref=e2196]:
+              - generic [ref=e2197]: V
+              - generic [ref=e2198]: ′
+            - generic [ref=e2199]: V
+          - generic [ref=e2200]: =
+          - generic [ref=e2201]:
+            - generic [ref=e2202]: k
+            - generic [ref=e2203]: "3"
+    - heading "Criterios de semejanza de triángulos" [level=3] [ref=e2204]
+    - table [ref=e2205]:
+      - rowgroup [ref=e2206]:
+        - row "Criterio Significado" [ref=e2207]:
+          - columnheader "Criterio" [ref=e2208]
+          - columnheader "Significado" [ref=e2209]
+      - rowgroup [ref=e2210]:
+        - row "AA Dos ángulos iguales" [ref=e2211]:
+          - cell "AA" [ref=e2212]:
+            - strong [ref=e2213]: AA
+          - cell "Dos ángulos iguales" [ref=e2214]
+        - row "LAL Dos lados proporcionales y ángulo comprendido igual" [ref=e2215]:
+          - cell "LAL" [ref=e2216]:
+            - strong [ref=e2217]: LAL
+          - cell "Dos lados proporcionales y ángulo comprendido igual" [ref=e2218]
+        - row "LLL Tres lados proporcionales" [ref=e2219]:
+          - cell "LLL" [ref=e2220]:
+            - strong [ref=e2221]: LLL
+          - cell "Tres lados proporcionales" [ref=e2222]
+    - heading "Teorema de Tales" [level=3] [ref=e2223]
+    - paragraph [ref=e2224]: Si una recta es paralela a uno de los lados de un triángulo, divide a los otros dos lados en segmentos proporcionales.
+    - paragraph [ref=e2225]:
+      - generic [ref=e2226]:
+        - img [ref=e2227]
+        - math [ref=e2257]:
+          - generic [ref=e2258]:
+            - generic [ref=e2259]:
+              - generic [ref=e2260]: A
+              - generic [ref=e2261]: D
+            - generic [ref=e2262]:
+              - generic [ref=e2263]: D
+              - generic [ref=e2264]: B
+          - generic [ref=e2265]: =
+          - generic [ref=e2266]:
+            - generic [ref=e2267]:
+              - generic [ref=e2268]: A
+              - generic [ref=e2269]: E
+            - generic [ref=e2270]:
+              - generic [ref=e2271]: E
+              - generic [ref=e2272]: C
+    - separator [ref=e2273]
+    - heading "4.9 Teorema de Pitágoras" [level=2] [ref=e2274]
+    - paragraph [ref=e2275]:
+      - 'img "Relaciones métricas: proyecciones, altura sobre hipotenusa" [ref=e2276]'
+    - paragraph [ref=e2277]:
+      - img "Representación visual del teorema de Pitágoras con cuadrados" [ref=e2278]
+    - paragraph [ref=e2279]:
+      - img "Problema de escalera apoyada - aplicación del teorema de Pitágoras" [ref=e2280]
+    - heading "Enunciado" [level=3] [ref=e2281]
+    - paragraph [ref=e2282]:
+      - text: "En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos:"
+      - generic [ref=e2283]:
+        - img [ref=e2284]
+        - math [ref=e2307]:
+          - generic [ref=e2308]:
+            - generic [ref=e2309]: c
+            - generic [ref=e2310]: "2"
+          - generic [ref=e2311]: =
+          - generic [ref=e2312]:
+            - generic [ref=e2313]: a
+            - generic [ref=e2314]: "2"
+          - generic [ref=e2315]: +
+          - generic [ref=e2316]:
+            - generic [ref=e2317]: b
+            - generic [ref=e2318]: "2"
+    - paragraph [ref=e2319]:
+      - text: donde
+      - generic [ref=e2320]:
+        - img [ref=e2321]
+        - math [ref=e2327]:
+          - generic [ref=e2328]: c
+      - text: es la hipotenusa y
+      - generic [ref=e2329]:
+        - img [ref=e2330]
+        - math [ref=e2336]:
+          - generic [ref=e2337]: a
+      - text: ","
+      - generic [ref=e2338]:
+        - img [ref=e2339]
+        - math [ref=e2345]:
+          - generic [ref=e2346]: b
+      - text: son los catetos.
+    - heading "Recíproco" [level=3] [ref=e2347]
+    - paragraph [ref=e2348]:
+      - text: Si en un triángulo se cumple
+      - generic [ref=e2349]:
+        - img [ref=e2350]
+        - math [ref=e2373]:
+          - generic [ref=e2374]:
+            - generic [ref=e2375]: c
+            - generic [ref=e2376]: "2"
+          - generic [ref=e2377]: =
+          - generic [ref=e2378]:
+            - generic [ref=e2379]: a
+            - generic [ref=e2380]: "2"
+          - generic [ref=e2381]: +
+          - generic [ref=e2382]:
+            - generic [ref=e2383]: b
+            - generic [ref=e2384]: "2"
+      - text: ", entonces el triángulo es rectángulo."
+    - heading "Clasificación de triángulos por el teorema" [level=3] [ref=e2385]
+    - table [ref=e2386]:
+      - rowgroup [ref=e2387]:
+        - row "Condición Tipo de triángulo" [ref=e2388]:
+          - columnheader "Condición" [ref=e2389]
+          - columnheader "Tipo de triángulo" [ref=e2390]
+      - rowgroup [ref=e2391]:
+        - row "Rectángulo" [ref=e2392]:
+          - cell [ref=e2393]:
+            - generic [ref=e2394]:
+              - img [ref=e2395]
+              - math [ref=e2418]:
+                - generic [ref=e2419]:
+                  - generic [ref=e2420]: c
+                  - generic [ref=e2421]: "2"
+                - generic [ref=e2422]: =
+                - generic [ref=e2423]:
+                  - generic [ref=e2424]: a
+                  - generic [ref=e2425]: "2"
+                - generic [ref=e2426]: +
+                - generic [ref=e2427]:
+                  - generic [ref=e2428]: b
+                  - generic [ref=e2429]: "2"
+          - cell "Rectángulo" [ref=e2430]
+        - row "Acutángulo" [ref=e2431]:
+          - cell [ref=e2432]:
+            - generic [ref=e2433]:
+              - img [ref=e2434]
+              - math [ref=e2457]:
+                - generic [ref=e2458]:
+                  - generic [ref=e2459]: c
+                  - generic [ref=e2460]: "2"
+                - generic [ref=e2461]: <
+                - generic [ref=e2462]:
+                  - generic [ref=e2463]: a
+                  - generic [ref=e2464]: "2"
+                - generic [ref=e2465]: +
+                - generic [ref=e2466]:
+                  - generic [ref=e2467]: b
+                  - generic [ref=e2468]: "2"
+          - cell "Acutángulo" [ref=e2469]
+        - row "Obtusángulo" [ref=e2470]:
+          - cell [ref=e2471]:
+            - generic [ref=e2472]:
+              - img [ref=e2473]
+              - math [ref=e2496]:
+                - generic [ref=e2497]:
+                  - generic [ref=e2498]: c
+                  - generic [ref=e2499]: "2"
+                - generic [ref=e2500]: ">"
+                - generic [ref=e2501]:
+                  - generic [ref=e2502]: a
+                  - generic [ref=e2503]: "2"
+                - generic [ref=e2504]: +
+                - generic [ref=e2505]:
+                  - generic [ref=e2506]: b
+                  - generic [ref=e2507]: "2"
+          - cell "Obtusángulo" [ref=e2508]
+    - heading "Ternas pitagóricas" [level=3] [ref=e2509]
+    - table [ref=e2510]:
+      - rowgroup [ref=e2511]:
+        - row "Terna Múltiplos" [ref=e2512]:
+          - columnheader "Terna" [ref=e2513]
+          - columnheader "Múltiplos" [ref=e2514]
+      - rowgroup [ref=e2515]:
+        - row ", , ..." [ref=e2516]:
+          - cell [ref=e2517]:
+            - generic [ref=e2518]:
+              - img [ref=e2519]
+              - math [ref=e2537]:
+                - generic [ref=e2538]: (
+                - generic [ref=e2539]: "3"
+                - generic [ref=e2540]: ","
+                - generic [ref=e2541]: "4"
+                - generic [ref=e2542]: ","
+                - generic [ref=e2543]: "5"
+                - generic [ref=e2544]: )
+          - cell ", , ..." [ref=e2545]:
+            - generic [ref=e2546]:
+              - img [ref=e2547]
+              - math [ref=e2566]:
+                - generic [ref=e2567]: (
+                - generic [ref=e2568]: "6"
+                - generic [ref=e2569]: ","
+                - generic [ref=e2570]: "8"
+                - generic [ref=e2571]: ","
+                - generic [ref=e2572]: "10"
+                - generic [ref=e2573]: )
+            - text: ","
+            - generic [ref=e2574]:
+              - img [ref=e2575]
+              - math [ref=e2595]:
+                - generic [ref=e2596]: (
+                - generic [ref=e2597]: "9"
+                - generic [ref=e2598]: ","
+                - generic [ref=e2599]: "12"
+                - generic [ref=e2600]: ","
+                - generic [ref=e2601]: "15"
+                - generic [ref=e2602]: )
+            - text: ", ..."
+        - row ", ..." [ref=e2603]:
+          - cell [ref=e2604]:
+            - generic [ref=e2605]:
+              - img [ref=e2606]
+              - math [ref=e2626]:
+                - generic [ref=e2627]: (
+                - generic [ref=e2628]: "5"
+                - generic [ref=e2629]: ","
+                - generic [ref=e2630]: "12"
+                - generic [ref=e2631]: ","
+                - generic [ref=e2632]: "13"
+                - generic [ref=e2633]: )
+          - cell ", ..." [ref=e2634]:
+            - generic [ref=e2635]:
+              - img [ref=e2636]
+              - math [ref=e2657]:
+                - generic [ref=e2658]: (
+                - generic [ref=e2659]: "10"
+                - generic [ref=e2660]: ","
+                - generic [ref=e2661]: "24"
+                - generic [ref=e2662]: ","
+                - generic [ref=e2663]: "26"
+                - generic [ref=e2664]: )
+            - text: ", ..."
+        - row ", ..." [ref=e2665]:
+          - cell [ref=e2666]:
+            - generic [ref=e2667]:
+              - img [ref=e2668]
+              - math [ref=e2688]:
+                - generic [ref=e2689]: (
+                - generic [ref=e2690]: "8"
+                - generic [ref=e2691]: ","
+                - generic [ref=e2692]: "15"
+                - generic [ref=e2693]: ","
+                - generic [ref=e2694]: "17"
+                - generic [ref=e2695]: )
+          - cell ", ..." [ref=e2696]:
+            - generic [ref=e2697]:
+              - img [ref=e2698]
+              - math [ref=e2719]:
+                - generic [ref=e2720]: (
+                - generic [ref=e2721]: "16"
+                - generic [ref=e2722]: ","
+                - generic [ref=e2723]: "30"
+                - generic [ref=e2724]: ","
+                - generic [ref=e2725]: "34"
+                - generic [ref=e2726]: )
+            - text: ", ..."
+        - row ", ..." [ref=e2727]:
+          - cell [ref=e2728]:
+            - generic [ref=e2729]:
+              - img [ref=e2730]
+              - math [ref=e2750]:
+                - generic [ref=e2751]: (
+                - generic [ref=e2752]: "7"
+                - generic [ref=e2753]: ","
+                - generic [ref=e2754]: "24"
+                - generic [ref=e2755]: ","
+                - generic [ref=e2756]: "25"
+                - generic [ref=e2757]: )
+          - cell ", ..." [ref=e2758]:
+            - generic [ref=e2759]:
+              - img [ref=e2760]
+              - math [ref=e2781]:
+                - generic [ref=e2782]: (
+                - generic [ref=e2783]: "14"
+                - generic [ref=e2784]: ","
+                - generic [ref=e2785]: "48"
+                - generic [ref=e2786]: ","
+                - generic [ref=e2787]: "50"
+                - generic [ref=e2788]: )
+            - text: ", ..."
+    - heading "Relaciones métricas en el triángulo rectángulo" [level=3] [ref=e2789]
+    - paragraph [ref=e2790]:
+      - text: Si
+      - generic [ref=e2791]:
+        - img [ref=e2792]
+        - math [ref=e2798]:
+          - generic [ref=e2799]: h
+      - text: es la altura sobre la hipotenusa, y
+      - generic [ref=e2800]:
+        - img [ref=e2801]
+        - math [ref=e2807]:
+          - generic [ref=e2808]: m
+      - text: ","
+      - generic [ref=e2809]:
+        - img [ref=e2810]
+        - math [ref=e2816]:
+          - generic [ref=e2817]: "n"
+      - text: "son las proyecciones de los catetos:"
+    - paragraph [ref=e2818]:
+      - generic [ref=e2819]:
+        - img [ref=e2820]
+        - math [ref=e2837]:
+          - generic [ref=e2838]:
+            - generic [ref=e2839]: h
+            - generic [ref=e2840]: "2"
+          - generic [ref=e2841]: =
+          - generic [ref=e2842]: m
+          - generic [ref=e2843]: ⋅
+          - generic [ref=e2844]: "n"
+      - generic [ref=e2845]:
+        - img [ref=e2846]
+        - math [ref=e2863]:
+          - generic [ref=e2864]:
+            - generic [ref=e2865]: a
+            - generic [ref=e2866]: "2"
+          - generic [ref=e2867]: =
+          - generic [ref=e2868]: m
+          - generic [ref=e2869]: ⋅
+          - generic [ref=e2870]: c
+      - generic [ref=e2871]:
+        - img [ref=e2872]
+        - math [ref=e2889]:
+          - generic [ref=e2890]:
+            - generic [ref=e2891]: b
+            - generic [ref=e2892]: "2"
+          - generic [ref=e2893]: =
+          - generic [ref=e2894]: "n"
+          - generic [ref=e2895]: ⋅
+          - generic [ref=e2896]: c
+      - generic [ref=e2897]:
+        - img [ref=e2898]
+        - math [ref=e2916]:
+          - generic [ref=e2917]: a
+          - generic [ref=e2918]: ⋅
+          - generic [ref=e2919]: b
+          - generic [ref=e2920]: =
+          - generic [ref=e2921]: c
+          - generic [ref=e2922]: ⋅
+          - generic [ref=e2923]: h
+    - separator [ref=e2924]
+    - heading "4.10 Geometría del espacio" [level=2] [ref=e2925]
+    - paragraph [ref=e2926]:
+      - 'img "Sólidos: prisma, pirámide, cilindro, cono, esfera" [ref=e2927]'
+    - heading "Sólidos y sus propiedades" [level=3] [ref=e2928]
+    - heading "Prisma" [level=4] [ref=e2929]
+    - table [ref=e2930]:
+      - rowgroup [ref=e2931]:
+        - row "Propiedad Fórmula" [ref=e2932]:
+          - columnheader "Propiedad" [ref=e2933]
+          - columnheader "Fórmula" [ref=e2934]
+      - rowgroup [ref=e2935]:
+        - row "Volumen" [ref=e2936]:
+          - cell "Volumen" [ref=e2937]
+          - cell [ref=e2938]:
+            - generic [ref=e2939]:
+              - img [ref=e2940]
+              - math [ref=e2957]:
+                - generic [ref=e2958]: V
+                - generic [ref=e2959]: =
+                - generic [ref=e2960]:
+                  - generic [ref=e2961]: A
+                  - generic [ref=e2962]: b
+                - generic [ref=e2963]: ⋅
+                - generic [ref=e2964]: h
+        - row "Área lateral" [ref=e2965]:
+          - cell "Área lateral" [ref=e2966]
+          - cell [ref=e2967]:
+            - generic [ref=e2968]:
+              - img [ref=e2969]
+              - math [ref=e2989]:
+                - generic [ref=e2990]:
+                  - generic [ref=e2991]: A
+                  - generic [ref=e2992]: L
+                - generic [ref=e2993]: =
+                - generic [ref=e2994]:
+                  - generic [ref=e2995]: P
+                  - generic [ref=e2996]: b
+                - generic [ref=e2997]: ⋅
+                - generic [ref=e2998]: h
+        - row "Área total" [ref=e2999]:
+          - cell "Área total" [ref=e3000]
+          - cell [ref=e3001]:
+            - generic [ref=e3002]:
+              - img [ref=e3003]
+              - math [ref=e3028]:
+                - generic [ref=e3029]:
+                  - generic [ref=e3030]: A
+                  - generic [ref=e3031]: T
+                - generic [ref=e3032]: =
+                - generic [ref=e3033]:
+                  - generic [ref=e3034]: A
+                  - generic [ref=e3035]: L
+                - generic [ref=e3036]: +
+                - generic [ref=e3037]: "2"
+                - generic [ref=e3038]:
+                  - generic [ref=e3039]: A
+                  - generic [ref=e3040]: b
+    - heading "Pirámide" [level=4] [ref=e3041]
+    - table [ref=e3042]:
+      - rowgroup [ref=e3043]:
+        - row "Propiedad Fórmula" [ref=e3044]:
+          - columnheader "Propiedad" [ref=e3045]
+          - columnheader "Fórmula" [ref=e3046]
+      - rowgroup [ref=e3047]:
+        - row "Volumen" [ref=e3048]:
+          - cell "Volumen" [ref=e3049]
+          - cell [ref=e3050]:
+            - generic [ref=e3051]:
+              - img [ref=e3052]
+              - math [ref=e3075]:
+                - generic [ref=e3076]: V
+                - generic [ref=e3077]: =
+                - generic [ref=e3078]:
+                  - generic [ref=e3079]: "1"
+                  - generic [ref=e3080]: "3"
+                - generic [ref=e3081]:
+                  - generic [ref=e3082]: A
+                  - generic [ref=e3083]: b
+                - generic [ref=e3084]: ⋅
+                - generic [ref=e3085]: h
+        - row "Área lateral ( = apotema de la pirámide)" [ref=e3086]:
+          - cell "Área lateral" [ref=e3087]
+          - cell "( = apotema de la pirámide)" [ref=e3088]:
+            - generic [ref=e3089]:
+              - img [ref=e3090]
+              - math [ref=e3119]:
+                - generic [ref=e3120]:
+                  - generic [ref=e3121]: A
+                  - generic [ref=e3122]: L
+                - generic [ref=e3123]: =
+                - generic [ref=e3124]:
+                  - generic [ref=e3125]: "1"
+                  - generic [ref=e3126]: "2"
+                - generic [ref=e3127]:
+                  - generic [ref=e3128]: P
+                  - generic [ref=e3129]: b
+                - generic [ref=e3130]: ⋅
+                - generic [ref=e3131]:
+                  - generic [ref=e3132]: a
+                  - generic [ref=e3133]: p
+            - text: (
+            - generic [ref=e3134]:
+              - img [ref=e3135]
+              - math [ref=e3144]:
+                - generic [ref=e3145]:
+                  - generic [ref=e3146]: a
+                  - generic [ref=e3147]: p
+            - text: = apotema de la pirámide)
+    - heading "Cilindro" [level=4] [ref=e3148]
+    - table [ref=e3149]:
+      - rowgroup [ref=e3150]:
+        - row "Propiedad Fórmula" [ref=e3151]:
+          - columnheader "Propiedad" [ref=e3152]
+          - columnheader "Fórmula" [ref=e3153]
+      - rowgroup [ref=e3154]:
+        - row "Volumen" [ref=e3155]:
+          - cell "Volumen" [ref=e3156]
+          - cell [ref=e3157]:
+            - generic [ref=e3158]:
+              - img [ref=e3159]
+              - math [ref=e3176]:
+                - generic [ref=e3177]: V
+                - generic [ref=e3178]: =
+                - generic [ref=e3179]: π
+                - generic [ref=e3180]:
+                  - generic [ref=e3181]: r
+                  - generic [ref=e3182]: "2"
+                - generic [ref=e3183]: h
+        - row "Área lateral" [ref=e3184]:
+          - cell "Área lateral" [ref=e3185]
+          - cell [ref=e3186]:
+            - generic [ref=e3187]:
+              - img [ref=e3188]
+              - math [ref=e3207]:
+                - generic [ref=e3208]:
+                  - generic [ref=e3209]: A
+                  - generic [ref=e3210]: L
+                - generic [ref=e3211]: =
+                - generic [ref=e3212]: "2"
+                - generic [ref=e3213]: π
+                - generic [ref=e3214]: r
+                - generic [ref=e3215]: h
+        - row "Área total" [ref=e3216]:
+          - cell "Área total" [ref=e3217]
+          - cell [ref=e3218]:
+            - generic [ref=e3219]:
+              - img [ref=e3220]
+              - math [ref=e3247]:
+                - generic [ref=e3248]:
+                  - generic [ref=e3249]: A
+                  - generic [ref=e3250]: T
+                - generic [ref=e3251]: =
+                - generic [ref=e3252]: "2"
+                - generic [ref=e3253]: π
+                - generic [ref=e3254]: r
+                - generic [ref=e3255]: (
+                - generic [ref=e3256]: r
+                - generic [ref=e3257]: +
+                - generic [ref=e3258]: h
+                - generic [ref=e3259]: )
+    - heading "Cono" [level=4] [ref=e3260]
+    - table [ref=e3261]:
+      - rowgroup [ref=e3262]:
+        - row "Propiedad Fórmula" [ref=e3263]:
+          - columnheader "Propiedad" [ref=e3264]
+          - columnheader "Fórmula" [ref=e3265]
+      - rowgroup [ref=e3266]:
+        - row "Volumen" [ref=e3267]:
+          - cell "Volumen" [ref=e3268]
+          - cell [ref=e3269]:
+            - generic [ref=e3270]:
+              - img [ref=e3271]
+              - math [ref=e3294]:
+                - generic [ref=e3295]: V
+                - generic [ref=e3296]: =
+                - generic [ref=e3297]:
+                  - generic [ref=e3298]: "1"
+                  - generic [ref=e3299]: "3"
+                - generic [ref=e3300]: π
+                - generic [ref=e3301]:
+                  - generic [ref=e3302]: r
+                  - generic [ref=e3303]: "2"
+                - generic [ref=e3304]: h
+        - row "Área lateral ( = generatriz)" [ref=e3305]:
+          - cell "Área lateral" [ref=e3306]
+          - cell "( = generatriz)" [ref=e3307]:
+            - generic [ref=e3308]:
+              - img [ref=e3309]
+              - math [ref=e3326]:
+                - generic [ref=e3327]:
+                  - generic [ref=e3328]: A
+                  - generic [ref=e3329]: L
+                - generic [ref=e3330]: =
+                - generic [ref=e3331]: π
+                - generic [ref=e3332]: r
+                - generic [ref=e3333]: g
+            - text: (
+            - generic [ref=e3334]:
+              - img [ref=e3335]
+              - math [ref=e3341]:
+                - generic [ref=e3342]: g
+            - text: = generatriz)
+        - row "Generatriz" [ref=e3343]:
+          - cell "Generatriz" [ref=e3344]
+          - cell [ref=e3345]:
+            - generic [ref=e3346]:
+              - img [ref=e3347]
+              - math [ref=e3372]:
+                - generic [ref=e3373]: g
+                - generic [ref=e3374]: =
+                - generic [ref=e3375]:
+                  - generic [ref=e3376]:
+                    - generic [ref=e3377]: r
+                    - generic [ref=e3378]: "2"
+                  - generic [ref=e3379]: +
+                  - generic [ref=e3380]:
+                    - generic [ref=e3381]: h
+                    - generic [ref=e3382]: "2"
+    - heading "Esfera" [level=4] [ref=e3383]
+    - table [ref=e3384]:
+      - rowgroup [ref=e3385]:
+        - row "Propiedad Fórmula" [ref=e3386]:
+          - columnheader "Propiedad" [ref=e3387]
+          - columnheader "Fórmula" [ref=e3388]
+      - rowgroup [ref=e3389]:
+        - row "Volumen" [ref=e3390]:
+          - cell "Volumen" [ref=e3391]
+          - cell [ref=e3392]:
+            - generic [ref=e3393]:
+              - img [ref=e3394]
+              - math [ref=e3415]:
+                - generic [ref=e3416]: V
+                - generic [ref=e3417]: =
+                - generic [ref=e3418]:
+                  - generic [ref=e3419]: "4"
+                  - generic [ref=e3420]: "3"
+                - generic [ref=e3421]: π
+                - generic [ref=e3422]:
+                  - generic [ref=e3423]: r
+                  - generic [ref=e3424]: "3"
+        - row "Área superficial" [ref=e3425]:
+          - cell "Área superficial" [ref=e3426]
+          - cell [ref=e3427]:
+            - generic [ref=e3428]:
+              - img [ref=e3429]
+              - math [ref=e3446]:
+                - generic [ref=e3447]: A
+                - generic [ref=e3448]: =
+                - generic [ref=e3449]: "4"
+                - generic [ref=e3450]: π
+                - generic [ref=e3451]:
+                  - generic [ref=e3452]: r
+                  - generic [ref=e3453]: "2"
+    - heading "Principio de Cavalieri" [level=3] [ref=e3454]
+    - paragraph [ref=e3455]: Dos sólidos con igual altura tienen igual volumen si todas las secciones paralelas a la base tienen igual área.

@@ -4,6 +4,7 @@
   --text-color: #2c2f33;
   --bg-container: #ffffff;
   --border-color: #eaeaea;
+  --content-media-max: 760px;
   --miku-cyan: #39C5BB;
   --miku-cyan-hover: #2ba69d;
   --miku-fuchsia: #E12885;
@@ -105,6 +106,36 @@ table {
 th, td {
   padding: 12px;
   border: 1px solid var(--table-border);
+}
+
+/* ===== MEDIA ===== */
+main img {
+  display: block;
+  width: 100%;
+  max-width: min(100%, var(--content-media-max));
+  height: auto;
+  margin: 1.25rem auto;
+  object-fit: contain;
+}
+
+main figure {
+  width: 100%;
+  max-width: min(100%, var(--content-media-max));
+  margin: 1.5rem auto;
+}
+
+main figure img {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    padding: 20px 16px;
+  }
 }
 
 /* ===== BIBLIOTECA MATEMATICA (INDEX) ===== */
