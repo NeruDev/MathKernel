@@ -13,10 +13,19 @@
 
     // Variables de entorno del proyecto
     "python.envFile": "${workspaceFolder}\\.env",
-    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+
+    // Limita analisis continuo para evitar notificaciones persistentes en segundo plano
+    "python.analysis.diagnosticMode": "openFilesOnly",
 
     // Reduce trabajo de Pylance en rutas grandes/no editables
     "python.analysis.exclude": [
+        "**/.*",
+        "**/node_modules",
+        "**/__pycache__",
+        ".git",
+        "**/venv/**",
+        "**/env/**",
         "**/site/**",
         "**/.venv/**",
         "**/assets/images/grafics/**"
