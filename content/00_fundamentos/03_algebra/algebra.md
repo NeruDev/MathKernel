@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'algebra'
+  content_path: 'content/00_fundamentos/03_algebra/algebra.md'
+  metadata_path: 'metadata/content/00_fundamentos/03_algebra/algebra.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Álgebra'
+  key_headings:
+    - 'Teoría de Álgebra'
+    - '3.1 Expresiones algebraicas'
+    - 'Lenguaje algebraico'
+    - 'Términos semejantes'
+    - 'Evaluación de expresiones'
+    - 'Grado de un término y polinomio'
+    - '3.2 Operaciones con polinomios'
+    - 'Suma y resta de polinomios'
+  key_concepts:
+    - 'Expresiones algebraicas'
+    - 'Polinomios'
+    - 'Productos notables'
+    - 'Factorización'
+    - 'Ecuaciones lineales'
+-->
 # Teoría de Álgebra
 ## 3.1 Expresiones algebraicas
 
@@ -476,3 +499,15 @@ $$x = 1 \text{ o } x = 6$$
 - $x = 6$: $\sqrt{9} = 3$ ✓
 
 **Solución:** $x = 6$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

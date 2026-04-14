@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'funciones_de_varias_variables'
+  content_path: 'content/04_calculo_vectorial/04_funciones_de_varias_variables/funciones_de_varias_variables.md'
+  metadata_path: 'metadata/content/04_calculo_vectorial/04_funciones_de_varias_variables/funciones_de_varias_variables.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Funciones de Varias Variables'
+  key_headings:
+    - 'Teoría — Funciones reales de varias variables'
+    - '4.1 Funciones de varias variables'
+    - 'Definición'
+    - 'Dominio y rango'
+    - 'Gráfica'
+    - 'Curvas de nivel'
+    - 'Superficies de nivel'
+    - '4.2 Límites y continuidad'
+  key_concepts:
+    - 'Derivadas parciales'
+    - 'Vector gradiente'
+    - 'Derivada direccional'
+    - 'Plano tangente'
+    - 'Multiplicadores de Lagrange'
+-->
 # Teoría — Funciones reales de varias variables
 ## 4.1 Funciones de varias variables
 
@@ -365,3 +388,14 @@ Usa las definiciones y fórmulas aquí como referencia canónica.
 Al generar problemas, verifica dominio de cada sección antes de avanzar.
 file_id: CV-04-Teoria-Varias
 -->
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| z | Variable z | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

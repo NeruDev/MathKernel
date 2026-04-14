@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'integral_indefinida'
+  content_path: 'content/03_calculo_integral/01_integral_indefinida/integral_indefinida.md'
+  metadata_path: 'metadata/content/03_calculo_integral/01_integral_indefinida/integral_indefinida.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de la Integral Indefinida'
+  key_headings:
+    - 'Teoría de la Integral Indefinida'
+    - '1.1 Concepto de Antiderivada'
+    - 'Definición'
+    - 'Ejemplo'
+    - 'Observación Importante'
+    - '1.2 Notación y Constante de Integración'
+    - 'Notación'
+    - 'La Constante de Integración'
+  key_concepts:
+    - 'Antiderivada'
+    - 'Constante de integración'
+    - 'Regla de la potencia'
+    - 'Integrales trigonométricas'
+    - 'Linealidad'
+-->
 # Teoría de la Integral Indefinida
 ## 1.1 Concepto de Antiderivada
 
@@ -166,3 +189,12 @@ $$\int [af(x) + bg(x)] \, dx = a\int f(x) \, dx + b\int g(x) \, dx$$
 | $\csc x \cot x$ | $-\csc x + C$ |
 | $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$ |
 | $\frac{1}{1+x^2}$ | $\arctan x + C$ |
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

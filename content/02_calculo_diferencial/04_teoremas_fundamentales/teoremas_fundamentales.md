@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'teoremas_fundamentales'
+  content_path: 'content/02_calculo_diferencial/04_teoremas_fundamentales/teoremas_fundamentales.md'
+  metadata_path: 'metadata/content/02_calculo_diferencial/04_teoremas_fundamentales/teoremas_fundamentales.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Teoremas Fundamentales del Cálculo'
+  key_headings:
+    - 'Teoremas Fundamentales del Cálculo Diferencial'
+    - '4.1 Teorema de Rolle'
+    - 'Enunciado'
+    - 'Interpretación Geométrica'
+    - 'Aplicaciones'
+    - '4.2 Teorema del Valor Medio (TVM)'
+    - 'Interpretación Física'
+    - 'Consecuencias'
+  key_concepts:
+    - 'Teorema de Rolle'
+    - 'Teorema del Valor Medio'
+    - 'Regla de L''Hôpital'
+    - 'Teorema de Taylor'
+    - 'Series de Maclaurin'
+-->
 # Teoremas Fundamentales del Cálculo Diferencial
 
 ## 4.1 Teorema de Rolle
@@ -149,3 +172,14 @@ $$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots \quad (\l
 
 **Binomial:**
 $$(1+x)^k = \sum_{n=0}^{\infty} \binom{k}{n} x^n \quad (\lvert x \rvert < 1)$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

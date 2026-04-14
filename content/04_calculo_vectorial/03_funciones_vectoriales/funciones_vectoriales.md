@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'funciones_vectoriales'
+  content_path: 'content/04_calculo_vectorial/03_funciones_vectoriales/funciones_vectoriales.md'
+  metadata_path: 'metadata/content/04_calculo_vectorial/03_funciones_vectoriales/funciones_vectoriales.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Funciones Vectoriales'
+  key_headings:
+    - 'Teoría — Funciones vectoriales de una variable real'
+    - '3.1 Definición y representación'
+    - 'Concepto intuitivo'
+    - 'Definición formal'
+    - 'Dominio'
+    - 'Curva en el espacio'
+    - 'Ejemplos fundamentales'
+    - '3.2 Límites y continuidad'
+  key_concepts:
+    - 'Marco de Frenet-Serret'
+    - 'Curvatura'
+    - 'Torsión'
+    - 'Componentes de la aceleración'
+    - 'Movimiento de proyectiles'
+-->
 # Teoría — Funciones vectoriales de una variable real
 ## 3.1 Definición y representación
 
@@ -337,3 +360,14 @@ Usa las definiciones y fórmulas aquí como referencia canónica.
 Al generar problemas, verifica que el estudiante domine cada sección.
 file_id: CV-03-Teoria-Vectoriales
 -->
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| z | Variable z | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

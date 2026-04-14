@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'transformada_laplace'
+  content_path: 'content/05_ecuaciones_diferenciales/03_transformada_laplace/transformada_laplace.md'
+  metadata_path: 'metadata/content/05_ecuaciones_diferenciales/03_transformada_laplace/transformada_laplace.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Transformada de Laplace'
+  key_headings:
+    - 'Teoría: Transformada de Laplace'
+    - '4.1 Definición y Transformadas Básicas'
+    - 'Definición'
+    - 'Notación'
+    - 'Condiciones de Existencia'
+    - 'Transformadas Fundamentales'
+    - '4.2 Propiedades de la Transformada'
+    - 'Linealidad'
+  key_concepts:
+    - 'Propiedades de la transformada'
+    - 'Transformada inversa'
+    - 'PVI con Laplace'
+    - 'Función escalón unitario'
+    - 'Delta de Dirac'
+-->
 # Teoría: Transformada de Laplace
 ## 4.1 Definición y Transformadas Básicas
 
@@ -260,3 +283,14 @@ $$f(t) = f_1(t)[u(t-a) - u(t-b)] + f_2(t)[u(t-b) - u(t-c)] + \cdots$$
 
 ![Diagrama de flujo para métodos de Transformada de Laplace](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-04/diagrama_decision_laplace.svg)
 
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |

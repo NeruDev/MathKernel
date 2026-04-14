@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'tecnicas_integracion'
+  content_path: 'content/03_calculo_integral/02_tecnicas_integracion/tecnicas_integracion.md'
+  metadata_path: 'metadata/content/03_calculo_integral/02_tecnicas_integracion/tecnicas_integracion.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Técnicas de Integración'
+  key_headings:
+    - 'Teoría de Técnicas de Integración'
+    - '2.1 Sustitución (Cambio de Variable)'
+    - 'Teorema Fundamental'
+    - 'Procedimiento'
+    - 'Ejemplo'
+    - '2.2 Integración por Partes'
+    - 'Fórmula'
+    - 'Regla LIATE'
+  key_concepts:
+    - 'Sustitución'
+    - 'Integración por partes'
+    - 'Sustitución trigonométrica'
+    - 'Fracciones parciales'
+    - 'Estrategias de integración'
+-->
 # Teoría de Técnicas de Integración
 ## 2.1 Sustitución (Cambio de Variable)
 
@@ -184,3 +207,14 @@ $$= 2(u - \ln\lvert u+1\rvert) + C = 2\sqrt{x} - 2\ln(\sqrt{x}+1) + C$$
 6. **¿Hay radicales?** → Sustitución racional o trigonométrica
 
 7. **¿Ninguna funciona?** → Probar manipulación algebraica
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |
+| v | Variable v | variable | N/A | N/A | N/A |

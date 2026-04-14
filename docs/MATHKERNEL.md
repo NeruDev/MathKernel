@@ -4,7 +4,7 @@
 
 Este proyecto implementa una arquitectura de contenido desacoplada:
 
-- **Capa de lectura humana:** Archivos Markdown en `content/` que contienen exclusivamente teoría matemática y fórmulas LaTeX. Se han eliminado metadatos internos y elementos de navegación para maximizar la legibilidad y portabilidad.
+- **Capa de lectura humana:** Archivos Markdown en `content/` que contienen teoría matemática y fórmulas LaTeX. Para apoyar flujos IA sin romper previews, los metadatos rapidos se incluyen como YAML comentado al inicio (`<!-- yaml_frontmatter: ... -->`).
 - **Capa de lectura por IA:** Archivos JSON en `metadata/` que proporcionan la estructura semántica, facilitando el procesamiento por agentes y sistemas automatizados.
 
 ## 2. Componentes
@@ -13,6 +13,8 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 - **Formato:** Markdown puro.
 - **Organización:** Estructura jerárquica por módulos.
 - **Integridad:** Las imágenes se inyectan automáticamente mediante scripts basados en metadatos, evitando el hardcoding manual.
+- **Frontmatter comentado:** Cada archivo incluye `yaml_frontmatter` dentro de comentario HTML para evitar renderizado en preview/web.
+- **Glosario local:** Cuando el tema usa variables/constantes, se agrega sección `## Glosario de variables` con tabla estándar.
 
 ### 2.2 Capa de metadatos (`metadata/`)
 - **Estructura Espejo (Homóloga):**
@@ -27,6 +29,15 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 - **`core/`**: Lógica de negocio pura desacoplada del filesystem (`validators.py`, `processors.py`, `generators.py`, `error_handling.py`).
 - **`io/file_manager.py`**: Abstracción de entrada/salida para texto, JSON y operaciones de directorios.
 - **`generate_assets.py`**: Generador de gráficos SVG invocado de forma opcional mediante el flag `--with-assets`.
+- **`migrate_content_yaml_frontmatter.py`**: Script de migración para insertar/actualizar YAML comentado y glosario de variables en `content/`.
+- **`validate_encoding.py`**: Validación UTF-8 estricta para carpetas críticas y archivos fuente.
+- **`validate_markdown_format.py`**: Validación informativa de fórmulas/tablas Markdown para detectar posibles problemas de formato sin bloquear el build.
+
+### 2.3.1 Calidad y mantenibilidad Python (incremental)
+- **`pyproject.toml`** centraliza configuración de `ruff` y `mypy`.
+- **`ruff`** se usa para checks rápidos de calidad en `scripts/`, `utils/`, `tests/`.
+- **`mypy`** se ejecuta en modo informativo para exponer el estado de tipado a IA y revisiones humanas, sin convertirlo aún en gate estricto.
+- **`.pre-commit-config.yaml`** y **`.editorconfig`** agregan higiene de contribución no destructiva.
 
 
 ### 2.4 Gestión de Activos
@@ -46,6 +57,10 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 2. **Build local:** Ejecutar `python scripts/build.py --verbose` para validar, vincular activos y generar el sitio.
 3. **Build con assets:** Ejecutar `python scripts/build.py --with-assets --verbose` cuando se requiera regenerar gráficos SVG.
 4. **CI/CD:** GitHub Actions descarga objetos LFS y ejecuta el build unificado antes de desplegar `site/`.
+
+El workflow de Pages está separado en dos jobs:
+- **quality**: linting, tipado informativo, validación UTF-8/Markdown y tests.
+- **deploy**: build con assets y publicación, dependiente del job quality.
 
 ## 4. Estructura del Proyecto
 
@@ -80,7 +95,9 @@ graph TD
 - **Rama principal:** `main`
 - **Sitio:** https://nerudev.github.io/MathKernel/
 
-## 5. Recomendaciones de Evolución
-- Mantener el desacoplamiento: no incluir información de formato o metadatos dentro de los archivos de teoría.
+## 6. Recomendaciones de Evolución
+- Mantener el desacoplamiento: conservar `metadata/content/*.json` como fuente de verdad y usar solo YAML comentado como referencia breve.
 - Expandir el catálogo de conceptos en los archivos JSON para mejorar la indexación por parte de IAs.
 - Asegurar que cualquier nuevo módulo siga la convención de nombrado `XX_nombre_modulo`.
+- Mantener validación UTF-8 estricta en CI para prevenir roturas por codificación en web.
+- Mantener `mypy` como señal informativa en el corto plazo y elevar gradualmente el nivel de exigencia por módulos estables.

@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'derivadas'
+  content_path: 'content/02_calculo_diferencial/02_derivadas/derivadas.md'
+  metadata_path: 'metadata/content/02_calculo_diferencial/02_derivadas/derivadas.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de la Derivada'
+  key_headings:
+    - 'Teoría de la Derivada'
+    - '2.1 Definición de Derivada'
+    - 'Definición por Límite'
+    - 'Notaciones'
+    - 'Interpretación Geométrica'
+    - 'Interpretación Física'
+    - '2.2 Derivadas de Funciones Elementales'
+    - 'Funciones Algebraicas'
+  key_concepts:
+    - 'Definición por límite'
+    - 'Regla de la cadena'
+    - 'Derivación implícita'
+    - 'Derivación logarítmica'
+    - 'Diferenciabilidad'
+-->
 # Teoría de la Derivada
 
 ## 2.1 Definición de Derivada
@@ -180,3 +203,15 @@ El recíproco NO es cierto: $f(x) = \lvert x \rvert$ es continua en $x = 0$ pero
 - Cúspides
 - Discontinuidades
 - Tangentes verticales
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |
+| v | Variable v | variable | N/A | N/A | N/A |

@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'interpolacion'
+  content_path: 'content/06_metodos_numericos/02_interpolacion/interpolacion.md'
+  metadata_path: 'metadata/content/06_metodos_numericos/02_interpolacion/interpolacion.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Interpolación'
+  key_headings:
+    - 'Teoría: Interpolación'
+    - '1. Introducción'
+    - '1.1 El Problema de Interpolación'
+    - '1.2 Teorema de Existencia y Unicidad'
+    - '2. Interpolación de Lagrange'
+    - '2.1 Polinomios Base de Lagrange'
+    - '2.2 Polinomio Interpolante de Lagrange'
+    - '2.3 Ejemplo: 3 Puntos'
+  key_concepts:
+    - 'Interpolación de Lagrange'
+    - 'Diferencias divididas'
+    - 'Splines cúbicos'
+    - 'Error de interpolación'
+    - 'Nodos de Chebyshev'
+-->
 # Teoría: Interpolación
 ## 1. Introducción
 
@@ -199,3 +222,13 @@ $$f[x_i, x_i] = f'(x_i)$$
 2. **Procesamiento de señales:** Reconstrucción de señales
 3. **Tablas numéricas:** Estimación entre valores tabulados
 4. **Integración y diferenciación numérica:** Base para otros métodos
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

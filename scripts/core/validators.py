@@ -1,6 +1,8 @@
 from pathlib import Path
 from typing import Any
 
+from scripts.core.encoding_validator import validate_utf8_paths
+
 
 def _to_rel_bases(paths: list[Path], root: Path, suffix: str) -> dict[str, Path]:
     mapping: dict[str, Path] = {}
@@ -120,3 +122,7 @@ def validate_against_schema(data: dict[str, Any], schema: dict[str, Any], file_p
             )
 
     return errors
+
+
+def validate_utf8_targets(targets: list[Path]) -> list[str]:
+    return validate_utf8_paths(targets)

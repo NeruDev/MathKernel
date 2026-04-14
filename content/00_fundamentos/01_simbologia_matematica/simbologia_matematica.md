@@ -1,3 +1,25 @@
+<!--
+yaml_frontmatter:
+  id: 'simbologia_matematica'
+  content_path: 'content/00_fundamentos/01_simbologia_matematica/simbologia_matematica.md'
+  metadata_path: 'metadata/content/00_fundamentos/01_simbologia_matematica/simbologia_matematica.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Simbología Matemática'
+  key_headings:
+    - '1. Aritmética y Álgebra Básica'
+    - '2. Lógica y Conjuntos'
+    - '3. Cálculo y Análisis Vectorial'
+    - '4. Álgebra Lineal'
+    - '5. Números Complejos (Contexto Ingeniería)'
+    - '6. Trigonometría y Geometría'
+    - '7. Estadística y Probabilidad'
+  key_concepts:
+    - 'Lógica'
+    - 'Conjuntos'
+    - 'Cálculo'
+    - 'Análisis Vectorial'
+    - 'Álgebra Lineal'
+-->
 # 1. Aritmética y Álgebra Básica
 
 | Símbolo | Nombre | LaTeX | Uso / Significado |
@@ -128,3 +150,16 @@ Añadí las funciones hiperbólicas (usadas en líneas de transmisión).
 | $\mathcal{N}(\mu, \sigma^2)$| Distribución Normal| `\mathcal{N}` | Campana de Gauss |
 
 ---
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| z | Variable z | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |
+| v | Variable v | variable | N/A | N/A | N/A |

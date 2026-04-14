@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'edo_segundo_orden'
+  content_path: 'content/05_ecuaciones_diferenciales/02_edo_segundo_orden/edo_segundo_orden.md'
+  metadata_path: 'metadata/content/05_ecuaciones_diferenciales/02_edo_segundo_orden/edo_segundo_orden.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de EDO de Segundo Orden'
+  key_headings:
+    - 'Teoría: Ecuaciones Diferenciales de Segundo Orden'
+    - '2.1 Ecuaciones Homogéneas con Coeficientes Constantes'
+    - 'Forma General'
+    - 'Ecuación Característica'
+    - 'Caso 1: Raíces Reales Distintas ($\Delta > 0$)'
+    - 'Caso 2: Raíces Reales Repetidas ($\Delta = 0$)'
+    - 'Caso 3: Raíces Complejas Conjugadas ($\Delta < 0$)'
+    - '2.2 Ecuaciones No Homogéneas'
+  key_concepts:
+    - 'Raíces de la ecuación característica'
+    - 'Coeficientes indeterminados'
+    - 'Variación de parámetros'
+    - 'Ecuación de Cauchy-Euler'
+    - 'Oscilador armónico'
+-->
 # Teoría: Ecuaciones Diferenciales de Segundo Orden
 ## 2.1 Ecuaciones Homogéneas con Coeficientes Constantes
 
@@ -331,3 +354,15 @@ Cuando la frecuencia de la fuerza externa $\omega$ iguala la frecuencia natural 
 **Con amortiguamiento:** La amplitud alcanza un máximo finito en:
 
 $$\omega_r = \sqrt{\omega_0^2 - 2\gamma^2}$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

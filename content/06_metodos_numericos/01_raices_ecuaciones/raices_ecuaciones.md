@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'raices_ecuaciones'
+  content_path: 'content/06_metodos_numericos/01_raices_ecuaciones/raices_ecuaciones.md'
+  metadata_path: 'metadata/content/06_metodos_numericos/01_raices_ecuaciones/raices_ecuaciones.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Raíces de Ecuaciones'
+  key_headings:
+    - 'Teoría: Raíces de Ecuaciones'
+    - '1. Introducción'
+    - '2. Fundamentos Teóricos'
+    - '2.1 Teorema del Valor Intermedio'
+    - '2.2 Teorema del Punto Fijo'
+    - '2.3 Series de Taylor'
+    - '3. Métodos Cerrados'
+    - '3.1 Método de Bisección'
+  key_concepts:
+    - 'Método de Bisección'
+    - 'Newton-Raphson'
+    - 'Método de la Secante'
+    - 'Punto Fijo'
+    - 'Orden de convergencia'
+-->
 # Teoría: Raíces de Ecuaciones
 ## 1. Introducción
 
@@ -180,3 +203,15 @@ Si $f(x) = (x - x^*)^m h(x)$ con $h(x^*) \neq 0$:
 
 **Ejemplo (TIR):** Resolver para $r$:
 $$\sum_{t=1}^{n} \frac{C_t}{(1+r)^t} - I_0 = 0$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

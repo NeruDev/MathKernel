@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'determinantes'
+  content_path: 'content/01_algebra_lineal/02_determinantes/determinantes.md'
+  metadata_path: 'metadata/content/01_algebra_lineal/02_determinantes/determinantes.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Determinantes'
+  key_headings:
+    - 'Teoría de Determinantes'
+    - '2.1 Determinante de Matrices 2×2 y 3×3'
+    - 'Determinante $2 \times 2$'
+    - 'Determinante $3 \times 3$ (Regla de Sarrus)'
+    - 'Interpretación Geométrica'
+    - '2.2 Propiedades de Determinantes'
+    - 'Propiedades Fundamentales'
+    - 'Efecto de Operaciones Elementales de Fila'
+  key_concepts:
+    - 'Regla de Sarrus'
+    - 'Propiedades de determinantes'
+    - 'Cofactores'
+    - 'Método de Laplace'
+    - 'Regla de Cramer'
+-->
 # Teoría de Determinantes
 ## 2.1 Determinante de Matrices 2×2 y 3×3
 
@@ -155,3 +178,12 @@ $$y = \frac{\begin{vmatrix} 2 & 5 \\ 3 & 6 \end{vmatrix}}{5} = \frac{12 - 15}{5}
 - Solo para sistemas con $\det(A) \neq 0$
 - Ineficiente para sistemas grandes (preferir eliminación gaussiana)
 - Útil para sistemas pequeños y demostrar existencia/unicidad
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

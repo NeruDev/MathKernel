@@ -30,3 +30,31 @@ def test_file_manager_missing_file_raises(tmp_path):
 
     with pytest.raises(FileOperationError):
         fm.read_text(missing)
+
+
+def test_file_manager_text_roundtrip_with_symbols(tmp_path):
+    fm = FileManager()
+    file_path = tmp_path / "utf8.txt"
+    text = "Matematica: pi=3.14159265359, lambda=\u03bb, enie=\u00f1"
+
+    fm.write_text(file_path, text)
+
+    assert fm.read_text(file_path) == text
+
+
+def test_file_manager_invalid_utf8_text_raises(tmp_path):
+    fm = FileManager()
+    bad_file = tmp_path / "bad.txt"
+    bad_file.write_bytes(b"\xff\xfe\xfa")
+
+    with pytest.raises(FileOperationError):
+        fm.read_text(bad_file)
+
+
+def test_file_manager_invalid_utf8_json_raises(tmp_path):
+    fm = FileManager()
+    bad_json = tmp_path / "bad.json"
+    bad_json.write_bytes(b"\xff\xfe\xfa")
+
+    with pytest.raises(FileOperationError):
+        fm.read_json(bad_json)

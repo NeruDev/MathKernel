@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'aritmetica'
+  content_path: 'content/00_fundamentos/02_aritmetica/aritmetica.md'
+  metadata_path: 'metadata/content/00_fundamentos/02_aritmetica/aritmetica.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Aritmética'
+  key_headings:
+    - 'Teoría de Aritmética'
+    - '2.1 Sistemas numéricos'
+    - 'Números naturales $\mathbb{N}$'
+    - 'Números enteros $\mathbb{Z}$'
+    - 'Números racionales $\mathbb{Q}$'
+    - 'Números irracionales $\mathbb{I}$'
+    - 'Números reales $\mathbb{R}$'
+    - 'Jerarquía de conjuntos'
+  key_concepts:
+    - 'Sistemas numéricos'
+    - 'Divisibilidad'
+    - 'Números primos'
+    - 'Fracciones'
+    - 'Potencias'
+-->
 # Teoría de Aritmética
 
 La aritmética es la rama más antigua de las matemáticas, fundamental para todas las demás áreas. Dominar sus conceptos es esencial para el éxito en álgebra, cálculo y matemáticas superiores.
@@ -339,7 +362,7 @@ Una **proporción** es la igualdad de dos razones:
 $$\frac{a}{b} = \frac{c}{d} \quad \text{o} \quad a : b = c : d$$
 
 **Propiedad fundamental**:
-$$\frac{a}{b} = \frac{c}{d} \iff a \cdot d = b \cdot c$$
+$$\frac{a}{b} = \frac{c}{d} \Leftrightarrow a \cdot d = b \cdot c$$
 
 ### Regla de tres simple
 
@@ -463,3 +486,15 @@ Si $p=7$ y queremos verificar si $7 \mid (84\cdot 25)$:
 | Proporción | $\frac{a}{b} = \frac{c}{d} \Leftrightarrow ad = bc$ |
 
 ---
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

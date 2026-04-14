@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'aplicaciones_integral'
+  content_path: 'content/03_calculo_integral/04_aplicaciones_integral/aplicaciones_integral.md'
+  metadata_path: 'metadata/content/03_calculo_integral/04_aplicaciones_integral/aplicaciones_integral.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Aplicaciones de la Integral'
+  key_headings:
+    - 'Aplicaciones de la Integral'
+    - '4.1 Área entre Curvas'
+    - 'Área con Integración Vertical'
+    - 'Área con Integración Horizontal'
+    - 'Criterio de Elección'
+    - '4.2 Volúmenes por Discos y Arandelas'
+    - 'Método del Disco'
+    - 'Método de la Arandela'
+  key_concepts:
+    - 'Área entre curvas'
+    - 'Volúmenes por discos'
+    - 'Capas cilíndricas'
+    - 'Longitud de arco'
+    - 'Trabajo'
+-->
 # Aplicaciones de la Integral
 ## 4.1 Área entre Curvas
 
@@ -195,3 +218,15 @@ $$f(c) = \frac{1}{b-a}\int_a^b f(x)\,dx$$
 - **Velocidad promedio:** $v_{\text{prom}} = \frac{1}{t_2-t_1}\int_{t_1}^{t_2} v(t)\,dt$
 - **Temperatura promedio**
 - **Concentración promedio**
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

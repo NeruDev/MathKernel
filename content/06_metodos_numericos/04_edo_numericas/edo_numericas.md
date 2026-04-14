@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'edo_numericas'
+  content_path: 'content/06_metodos_numericos/04_edo_numericas/edo_numericas.md'
+  metadata_path: 'metadata/content/06_metodos_numericos/04_edo_numericas/edo_numericas.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Métodos Numéricos para EDO'
+  key_headings:
+    - 'Teoría: Solución Numérica de EDO'
+    - '1. Introducción'
+    - '1.1 Problema de Valor Inicial (PVI)'
+    - '1.2 Existencia y Unicidad'
+    - '1.3 Notación'
+    - '2. Método de Euler'
+    - '2.1 Derivación Geométrica'
+    - '2.2 Derivación por Serie de Taylor'
+  key_concepts:
+    - 'Método de Euler'
+    - 'Runge-Kutta (RK4)'
+    - 'Métodos multipaso'
+    - 'Predictor-Corrector'
+    - 'Estabilidad y rigidez'
+-->
 # Teoría: Solución Numérica de EDO
 ## 1. Introducción
 
@@ -279,3 +302,15 @@ $$h_{nuevo} = h \cdot \left(\frac{\text{tol}}{\text{Error}}\right)^{1/5}$$
 
 - Si Error > tol: rechazar paso, reducir $h$
 - Si Error < tol: aceptar paso, posiblemente aumentar $h$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| z | Variable z | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

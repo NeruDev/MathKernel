@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'trigonometria'
+  content_path: 'content/00_fundamentos/05_trigonometria/trigonometria.md'
+  metadata_path: 'metadata/content/00_fundamentos/05_trigonometria/trigonometria.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Trigonometría'
+  key_headings:
+    - 'Teoría de Trigonometría'
+    - '5.1 Conceptos fundamentales'
+    - 'Definición de ángulo'
+    - 'Sistemas de medición angular'
+    - 'Ángulos notables'
+    - '5.2 Razones trigonométricas en triángulos rectángulos'
+    - 'Definición'
+    - 'Razones recíprocas'
+  key_concepts:
+    - 'Razones trigonométricas'
+    - 'Círculo unitario'
+    - 'Identidades'
+    - 'Ley de senos'
+    - 'Ley de cosenos'
+-->
 # Teoría de Trigonometría
 ## 5.1 Conceptos fundamentales
 
@@ -433,3 +456,13 @@ donde $n \in \mathbb{Z}$.
 ---
 
 > 📚 **Nota:** Este documento cubre trigonometría para nivel fundamentos.
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

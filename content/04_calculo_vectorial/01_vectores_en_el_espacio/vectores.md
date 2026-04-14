@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'vectores'
+  content_path: 'content/04_calculo_vectorial/01_vectores_en_el_espacio/vectores.md'
+  metadata_path: 'metadata/content/04_calculo_vectorial/01_vectores_en_el_espacio/vectores.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Vectores en el Espacio'
+  key_headings:
+    - 'Teoría — Vectores en el espacio'
+    - '1.1 Definición de un vector en el plano y en el espacio'
+    - 'Concepto intuitivo'
+    - 'Representación en coordenadas'
+    - 'Vector posición'
+    - 'Vector entre dos puntos'
+    - 'Interpretación geométrica'
+    - 'Magnitud (norma)'
+  key_concepts:
+    - 'Producto escalar'
+    - 'Producto vectorial'
+    - 'Ecuación de la recta'
+    - 'Ecuación del plano'
+    - 'Producto triple escalar'
+-->
 # Teoría — Vectores en el espacio
 ## 1.1 Definición de un vector en el plano y en el espacio
 
@@ -219,3 +242,14 @@ file_id: CV-01-Teoria-Vectores
 
 ![Ecuación de la recta y el plano en el espacio 3D](../../../assets/images/grafics/04_calculo_vectorial/01_vectores_en_el_espacio/recta_plano_espacio.svg)
 
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| z | Variable z | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

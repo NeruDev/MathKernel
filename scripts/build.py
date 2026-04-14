@@ -10,6 +10,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from scripts.config import BuildConfig, Paths
 from scripts.core import generators, processors, validators
 from scripts.core.error_handling import ErrorCollector, FileOperationError, ProcessingError
+from scripts.core.formula_validator import validate_markdown_math_tables
 from scripts.io.file_manager import FileManager
 from utils.links import detect_broken_internal_links
 from utils.logging import log_error, log_info, log_warn
@@ -42,12 +43,27 @@ def _load_schema(path: Path, file_manager: FileManager) -> dict:
     return file_manager.read_json(path)
 
 
+def _utf8_validation_targets(paths: Paths) -> list[Path]:
+    return [
+        paths.content_dir,
+        paths.metadata_dir,
+        paths.scripts_dir,
+        paths.project_root / "utils",
+        paths.site_src_dir,
+        paths.project_root / "docs",
+        paths.project_root / "README.md",
+        paths.project_root / "requirements.txt",
+    ]
+
+
 def validate_project(config: BuildConfig, file_manager: FileManager) -> list[str]:
     paths = config.paths
     errors: list[str] = []
 
     if not paths.content_dir.exists():
         return [f"No existe la carpeta content/: {paths.content_dir}"]
+
+    errors.extend(validators.validate_utf8_targets(_utf8_validation_targets(paths)))
 
     md_files = sorted(paths.content_dir.rglob("*.md"))
 
@@ -233,6 +249,7 @@ def run_site_generation(config: BuildConfig, file_manager: FileManager, collecto
 
     generated_pages: list[str] = []
     id_to_path: dict[str, str] = {}
+    markdown_warning_count = 0
 
     for md_path in sorted(paths.content_dir.rglob("*.md")):
         rel_path_html = get_relative_html_path(md_path, paths.content_dir)
@@ -241,6 +258,13 @@ def run_site_generation(config: BuildConfig, file_manager: FileManager, collecto
 
         depth = compute_depth(rel_path_html)
         md_text = file_manager.read_text(md_path)
+
+        markdown_warnings = validate_markdown_math_tables(md_text, md_path)
+        markdown_warning_count += len(markdown_warnings)
+        if config.verbose and markdown_warnings:
+            for warning in markdown_warnings:
+                log_warn(warning)
+
         html_content, conversion_count = convert_md_to_html(
             md_text,
             asset_prefix="../" * depth,
@@ -281,6 +305,12 @@ def run_site_generation(config: BuildConfig, file_manager: FileManager, collecto
     broken_links = detect_broken_internal_links(generated_pages)
     for html_path, link in broken_links:
         collector.add_message("generate_site", f"Enlace interno roto: {link} en {html_path}")
+
+    if markdown_warning_count:
+        log_warn(
+            "Validacion Markdown informativa: "
+            f"{markdown_warning_count} alertas detectadas (no bloqueantes)"
+        )
 
     log_info("Generacion de sitio finalizada")
     return generated_pages

@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'aplicaciones_derivada'
+  content_path: 'content/02_calculo_diferencial/03_aplicaciones_de_la_derivada/aplicaciones_derivada.md'
+  metadata_path: 'metadata/content/02_calculo_diferencial/03_aplicaciones_de_la_derivada/aplicaciones_derivada.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Aplicaciones de la Derivada'
+  key_headings:
+    - 'Teoría de Aplicaciones de la Derivada'
+    - '3.1 Recta Tangente y Normal'
+    - 'Recta Tangente'
+    - 'Recta Normal'
+    - '3.2 Razones de Cambio Relacionadas'
+    - 'Concepto'
+    - 'Procedimiento'
+    - '3.3 Valores Extremos'
+  key_concepts:
+    - 'Recta tangente'
+    - 'Valores extremos'
+    - 'Criterio de la primera derivada'
+    - 'Optimización'
+    - 'Método de Newton-Raphson'
+-->
 # Teoría de Aplicaciones de la Derivada
 
 ## 3.1 Recta Tangente y Normal
@@ -140,3 +163,12 @@ $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$
 ### Convergencia
 - Funciona bien si $x_0$ está cerca de la raíz
 - Puede fallar si $f'(x_n) \approx 0$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |

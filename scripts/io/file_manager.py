@@ -33,7 +33,7 @@ class FileManager:
         self.ensure_dir(target.parent)
         try:
             target.write_text(content, encoding="utf-8")
-        except OSError as exc:
+        except (OSError, UnicodeEncodeError) as exc:
             raise FileOperationError(
                 f"No se pudo escribir archivo de texto: {target}",
                 context={"path": str(target)},
@@ -45,7 +45,7 @@ class FileManager:
         try:
             with target.open("r", encoding="utf-8") as handle:
                 data = json.load(handle)
-        except (FileNotFoundError, OSError, json.JSONDecodeError) as exc:
+        except (FileNotFoundError, OSError, json.JSONDecodeError, UnicodeDecodeError) as exc:
             raise FileOperationError(
                 f"No se pudo leer JSON: {target}",
                 context={"path": str(target)},
@@ -65,7 +65,7 @@ class FileManager:
         try:
             with target.open("w", encoding="utf-8") as handle:
                 json.dump(data, handle, indent=2, ensure_ascii=False)
-        except OSError as exc:
+        except (OSError, UnicodeEncodeError) as exc:
             raise FileOperationError(
                 f"No se pudo escribir JSON: {target}",
                 context={"path": str(target)},

@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'integrales_impropias'
+  content_path: 'content/03_calculo_integral/05_integrales_impropias/integrales_impropias.md'
+  metadata_path: 'metadata/content/03_calculo_integral/05_integrales_impropias/integrales_impropias.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Integrales Impropias'
+  key_headings:
+    - 'Integrales Impropias'
+    - 'Introducción'
+    - '5.1 Tipo I: Límites Infinitos'
+    - 'Definición'
+    - 'Convergencia'
+    - 'Ejemplos Fundamentales'
+    - '5.2 Tipo II: Discontinuidades'
+    - 'Discontinuidad en un Extremo'
+  key_concepts:
+    - 'Límites infinitos'
+    - 'Discontinuidades'
+    - 'Convergencia y divergencia'
+    - 'Criterios de comparación'
+    - 'Integrales p'
+-->
 # Integrales Impropias
 ## Introducción
 
@@ -178,3 +201,12 @@ La integral $\int_{-1}^{1} \frac{1}{x}\,dx$ **diverge** porque las dos partes de
 Para funciones oscilantes como $\sin x$ o $\cos x$:
 - $\int_0^{\infty} \sin x\,dx$ **diverge** (oscila)
 - $\int_0^{\infty} \frac{\sin x}{x}\,dx$ **converge** (amortiguada)
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |

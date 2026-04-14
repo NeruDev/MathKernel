@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'geometria'
+  content_path: 'content/00_fundamentos/04_geometria/geometria.md'
+  metadata_path: 'metadata/content/00_fundamentos/04_geometria/geometria.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Geometría'
+  key_headings:
+    - 'Teoría de Geometría'
+    - '4.1 Conceptos fundamentales'
+    - 'Elementos primitivos'
+    - 'Segmentos y rayos'
+    - 'Punto medio'
+    - 'Posiciones relativas'
+    - '4.2 Ángulos'
+    - 'Definición'
+  key_concepts:
+    - 'Ángulos'
+    - 'Triángulos'
+    - 'Cuadriláteros'
+    - 'Círculo'
+    - 'Áreas'
+-->
 # Teoría de Geometría
 ## 4.1 Conceptos fundamentales
 
@@ -23,6 +46,7 @@ $$AM = MB = \frac{AB}{2}$$
 ### Posiciones relativas
 
 **Entre rectas:**
+
 | Posición | Descripción |
 |----------|-------------|
 | Paralelas | No se intersectan, misma dirección ($\ell_1 \parallel \ell_2$) |
@@ -501,3 +525,13 @@ $$a \cdot b = c \cdot h$$
 ### Principio de Cavalieri
 
 Dos sólidos con igual altura tienen igual volumen si todas las secciones paralelas a la base tienen igual área.
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

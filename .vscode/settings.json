@@ -1,28 +1,24 @@
 {
-    // Intérprete por defecto del entorno virtual
+    // Intérprete del workspace (evita conflictos con el intérprete global)
     "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe",
 
     // Usar PowerShell como terminal por defecto
     "terminal.integrated.defaultProfile.windows": "PowerShell",
 
-    // Activación automática cuando la terminal la abre la extensión de Python
-    "python.terminal.activateEnvironment": true,
+    // Evita bucles por activación forzada en terminal; usar ejecutable explícito del venv
+    "python.terminal.activateEnvironment": false,
 
-    // Perfil personalizado de PowerShell con activación forzada del venv
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "args": [
-                "-NoExit",
-                "-Command",
-                "if (Test-Path .\\.venv\\Scripts\\Activate.ps1) { & .\\.venv\\Scripts\\Activate.ps1 }"
-            ]
-        }
-    },
-
-    // Opcional: asegura que el entorno se detecte correctamente en el workspace
+    // Asegura detección de entornos del workspace
     "python.venvPath": ".",
 
-    // Mejora la detección de entornos en proyectos
-    "python.envFile": "${workspaceFolder}\\.env"
+    // Variables de entorno del proyecto
+    "python.envFile": "${workspaceFolder}\\.env",
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+
+    // Reduce trabajo de Pylance en rutas grandes/no editables
+    "python.analysis.exclude": [
+        "**/site/**",
+        "**/.venv/**",
+        "**/assets/images/grafics/**"
+    ]
 }

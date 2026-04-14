@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'curvas'
+  content_path: 'content/04_calculo_vectorial/02_curvas_planas_parametricas_y_polares/curvas.md'
+  metadata_path: 'metadata/content/04_calculo_vectorial/02_curvas_planas_parametricas_y_polares/curvas.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Curvas Planas, Ecuaciones Paramétricas y Coordenadas Polares'
+  key_headings:
+    - 'Teoría — Curvas planas, ecuaciones paramétricas y coordenadas polares'
+    - '2.1 Ecuaciones paramétricas'
+    - 'Concepto intuitivo'
+    - 'Definición formal'
+    - 'Orientación'
+    - 'Eliminación del parámetro'
+    - 'Curvas paramétricas clásicas'
+    - '2.2 Cálculo con curvas paramétricas'
+  key_concepts:
+    - 'Ecuaciones paramétricas'
+    - 'Coordenadas polares'
+    - 'Longitud de arco'
+    - 'Área en polares'
+    - 'Secciones cónicas'
+-->
 # Teoría — Curvas planas, ecuaciones paramétricas y coordenadas polares
 ## 2.1 Ecuaciones paramétricas
 
@@ -235,3 +258,16 @@ Usa las definiciones y fórmulas aquí como referencia canónica.
 Al generar problemas, asegura dominio de cada sección antes de avanzar.
 file_id: CV-02-Teoria-Curvas
 -->
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |

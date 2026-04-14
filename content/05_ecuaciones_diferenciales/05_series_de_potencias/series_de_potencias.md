@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'series_de_potencias'
+  content_path: 'content/05_ecuaciones_diferenciales/05_series_de_potencias/series_de_potencias.md'
+  metadata_path: 'metadata/content/05_ecuaciones_diferenciales/05_series_de_potencias/series_de_potencias.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Series de Potencias'
+  key_headings:
+    - 'Teoría: Series de Potencias para EDO'
+    - '5.1 Repaso de Series de Potencias'
+    - 'Definición'
+    - 'Radio de Convergencia'
+    - 'Operaciones con Series'
+    - 'Función Analítica'
+    - '5.2 Soluciones en Puntos Ordinarios'
+    - 'Clasificación de Puntos'
+  key_concepts:
+    - 'Puntos ordinarios'
+    - 'Método de Frobenius'
+    - 'Ecuación de Bessel'
+    - 'Polinomios de Legendre'
+    - 'Relación de recurrencia'
+-->
 # Teoría: Series de Potencias para EDO
 ## 5.1 Repaso de Series de Potencias
 
@@ -228,3 +251,14 @@ $$L_0(x) = 1, \quad L_1(x) = 1-x, \quad L_2(x) = \frac{1}{2}(x^2 - 4x + 2)$$
 
 ![Diagrama de flujo para método de series de potencias](../../../assets/images/grafics/05_ecuaciones_diferenciales/ED-05/diagrama_decision_series_potencias.svg)
 
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

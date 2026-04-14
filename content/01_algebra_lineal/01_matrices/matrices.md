@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'matrices'
+  content_path: 'content/01_algebra_lineal/01_matrices/matrices.md'
+  metadata_path: 'metadata/content/01_algebra_lineal/01_matrices/matrices.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Matrices'
+  key_headings:
+    - 'Teoría de Matrices'
+    - '1.1 Definición y Notación'
+    - 'Definición'
+    - 'Notación'
+    - 'Igualdad de Matrices'
+    - '1.2 Tipos de Matrices'
+    - 'Por su forma'
+    - 'Matrices Cuadradas Especiales'
+  key_concepts:
+    - 'Matriz identidad'
+    - 'Multiplicación de matrices'
+    - 'Transpuesta'
+    - 'Matriz inversa'
+    - 'Matriz ortogonal'
+-->
 # Teoría de Matrices
 ## 1.1 Definición y Notación
 
@@ -171,3 +194,12 @@ Para encontrar $A^{-1}$:
 $A$ es **ortogonal** si $A^T = A^{-1}$, es decir, $AA^T = A^T A = I$.
 
 Las columnas (y filas) forman un conjunto ortonormal.
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |

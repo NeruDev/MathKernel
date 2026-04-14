@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'edo_primer_orden'
+  content_path: 'content/05_ecuaciones_diferenciales/01_edo_primer_orden/edo_primer_orden.md'
+  metadata_path: 'metadata/content/05_ecuaciones_diferenciales/01_edo_primer_orden/edo_primer_orden.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de EDO de Primer Orden'
+  key_headings:
+    - 'Teoría de EDO de Primer Orden'
+    - '1.1 Conceptos Fundamentales'
+    - 'Definición de Ecuación Diferencial'
+    - 'Orden y Grado'
+    - 'Tipos de Soluciones'
+    - 'Problema de Valor Inicial (PVI)'
+    - 'Teorema de Existencia y Unicidad (Picard-Lindelöf)'
+    - '1.2 Ecuaciones Separables'
+  key_concepts:
+    - 'Ecuaciones separables'
+    - 'Ecuaciones lineales'
+    - 'Ecuaciones exactas'
+    - 'Ecuaciones de Bernoulli'
+    - 'Problema de Valor Inicial'
+-->
 # Teoría de EDO de Primer Orden
 ## 1.1 Conceptos Fundamentales
 
@@ -258,3 +281,15 @@ $$\frac{dq}{dt} + \frac{1}{RC}q = \frac{E(t)}{R}$$
 ### Mezclas
 
 $$\frac{dx}{dt} = \text{(tasa entrada)} - \text{(tasa salida)}$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| v | Variable v | variable | N/A | N/A | N/A |

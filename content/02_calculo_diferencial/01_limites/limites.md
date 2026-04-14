@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'limites'
+  content_path: 'content/02_calculo_diferencial/01_limites/limites.md'
+  metadata_path: 'metadata/content/02_calculo_diferencial/01_limites/limites.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Límites'
+  key_headings:
+    - 'Teoría de Límites'
+    - '1.1 Concepto de Límite'
+    - 'Definición Intuitiva'
+    - 'Definición Formal (Épsilon-Delta)'
+    - '1.2 Límites Laterales'
+    - 'Límite por la Derecha'
+    - 'Límite por la Izquierda'
+    - 'Teorema de Existencia'
+  key_concepts:
+    - 'Límite intuitivo'
+    - 'Límite formal'
+    - 'Límites laterales'
+    - 'Teorema del emparedado'
+    - 'Continuidad'
+-->
 # Teoría de Límites
 
 ## 1.1 Concepto de Límite
@@ -228,3 +251,14 @@ Para demostrar que una ecuación tiene solución en un intervalo:
 2. Verificar que $f$ es continua
 3. Encontrar $a, b$ donde $f(a)$ y $f(b)$ tienen signos opuestos
 4. Concluir por TVI que existe raíz en $(a, b)$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |

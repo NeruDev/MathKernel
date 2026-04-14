@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'geometria_analitica'
+  content_path: 'content/00_fundamentos/06_geometria_analitica/geometria_analitica.md'
+  metadata_path: 'metadata/content/00_fundamentos/06_geometria_analitica/geometria_analitica.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Geometría Analítica'
+  key_headings:
+    - 'Teoría de Geometría Analítica'
+    - '6.1 Sistema de coordenadas cartesianas'
+    - 'Definición'
+    - 'Coordenadas de un punto'
+    - 'Cuadrantes'
+    - '6.2 Fórmulas fundamentales'
+    - 'Distancia entre dos puntos'
+    - 'Punto medio de un segmento'
+  key_concepts:
+    - 'Plano cartesiano'
+    - 'Línea recta'
+    - 'Circunferencia'
+    - 'Parábola'
+    - 'Elipse'
+-->
 # Teoría de Geometría Analítica
 ## 6.1 Sistema de coordenadas cartesianas
 
@@ -455,3 +478,15 @@ $$y' = x\sin\theta + y\cos\theta$$
 Cambio de tamaño con factor $k$ desde el origen:
 
 $$x' = kx, \quad y' = ky$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| r | Variable r | variable | N/A | N/A | N/A |

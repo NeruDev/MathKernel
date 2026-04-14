@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'sistemas_edo'
+  content_path: 'content/05_ecuaciones_diferenciales/04_sistemas_edo/sistemas_edo.md'
+  metadata_path: 'metadata/content/05_ecuaciones_diferenciales/04_sistemas_edo/sistemas_edo.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Sistemas EDO'
+  key_headings:
+    - 'Teoría: Sistemas de Ecuaciones Diferenciales Ordinarias'
+    - '3.1 Forma Matricial'
+    - 'Sistema de EDO Lineales'
+    - 'Notación Matricial'
+    - 'Sistema Homogéneo'
+    - 'Conversión de EDO de Orden Superior'
+    - '3.2 Método de Valores Propios (Eigenvalores Reales Distintos)'
+    - 'Idea Central'
+  key_concepts:
+    - 'Método de valores propios'
+    - 'Eigenvalores complejos'
+    - 'Retratos de fase'
+    - 'Estabilidad'
+    - 'Matriz exponencial'
+-->
 # Teoría: Sistemas de Ecuaciones Diferenciales Ordinarias
 ## 3.1 Forma Matricial
 
@@ -259,3 +282,15 @@ donde $e^{Dt} = \text{diag}(e^{\lambda_1 t}, ..., e^{\lambda_n t})$
 > $$e^{At} = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} e^t & 0 \\ 0 & e^{2t} \end{pmatrix}\begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix}$$
 > 
 > $$e^{At} = \begin{pmatrix} e^t & e^{2t} - e^t \\ 0 & e^{2t} \end{pmatrix}$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| v | Variable v | variable | N/A | N/A | N/A |

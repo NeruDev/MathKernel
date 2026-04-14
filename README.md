@@ -46,6 +46,11 @@ La **capa IA** se apoya en una arquitectura de **Metadatos Espejo**:
 - **Campos de Teoría:** `id`, `title`, `module`, `order`, `concepts`.
 - **Campos de Activos:** `id`, `topic_id`, `description`, `section`, `image_path`.
 
+Referencia rapida en contenido Markdown:
+- Cada archivo en `content/` incluye un bloque `yaml_frontmatter` en comentario HTML (`<!-- ... -->`) para consulta rapida por IA.
+- Ese bloque no reemplaza metadata JSON: la fuente de verdad sigue siendo `metadata/content/*.json`.
+- El bloque comentado no se renderiza en la salida HTML del sitio.
+
 ## Flujo local con entorno virtual
 
 Requisitos: Python 3.11+
@@ -72,9 +77,47 @@ Flags disponibles en el CLI unico:
 - `--skip-validation`: salta validacion estructural.
 - `--with-assets`: ejecuta `generate_assets.py` antes del pipeline principal.
 
+Scripts auxiliares:
+- `python scripts/migrate_content_yaml_frontmatter.py`: inserta/actualiza `yaml_frontmatter` comentado en `content/*.md` y agrega seccion `Glosario de variables` cuando el tema usa variables/constantes.
+- `python scripts/validate_encoding.py`: valida codificacion UTF-8 en rutas criticas (`content/`, `metadata/`, `scripts/`, `utils/`, `site_src/`, `docs/`).
+- `python scripts/validate_markdown_format.py`: valida de forma informativa formulas/tablas Markdown y reporta posibles casos de formato inconsistente.
+
+### 3. Calidad y mantenibilidad Python
+
+Se adopta una capa ligera de tooling sin cambiar la arquitectura del repositorio:
+
+- `ruff` para chequeo rapido de calidad en `scripts/`, `utils/` y `tests/`.
+- `mypy` en modo **informativo** para mostrar estado de tipado actual (sin bloquear deploy).
+- `pyproject.toml` como configuracion central de tooling (no reemplaza `requirements.txt`).
+
+Comandos recomendados:
+
+```powershell
+ruff check scripts utils tests
+mypy scripts utils --config-file pyproject.toml --no-error-summary
+python -m pytest -q
+```
+
+### 4. Higiene de contribucion
+
+- `.editorconfig` fija convenciones base (UTF-8, newline final, fin de linea LF).
+- `.pre-commit-config.yaml` habilita hooks locales no destructivos.
+
+Flujo sugerido:
+
+```powershell
+pip install pre-commit
+pre-commit install
+pre-commit run --all-files
+```
+
 ## Publicación en GitHub Pages
 
 El despliegue es automático mediante GitHub Actions (`.github/workflows/pages.yml`) al realizar un push a la rama **main**.
+
+El workflow separa dos etapas:
+- **quality**: ruff + mypy (informativo) + validaciones de encoding/markdown + tests.
+- **deploy**: build con assets y publicación en GitHub Pages (solo si quality finaliza correctamente).
 
 ## Estado actual del repositorio
 
@@ -89,6 +132,10 @@ El despliegue es automático mediante GitHub Actions (`.github/workflows/pages.y
 - Se añadió un límite de ancho para medios en la capa web fuente (`site_src/styles.css`), con comportamiento responsive en móvil.
 - Se actualizó la paleta de generación SVG a colores didácticos vivos (azul, verde, amarillo, rojo, morado, rosa y variantes).
 - Se regeneraron assets SVG y se validó build/tests sin rotura de enlaces de imágenes.
+
+- Se agrego `yaml_frontmatter` comentado en `content/` para identificacion rapida de archivo, encabezados y conceptos clave sin afectar render web.
+- Se incorporo seccion estandar `Glosario de variables` en Markdown para temas con variables/constantes, incluyendo precision de 12 digitos para constantes cuando aplica.
+- Se incorporo validacion UTF-8 estricta en el pipeline de build y en un script dedicado (`scripts/validate_encoding.py`).
 
 ## Documentación técnica complementaria
 

@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'integracion_multiple'
+  content_path: 'content/04_calculo_vectorial/05_integracion_multiple/integracion_multiple.md'
+  metadata_path: 'metadata/content/04_calculo_vectorial/05_integracion_multiple/integracion_multiple.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Integración Múltiple'
+  key_headings:
+    - 'Teoría — Integración múltiple'
+    - '5.1 Integrales dobles sobre rectángulos'
+    - 'Definición mediante sumas de Riemann'
+    - 'Teorema de Fubini (rectángulos)'
+    - 'Interpretación geométrica'
+    - 'Propiedades'
+    - '5.2 Integrales dobles sobre regiones generales'
+    - 'Región tipo I (simple en $y$)'
+  key_concepts:
+    - 'Integrales dobles'
+    - 'Coordenadas polares'
+    - 'Integrales triples'
+    - 'Teorema de Green'
+    - 'Teorema de Stokes'
+-->
 # Teoría — Integración múltiple
 ## 5.1 Integrales dobles sobre rectángulos
 
@@ -402,3 +425,16 @@ Usa las definiciones y fórmulas aquí como referencia canónica.
 Al generar problemas, asegura dominio progresivo de cada sección.
 file_id: CV-05-Teoria-Integracion
 -->
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| z | Variable z | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |

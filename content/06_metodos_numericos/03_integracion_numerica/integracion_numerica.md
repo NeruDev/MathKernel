@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'integracion_numerica'
+  content_path: 'content/06_metodos_numericos/03_integracion_numerica/integracion_numerica.md'
+  metadata_path: 'metadata/content/06_metodos_numericos/03_integracion_numerica/integracion_numerica.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de Integración Numérica'
+  key_headings:
+    - 'Teoría: Integración Numérica'
+    - '1. Introducción'
+    - '1.1 Motivación'
+    - '1.2 Idea General'
+    - '2. Fórmulas de Newton-Cotes'
+    - '2.1 Derivación'
+    - '2.2 Regla del Trapecio (n = 1)'
+    - '2.3 Regla de Simpson 1/3 (n = 2)'
+  key_concepts:
+    - 'Regla del Trapecio'
+    - 'Regla de Simpson'
+    - 'Integración de Romberg'
+    - 'Cuadratura Gaussiana'
+    - 'Extrapolación de Richardson'
+-->
 # Teoría: Integración Numérica
 ## 1. Introducción
 
@@ -190,3 +213,14 @@ Para $\int_a^b f(x)\sin(\omega x)\,dx$ con $\omega$ grande, los métodos clásic
 2. **Probabilidad:** Funciones de distribución
 3. **Ingeniería:** Análisis de señales, procesamiento de datos
 4. **Economía:** Valor presente, excedente del consumidor
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| k | Variable k | variable | N/A | N/A | N/A |
+| w | Variable w | variable | N/A | N/A | N/A |

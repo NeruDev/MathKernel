@@ -1,3 +1,26 @@
+<!--
+yaml_frontmatter:
+  id: 'integral_definida'
+  content_path: 'content/03_calculo_integral/03_integral_definida/integral_definida.md'
+  metadata_path: 'metadata/content/03_calculo_integral/03_integral_definida/integral_definida.json'
+  source_of_truth: 'metadata/content/*.json'
+  title: 'Teoría de la Integral Definida'
+  key_headings:
+    - 'Teoría de la Integral Definida'
+    - '3.1 Sumas de Riemann'
+    - 'Partición del Intervalo'
+    - 'Suma de Riemann'
+    - 'Tipos de Sumas'
+    - '3.2 Definición de Integral Definida'
+    - 'Definición'
+    - 'Interpretación Geométrica'
+  key_concepts:
+    - 'Sumas de Riemann'
+    - 'Teorema Fundamental del Cálculo'
+    - 'Propiedades de la integral'
+    - 'Sustitución en integrales definidas'
+    - 'Funciones pares e impares'
+-->
 # Teoría de la Integral Definida
 ## 3.1 Sumas de Riemann
 
@@ -160,3 +183,16 @@ $$\boxed{\int_{-a}^{a} f(x) \, dx = 0}$$
 $$\int_{-\pi}^{\pi} \sin x \, dx = 0 \quad \text{(impar)}$$
 
 $$\int_{-2}^{2} x^4 \, dx = 2\int_0^2 x^4 \, dx = 2 \cdot \frac{32}{5} = \frac{64}{5}$$
+
+## Glosario de variables
+
+| Simbolo | Nombre | Tipo | Unidad | Valor | Precision |
+| --- | --- | --- | --- | --- | --- |
+| π | Constante pi | constante | rad | 3.14159265359 | 12 |
+| e | Numero de Euler | constante | N/A | 2.71828182846 | 12 |
+| x | Variable x | variable | N/A | N/A | N/A |
+| y | Variable y | variable | N/A | N/A | N/A |
+| t | Variable t | variable | N/A | N/A | N/A |
+| n | Variable n | variable | N/A | N/A | N/A |
+| m | Variable m | variable | N/A | N/A | N/A |
+| u | Variable u | variable | N/A | N/A | N/A |
