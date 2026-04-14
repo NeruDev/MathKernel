@@ -1,3 +1,17 @@
+# yaml_frontmatter:
+#   id: 'encoding_validator'
+#   script_path: 'scripts/core/encoding_validator.py'
+#   metadata_path: 'metadata/scripts/core/encoding_validator.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Validador base de codificacion UTF-8 para archivos de texto'
+#   key_functions:
+#     - 'validate_utf8_file'
+#     - 'validate_utf8_paths'
+#   tags:
+#     - 'utf8'
+#     - 'validacion'
+#     - 'archivos'
+
 from pathlib import Path
 
 DEFAULT_TEXT_EXTENSIONS = {
@@ -21,10 +35,14 @@ IGNORED_DIR_NAMES = {
 
 
 def _is_ignored(path: Path) -> bool:
+    """Indica si una ruta pertenece a directorios excluidos de escaneo."""
+
     return any(part in IGNORED_DIR_NAMES for part in path.parts)
 
 
 def _iter_candidate_files(path: Path, extensions: set[str]) -> list[Path]:
+    """Enumera archivos candidatos de texto bajo una ruta objetivo."""
+
     if not path.exists():
         return []
 
@@ -41,6 +59,8 @@ def _iter_candidate_files(path: Path, extensions: set[str]) -> list[Path]:
 
 
 def validate_utf8_file(path: Path) -> str | None:
+    """Valida que un archivo pueda decodificarse en UTF-8."""
+
     try:
         path.read_bytes().decode("utf-8")
     except UnicodeDecodeError as exc:
@@ -58,6 +78,8 @@ def validate_utf8_paths(
     targets: list[Path],
     extensions: set[str] | None = None,
 ) -> list[str]:
+    """Valida UTF-8 para un conjunto de targets con deduplicacion de archivos."""
+
     active_extensions = {ext.lower() for ext in (extensions or DEFAULT_TEXT_EXTENSIONS)}
 
     errors: list[str] = []

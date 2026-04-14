@@ -1,5 +1,6 @@
 # Core dependencies
 markdown==3.6
+types-Markdown==3.6.0.20240316
 pymdown-extensions==10.7.1
 pytest==8.1.1
 

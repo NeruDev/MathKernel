@@ -1,0 +1,32 @@
+{
+  "file_name": "validators.py",
+  "script_path": "scripts/core/validators.py",
+  "metadata_path": "metadata/scripts/core/validators.meta.json",
+  "description": "Valida espejos de archivos y cumplimiento basico de schemas JSON.",
+  "repo_role": "validator",
+  "inputs": [
+    "Listas de rutas de contenido/assets/scripts y sus metadatos",
+    "Objetos schema para validacion de campos"
+  ],
+  "outputs": [
+    "Listas de errores de integridad",
+    "Mapas relativos usados para conciliacion de espejos"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": ["scripts.core.encoding_validator"]
+  },
+  "tags": ["validator", "mirror", "schema", "integridad"],
+  "key_functions": [
+    "validate_mirror_sets",
+    "validate_content_mirror",
+    "validate_assets_mirror",
+    "validate_scripts_mirror",
+    "validate_against_schema"
+  ],
+  "usage_example": "from scripts.core import validators; validators.validate_content_mirror(md_files, json_files, content_root, metadata_root)",
+  "performance_constraints": "Debe mantener comparaciones por diccionario para evitar costos cuadraticos.",
+  "known_limitations": "La validacion de schema implementa un subconjunto practico de reglas JSON Schema.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

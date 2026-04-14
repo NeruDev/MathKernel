@@ -1,0 +1,27 @@
+{
+  "file_name": "templates.py",
+  "script_path": "scripts/templates.py",
+  "metadata_path": "metadata/scripts/templates.meta.json",
+  "description": "Provee paleta y estilo reutilizable para graficos matplotlib del proyecto.",
+  "repo_role": "template",
+  "inputs": [
+    "Identificador de tema para construir ruta de salida",
+    "Objeto figura matplotlib para guardado"
+  ],
+  "outputs": [
+    "Diccionarios de color para visualizaciones",
+    "Parametros globales de estilo matplotlib",
+    "Rutas SVG generadas"
+  ],
+  "dependencies": {
+    "external": ["matplotlib"],
+    "internal": []
+  },
+  "tags": ["templates", "matplotlib", "estilo", "graficos"],
+  "key_functions": ["get_colors", "setup_style", "get_output_dir_for_topic", "save_figure"],
+  "usage_example": "from scripts import templates; templates.setup_style()",
+  "performance_constraints": "Debe mantener costo minimo porque se invoca por cada grafico.",
+  "known_limitations": "No valida compatibilidad de fuentes en todos los entornos de render.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

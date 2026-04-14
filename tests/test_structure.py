@@ -16,3 +16,24 @@ def test_metadata_schema_compliance(sandbox_project, run_script):
 
     assert result.returncode == 2
     assert "Falta campo requerido 'title'" in result.stdout
+
+
+def test_scripts_metadata_schema_compliance(sandbox_project, run_script):
+    bad_meta = sandbox_project / "metadata" / "scripts" / "build.meta.json"
+    bad_meta.write_text(
+        (
+            '{"file_name": "build.py", "script_path": "scripts/build.py", '
+            '"metadata_path": "metadata/scripts/build.meta.json", "description": "x", '
+            '"repo_role": "invalid_role", "inputs": [], "outputs": [], '
+            '"dependencies": {"external": [], "internal": []}, "tags": [], '
+            '"key_functions": [], "usage_example": "python scripts/build.py", '
+            '"performance_constraints": "x", "known_limitations": "x", '
+            '"status": "production", "maintainer": "tests"}'
+        ),
+        encoding="utf-8",
+    )
+
+    result = run_script(sandbox_project, "scripts/build.py")
+
+    assert result.returncode == 2
+    assert "repo_role" in result.stdout

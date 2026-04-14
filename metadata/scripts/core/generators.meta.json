@@ -1,0 +1,34 @@
+{
+  "file_name": "generators.py",
+  "script_path": "scripts/core/generators.py",
+  "metadata_path": "metadata/scripts/core/generators.meta.json",
+  "description": "Genera bloques HTML para indice y glosario a partir de metadata de contenido.",
+  "repo_role": "generator",
+  "inputs": [
+    "Registros de metadata/content",
+    "Mapa id->ruta html",
+    "Template HTML base"
+  ],
+  "outputs": [
+    "Items de indice ordenados",
+    "Cuerpo HTML de indice y glosario"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": ["utils.metadata", "utils.pathing"]
+  },
+  "tags": ["generator", "html", "index", "glossary"],
+  "key_functions": [
+    "format_display_title",
+    "wrap_html",
+    "build_glossary_body",
+    "build_index_items",
+    "build_index_body",
+    "metadata_json_paths"
+  ],
+  "usage_example": "from scripts.core import generators; generators.build_index_body(items)",
+  "performance_constraints": "La agregacion de conceptos debe ser lineal respecto al total de metadata records.",
+  "known_limitations": "No aplica plantillas dinamicas avanzadas; se limita a reemplazos simples por string.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

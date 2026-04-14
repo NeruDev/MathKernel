@@ -1,3 +1,17 @@
+# yaml_frontmatter:
+#   id: 'validate_encoding'
+#   script_path: 'scripts/validate_encoding.py'
+#   metadata_path: 'metadata/scripts/validate_encoding.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Validador UTF-8 de rutas criticas del repositorio'
+#   key_functions:
+#     - '_targets'
+#     - 'main'
+#   tags:
+#     - 'validacion'
+#     - 'encoding'
+#     - 'utf8'
+
 import sys
 from pathlib import Path
 
@@ -11,6 +25,8 @@ from utils.logging import log_error, log_info
 
 
 def _targets(paths: Paths) -> list[Path]:
+    """Define las rutas del proyecto que deben mantenerse en UTF-8."""
+
     return [
         paths.content_dir,
         paths.metadata_dir,
@@ -24,6 +40,8 @@ def _targets(paths: Paths) -> list[Path]:
 
 
 def main() -> int:
+    """Ejecuta validacion UTF-8 y retorna codigo de salida CLI."""
+
     paths = Paths.from_project_root(PROJECT_ROOT)
     errors = validators.validate_utf8_targets(_targets(paths))
 

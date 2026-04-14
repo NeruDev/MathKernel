@@ -1,3 +1,18 @@
+# yaml_frontmatter:
+#   id: 'migrate_content_yaml_frontmatter'
+#   script_path: 'scripts/migrate_content_yaml_frontmatter.py'
+#   metadata_path: 'metadata/scripts/migrate_content_yaml_frontmatter.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Migrador de frontmatter YAML comentado y glosario para content'
+#   key_functions:
+#     - '_build_frontmatter_comment'
+#     - '_update_markdown_file'
+#     - 'main'
+#   tags:
+#     - 'migracion'
+#     - 'yaml_frontmatter'
+#     - 'markdown'
+
 import argparse
 import re
 import sys
@@ -27,15 +42,21 @@ VARIABLE_CANDIDATES = ["x", "y", "z", "t", "n", "m", "k", "r", "u", "v", "w"]
 
 
 def _yaml_quote(value: str) -> str:
+    """Escapa comillas simples para serializar valores seguros en YAML."""
+
     escaped = value.replace("'", "''")
     return f"'{escaped}'"
 
 
 def _strip_frontmatter_block(md_text: str) -> str:
+    """Elimina el bloque yaml_frontmatter comentado si ya existe."""
+
     return FRONTMATTER_BLOCK_RE.sub("", md_text, count=1).lstrip("\n")
 
 
 def _extract_headings(md_text: str, max_items: int = 8) -> list[str]:
+    """Extrae encabezados markdown unicos para resumir estructura del tema."""
+
     headings: list[str] = []
     for line in md_text.splitlines():
         match = HEADING_RE.match(line.strip())
@@ -52,6 +73,8 @@ def _extract_headings(md_text: str, max_items: int = 8) -> list[str]:
 
 
 def _extract_variable_symbols(md_text: str, max_items: int = 6) -> list[str]:
+    """Detecta simbolos de variables frecuentes dentro de formulas del tema."""
+
     symbols: list[str] = []
 
     formula_chunks = FORMULA_RE.findall(md_text)
@@ -68,10 +91,14 @@ def _extract_variable_symbols(md_text: str, max_items: int = 6) -> list[str]:
 
 
 def _needs_glossary(md_text: str) -> bool:
+    """Determina si el contenido requiere seccion de glosario de variables."""
+
     return bool(FORMULA_RE.search(md_text) or EQUATION_RE.search(md_text))
 
 
 def _build_glossary_section(md_text: str) -> str:
+    """Construye una tabla markdown de variables y constantes detectadas."""
+
     rows: list[tuple[str, str, str, str, str, str]] = []
 
     if PI_RE.search(md_text):
@@ -105,6 +132,8 @@ def _build_frontmatter_comment(
     headings: list[str],
     concepts: list[str],
 ) -> str:
+    """Construye el bloque YAML comentado que sirve de referencia para IA."""
+
     lines = [
         "<!--",
         "yaml_frontmatter:",
@@ -135,6 +164,8 @@ def _build_frontmatter_comment(
 
 
 def _update_markdown_file(paths: Paths, file_manager: FileManager, md_path: Path, dry_run: bool) -> tuple[bool, bool]:
+    """Actualiza un archivo markdown con frontmatter comentado y glosario opcional."""
+
     md_rel_path = md_path.relative_to(paths.project_root).as_posix()
     rel_to_content = md_path.relative_to(paths.content_dir).with_suffix(".json")
     metadata_path = paths.metadata_content_dir / rel_to_content
@@ -179,12 +210,16 @@ def _update_markdown_file(paths: Paths, file_manager: FileManager, md_path: Path
 
 
 def parse_args() -> argparse.Namespace:
+    """Parsea argumentos del migrador de frontmatter."""
+
     parser = argparse.ArgumentParser(description="Inserta YAML comentado y glosario en content/*.md")
     parser.add_argument("--dry-run", action="store_true", help="Analiza sin escribir cambios")
     return parser.parse_args()
 
 
 def main() -> int:
+    """Ejecuta la migracion sobre content/*.md y reporta resumen final."""
+
     args = parse_args()
     file_manager = FileManager()
     paths = Paths.from_project_root(PROJECT_ROOT)

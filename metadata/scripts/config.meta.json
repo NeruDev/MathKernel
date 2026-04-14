@@ -1,0 +1,26 @@
+{
+  "file_name": "config.py",
+  "script_path": "scripts/config.py",
+  "metadata_path": "metadata/scripts/config.meta.json",
+  "description": "Define dataclasses inmutables con rutas canonicas y flags de ejecucion del build.",
+  "repo_role": "config",
+  "inputs": [
+    "Ruta opcional de raiz de proyecto",
+    "Convenciones de estructura de carpetas del repositorio"
+  ],
+  "outputs": [
+    "Instancia Paths con rutas absolutas",
+    "Instancia BuildConfig con flags de pipeline"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": []
+  },
+  "tags": ["configuracion", "rutas", "build"],
+  "key_functions": ["Paths.from_project_root"],
+  "usage_example": "from scripts.config import Paths; Paths.from_project_root()",
+  "performance_constraints": "Operacion de costo constante sobre manipulacion de rutas.",
+  "known_limitations": "Asume estructura de directorios estable segun arquitectura de MathKernel.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

@@ -1,4 +1,5 @@
 import re
+
 import markdown
 
 # Extension completa de pymdownx para compatibilidad con Python-Markdown.

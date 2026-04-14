@@ -1,0 +1,35 @@
+{
+  "file_name": "file_manager.py",
+  "script_path": "scripts/io/file_manager.py",
+  "metadata_path": "metadata/scripts/io/file_manager.meta.json",
+  "description": "Abstraccion de operaciones de entrada/salida con excepciones de dominio consistentes.",
+  "repo_role": "io_manager",
+  "inputs": [
+    "Rutas de archivos y directorios",
+    "Contenido de texto o estructuras dict para JSON"
+  ],
+  "outputs": [
+    "Lectura/escritura de texto UTF-8",
+    "Lectura/escritura de objetos JSON",
+    "Copia y eliminacion de directorios"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": ["scripts.core.error_handling"]
+  },
+  "tags": ["io", "filesystem", "json", "errors"],
+  "key_functions": [
+    "ensure_dir",
+    "read_text",
+    "write_text",
+    "read_json",
+    "write_json",
+    "copy_dir",
+    "remove_dir"
+  ],
+  "usage_example": "from scripts.io.file_manager import FileManager",
+  "performance_constraints": "Debe priorizar robustez y mensajes claros por encima de optimizaciones complejas.",
+  "known_limitations": "Exige UTF-8 y que el JSON raiz sea un objeto dict.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

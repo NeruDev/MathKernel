@@ -20,12 +20,16 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 - **Estructura Espejo (Homóloga):**
     - `metadata/content/`: Réplica exacta de `content/`. Cada `.md` tiene un `.json`.
     - `metadata/assets/images/grafics/`: Réplica de los activos visuales. Cada `.svg` tiene un `.json`.
+    - `metadata/scripts/`: Réplica de scripts objetivo (`scripts/`, `scripts/core/`, `scripts/io/`). Cada `.py` tiene un `.meta.json`.
 - **Esquemas de Validación (`metadata/schemas/`):**
     - `content.schema.json`: Rige la teoría (id, title, concepts, etc.).
     - `assets.schema.json`: Rige los gráficos (id, topic_id, description, section, etc.).
+    - `scripts.schema.json`: Rige metadatos de scripts (rol, entradas/salidas, dependencias, estado y contexto de uso).
 
 ### 2.3 Capa de generación y herramientas (`scripts/`)
 - **`build.py`**: CLI único del proyecto. Orquesta el pipeline `Validar -> Linkear Assets -> Generar Sitio` y centraliza flags operativos (`--verbose`, `--continue-on-error`, `--skip-validation`, `--with-assets`).
+- **Frontmatter de scripts:** Cada script objetivo incluye `yaml_frontmatter` comentado con `#` al inicio, para consulta rapida de IA sin afectar ejecucion Python.
+- **Validacion estricta de scripts:** `build.py` valida espejo y schema para `metadata/scripts/**/*.meta.json`.
 - **`core/`**: Lógica de negocio pura desacoplada del filesystem (`validators.py`, `processors.py`, `generators.py`, `error_handling.py`).
 - **`io/file_manager.py`**: Abstracción de entrada/salida para texto, JSON y operaciones de directorios.
 - **`generate_assets.py`**: Generador de gráficos SVG invocado de forma opcional mediante el flag `--with-assets`.
@@ -50,6 +54,13 @@ Este proyecto implementa una arquitectura de contenido desacoplada:
 - `setup_style` define un `axes.prop_cycle` que prioriza azul, verde, amarillo, rojo, morado y rosa.
 - La regeneración de SVG se realiza con `scripts/generate_assets.py` y se integra al flujo con `scripts/build.py --with-assets`.
 - La verificación de integridad debe incluir pruebas de `tests/test_links.py`, `tests/test_assets.py` y `tests/test_structure.py`.
+
+### 2.6 Historial de errores y troubleshooting operativo
+- El registro oficial de incidentes grandes se mantiene en `docs/historial_errores.md`.
+- `README.md` debe conservar solo un resumen ejecutivo y referencias al historial, evitando duplicar bloques operativos extensos.
+- Para ejecucion local en Windows, usar protocolo por checkpoints antes de correr tareas pesadas.
+- La notificacion de Pylance `14 files and 0 cells to analyze` puede ser estado informativo en `openFilesOnly`; tratar como incidente solo si hay actividad anomala sostenida.
+- Si CP1 Ruff parece detenerse en terminal integrada, ejecutar con salida redirigida y validar en host alterno (`cmd.exe`) antes de clasificarlo como cuelgue real del comando.
 
 ## 3. Flujo de trabajo y Despliegue
 

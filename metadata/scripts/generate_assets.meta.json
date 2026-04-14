@@ -1,0 +1,31 @@
+{
+  "file_name": "generate_assets.py",
+  "script_path": "scripts/generate_assets.py",
+  "metadata_path": "metadata/scripts/generate_assets.meta.json",
+  "description": "Ejecuta scripts de scripts/grafics para producir SVG y metadatos de assets homologados.",
+  "repo_role": "generator",
+  "inputs": [
+    "Scripts Python en scripts/grafics con funcion generate()",
+    "Diccionario METADATA opcional definido por script grafico"
+  ],
+  "outputs": [
+    "Archivos SVG en assets/images/grafics/",
+    "Metadatos JSON de assets en metadata/assets/images/grafics/"
+  ],
+  "dependencies": {
+    "external": ["matplotlib"],
+    "internal": ["scripts.templates", "utils.io", "utils.logging"]
+  },
+  "tags": ["assets", "svg", "matplotlib", "graficos"],
+  "key_functions": [
+    "setup_svg_styles",
+    "generate_asset_metadata",
+    "run_graphic_script",
+    "main"
+  ],
+  "usage_example": "python scripts/generate_assets.py",
+  "performance_constraints": "El tiempo total depende del numero y complejidad de scripts de graficos.",
+  "known_limitations": "Depende de que cada script grafico exponga generate() y no falle durante import dinamico.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

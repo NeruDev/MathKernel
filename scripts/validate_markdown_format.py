@@ -1,3 +1,17 @@
+# yaml_frontmatter:
+#   id: 'validate_markdown_format'
+#   script_path: 'scripts/validate_markdown_format.py'
+#   metadata_path: 'metadata/scripts/validate_markdown_format.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Validador informativo de formulas y tablas markdown'
+#   key_functions:
+#     - '_parse_args'
+#     - 'main'
+#   tags:
+#     - 'validacion'
+#     - 'markdown'
+#     - 'formulas'
+
 import argparse
 import re
 import sys
@@ -13,12 +27,13 @@ from scripts.io.file_manager import FileManager
 from utils.logging import log_info, log_warn
 from utils.markdown import convert_md_to_html
 
-
 RAW_MATH_HTML_RE = re.compile(r">\s*\$[^<\n]+\$\s*<")
 RAW_TABLE_HTML_RE = re.compile(r"^\s*\|.*\|\s*$", re.MULTILINE)
 
 
 def _parse_args() -> argparse.Namespace:
+    """Parsea opciones de ejecucion del validador markdown."""
+
     parser = argparse.ArgumentParser(
         description="Valida formulas y tablas Markdown en modo informativo"
     )
@@ -31,6 +46,8 @@ def _parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    """Valida markdown de content/ y reporta alertas informativas o estrictas."""
+
     args = _parse_args()
     paths = Paths.from_project_root(PROJECT_ROOT)
     manager = FileManager()

@@ -1,12 +1,26 @@
+# yaml_frontmatter:
+#   id: 'formula_validator'
+#   script_path: 'scripts/core/formula_validator.py'
+#   metadata_path: 'metadata/scripts/core/formula_validator.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Validador de delimitadores matematicos y tablas markdown'
+#   key_functions:
+#     - 'validate_markdown_math_tables'
+#   tags:
+#     - 'validacion'
+#     - 'markdown'
+#     - 'matematicas'
+
 import re
 from pathlib import Path
-
 
 TABLE_ROW_RE = re.compile(r"^\s*\|.*\|\s*$")
 TABLE_SEPARATOR_RE = re.compile(r"^\s*\|(?:\s*:?-{3,}:?\s*\|)+\s*$")
 
 
 def _scan_unbalanced_math_delimiters(md_text: str) -> bool:
+    """Detecta delimitadores $ y $$ desbalanceados respetando escapes."""
+
     in_inline = False
     in_block = False
     i = 0
@@ -29,6 +43,8 @@ def _scan_unbalanced_math_delimiters(md_text: str) -> bool:
 
 
 def _validate_table_block(lines: list[str], start_index: int, source: str) -> list[str]:
+    """Valida separador y consistencia de columnas en un bloque de tabla."""
+
     warnings: list[str] = []
 
     if len(lines) < 2:
@@ -54,6 +70,8 @@ def _validate_table_block(lines: list[str], start_index: int, source: str) -> li
 
 
 def validate_markdown_math_tables(md_text: str, source_path: Path | str) -> list[str]:
+    """Aplica validaciones de formulas/tablas y retorna advertencias no bloqueantes."""
+
     source = str(source_path)
     warnings: list[str] = []
 

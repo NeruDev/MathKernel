@@ -8,6 +8,23 @@ __pycache__/
 *.py[cod]
 *.class
 .pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.playwright-mcp/
+
+# Local quality/test artifacts
+.coverage
+coverage.xml
+htmlcov/
+mypy-report.txt
+
+# Local diagnostic outputs
+.build-local.txt
+.build-with-assets-local.txt
+.markdown-validation-local.txt
+.mypy-report-local.txt
+.ruff-report-local.txt
+
 dist/
 build/
 *.egg-info/

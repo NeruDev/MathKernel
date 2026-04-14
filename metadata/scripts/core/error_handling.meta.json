@@ -1,0 +1,26 @@
+{
+  "file_name": "error_handling.py",
+  "script_path": "scripts/core/error_handling.py",
+  "metadata_path": "metadata/scripts/core/error_handling.meta.json",
+  "description": "Define errores de dominio y recolector central para resumen de incidencias.",
+  "repo_role": "error_model",
+  "inputs": [
+    "Excepciones levantadas por pasos del pipeline",
+    "Mensajes de error sinteticos por etapa"
+  ],
+  "outputs": [
+    "Estructuras CollectedError en memoria",
+    "Lineas de resumen listas para logging"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": []
+  },
+  "tags": ["errors", "collector", "pipeline", "diagnostics"],
+  "key_functions": ["ErrorCollector.add", "ErrorCollector.add_message", "ErrorCollector.format_summary"],
+  "usage_example": "from scripts.core.error_handling import ErrorCollector",
+  "performance_constraints": "Debe agregar errores en O(1) y evitar operaciones costosas en runtime.",
+  "known_limitations": "El estado de errores vive solo en memoria de proceso actual.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

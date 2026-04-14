@@ -1,4 +1,3 @@
-from pathlib import Path
 
 from scripts.core import generators, processors, validators
 
@@ -16,6 +15,21 @@ def test_validators_detect_missing_metadata(tmp_path):
 
     assert errors
     assert "Sin metadata" in errors[0]
+
+
+def test_validators_detect_missing_script_metadata(tmp_path):
+    scripts_root = tmp_path / "scripts"
+    metadata_root = tmp_path / "metadata" / "scripts"
+    scripts_root.mkdir(parents=True)
+    metadata_root.mkdir(parents=True)
+
+    py_file = scripts_root / "build.py"
+    py_file.write_text("print('build')\n", encoding="utf-8")
+
+    errors, _, _ = validators.validate_scripts_mirror([py_file], [], scripts_root, metadata_root)
+
+    assert errors
+    assert "metadata de script" in errors[0]
 
 
 def test_processors_inject_image_in_section():

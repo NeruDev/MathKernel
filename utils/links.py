@@ -3,7 +3,6 @@ import re
 
 from .io import read_text
 
-
 HREF_PATTERN = re.compile(r'href="([^"]+)"')
 
 

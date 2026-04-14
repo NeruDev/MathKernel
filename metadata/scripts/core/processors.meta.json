@@ -1,0 +1,32 @@
+{
+  "file_name": "processors.py",
+  "script_path": "scripts/core/processors.py",
+  "metadata_path": "metadata/scripts/core/processors.meta.json",
+  "description": "Provee transformaciones para rutas, mapeo script->markdown e insercion de imagenes.",
+  "repo_role": "processor",
+  "inputs": [
+    "Rutas relativas de markdown y assets",
+    "Registros metadata/content con lista de scripts",
+    "Contenido markdown crudo"
+  ],
+  "outputs": [
+    "Mapeo script->markdown",
+    "Contenido markdown actualizado con imagenes"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": ["utils.pathing"]
+  },
+  "tags": ["processor", "markdown", "assets", "mapping"],
+  "key_functions": [
+    "get_relative_image_path",
+    "extract_section_id",
+    "build_script_to_md_map",
+    "inject_image_markdown"
+  ],
+  "usage_example": "from scripts.core import processors; processors.inject_image_markdown(raw_content, image_md, section)",
+  "performance_constraints": "Debe operar en memoria y evitar escrituras hasta confirmar insercion.",
+  "known_limitations": "La deteccion de seccion objetivo usa heuristica textual y puede fallar con encabezados atipicos.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

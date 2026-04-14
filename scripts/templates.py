@@ -1,6 +1,23 @@
+# yaml_frontmatter:
+#   id: 'templates'
+#   script_path: 'scripts/templates.py'
+#   metadata_path: 'metadata/scripts/templates.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Plantillas de estilo para graficos matplotlib'
+#   key_functions:
+#     - 'get_colors'
+#     - 'setup_style'
+#     - 'get_output_dir_for_topic'
+#     - 'save_figure'
+#   tags:
+#     - 'templates'
+#     - 'graficos'
+#     - 'matplotlib'
+
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+
 
 def get_colors():
     """Retorna la paleta de colores oficial del sitio."""
@@ -66,7 +83,7 @@ def setup_style():
 
 
 def get_output_dir_for_topic(topic_id):
-    """Builds an output path for a topic and ensures it exists."""
+    """Construye la ruta de salida de un tema y garantiza su existencia."""
     project_root = Path(__file__).resolve().parents[1]
     output_dir = project_root / "assets" / "images" / "grafics" / str(topic_id)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -74,7 +91,7 @@ def get_output_dir_for_topic(topic_id):
 
 
 def save_figure(fig, output_dir, base_name):
-    """Saves a figure to SVG and returns generated paths."""
+    """Guarda una figura en SVG y retorna las rutas generadas."""
     target_dir = Path(output_dir)
     target_dir.mkdir(parents=True, exist_ok=True)
     svg_path = target_dir / f"{base_name}.svg"

@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scripts Metadata Schema",
+  "description": "Esquema de validacion para metadatos de scripts Python en scripts/, scripts/core y scripts/io.",
+  "type": "object",
+  "required": [
+    "file_name",
+    "script_path",
+    "metadata_path",
+    "description",
+    "repo_role",
+    "inputs",
+    "outputs",
+    "dependencies",
+    "tags",
+    "key_functions",
+    "usage_example",
+    "performance_constraints",
+    "known_limitations",
+    "status",
+    "maintainer"
+  ],
+  "properties": {
+    "file_name": { "type": "string" },
+    "script_path": { "type": "string" },
+    "metadata_path": { "type": "string" },
+    "description": { "type": "string" },
+    "repo_role": {
+      "type": "string",
+      "enum": [
+        "orchestrator",
+        "config",
+        "generator",
+        "migration",
+        "template",
+        "validator",
+        "processor",
+        "error_model",
+        "io_manager"
+      ]
+    },
+    "inputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dependencies": {
+      "type": "object",
+      "required": ["external", "internal"],
+      "properties": {
+        "external": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "internal": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "key_functions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "usage_example": { "type": "string" },
+    "performance_constraints": { "type": "string" },
+    "known_limitations": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "testing", "production", "deprecated"]
+    },
+    "maintainer": { "type": "string" }
+  }
+}

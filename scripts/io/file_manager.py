@@ -1,3 +1,20 @@
+# yaml_frontmatter:
+#   id: 'file_manager'
+#   script_path: 'scripts/io/file_manager.py'
+#   metadata_path: 'metadata/scripts/io/file_manager.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Gestor centralizado de operaciones de archivo y directorio'
+#   key_functions:
+#     - 'read_text'
+#     - 'write_text'
+#     - 'read_json'
+#     - 'write_json'
+#     - 'copy_dir'
+#   tags:
+#     - 'io'
+#     - 'filesystem'
+#     - 'json'
+
 import json
 import shutil
 from pathlib import Path
@@ -7,7 +24,11 @@ from scripts.core.error_handling import FileOperationError
 
 
 class FileManager:
+    """Abstrae operaciones de filesystem con errores de dominio consistentes."""
+
     def ensure_dir(self, path: str | Path) -> Path:
+        """Crea un directorio (y padres) retornando la ruta resultante."""
+
         target = Path(path)
         try:
             target.mkdir(parents=True, exist_ok=True)
@@ -19,6 +40,8 @@ class FileManager:
         return target
 
     def read_text(self, path: str | Path) -> str:
+        """Lee un archivo de texto en UTF-8 y retorna su contenido."""
+
         target = Path(path)
         try:
             return target.read_text(encoding="utf-8")
@@ -29,6 +52,8 @@ class FileManager:
             ) from exc
 
     def write_text(self, path: str | Path, content: str) -> Path:
+        """Escribe texto UTF-8 asegurando la existencia del directorio padre."""
+
         target = Path(path)
         self.ensure_dir(target.parent)
         try:
@@ -41,6 +66,8 @@ class FileManager:
         return target
 
     def read_json(self, path: str | Path) -> dict[str, Any]:
+        """Lee un JSON UTF-8 y exige que el documento sea un objeto."""
+
         target = Path(path)
         try:
             with target.open("r", encoding="utf-8") as handle:
@@ -60,6 +87,8 @@ class FileManager:
         return data
 
     def write_json(self, path: str | Path, data: dict[str, Any]) -> Path:
+        """Escribe un objeto dict en JSON con indentacion estable."""
+
         target = Path(path)
         self.ensure_dir(target.parent)
         try:
@@ -74,6 +103,8 @@ class FileManager:
         return target
 
     def copy_dir(self, src: str | Path, dst: str | Path, merge: bool = False) -> Path:
+        """Copia un arbol de directorio con opcion de merge en destino existente."""
+
         source = Path(src)
         target = Path(dst)
         if not source.exists():
@@ -93,6 +124,8 @@ class FileManager:
         return target
 
     def remove_dir(self, path: str | Path) -> None:
+        """Elimina recursivamente un directorio si existe."""
+
         target = Path(path)
         if not target.exists():
             return

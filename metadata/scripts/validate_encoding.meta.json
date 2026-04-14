@@ -1,0 +1,26 @@
+{
+  "file_name": "validate_encoding.py",
+  "script_path": "scripts/validate_encoding.py",
+  "metadata_path": "metadata/scripts/validate_encoding.meta.json",
+  "description": "CLI de validacion UTF-8 para rutas criticas del repositorio.",
+  "repo_role": "validator",
+  "inputs": [
+    "Rutas configuradas desde Paths",
+    "Archivos de texto bajo content/, metadata/, scripts/, utils/, site_src/ y docs/"
+  ],
+  "outputs": [
+    "Mensajes de error por archivos no UTF-8",
+    "Codigo de salida 0/1"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": ["scripts.config", "scripts.core.validators", "utils.logging"]
+  },
+  "tags": ["validator", "utf8", "encoding", "quality"],
+  "key_functions": ["_targets", "main"],
+  "usage_example": "python scripts/validate_encoding.py",
+  "performance_constraints": "Debe evitar duplicados en escaneo para mantener tiempo lineal por archivo.",
+  "known_limitations": "Solo inspecciona extensiones de texto definidas por el validador.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

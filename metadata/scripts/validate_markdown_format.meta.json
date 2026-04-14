@@ -1,0 +1,32 @@
+{
+  "file_name": "validate_markdown_format.py",
+  "script_path": "scripts/validate_markdown_format.py",
+  "metadata_path": "metadata/scripts/validate_markdown_format.meta.json",
+  "description": "Valida formulas y tablas markdown en modo informativo o estricto.",
+  "repo_role": "validator",
+  "inputs": [
+    "Archivos markdown en content/",
+    "Flag --strict para elevar alertas a codigo de salida 1"
+  ],
+  "outputs": [
+    "Lista de advertencias sobre formulas/tablas",
+    "Codigo de salida segun modo de ejecucion"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": [
+      "scripts.config",
+      "scripts.core.formula_validator",
+      "scripts.io.file_manager",
+      "utils.logging",
+      "utils.markdown"
+    ]
+  },
+  "tags": ["validator", "markdown", "formulas", "tablas"],
+  "key_functions": ["_parse_args", "main"],
+  "usage_example": "python scripts/validate_markdown_format.py --strict",
+  "performance_constraints": "Se ejecuta en barrido de content/, por lo que debe mantener costo lineal por archivo.",
+  "known_limitations": "Incluye heuristicas que pueden generar falsos positivos en casos de markdown no estandar.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

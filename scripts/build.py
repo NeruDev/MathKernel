@@ -1,3 +1,19 @@
+# yaml_frontmatter:
+#   id: 'build'
+#   script_path: 'scripts/build.py'
+#   metadata_path: 'metadata/scripts/build.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'CLI unico para validar, enlazar assets y generar sitio'
+#   key_functions:
+#     - 'validate_project'
+#     - 'run_assets_linking'
+#     - 'run_site_generation'
+#     - 'run_build'
+#   tags:
+#     - 'build'
+#     - 'validacion'
+#     - 'site'
+
 import argparse
 import subprocess
 import sys
@@ -19,6 +35,8 @@ from utils.pathing import compute_depth, get_relative_html_path
 
 
 def parse_args() -> argparse.Namespace:
+    """Define y parsea argumentos del build unificado."""
+
     parser = argparse.ArgumentParser(description="Build unificado de MathKernel")
     parser.add_argument("--verbose", action="store_true", help="Muestra logs detallados")
     parser.add_argument(
@@ -40,10 +58,14 @@ def parse_args() -> argparse.Namespace:
 
 
 def _load_schema(path: Path, file_manager: FileManager) -> dict:
+    """Carga un schema JSON usando el gestor de archivos central."""
+
     return file_manager.read_json(path)
 
 
 def _utf8_validation_targets(paths: Paths) -> list[Path]:
+    """Retorna rutas criticas que deben mantener codificacion UTF-8."""
+
     return [
         paths.content_dir,
         paths.metadata_dir,
@@ -56,7 +78,22 @@ def _utf8_validation_targets(paths: Paths) -> list[Path]:
     ]
 
 
+def _is_target_script(path: Path, scripts_root: Path) -> bool:
+    """Filtra scripts cubiertos por metadata/scripts: raiz, core e io."""
+
+    if path.suffix != ".py" or path.name == "__init__.py":
+        return False
+
+    rel_path = path.relative_to(scripts_root)
+    if len(rel_path.parts) == 1:
+        return True
+
+    return rel_path.parts[0] in {"core", "io"}
+
+
 def validate_project(config: BuildConfig, file_manager: FileManager) -> list[str]:
+    """Ejecuta todas las validaciones estructurales y de schema del proyecto."""
+
     paths = config.paths
     errors: list[str] = []
 
@@ -96,8 +133,28 @@ def validate_project(config: BuildConfig, file_manager: FileManager) -> list[str
     )
     errors.extend(assets_errors)
 
+    script_py_files = [
+        path
+        for path in sorted(paths.scripts_dir.rglob("*.py"))
+        if _is_target_script(path, paths.scripts_dir)
+    ]
+    script_json_files = [
+        path
+        for path in sorted(paths.metadata_scripts_dir.rglob("*.meta.json"))
+        if path.name != "schema.json"
+    ]
+
+    script_errors, script_rel, scripts_json_rel = validators.validate_scripts_mirror(
+        script_py_files,
+        script_json_files,
+        paths.scripts_dir,
+        paths.metadata_scripts_dir,
+    )
+    errors.extend(script_errors)
+
     content_schema = _load_schema(paths.schemas_dir / "content.schema.json", file_manager)
     assets_schema = _load_schema(paths.schemas_dir / "assets.schema.json", file_manager)
+    scripts_schema = _load_schema(paths.schemas_dir / "scripts.schema.json", file_manager)
 
     for rel_base in sorted(set(md_rel).intersection(content_json_rel)):
         data = file_manager.read_json(content_json_rel[rel_base])
@@ -119,10 +176,22 @@ def validate_project(config: BuildConfig, file_manager: FileManager) -> list[str
             )
         )
 
+    for rel_base in sorted(set(script_rel).intersection(scripts_json_rel)):
+        data = file_manager.read_json(scripts_json_rel[rel_base])
+        errors.extend(
+            validators.validate_against_schema(
+                data,
+                scripts_schema,
+                scripts_json_rel[rel_base],
+            )
+        )
+
     return errors
 
 
 def run_assets_generation(config: BuildConfig, collector: ErrorCollector) -> None:
+    """Ejecuta generate_assets.py y registra error critico si falla."""
+
     script_path = config.paths.scripts_dir / "generate_assets.py"
     result = subprocess.run(
         [sys.executable, str(script_path)],
@@ -139,6 +208,8 @@ def run_assets_generation(config: BuildConfig, collector: ErrorCollector) -> Non
 
 
 def run_assets_linking(config: BuildConfig, file_manager: FileManager, collector: ErrorCollector) -> dict[str, int]:
+    """Vincula assets SVG a markdown usando metadata de contenido y de activos."""
+
     paths = config.paths
     linked_count = 0
     skipped_count = 0
@@ -232,6 +303,8 @@ def run_assets_linking(config: BuildConfig, file_manager: FileManager, collector
 
 
 def run_site_generation(config: BuildConfig, file_manager: FileManager, collector: ErrorCollector) -> list[str]:
+    """Genera el sitio HTML final a partir de content, metadata y template."""
+
     paths = config.paths
 
     if not paths.site_src_dir.exists():
@@ -317,6 +390,8 @@ def run_site_generation(config: BuildConfig, file_manager: FileManager, collecto
 
 
 def print_error_summary(collector: ErrorCollector) -> None:
+    """Imprime un resumen unificado de incidencias recolectadas."""
+
     if not collector.has_errors:
         return
 
@@ -329,6 +404,8 @@ def print_error_summary(collector: ErrorCollector) -> None:
 
 
 def run_build(config: BuildConfig) -> int:
+    """Orquesta el pipeline completo de build con manejo central de errores."""
+
     collector = ErrorCollector()
     file_manager = FileManager()
 
@@ -385,6 +462,8 @@ def run_build(config: BuildConfig) -> int:
 
 
 def main() -> int:
+    """Punto de entrada CLI del build principal."""
+
     args = parse_args()
     config = BuildConfig(
         paths=Paths.from_project_root(PROJECT_ROOT),

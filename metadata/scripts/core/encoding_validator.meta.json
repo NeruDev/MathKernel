@@ -1,0 +1,26 @@
+{
+  "file_name": "encoding_validator.py",
+  "script_path": "scripts/core/encoding_validator.py",
+  "metadata_path": "metadata/scripts/core/encoding_validator.meta.json",
+  "description": "Implementa validacion base UTF-8 para archivos de texto en rutas objetivo.",
+  "repo_role": "validator",
+  "inputs": [
+    "Rutas de archivos o directorios a inspeccionar",
+    "Conjunto opcional de extensiones permitidas"
+  ],
+  "outputs": [
+    "Lista de errores de codificacion por archivo",
+    "Conjunto deduplicado de archivos revisados"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": []
+  },
+  "tags": ["validator", "utf8", "encoding", "filesystem"],
+  "key_functions": ["_iter_candidate_files", "validate_utf8_file", "validate_utf8_paths"],
+  "usage_example": "from scripts.core.encoding_validator import validate_utf8_paths",
+  "performance_constraints": "Debe ignorar carpetas no relevantes y evitar validar el mismo archivo dos veces.",
+  "known_limitations": "Filtra por extension, por lo que archivos de texto sin extension conocida no se revisan.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

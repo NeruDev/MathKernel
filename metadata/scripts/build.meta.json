@@ -1,0 +1,45 @@
+{
+  "file_name": "build.py",
+  "script_path": "scripts/build.py",
+  "metadata_path": "metadata/scripts/build.meta.json",
+  "description": "Orquesta el pipeline principal: validacion estructural, enlace de assets y generacion del sitio.",
+  "repo_role": "orchestrator",
+  "inputs": [
+    "Flags CLI (--verbose, --continue-on-error, --skip-validation, --with-assets)",
+    "Arbol de content/, metadata/, assets/ y site_src/"
+  ],
+  "outputs": [
+    "Sitio estatico en site/",
+    "Enlaces de imagen inyectados en content/*.md",
+    "Codigo de salida CLI segun severidad de errores"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": [
+      "scripts.config",
+      "scripts.core.validators",
+      "scripts.core.generators",
+      "scripts.core.processors",
+      "scripts.core.error_handling",
+      "scripts.core.formula_validator",
+      "scripts.io.file_manager",
+      "utils.links",
+      "utils.logging",
+      "utils.markdown",
+      "utils.pathing"
+    ]
+  },
+  "tags": ["build", "pipeline", "validacion", "site"],
+  "key_functions": [
+    "parse_args",
+    "validate_project",
+    "run_assets_linking",
+    "run_site_generation",
+    "run_build"
+  ],
+  "usage_example": "python scripts/build.py --verbose",
+  "performance_constraints": "Debe escalar linealmente con la cantidad de archivos en content/, metadata/ y scripts/.",
+  "known_limitations": "No paraleliza etapas; depende de schemas presentes en metadata/schemas.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

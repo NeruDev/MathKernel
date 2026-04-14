@@ -1,0 +1,32 @@
+{
+  "file_name": "migrate_content_yaml_frontmatter.py",
+  "script_path": "scripts/migrate_content_yaml_frontmatter.py",
+  "metadata_path": "metadata/scripts/migrate_content_yaml_frontmatter.meta.json",
+  "description": "Inserta o actualiza YAML frontmatter comentado en content/*.md y agrega glosario de variables cuando aplica.",
+  "repo_role": "migration",
+  "inputs": [
+    "Archivos markdown en content/",
+    "Metadatos JSON en metadata/content/",
+    "Flag --dry-run"
+  ],
+  "outputs": [
+    "Markdown actualizado con bloque yaml_frontmatter comentado",
+    "Seccion de glosario de variables cuando el tema contiene formulas"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": ["scripts.config", "scripts.io.file_manager", "utils.logging"]
+  },
+  "tags": ["migracion", "yaml_frontmatter", "markdown", "glosario"],
+  "key_functions": [
+    "_build_frontmatter_comment",
+    "_build_glossary_section",
+    "_update_markdown_file",
+    "main"
+  ],
+  "usage_example": "python scripts/migrate_content_yaml_frontmatter.py --dry-run",
+  "performance_constraints": "Procesamiento lineal sobre cantidad de archivos markdown en content/.",
+  "known_limitations": "La extraccion de simbolos y headings se basa en heuristicas regex.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

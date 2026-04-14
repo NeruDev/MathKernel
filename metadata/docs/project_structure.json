@@ -1,43 +1,31 @@
 [
     {
+        "path": ".github",
+        "type": "directory"
+    },
+    {
+        "path": ".github/copilot-instructions.md",
+        "type": "file"
+    },
+    {
+        "path": ".github/workflows",
+        "type": "directory"
+    },
+    {
+        "path": ".github/workflows/pages.yml",
+        "type": "file"
+    },
+    {
         "path": ".vscode",
         "type": "directory"
     },
     {
-        "path": "assets",
-        "type": "directory"
+        "path": ".editorconfig",
+        "type": "file"
     },
     {
-        "path": "content",
-        "type": "directory"
-    },
-    {
-        "path": "docs",
-        "type": "directory"
-    },
-    {
-        "path": "metadata",
-        "type": "directory"
-    },
-    {
-        "path": "scripts",
-        "type": "directory"
-    },
-    {
-        "path": "site",
-        "type": "directory"
-    },
-    {
-        "path": "site_src",
-        "type": "directory"
-    },
-    {
-        "path": "tests",
-        "type": "directory"
-    },
-    {
-        "path": "utils",
-        "type": "directory"
+        "path": ".gitignore",
+        "type": "file"
     },
     {
         "path": "AGENTS.md",
@@ -56,11 +44,27 @@
         "type": "file"
     },
     {
+        "path": "pyproject.toml",
+        "type": "file"
+    },
+    {
         "path": "requirements.txt",
         "type": "file"
     },
     {
+        "path": "assets",
+        "type": "directory"
+    },
+    {
+        "path": "assets/images",
+        "type": "directory"
+    },
+    {
         "path": "assets/images/grafics",
+        "type": "directory"
+    },
+    {
+        "path": "content",
         "type": "directory"
     },
     {
@@ -68,7 +72,51 @@
         "type": "directory"
     },
     {
-        "path": "metadata/content",
+        "path": "content/01_algebra_lineal",
+        "type": "directory"
+    },
+    {
+        "path": "content/02_calculo_diferencial",
+        "type": "directory"
+    },
+    {
+        "path": "content/03_calculo_integral",
+        "type": "directory"
+    },
+    {
+        "path": "content/04_calculo_vectorial",
+        "type": "directory"
+    },
+    {
+        "path": "content/05_ecuaciones_diferenciales",
+        "type": "directory"
+    },
+    {
+        "path": "content/06_metodos_numericos",
+        "type": "directory"
+    },
+    {
+        "path": "docs",
+        "type": "directory"
+    },
+    {
+        "path": "docs/MATHKERNEL.md",
+        "type": "file"
+    },
+    {
+        "path": "docs/historial_errores.md",
+        "type": "file"
+    },
+    {
+        "path": "metadata",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/assets",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/assets/images",
         "type": "directory"
     },
     {
@@ -76,32 +124,48 @@
         "type": "directory"
     },
     {
-        "path": "scripts/build.py",
-        "type": "file"
-    },
-    {
-        "path": "scripts/core",
+        "path": "metadata/content",
         "type": "directory"
     },
     {
-        "path": "scripts/io",
+        "path": "metadata/content/00_fundamentos",
         "type": "directory"
     },
     {
-        "path": "site/index.html",
-        "type": "file"
+        "path": "metadata/content/01_algebra_lineal",
+        "type": "directory"
     },
     {
-        "path": "site/styles.css",
-        "type": "file"
+        "path": "metadata/content/02_calculo_diferencial",
+        "type": "directory"
     },
     {
-        "path": "site/scripts.js",
-        "type": "file"
+        "path": "metadata/content/03_calculo_integral",
+        "type": "directory"
     },
     {
-        "path": "docs/MATHKERNEL.md",
-        "type": "file"
+        "path": "metadata/content/04_calculo_vectorial",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/content/05_ecuaciones_diferenciales",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/content/06_metodos_numericos",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/scripts",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/scripts/core",
+        "type": "directory"
+    },
+    {
+        "path": "metadata/scripts/io",
+        "type": "directory"
     },
     {
         "path": "metadata/docs",
@@ -112,7 +176,39 @@
         "type": "file"
     },
     {
+        "path": "metadata/schemas",
+        "type": "directory"
+    },
+    {
+        "path": "scripts",
+        "type": "directory"
+    },
+    {
+        "path": "scripts/build.py",
+        "type": "file"
+    },
+    {
+        "path": "scripts/config.py",
+        "type": "file"
+    },
+    {
+        "path": "scripts/core",
+        "type": "directory"
+    },
+    {
         "path": "scripts/generate_assets.py",
+        "type": "file"
+    },
+    {
+        "path": "scripts/grafics",
+        "type": "directory"
+    },
+    {
+        "path": "scripts/io",
+        "type": "directory"
+    },
+    {
+        "path": "scripts/migrate_content_yaml_frontmatter.py",
         "type": "file"
     },
     {
@@ -120,8 +216,84 @@
         "type": "file"
     },
     {
+        "path": "scripts/validate_encoding.py",
+        "type": "file"
+    },
+    {
+        "path": "scripts/validate_markdown_format.py",
+        "type": "file"
+    },
+    {
+        "path": "site",
+        "type": "directory"
+    },
+    {
+        "path": "site/00_fundamentos",
+        "type": "directory"
+    },
+    {
+        "path": "site/01_algebra_lineal",
+        "type": "directory"
+    },
+    {
+        "path": "site/02_calculo_diferencial",
+        "type": "directory"
+    },
+    {
+        "path": "site/03_calculo_integral",
+        "type": "directory"
+    },
+    {
+        "path": "site/04_calculo_vectorial",
+        "type": "directory"
+    },
+    {
+        "path": "site/05_ecuaciones_diferenciales",
+        "type": "directory"
+    },
+    {
+        "path": "site/06_metodos_numericos",
+        "type": "directory"
+    },
+    {
+        "path": "site/assets",
+        "type": "directory"
+    },
+    {
+        "path": "site/assets/images",
+        "type": "directory"
+    },
+    {
         "path": "site/assets/images/grafics",
         "type": "directory"
+    },
+    {
+        "path": "site/index.html",
+        "type": "file"
+    },
+    {
+        "path": "site/scripts.js",
+        "type": "file"
+    },
+    {
+        "path": "site/styles.css",
+        "type": "file"
+    },
+    {
+        "path": "site/template_page.html",
+        "type": "file"
+    },
+    {
+        "path": "site_src",
+        "type": "directory"
+    },
+    {
+        "path": "site_src/index.html",
+        "type": "file"
+    },
+    {
+        "path": "site_src/scripts.js",
+        "type": "file"
     },
     {
         "path": "site_src/styles.css",
@@ -129,6 +301,90 @@
     },
     {
         "path": "site_src/template_page.html",
+        "type": "file"
+    },
+    {
+        "path": "tests",
+        "type": "directory"
+    },
+    {
+        "path": "tests/conftest.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_assets.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_config.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_content_migration.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_core_modules.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_encoding_validation.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_error_handling.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_file_manager.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_generation.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_links.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_markdown_validation.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_metadata.py",
+        "type": "file"
+    },
+    {
+        "path": "tests/test_structure.py",
+        "type": "file"
+    },
+    {
+        "path": "utils",
+        "type": "directory"
+    },
+    {
+        "path": "utils/io.py",
+        "type": "file"
+    },
+    {
+        "path": "utils/links.py",
+        "type": "file"
+    },
+    {
+        "path": "utils/logging.py",
+        "type": "file"
+    },
+    {
+        "path": "utils/markdown.py",
+        "type": "file"
+    },
+    {
+        "path": "utils/metadata.py",
+        "type": "file"
+    },
+    {
+        "path": "utils/pathing.py",
         "type": "file"
     }
 ]

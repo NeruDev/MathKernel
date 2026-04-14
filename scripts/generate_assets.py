@@ -1,8 +1,24 @@
-import os
-import sys
-import json
+# yaml_frontmatter:
+#   id: 'generate_assets'
+#   script_path: 'scripts/generate_assets.py'
+#   metadata_path: 'metadata/scripts/generate_assets.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Generador de assets SVG y metadata de graficos'
+#   key_functions:
+#     - 'setup_svg_styles'
+#     - 'run_graphic_script'
+#     - 'generate_asset_metadata'
+#     - 'main'
+#   tags:
+#     - 'assets'
+#     - 'svg'
+#     - 'matplotlib'
+
 import importlib.util
+import json
+import sys
 from pathlib import Path
+
 import matplotlib.pyplot as plt
 
 # Añadir la raíz del proyecto al path para importar templates y otros módulos
@@ -13,6 +29,7 @@ sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 import templates
 from utils.io import ensure_dir
 from utils.logging import log_error, log_info, log_warn
+
 
 def setup_svg_styles():
     """Configura estilos globales para salida SVG de alta calidad."""
@@ -61,6 +78,8 @@ def run_graphic_script(script_path):
     return None, None
 
 def main():
+    """Recorre scripts de graficos, genera SVG y persiste metadata homologada."""
+
     log_info("Iniciando generacion de assets vectoriales (SVG)...")
     setup_svg_styles()
     

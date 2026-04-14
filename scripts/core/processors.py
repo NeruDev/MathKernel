@@ -1,15 +1,34 @@
+# yaml_frontmatter:
+#   id: 'processors'
+#   script_path: 'scripts/core/processors.py'
+#   metadata_path: 'metadata/scripts/core/processors.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Procesadores para mapeos script->markdown e inyeccion de imagenes'
+#   key_functions:
+#     - 'get_relative_image_path'
+#     - 'build_script_to_md_map'
+#     - 'inject_image_markdown'
+#   tags:
+#     - 'procesamiento'
+#     - 'assets'
+#     - 'markdown'
+
 from pathlib import Path
 
 from utils.pathing import build_relative_prefix, compute_depth
 
 
 def get_relative_image_path(md_file_rel_path: str, image_path: str) -> str:
+    """Calcula la ruta relativa de una imagen segun profundidad del markdown."""
+
     depth = compute_depth(md_file_rel_path)
     prefix = build_relative_prefix(depth)
     return f"{prefix}{image_path}"
 
 
 def extract_section_id(section_text: str) -> str:
+    """Obtiene el identificador inicial de una seccion para anclaje flexible."""
+
     if not section_text:
         return ""
     return section_text.split(" ")[0].strip()
@@ -19,6 +38,8 @@ def build_script_to_md_map(
     content_metadata_records: list[tuple[str, dict]],
     md_rel_paths: list[str],
 ) -> dict[str, str]:
+    """Construye mapa script->archivo markdown a partir de metadata/content."""
+
     script_to_md: dict[str, str] = {}
 
     md_by_dir: dict[str, str] = {}
@@ -44,6 +65,8 @@ def inject_image_markdown(
     image_markdown: str,
     section_text: str,
 ) -> tuple[str, bool, str]:
+    """Inserta markdown de imagen en seccion objetivo o al final si no existe."""
+
     if image_markdown in raw_content:
         return raw_content, False, "duplicate"
 

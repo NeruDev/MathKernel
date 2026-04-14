@@ -1,4 +1,3 @@
-from pathlib import Path
 
 from utils.links import detect_broken_internal_links
 

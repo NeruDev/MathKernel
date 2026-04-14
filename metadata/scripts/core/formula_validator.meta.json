@@ -1,0 +1,29 @@
+{
+  "file_name": "formula_validator.py",
+  "script_path": "scripts/core/formula_validator.py",
+  "metadata_path": "metadata/scripts/core/formula_validator.meta.json",
+  "description": "Valida delimitadores matematicos y estructura de tablas markdown.",
+  "repo_role": "validator",
+  "inputs": [
+    "Texto markdown",
+    "Ruta origen para trazabilidad de advertencias"
+  ],
+  "outputs": [
+    "Lista de warnings sobre formulas desbalanceadas o tablas inconsistentes"
+  ],
+  "dependencies": {
+    "external": [],
+    "internal": []
+  },
+  "tags": ["validator", "markdown", "math", "tables"],
+  "key_functions": [
+    "_scan_unbalanced_math_delimiters",
+    "_validate_table_block",
+    "validate_markdown_math_tables"
+  ],
+  "usage_example": "from scripts.core.formula_validator import validate_markdown_math_tables",
+  "performance_constraints": "Debe recorrer texto de forma secuencial para minimizar costo por archivo.",
+  "known_limitations": "Usa regex y reglas simples; no interpreta completamente sintaxis markdown extendida.",
+  "status": "production",
+  "maintainer": "mathkernel_team"
+}

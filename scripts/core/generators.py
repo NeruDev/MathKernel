@@ -1,3 +1,18 @@
+# yaml_frontmatter:
+#   id: 'generators'
+#   script_path: 'scripts/core/generators.py'
+#   metadata_path: 'metadata/scripts/core/generators.meta.json'
+#   source_of_truth: 'metadata/scripts/**/*.meta.json'
+#   title: 'Generadores de cuerpo HTML para indice y glosario'
+#   key_functions:
+#     - 'build_glossary_body'
+#     - 'build_index_items'
+#     - 'build_index_body'
+#   tags:
+#     - 'generacion'
+#     - 'html'
+#     - 'metadata'
+
 import re
 from pathlib import Path
 from typing import Any
@@ -7,10 +22,14 @@ from utils.pathing import build_relative_prefix
 
 
 def format_display_title(file_stem: str) -> str:
+    """Formatea un stem en titulo legible para interfaz web."""
+
     return file_stem.replace("_", " ").title()
 
 
 def wrap_html(title: str, body: str, template_html: str, depth: int) -> str:
+    """Envuelve contenido HTML en template aplicando prefijo relativo de assets."""
+
     prefix = build_relative_prefix(depth)
     return (
         template_html.replace("{{TITLE}}", title)
@@ -20,6 +39,8 @@ def wrap_html(title: str, body: str, template_html: str, depth: int) -> str:
 
 
 def build_glossary_body(metadata_records: list[dict[str, Any]]) -> str:
+    """Genera HTML del glosario agregando conceptos unicos de metadata."""
+
     concepts: list[str] = []
     for data in metadata_records:
         fields = extract_metadata_fields(data)
@@ -41,6 +62,8 @@ def build_index_items(
     metadata_records: list[dict[str, Any]],
     id_to_path: dict[str, str],
 ) -> tuple[list[dict[str, Any]], list[str]]:
+    """Construye items de indice ordenados y sus advertencias de integridad."""
+
     items: list[dict[str, Any]] = []
     warnings: list[str] = []
 
@@ -70,6 +93,8 @@ def build_index_items(
 
 
 def build_index_body(items: list[dict[str, Any]]) -> str:
+    """Renderiza bloques HTML del indice agrupados por modulo."""
+
     current_module: str | None = None
     chunks: list[str] = [
         "<h1>Biblioteca Matemática</h1>",
@@ -94,6 +119,8 @@ def build_index_body(items: list[dict[str, Any]]) -> str:
 
 
 def metadata_json_paths(metadata_content_dir: Path) -> list[Path]:
+    """Lista metadatos JSON de contenido ignorando schema.json heredado."""
+
     return [
         path
         for path in sorted(metadata_content_dir.rglob("*.json"))
